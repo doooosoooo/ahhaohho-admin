@@ -1,0 +1,169 @@
+[
+  {
+    "_table": {
+      "_base": {
+        "_airtable": {},
+        "_id": "appRzH8eqfXddaLyt"
+      },
+      "id": null,
+      "name": "tbl08YQjobglpiI7F"
+    },
+    "id": "rec9piFMfG9lNn6Rr",
+    "_rawJson": {
+      "id": "rec9piFMfG9lNn6Rr",
+      "createdTime": "2024-05-08T08:35:50.000Z",
+      "fields": {
+        "Name": 1,
+        "P형 액티비티": [
+          "rec1EgXd42fRGAVGZ",
+          "recBQUEH35XtFleTt",
+          "recdZtTQ4A65t1DAx",
+          "recyr0b77Y7zttsaU",
+          "recRpd1j2h87amOFy"
+        ],
+        "액티비티 ID (from Notes)": [
+          6,
+          9,
+          15,
+          32,
+          40
+        ]
+      }
+    },
+    "fields": {
+      "Name": 1,
+      "P형 액티비티": [
+        "rec1EgXd42fRGAVGZ",
+        "recBQUEH35XtFleTt",
+        "recdZtTQ4A65t1DAx",
+        "recyr0b77Y7zttsaU",
+        "recRpd1j2h87amOFy"
+      ],
+      "액티비티 ID (from Notes)": [
+        6,
+        9,
+        15,
+        32,
+        40
+      ]
+    }
+  },
+  {
+    "_table": {
+      "_base": {
+        "_airtable": {},
+        "_id": "appRzH8eqfXddaLyt"
+      },
+      "id": null,
+      "name": "tbl08YQjobglpiI7F"
+    },
+    "id": "reck7vgnRIusYUQfk",
+    "_rawJson": {
+      "id": "reck7vgnRIusYUQfk",
+      "createdTime": "2024-05-08T08:35:50.000Z",
+      "fields": {
+        "Name": 2,
+        "P형 액티비티": [
+          "recu0fLZYtcazLAKO",
+          "recdBZPfd6U4rjOrj",
+          "rec8UEVKZ91CI2p6a",
+          "recU78SfzTZlR8OaT",
+          "recz5yY2VIOWODhCo",
+          "recNYHBpWsAHf3kKz",
+          "recPV7vNhWKeXfmSn",
+          "recNbMLJgcqKtu27Y",
+          "recii6g9jTW5RmNaN",
+          "recmWnt4gRSdWahpG",
+          "receBJmMINBIeN1KO"
+        ],
+        "액티비티 ID (from Notes)": [
+          7,
+          10,
+          13,
+          17,
+          19,
+          21,
+          24,
+          34,
+          35,
+          36,
+          42
+        ]
+      }
+    },
+    "fields": {
+      "Name": 2,
+      "P형 액티비티": [
+        "recu0fLZYtcazLAKO",
+        "recdBZPfd6U4rjOrj",
+        "rec8UEVKZ91CI2p6a",
+        "recU78SfzTZlR8OaT",
+        "recz5yY2VIOWODhCo",
+        "recNYHBpWsAHf3kKz",
+        "recPV7vNhWKeXfmSn",
+        "recNbMLJgcqKtu27Y",
+        "recii6g9jTW5RmNaN",
+        "recmWnt4gRSdWahpG",
+        "receBJmMINBIeN1KO"
+      ],
+      "액티비티 ID (from Notes)": [
+        7,
+        10,
+        13,
+        17,
+        19,
+        21,
+        24,
+        34,
+        35,
+        36,
+        42
+      ]
+    }
+  },
+  {
+    "_table": {
+      "_base": {
+        "_airtable": {},
+        "_id": "appRzH8eqfXddaLyt"
+      },
+      "id": null,
+      "name": "tbl08YQjobglpiI7F"
+    },
+    "id": "recEJRLBuL4QIYi5e",
+    "_rawJson": {
+      "id": "recEJRLBuL4QIYi5e",
+      "createdTime": "2024-05-08T08:35:50.000Z",
+      "fields": {
+        "Name": 3,
+        "P형 액티비티": [
+          "recbA3ExUP1uuRFel",
+          "recH5EZR7VHjGfOsl",
+          "reckm7DEzwhxny5vn",
+          "recodKDjO9f4b7fzv"
+        ],
+        "액티비티 ID (from Notes)": [
+          12,
+          29,
+          31,
+          39
+        ]
+      }
+    },
+    "fields": {
+      "Name": 3,
+      "P형 액티비티": [
+        "recbA3ExUP1uuRFel",
+        "recH5EZR7VHjGfOsl",
+        "reckm7DEzwhxny5vn",
+        "recodKDjO9f4b7fzv"
+      ],
+      "액티비티 ID (from Notes)": [
+        12,
+        29,
+        31,
+        39
+      ]
+    }
+  }
+]
