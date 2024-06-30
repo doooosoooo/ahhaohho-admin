@@ -15,10 +15,18 @@ async function main() {
 
     for (const [mainKey, { tableName, viewName } ] of Object.entries(tableNames)) {
         try {
-            const tableData = await fetchTableData(tableName, viewName);
-            const jsonData = JSON.stringify(tableData, null, 2);
-            const fileName = `${mainKey}-updateAt${updateDate}.json`;
-            const filePath = path.join(dataDir, fileName);
+            const tableData = await fetchTableData(tableName, viewName); //
+            const jsonData = JSON.stringify(tableData, null, 2); // JSON 데이터를 읽기 쉽도록 들여쓰기
+            const fileName = `${mainKey}-updateAt${updateDate}.json`; // 파일 이름
+            const filePath = path.join(dataDir, fileName); // 파일 경로
+            
+            const mainKeyPattern = new RegExp(`${mainKey}-updateAt\\d{8}.json`);
+            
+            fs.readdirSync(dataDir).forEach(file => {
+                if (mainKeyPattern.test(file)) {
+                    fs.unlinkSync(path.join(dataDir, file));
+                }
+            });
             
             fs.writeFile(filePath, jsonData, 'utf8', (err) => {
                 if (err) {
