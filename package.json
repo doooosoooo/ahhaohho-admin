@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "airtable": "^0.12.2",
-    "aws-sdk": "^2.1648.0",
+    "aws-sdk": "^2.1651.0",
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

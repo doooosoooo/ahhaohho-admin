@@ -42,20 +42,22 @@ function readDataFromFile(filePath) {
 }
 
 // API로 데이터를 전송하는 함수
-async function sendDataToApi(processedData, apiUrl) {
-    const axios = require('axios');
-    const responses = [];
+async function sendDataToApi(data, url) {
     try {
-        for (const item of processedData) {
-            const response = await axios.post(apiUrl, item); // 각 데이터를 API로 전송
-            responses.push(response.data);
-        }
-        console.log('Data successfully sent to API');
+        const axios = require('axios');
+        console.log('Sending data to API:', JSON.stringify(data, null, 2));
+        const response = await axios.post(url, data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        return response.data;
     } catch (error) {
-        console.error('Error sending data to API:', error); // 데이터 전송 중 에러 발생 시 출력
+        console.error('Error sending data to API:');
+        throw error;
     }
-    return responses;
 }
+
 
 // 디렉토리 생성 함수
 function createDirectoryIfNotExists(dir) {
