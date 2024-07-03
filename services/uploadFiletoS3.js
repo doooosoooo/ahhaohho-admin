@@ -72,9 +72,8 @@ function getContentType(filePath) {
         '.jpeg': 'image/jpeg',
         '.png': 'image/png',
         '.gif': 'image/gif',
-        '.html': 'text/html',
-        '.css': 'text/css',
-        '.js': 'application/javascript',
+        '.json': 'application/json',
+        '.mp4': 'video/mp4',
     };
     return contentTypes[ext] || 'application/octet-stream';
 }
