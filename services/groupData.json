@@ -1,0 +1,44 @@
+[
+    {
+      "showNumber": 1,
+      "groupName": "Group 1",
+      "list": [
+        "6683399434058cb3ba3b79e5",
+        "6683399434058cb3ba3b79ee",
+        "6683399434058cb3ba3b79f7"
+      ]
+    },
+    {
+      "showNumber": 2,
+      "groupName": "Group 2",
+      "list": [
+        "6683399434058cb3ba3b7a01",
+        "6683399434058cb3ba3b7a01"
+      ]
+    },
+    {
+      "showNumber": 3,
+      "groupName": "Group 3",
+      "list": [
+        "6683399434058cb3ba3b7a04",
+        "6683399434058cb3ba3b7a04",
+        "6683399434058cb3ba3b7a04",
+        "6683399434058cb3ba3b7a04"
+      ]
+    },
+    {
+      "showNumber": 4,
+      "groupName": "Group 4",
+      "list": [
+        "6683399434058cb3ba3b7a0a"
+      ]
+    },
+    {
+      "showNumber": 5,
+      "groupName": "Group 5",
+      "list": [
+        "6683399434058cb3ba3b7a11",
+        "6683399434058cb3ba3b7a14"
+      ]
+    }
+]

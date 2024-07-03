@@ -21,7 +21,7 @@ function processData(data) {
 
             if (tipImages && Array.isArray(tipImages) && tipImages.length > 0) {
                 preparationTip.push({
-                    imageUrl: tipImages[0].url,
+                    imageUrl: { url: tipImages[0].url, type: tipImages[0].type },
                     comment: tipDescription || null,
                 });
             }
@@ -39,19 +39,23 @@ function processData(data) {
                 let imageUrl = {
                     aos: null,
                     ios: null,
-                    default: null
+                    default: null,
+                    type: null,
                 };
 
                 if (images.length === 1) {
                     // 단일 이미지인 경우 default로 설정
-                    imageUrl.default = images[0].url;
+                    imageUrl.default = images[0].large.url;
+                    imageUrl.type = images[0].type;
                 } else {
                     // 여러 이미지인 경우 aos와 ios로 구분
                     images.forEach(img => {
                         if (img.filename.includes('aos')) {
                             imageUrl.aos = img.url;
+                            imageUrl.type = img.type;
                         } else if (img.filename.includes('ios')) {
                             imageUrl.ios = img.url;
+                            imageUrl.type = img.type;
                         }
                     });
                 }
