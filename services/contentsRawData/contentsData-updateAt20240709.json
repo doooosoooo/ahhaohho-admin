@@ -1,0 +1,5001 @@
+[
+  {
+    "id": "rec1EgXd42fRGAVGZ",
+    "액티비티 ID": 6,
+    "*액티비티 썸네일": [
+      {
+        "id": "attA0CrrnsmO2nKwV",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/nczUOuf1oDDfKmQEp4tFIrukbjrmR8siPcS1pOUQNWU",
+        "filename": "우리가 보는것에_01_썸네일.mp4",
+        "size": 379332,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "우리가 보는 모든 것에 눈이 있다면?",
+    "*메인 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 5,
+    "*활동 설명": "우리가 보는 모든 것에 눈이 있다고 상상해봅시다. 나의 주변에 숨어있는 캐릭터를 찾아보세요!",
+    "*역량(기본보상)": [
+      "recTCJuxFbn83RCJe"
+    ],
+    "준비물 데이터": [
+      "recYeGXD75RJiiMxs"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attY7f1GXTgtfrB3k",
+        "width": 3141,
+        "height": 1767,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/LSDrT0a0U_56wQuaRG3Rt_RxIPbGxH8zUk6LzmotuuA",
+        "filename": "우리가 보는것에_준비팁_1.jpg",
+        "size": 2314045,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/thdN8T-7U33dvxpFv18IKRaA-0aUdmoil0Jb8Cni0hY",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/HMaO_aXv7wfPdpP0X5QLYJZQPAVtDp6mJ7FfXj1eK8s",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/nqzzQfMLrXsRwdKVNx1Pda1t8yCPFKpnbGXGG_yNcFs",
+            "width": 3000,
+            "height": 1688
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": "핸드폰이나 테블릿pc에 연동되는 펜이 있다면 더 쉽게 그림을 그릴 수 있어요.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "att76vKhYXdKDoK7y",
+        "width": 3181,
+        "height": 2545,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/AaBE5hwjKVvjzjkfe6eSAoBGpJ-UsyugzmxC6zeJDpY",
+        "filename": "우리가 보는것에_s1.jpg",
+        "size": 6816007,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/AyWVRjkIYwHSCKOvL6Hja_UnaO3lsSfJLdta0oQAGwE",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/REntJ_UdRL1cpY2JPMC0fMswOodqvO18fLPIxY-ikoc",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/dfa3L5dg-gX_wscaEfd4uCjWGytz0b8pe1fp5OGQR4Q",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "나의 주변에 캐릭터가 숨어있다는 상상을 하면서 주변을 관찰해보세요. ",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "atteSjHHtEWTpkPec",
+        "width": 3164,
+        "height": 2531,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/2cSupJ_ugNHsHrFbjj-a6aR9ME1vP-44ENRbBYUwpa0",
+        "filename": "우리가 보는것에_s2.jpg",
+        "size": 5787685,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/f1rCK9Usf0KWB18etFO7O0kTy0nBePP7Y3jyNhtx938",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/_P2TlOrs6IaIdnbymH0lvpCRDsfE3k9vdL0gthUHXqg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/e2Q7JAxEREAKjdgc6I3-mGUUvwQR7xJmhGy4As7MO2I",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "혹시 발견했나요? 그렇다면 핸드폰으로 사진을 찍어보세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attmUxFMtmDXCJQuZ",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ke-opT2pJgGWJn4xwwupz1YV4oU2NqGqm-Y7r17Nv_8",
+        "filename": "aos_우리가 보는것에_s3.jpg",
+        "size": 3058359,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/s-vRQcdVzc1_AvASJIRu54aHmv4sW-ba9NhApzViyz8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/pKi4FvCkdRhg-6y3OGAZcgzycbXmW33ZZfb_SG01Weg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/H_PruJB7k5mV3l1FpOH9ldLMVxRWTKWXY5eL0scEk78",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      },
+      {
+        "id": "att2bR8VlkEE3t4Pg",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/r7j_eF8B7MTWksEsfOvUlY3nzMKiHMFNFJJasjMRuDM",
+        "filename": "ios_우리가 보는것에_s3.jpg",
+        "size": 2322403,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/eXTU6sOSXxnioA6as3InVFi7w3VSadQDLK_miJeTVx4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/TF7EATKGngHzcgwBolvhRsPsjT3KzSOyTBKytkpABy8",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/l1PPxfj1XWQFcB-ng8cDug8IFJ_4waz6yRzP8vFPevs",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "찍은 사진을 열고 [편집]을 클릭! [펜] 기능을 클릭!",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attpgWgxq7zqbrAYK",
+        "width": 1280,
+        "height": 1024,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/HbZwXSfAHExzkrA3Yc3cfxmVQ15p1iG-4u6iYO3HjWo",
+        "filename": "aos_우리가 보는것에_s4.jpeg",
+        "size": 52021,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/Xx-0QmhK2jIGCjE9fxSKeFG21CwHVSPlTjRzO6VXqw0",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/ctsRE7UrqKEtmGLeHSGLEHeKQsgKY3YGPPwoeedGMgg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/f00xcVrxftelnYIMvgTlocI4_-uah83t3QS4QDPARmE",
+            "width": 1280,
+            "height": 1024
+          }
+        }
+      },
+      {
+        "id": "attF7nwINuWd5QrSI",
+        "width": 1280,
+        "height": 1024,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/mo8gDfMxbzPWJvaC9qcFBe8h9HXXnBk3rZ-T0uef3ww",
+        "filename": "ios_우리가 보는것에_s4.jpeg",
+        "size": 52196,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/JDVX1P2IeIe9T0-nnCLavgk702whKPTyVW8SSE3Vkkk",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/pOrh4NOwC48lEInrxLQi__iWLOsUN53vKwCL5wQkkxM",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/5PQNudoYoo-AwO4GLfLMUjChSau6VKVeSQIkg1E3BZM",
+            "width": 1280,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "원하는 [펜]의 색을 선택하고 찍은 사진 위에 눈을 찾아 그려보세요! ",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attpQq0TJzpVmh0J3",
+        "width": 1500,
+        "height": 1200,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/VL7tOIvTdQBMhwrX2VGypd23HdrjJ6bJPbs0VEiHuhQ",
+        "filename": "우리가 보는것에_s5.jpg",
+        "size": 574537,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/WLo2Bpo0Wi5G2zZMZEiu305zCy_x1MRngtgFzmgQ0QU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/wB-Q4vnN_SEcqnWd7sHLxi_xeWcAgapQkriD2K0AQEA",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/PfuBvmfboZ8LjUb760KdsqnxaUB8Qgnn2SqC2KxmT7E",
+            "width": 1500,
+            "height": 1200
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "이런 눈으로 주변을 바라보면 캐릭터들이 참 많이도 숨어있답니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attAvrIgmEKSfGfz6",
+        "width": 1280,
+        "height": 959,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/BfScylZ7quJiPWq6zzhdehdbsrU6rnAP2WVkrQkVXdw",
+        "filename": "우리가 보는것에_s6.jpeg",
+        "size": 289663,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/n6V0NoEfQ9LKWSSbLdoVezKD15-FV0A9kn2H1U1Jh7E",
+            "width": 48,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/e3vP-_r5DSs3vQNpYPvXZCQyOjgFDplu6qkSWtvO7KE",
+            "width": 683,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/sd_yHo6GjiDfuBHdXQOCN0m_sVckhSdd3rzQGgfTq70",
+            "width": 1280,
+            "height": 959
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "발견한 캐릭터의 이름을 지어주세요. <안녕! 난 우리집을 지키는 가스통이야!>",
+    "추천 활동": [
+      "recu0fLZYtcazLAKO",
+      "recbA3ExUP1uuRFel",
+      "recBQUEH35XtFleTt",
+      "recH5EZR7VHjGfOsl"
+    ],
+    "활동 가이드_3_팁": "안드로이드폰에서는 사진을 열고 [편집]을 클릭! [그리기] 기능을 사용해봐.",
+    "활동 가이드_4_팁": "사진 속 풍경이나 물건의 표정을 찾아볼까?",
+    "활동 가이드_5_팁": "참~ 쉽다! 캐릭터를 만드는 방법! ",
+    "활동 가이드_6_팁": "이름을 짓는것이 어렵다면 물건의 쓰임이나 이름과 연결시켜 만들어봐. \n사과->애피,새콤이 등등.",
+    "활동 가이드 1_이미지_제작디렉션": "주변에서 흔히 볼 수 있는 풍경 사진. (ex. 도로변, 상가, 실내 등)",
+    "활동가이드 2_이미지_제작디렉션": "활동가이드 1_이미지를 배경으로, 일상 속 숨겨진 눈을 찾아 핸드폰으로 촬영하는 모습",
+    "활동 가이드 3_이미지_제작디렉션": "아이폰,갤럭시 둘 다 촬영/ 파일명 다르게 하면 접속하는 기종에 따라 자동변환된다고 함 (iOS/AOS) ",
+    "활동 가이드 4_이미지_제작디렉션": "펜 툴을 사용해서 내가 찾은 눈을 그려보는 모습 / 갤럭시탭에서는 펜으로 그리기 ",
+    "활동 가이드 5_이미지_제작디렉션": "일상에서 찾은 다른 눈 예시 3분할컷-gif",
+    "활동 가이드 6_이미지_제작디렉션": "아하오호 앱에서 이미지 업로드하며 텍스트쓰는 장면-아하오호 테스트버젼 사용가능한지 체크",
+    "액티비티썸네일_이미지_제작디렉션": "원본 사진+얼굴 그린 사진- 움짤",
+    "준비 Tip 1_이미지_제작디렉션": "테블릿pc와 연동되는 펜 촬영.",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "사진/영상/움짤데이터": "사진/움짤",
+    "P형 포스트 가이드": [
+      "rec9piFMfG9lNn6Rr"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "큐레이션 리스트": [
+      "recHPy5b7S3gTyntR"
+    ],
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    },
+    "업데이트 필요 요청 시간": "2024-07-02T08:44:52.000Z"
+  },
+  {
+    "id": "recu0fLZYtcazLAKO",
+    "액티비티 ID": 7,
+    "*액티비티 썸네일": [
+      {
+        "id": "attjd5R0Jlc6uI5jf",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/UfjU_GepS041uDcHCKG8U0QRJ_2JzxEkV5JrJBNRu50",
+        "filename": "DIY 프로젝터_썸네일.mp4",
+        "size": 7815266,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "DIY 프로젝터 ",
+    "*메인 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*서브 장르": [
+      "recj5GonSSUrQeMe5"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 15,
+    "*활동 설명": "빛을 통과시켜서 내가 만든 이미지를 어두운 화면에 내보내기! \n혹시, 옛날에 극장에서는 영사기를 사용해 영화를 틀었던 사실을 알고 있나요? 우리가 만드는 DIY프로젝터는 이것의 시작이기도 합니다. ",
+    "*역량(기본보상)": [
+      "recq7dC1fQ5yy9Zoe"
+    ],
+    "준비물 데이터": [
+      "recYeGXD75RJiiMxs",
+      "recXDqCbCZybRrPPq",
+      "rectzBzaIgbgiVYPe",
+      "recHlP8FT1Of2FqHL",
+      "recsyHD5P0wfeQTHy",
+      "rec7ihOQuo4WVL0H6",
+      "recqW9czHgr6Nm41J"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attUO78cpEIBEONBf",
+        "width": 2675,
+        "height": 1505,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/zF0KS9kxCKXr7vMhjPQRjFlpiZipEYNJ94oWFjqbovA",
+        "filename": "diy 프로젝터_준비팁_1.jpg",
+        "size": 1389496,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/Z30A8gwC42k9jx5fPQUO2m8BNYFx5xXjptiGyXwYA6Q",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/r2pjrZqhJ4xdF01V5QGwDoV2PmgLAd2XmVXjLSl-PRM",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/4VavaciW3w90tUXTKv3lv22sjr4frp10RqdKBGF2A_8",
+            "width": 2675,
+            "height": 1505
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": "프로젝터에 작은 장난감 등을 넣어서 그림자를 만들 수도 있어요.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attvm3g6iwhtMjeHl",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ZVgBuFKcpySj1fj9lvTox6vDuoqZjgEBndAc7zuWwpE",
+        "filename": "diy 프로젝터_s1.jpg",
+        "size": 3455275,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/KE3aAdj1XAJtQ8fFypPJUx83u7xh5LOwy4d9nr2jlY8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/rFDnNgAoEezyE7QJPaP5BlmlZskzYDbUivUINq9OKhU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/nzDz8BciMG8tgqapX8avYlKWfVdmcklv43PVz4Ty9t4",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "재활용 테이프 심지에 투명테이프의 접착면이 아래로 향하도록 붙입니다.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attAa9cnzCVnyoAR8",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/B_RT53omlXAQv0diYeMT16rb9_12JLh8_DlXQ7pTWKQ",
+        "filename": "diy 프로젝터_s2.jpg",
+        "size": 3613519,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/tR3wlsFgb1uB5VlubfMeKb661qlqk93OcE9zzSEXVoU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/4tna9zwSgCeQXoYj1H70A2tWkfMVIskHKLYmqqnUWOU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/z3XXFRZ0kH1XFS19dhQxfzwzD5lb5x-T8dLZJx9jrXE",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "투명테이프의 윗면(접착면이 없는 쪽)에 마커펜으로 눈을 그려보세요. ",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "atttTA0sKhdEMXHwn",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/GgIi8hVT5BdbUCqsOlXRHeD-yUFsnLFLUIU2AI6flBY",
+        "filename": "diy 프로젝터_s3.jpg",
+        "size": 3631065,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/JWqR7lB-E8Cmy0xmAo5RRLmbzwBVCpHLFjEWnyD2Q1g",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-yduXsArzbNCgqX2V4JlY5kox8op7vXcdr4WCwmUT0c",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/eIXP7QUwXxzWXZwdKi_cdtb62WgamxD0atFZXTgoESg",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "이번에는 매직펜을 사용해 그림에 색깔을 넣어보세요. ",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attby4Ky0Oj2akewd",
+        "width": 3209,
+        "height": 2567,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/0O2EjK379eX3TT7QZEkhEpmJBC3o2UvSeg-fyZXv4Qo",
+        "filename": "diy 프로젝터_s4.jpg",
+        "size": 2836256,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ljupjcLLuR4gADp5Ufjua36w6Q9zaYt54yN1pEje4ag",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/ykJUUvBTjCpRnVQ8qDTwu8tboRFa-oGGQ0r5T0h0mPU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/YHTVn2Y1go9XNfds767xyTAGhVp8VDDYGmNffAYrg8I",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "종이로 테이프 심지의 겉면을 장식해서 캐릭터를 만들어 볼까요?",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attMjfbFVqBUawnJz",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/RbC3DMDm2iKEy1xO1pYmY7GTA1jpgu5eZgY9DutkE98",
+        "filename": "diy 프로젝터_s5.jpg",
+        "size": 3060445,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/U1ME4UzwatsYevpMmWJGpsM73PG95aLnpzcy9kTb8s8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/FabPrs8i3z3FMb0E0DQZ53IIwqLOnQleWe0ePvAkDB4",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/kZQktO49pd087UKpBOYwU5aHFZ0NidmO89_J981RR3w",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "핸드폰의 라이트 기능을 활용해 심지 안에 불을 비춰보세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attxCBQtRoGTp56wG",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Bz6H50QSG39XmJ6B9JG8g5c3gsIwj81mFqTcYq77k6g",
+        "filename": "DIY 프로젝터_6.MP4",
+        "size": 2197288,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "완성한 DIY 프로젝터에 라이트를 가까이하면 캐릭터의 크기가 커지고 멀리하면 작아져요. ",
+    "추천 활동": [
+      "rec1EgXd42fRGAVGZ",
+      "recmWnt4gRSdWahpG"
+    ],
+    "활동 가이드_1_팁": "가장자리에 남은 테이프는 자르거나 심지에 붙여서 잘 정리해줘야해~",
+    "활동 가이드_2_팁": "마카펜은 빛이 통과하지못해 진한 그림자를 만들 수 있어.",
+    "활동 가이드_3_팁": "매직펜은 빛을 통과시켜서 색이 투과돼. 무지개처럼!",
+    "활동 가이드_4_팁": "꼬리나 귀를 붙이면 뭔가 더 재밌을 것 같아!",
+    "활동 가이드_5_팁": "주변을 어둡게하고 하얀벽에 비추면 효과 만점!",
+    "활동 가이드_6_팁": "다양한 움직임을 이용해 짧은 그림자 연극을 시도해봐~",
+    "활동 가이드 1_이미지_제작디렉션": "테이프 심지에 투명 테이프를 붙이는 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "활동 가이드 2_이미지에 색깔이 추가된 모습; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "활동 가이드 3_이미지에 종이장식이 추가; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "어두운 공간에서 촬영; 정면샷",
+    "활동 가이드 6_이미지_제작디렉션": "라이트를 앞뒤로 움직이며 캐릭터 크기 변하는 mp4",
+    "액티비티썸네일_이미지_제작디렉션": "비어있는 벽면에 이미지가 나타나는 mp4",
+    "준비 Tip 1_이미지_제작디렉션": "휴지심지 안에 장난감+사탕등- 그림자와 컬러를 투과할 수 있는것을 넣고 빛 통과하여 사진.",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "reck7vgnRIusYUQfk"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "큐레이션 리스트": [
+      "recqzowu8rgDd0lUX"
+    ],
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recBQUEH35XtFleTt",
+    "액티비티 ID": 9,
+    "*액티비티 썸네일": [
+      {
+        "id": "att6ix3sPEF97IglA",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/lDfD-tC7PqAoOw3nIwshtczLLtWXv5niujrSZ-H3I-A",
+        "filename": "슬로 모션_thumb.mp4",
+        "size": 28029707,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "슬로우모션으로 촬영하면 멋있는 것 발견하기",
+    "*메인 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 10,
+    "*활동 설명": "평범한 일상도 슬로우모션으로 보면 뭔가 멋있게 보일 수 있답니다! 스마트폰 카메라에 슬로우모션 기능을 이용해 일상을 색다르게 관찰해봅시다!",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "atts7fcyAdeAs9ZWk",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/bh_r6uNBYSDOhqyx4cGgBJyCc_vzWc3QVu3ObdHwGpE",
+        "filename": "aos_slowmotion.MP4",
+        "size": 3379465,
+        "type": "video/mp4"
+      },
+      {
+        "id": "attyPXaWzswtLzQoX",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/gjZk5jWNQdDwVRq9vl5nETFts7dojLHzZX2cpzH8Wa8",
+        "filename": "ios_slowmotion.mp4",
+        "size": 5856885,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "카메라 앱을 실행해 슬로우모션 촬영 모드를 선택해주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attp9tKlPAx56lyDK",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/GUBYPOxdp4zRu1TELz8W3aR-FGt769G_0K3f8oMoSZg",
+        "filename": "물뿌리는거찍기.jpg",
+        "size": 3575904,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/UTjrJ2jhWuXmak6Rq6iUlH093gQ93fr9ZtZ3rUx0CsQ",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/Soi2xyond3l2UJUNqbQRNaF-Tszw9yK2Ru-eIfFdsgU",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "떨어지는 물방울, 날아가는 새, 자전거 바퀴 같이 다양한 일상의 순간들을 슬로우 모션으로 촬영해보세요!",
+    "추천 활동": [
+      "recbA3ExUP1uuRFel",
+      "rec1EgXd42fRGAVGZ",
+      "recNbMLJgcqKtu27Y",
+      "recH5EZR7VHjGfOsl"
+    ],
+    "활동 가이드_2_팁": "영상이 너무 어두울 경우 야외의 밝은 곳에서 촬영하거나 플래시를 켜고 촬영해봐.",
+    "활동 가이드 1_이미지_제작디렉션": "스마트폰 카메라 앱에서 슬로우모션 촬영 넘어가는 장면 (iOS/AOS) 별도 제작",
+    "활동가이드 2_이미지_제작디렉션": "수도꼭지에서 떨어지는 물을 촬영하고 있는 모습",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "rectHHUx7qqzCNgsL"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recEJRLBuL4QIYi5e"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "큐레이션 리스트": [
+      "rec4nqnziFvztim2G"
+    ],
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrPAGESHARE00000",
+      "email": "anonymous+formpage@noreply.airtable.com",
+      "name": "Anonymous"
+    }
+  },
+  {
+    "id": "recdBZPfd6U4rjOrj",
+    "액티비티 ID": 10,
+    "*액티비티 썸네일": [
+      {
+        "id": "attQGd3FwJsWOvlze",
+        "width": 1200,
+        "height": 1500,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/PzyVYYjLUqeCC6HMdzV2bUXrMsZwTYYc81NFZv-brbI",
+        "filename": "석고붕대 화병_01_썸네일.jpg",
+        "size": 1149148,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/6zPSlzlCWrWnHrncciww5pYRvEZMEwdqn4e8oz5SoOA",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/ntmbvdyySCXqjYb_ViPK6Rorl-zp9BuL1ABMYgLbRGU",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/c4qSQ_MT_Lfk9-8iNNHbrZUdDZdLce1Hpg66fYTvKIA",
+            "width": 1200,
+            "height": 1500
+          }
+        }
+      }
+    ],
+    "*액티비티 타이틀": "석고붕대로 만든 캐릭터 화병",
+    "*메인 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "recoBBOrhMi5aLmPo"
+    ],
+    "*예상 소요시간": 30,
+    "*활동 설명": "석고붕대로 화병을 만든다고?! 풍선과 종이컵, 컵라면 용기등 다양한 재활용 재료와 석고붕대로 캐릭터 화병을 만들어봅니다.",
+    "준비물 데이터": [
+      "recQyr6iwCCSS0xGu",
+      "recdpURIJUALFaII5",
+      "reca9gT2dZoFrDsWe",
+      "recXfu6M9fvTpql8I",
+      "recdJvWKiqH8Vu263",
+      "rec45HsuLsHlfUenW",
+      "rec9sh0jk9r1viC91"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attaAiHBffLbL2gVI",
+        "width": 3237,
+        "height": 2590,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/lt2KPlDHbHgt1WxrMKhZCJI0W2llxaOWnb6mOKcVOYU",
+        "filename": "석고붕대 화병_s1.jpg",
+        "size": 3007014,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/STesWb4g5h8brx9KqKS5wxOIfzJoDC54_9-ZqLXemnU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/XjG5bw-seWDjivRUkPaI-iIdzgPAIkeiKY6A8ryfeGk",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/ChGsONi2nOmRT0Bwefi6yl_MICt2fHLUUbauhPs91Cg",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "석고붕대는 5~7cm 간격으로 자르고 사용할 재활용 용기를 준비하세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "att3Z49X1RxdVlbMX",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/3uyzvJenAeMV-NmnKrAsbpnZqYTwU6bTSlTW9t_fCYU",
+        "filename": "석고붕대 화병_s2.jpg",
+        "size": 2876532,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/bBFo4V73txk9xMFUerh4B56Y9dUsPPyv8tSdG47zpXA",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/Z8lXzSZKTy5puTW4aZ1B-pxFfw9ArXa8hfbMcgMkoEI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/_MpfTsa0YOheE6tf042aYZiL9gE_bxMOG7YnYNkFUZs",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "사용할 재활용 용기의 밑바닥을 컷터칼로 오려내어 주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attDuPLD7WlpoLTGC",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/BDcSEpVmid4jNGqG45S4PiQbvKFhqhMlQlxf_S40Zb8",
+        "filename": "석고붕대로 만든 화병_3.mp4",
+        "size": 2999357,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "풍선에 원하는 크기로 바람을 불고 꽉 묶어주세요. 너무 크게 불면 쉽게 터질 수 있어요!",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attKW7GyqUK4iLkjw",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/EvYqAYEQ0U_Hf3EySIbWTO_zzUgUM9vK1_uYWvP-WuE",
+        "filename": "석고붕대 화병_s4.jpg",
+        "size": 2958935,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ryT3kbCP9xKDxNVv_L064FnlOJ78LwElUsKXdP0AeXk",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/EpbYL7EUE7VRkk6OoTUQenMsFCFaznrDKH2SE44b8ek",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/7yKrVsBYIoqURhpxxWRgLkiSNMMz47HKm4IOlKDiBLY",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "마스킹테이프로 사용할 재활용 용기와 풍선을 고정시켜주세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attnEbubX3a5uioII",
+        "width": 2745,
+        "height": 2196,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/GLPf0sib50CUtSP2GdP05mlO9h679wbDBRMzf9nBLQQ",
+        "filename": "석고붕대 화병_s5.jpg",
+        "size": 2190353,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/J6ESCv0zGaWQ4aeQIED5TEICcRQ2dnvDP80pVQPfofE",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/6tf9OgIPqkJTKgTaN2w8PmrMvUbJP4Rn_L_-TXcPhmk",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/_p2TEQ8UEnHPKOqkk04DP3lNhSWYbF2nSEv7wARm1KA",
+            "width": 2745,
+            "height": 2196
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "준비한 석고붕대를 풍선과 재활용 용기 위에 놓고 분무기로 물을 뿌리고 문질러서 붙여주세요. 2~3겹정도 붙이면 튼튼합니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attllB0Ckscq703c3",
+        "width": 3045,
+        "height": 2436,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ZVxKOg8-CrUPFQ8fRO3JusPFhITXImv5vZW5Ra9i1-g",
+        "filename": "석고붕대 화병_s6.jpg",
+        "size": 2674582,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/DR7uiPxdtccB7yJFdd7skLdGRv2APpgw4idX_0KoTpc",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/BxuhROT5GnK8S3NkbiGHkQoDqowhWCuuQk1dxFUGeS0",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/uFt14purN-AxRm_gEn98Q0JXW5s8QOCW2DenBZ0gjjA",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "단단하게 굳은 화병을 아크릴 물감으로 겉면을 색칠하여 각자의 스타일로 완성합니다.",
+    "추천 활동": [
+      "recEqt6lbEa2AD14x",
+      "recPRHpK9OUED6W2w"
+    ],
+    "활동 가이드_1_팁": "석고붕대를 자를 때 석고가루가 바닥에 떨어지지 않도록 그릇에 올려놓고 자르면 만들기후 정리하기가 쉬울거야!",
+    "활동 가이드_2_팁": "컷터칼로 X 모양의  캅집을 낸 후 가장자리를 오려내면 쉬워!",
+    "활동 가이드_3_팁": "여기까지가 준비의 과정이야.",
+    "활동 가이드_4_팁": "재활용 용기의 개수와 위치를 마음대로 조합하여 다양한 디자인을 할 수 있어!",
+    "활동 가이드_5_팁": "1~2시간 정도 실온에 놓아두면 석고붕대가 단단하게 굳을거야.",
+    "활동 가이드_6_팁": "완성 후 송곳처럼 뾰족한 도구로 풍선을 터트려! (팡!)",
+    "활동 가이드 1_이미지_제작디렉션": "재료들을 디스플레이 해놓고 석고붕대를 자르는 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "컵라면 용기 또는 종이컵 밑바닥을 컷터칼로 오리는 모습; 활동가이드 1_이미지와 동일한 앵글",
+    "활동 가이드 3_이미지_제작디렉션": "풍선 불기정면",
+    "활동 가이드 4_이미지_제작디렉션": "풍선 아래쪽에 컵라면 용기를 고정시키고, 위쪽에 종이컵을 마스킹테이프로 고정시키는 모습; 정면샷",
+    "활동 가이드 5_이미지_제작디렉션": "분무기를 사용해 석고붕대를 풍선에 붙이는 모습; 정면샷",
+    "활동 가이드 6_이미지_제작디렉션": "완성된 화병을 아크릴 물감으로 색칠하는 모습; 정면샷",
+    "액티비티썸네일_이미지_제작디렉션": "조화꽃 사전 제작후 꽃병으로 활용 한 모습",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "P형 포스트 가이드": [
+      "recIAmhTVK8TR7C3y"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "15~30분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recbA3ExUP1uuRFel",
+    "액티비티 ID": 12,
+    "*액티비티 썸네일": [
+      {
+        "id": "attCr0gKyPfjjplfB",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Sq4xR0f32xp58BMdmEhugW3eUdW1d_XSLCHBXkcm98g",
+        "filename": "타임랩스_thumb.mp4",
+        "size": 35466733,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "시간, 압축! 타입랩스로 주변 찍어보기",
+    "*메인 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 30,
+    "*활동 설명": "타임랩스는 일정한 간격으로 여러장의 사진을 찍어 이어붙여 긴 시간을 짧게 압축한 것처럼 보이도록 만드는 촬영기법입니다. 스마트폰 카메라의 타임랩스 기능을 사용해 내 주변 환경을 다르게 살펴봅니다. ",
+    "준비물 데이터": [
+      "recYeGXD75RJiiMxs"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attReUvVEb0sxs4yO",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/FALIORCfuRQd2LBjedaNrOGsza9ZDERs3iBMTAP6QPE",
+        "filename": "aos_timelapse_setting.MP4.mp4",
+        "size": 5161087,
+        "type": "video/mp4"
+      },
+      {
+        "id": "attZSSC91TkjwLRdX",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/k4T3NZHYhXrCPj33oNArQO4obgW2qGeiYMl59Y9Kj84",
+        "filename": "ios_timelapse_setting.MP4",
+        "size": 19040218,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "카메라 앱을 실행해 타임랩스 촬영 모드를 선택해주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attkFqWQ0MOEtRuSo",
+        "width": 1080,
+        "height": 1350,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/lI0W0PwFNv7OxqbDQTfiB1LvbQ2M8RElNCIZR-JJ-DM",
+        "filename": "p12_act2.jpeg",
+        "size": 298670,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/8B8ETZOR1IOI4yosEZzi7fccIwBhYcTdYmLZCIE6keE",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/r_xqUa5TFPZUM9LrLz38Yd7BUhGT4oFpIMYCwVF5ato",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/aOW27bwHJ1DfZjwNtKgVeraF9Cw3nblH7cf8Z4BIJUE",
+            "width": 1080,
+            "height": 1350
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": " 타임랩스로 최소 1분 이상 한 장소에 머물며 촬영을 진행해주세요.",
+    "추천 활동": [
+      "recBQUEH35XtFleTt",
+      "recNbMLJgcqKtu27Y",
+      "recH5EZR7VHjGfOsl"
+    ],
+    "활동 가이드_2_팁": "오랜 시간 같은 장소에서 촬영을 하려면 그립톡이나 삼각대로 스마트폰을 고정해두면 편리해~",
+    "활동 가이드 1_이미지_제작디렉션": "스마트폰 화면 캡쳐",
+    "활동가이드 2_이미지_제작디렉션": "야외에서 스마트폰으로 촬영하고 있는 모습 / 실내에서 얼음 녹는 것을 촬영하고 있는 모습 한 장으로 합치기",
+    "액티비티썸네일_이미지_제작디렉션": "얼음이 녹는 장면, 육교 위에서 차량이 지나가는 장면, 타임랩스로 일상을 찍은 장면들",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "rectHHUx7qqzCNgsL"
+    ],
+    "준비물 데이터 입력": "추후 입력",
+    "P형 포스트 가이드": [
+      "recEJRLBuL4QIYi5e"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "큐레이션 리스트": [
+      "recHPy5b7S3gTyntR"
+    ],
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrPAGESHARE00000",
+      "email": "anonymous+formpage@noreply.airtable.com",
+      "name": "Anonymous"
+    }
+  },
+  {
+    "id": "rec8UEVKZ91CI2p6a",
+    "액티비티 ID": 13,
+    "*액티비티 썸네일": [
+      {
+        "id": "attNdiKS1ecGpWrGc",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ncYsv8sg1YoouQ34YDBDM4bxthUEv4-ScAsRFb4kFMM",
+        "filename": "OctoStudio in Action.mp4",
+        "size": 16784291,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "옥토스튜디오 설치하고 만든 프로젝트 인증하기",
+    "*메인 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 10,
+    "*활동 설명": "옥토스튜디오(OctoStudio)는 스마트폰에서 상호작용하는 애니메이션과 게임을 만들 수 있는 블록코딩 앱 입니다. 옥토스튜디오 앱을 설치하고 만든 프로젝트를 공유해봅니다!",
+    "준비물 데이터": [
+      "recWbtmRCs0UIwfJz"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attzVO3yixzr8ONVB",
+        "width": 1179,
+        "height": 2556,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/UAY49jypk6JBrxpl1MIdTLvKJ0jV_YjxbxUvIXmNmrc",
+        "filename": "ios_octostudio_appstore.jpeg",
+        "size": 1004027,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/5IbchJLvvlzMQfL5XYS-v8CG_97OxM2hhY_49tlyJco",
+            "width": 17,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-b6lEmSQM0s3bUCxL9ApuJwTj3ntgf6g-CXFSAvKxkE",
+            "width": 512,
+            "height": 1110
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/yeinFe5LyG7n_8ad-21R8OyJe4VE9dBQDkdlexPzbGc",
+            "width": 1179,
+            "height": 2556
+          }
+        }
+      },
+      {
+        "id": "attLCjKiT9aTtuys4",
+        "width": 1080,
+        "height": 2400,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/1q_55XKd6WLQ53DEvPbjPxol3LYcJP1aD8y_e_EmIh4",
+        "filename": "aos_octostudio_playstore (1).jpeg",
+        "size": 351433,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/h_UF8f1H0xas8hj4_qx8oRU5FqAjMYnJSuXyjHn17vQ",
+            "width": 16,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/N0jalwJHoCorkPEulZGpR4yUoxikzbmiB5s_cpMTrz4",
+            "width": 512,
+            "height": 1138
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/o4kgPe5TNuOu0wo0oIDUMHar8XxlUKpgR6jqK12j5wc",
+            "width": 1080,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": "앱 스토어 또는 Play스토어에서 OctoStudio를 검색해 앱을 설치합니다.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attxjE2WSqQCeImuM",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/yVEbSYAXIiwEm6QseDjv_W1T9Cgzp6OAaGsuPTxLkk8",
+        "filename": "explore.mp4",
+        "size": 7205737,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "OctoStudio앱을 실행해 \"탐험하기\" 버튼을 클릭해 샘플 프로젝트 중 마음에 끌리는 프로젝트를 골라보세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attT2cLKfJVs6LV9l",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/pu7R-yxFAocfU6WAPePEbIpvulS0V1ppu-tg9XxPee8",
+        "filename": "experience.mp4",
+        "size": 5879476,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 2_설명": "마음에 드는 프로젝트의 \"직접 해보기\" 버튼을 눌러\b 프로젝트를 체험해보세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attmqGdJ4qRflqeKl",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/T55Ft1c9PcP4c46L3flXeWanuOTk38ZUa9UFKBLNTV8",
+        "filename": "remix.mp4",
+        "size": 12859239,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "스프라이트 이미지를 바꿔보거나 새로운 코드를 추가해 프로젝트를 리믹스해보세요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attvORHVTeHKZYXKy",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/nnn6Hl0T85zMVDnCKoV2eRvFmjgviVOLXT77XnrWo24",
+        "filename": "export.mp4",
+        "size": 6962086,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 4_설명": "공유하기 버튼을 클릭해 영상이나 GIF로 내가 만든 프로젝트를 녹화해 공유해주세요.",
+    "추천 활동": [
+      "recU78SfzTZlR8OaT",
+      "rec1EgXd42fRGAVGZ"
+    ],
+    "활동 가이드 1_이미지_제작디렉션": "탐험하기 탭에 들어가 샘플 프로젝트를 살펴보는 장면",
+    "활동가이드 2_이미지_제작디렉션": "공차기 프로젝트를 직접해보는 장면",
+    "활동 가이드 3_이미지_제작디렉션": "프로젝트 코드를 바꾸며 리믹스하는 장면",
+    "활동 가이드 4_이미지_제작디렉션": "공유하기 버튼을 눌러 영상으로 저장하는 장면",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "rectHHUx7qqzCNgsL"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recvovgwSMBQ2Iz8a"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrPAGESHARE00000",
+      "email": "anonymous+formpage@noreply.airtable.com",
+      "name": "Anonymous"
+    }
+  },
+  {
+    "id": "recdZtTQ4A65t1DAx",
+    "액티비티 ID": 15,
+    "*액티비티 썸네일": [
+      {
+        "id": "attqXddahi5eojAwy",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/S5RUS5Ej3h_gCz2npOJovtAuJav_2rROidnaws_cafM",
+        "filename": "춤추는 낙서로봇_썸네일.mp4",
+        "size": 8294129,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "춤추는 낙서 로봇",
+    "*메인 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*서브 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*난이도": [
+      "recLlLTh9n4tA8GCS"
+    ],
+    "*예상 소요시간": 50,
+    "*활동 설명": "모터를 이용해 움직이는 낙서로봇을 만들어봅시다. 우스꽝스럽게 움직이는 로봇을 보고 있으면 저절로 웃음이!",
+    "준비물 데이터": [
+      "recQz5QAipoOBKqL8",
+      "recduSRkqwpAsV3al",
+      "rec5ipPkkb1m4YAsP",
+      "recJjIVkrV7KIJ16w",
+      "recsDV5f3KJ9oylLi",
+      "reca9gT2dZoFrDsWe",
+      "rectzBzaIgbgiVYPe",
+      "recqW9czHgr6Nm41J"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attIBCNx9K4YCBF0N",
+        "width": 3320,
+        "height": 1867,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/W1tEdsz2t3TJ3RN36X0vHfaH1c6yAF9U4GDRv0XROoA",
+        "filename": "춤추는 낙서로봇_준비팁_01.jpg",
+        "size": 2006400,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/3-0fwSxSuM6XsONmnzgnrMBqlBKYKGmc8cfQ-HUWfLw",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/X-qfiMDuwD1cwbUk2bRMpvZjiwbJeE6eH_nrQAlJ0BE",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/I4TQ54AmX_w5W0ePL-kfkChkR9GVmHpLGPzL8vPyCaU",
+            "width": 3000,
+            "height": 1687
+          }
+        }
+      }
+    ],
+    "준비 Tip 2_이미지": [
+      {
+        "id": "attR1xLvLkTzLbhKH",
+        "width": 2966,
+        "height": 1669,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/52O5fsC4Vp4lzz0F89FPRvtdHA0r3J_53IrawVj84TU",
+        "filename": "춤추는 낙서로봇_준비팁_02.jpg",
+        "size": 1818024,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/PVeRER76cpHMCEsFuhoydvW-EmrIE33J61h8zRm8_Oo",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/Kl87mnPQzFxWU7vgALDjgfVK_i1PBXcC8qujaDcgTlE",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/jh2jUsTaRyuWdyi6BATuOy3DgeL6wp15CFrY-o12QYw",
+            "width": 2966,
+            "height": 1669
+          }
+        }
+      }
+    ],
+    "준비 Tip 2_설명": "플라스틱컵대신 종이컵을 사용해도 괜찮습니다.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attrZjXhawBgGXYmi",
+        "width": 3231,
+        "height": 2585,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/aZN6gzZQM2Ufiheog6bktjIBDJC_-eEmJKNmc5u5tUI",
+        "filename": "춤추는 낙서로봇_s1.jpg",
+        "size": 3124917,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/_YA-XsfGydAKA_QY6yMWjRyPXoUGDxP7Knm68qrTvM8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/KeBclz9vIMxSZvvWhsEJosGUp67K7SGYlvWcDYpQubU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/irnIw1aEr1geZLGU_hkQEbFjtG5gi1Xpl86KOAEpTDo",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "가위로 컵의 끝부분을 조금 잘라 플라스틱 컵 입구 양 끝에 고무줄을 끼울 홈을 만들어 줍니다.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attmcTfVSA5aBslBE",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/dzSHre-X8Lyx0uKH3rdh50GZZdi-Y_bGEKsGgCdxcxk",
+        "filename": "춤추는 낙서로봇_s2.jpg",
+        "size": 3171932,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/tvXxRyE95paxzp5oVy-MxBPAJSHBN4E-mWWaLjHpOWg",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/jcJNkSYkL7uBownm07hKX95h8NWzuQynsLOp_6MPez8",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/sds6uoL3jNRuAJxJT7DYWeWmU0zfKLui3UYS30yPYVc",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "펜 4개를 플라스틱 컵 하단, 펜촉이 바닥에 닿는 위치에 글루건으로 붙여주세요.  ",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attAiGceoSbst1YB3",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/r87JfjSusH7xEf-LpzzMl01N7UgBMPqT14Brv8fbq58",
+        "filename": "춤추는 낙서로봇_s3.jpg",
+        "size": 3737073,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/3pZs834bhM7NiWp6Nlbge9oKojjiAZSgwbU125bdseQ",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/9GKxN8J22zX0ZVKk_iXQ_O5tOhG1wJ9VjA2ndSbgkNM",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/YTpvCNqrB9OoeT7UL_-THXtXrHlGZlQixADGvWtyoh4",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "플라스틱 컵을 로봇으로 바꿔줄 차례! 매직펜을 사용해 표정이나 모양을 그려서 캐릭터를 완성합니다. ",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attuQvoupwCHAuRBZ",
+        "width": 3320,
+        "height": 2656,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/LuBUZs7dZnh9YyliGtWbQwQ-L3tk1TgvWA3w1OJXYAs",
+        "filename": "춤추는 낙서로봇_s4.jpg",
+        "size": 3512780,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ha5FPkDMwO82q30YNJTsNn1-m7Ohx2xeXaub3avZXM8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/zTqrO_jACGjNC6Wd3NQIdrzOTMIQ2zbfYpvioDEjQVg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/OUpXfrKjixgvRiGqCVupwQMEtOY76qqHXZkbYte6x6g",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "모터의 회전축에 글루스틱을 짧게 잘라 글루건으로 붙이고, 플라스틱 컵 위에 모터,9v 건전지를 고무줄에 끼워 고정시켜 주세요. ",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "atttzMehG8YSu9SxN",
+        "width": 6414,
+        "height": 5131,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/FWeOzjm9Mze_fv9gtN_V1n83Mp6nS6qu7uNpF7l00Es",
+        "filename": "춤추는 낙서로봇_s5.jpg",
+        "size": 15317212,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/WtIO6u0GTRBMqQY6ynMIhS8d78Lrz5qaroPLYLR2DZg",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/6zjpfTYyUiRF4W5kE97CYHiEHA9SY9aqvp3Q1tgJqdU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/2nmI1QaqVje2gpRzDdRXX0JFT4J-dBaREXQMLWfec1k",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "악어 클립 2개를 사용하여 모터와 9v 건전지의 전극에 한쪽씩 집어서 모터와 건전지를 연결하세요. ",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "att1imBoQeZ4DJ5SE",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Ik310GafU_VY9zoORbZE6JdpCwVZ5AlRKT79D6ZCi98",
+        "filename": "춤추는 낙서로봇_6.mp4",
+        "size": 3404396,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "펜 뚜껑을 열고 종이 위에 낙서 로봇을 올려두세요. 낙서 로봇이 어떤 춤을 추는지 공연을 관람해 보세요!",
+    "추천 활동": [
+      "recRdNl1Y4NE5T4NF",
+      "reccIIMftOt1jJsku"
+    ],
+    "활동 가이드_1_팁": "나중에 배터리와 모터를 고정할 때 필요해. 그때가서 잘라도 되~",
+    "활동 가이드_2_팁": "글루건을 사용 할 때는 화상을 입지 않도록 주의해서 사용해줘!",
+    "활동 가이드_3_팁": "종이를 잘라 너풀거리는 팔을 붙여보는건 어때?",
+    "활동 가이드_4_팁": "고정이 잘 안된다면 고무줄을 여러개 사용하거나 모터와 건전지를 글루건으로 붙여도 OK!",
+    "활동 가이드_5_팁": "모터가 잘 움직여서 글루스틱이 빙글빙글 돌아간다면 준비 끝!",
+    "활동 가이드_6_팁": "모터가 움직이는 상태에서 펜뚜껑을 열기가 어렵다면, 악어클립을 분리해 잠시 모터를 멈춘 뒤 펜뚜껑을 열고 다시 연결해.",
+    "활동 가이드 1_이미지_제작디렉션": "컵 하단에 가위로 홈을 만드는 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "펜 (매직펜/싸인펜 상관 없음)을 컵 하단에 붙이는 모습; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "컵을 캐릭터로 꾸미는 모습; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "홈에는 고무줄을 걸어 컵 상단에 글루스틱이 달린 모터와 건전지를 고정시킨 모습; 정면샷",
+    "활동 가이드 5_이미지_제작디렉션": "악어클립을 연결하는 모습; 정면/부감 중 전체적인 모습이 잘 나오는 앵글에서 촬영",
+    "활동 가이드 6_이미지_제작디렉션": "낙서 로봇이 움직이는 mp4",
+    "액티비티썸네일_이미지_제작디렉션": "활동가이드 6 중첩사용.",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "P형 포스트 가이드": [
+      "recI3TWRepg06AvNh"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "50~90분"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recz5yY2VIOWODhCo",
+    "액티비티 ID": 19,
+    "*액티비티 썸네일": [
+      {
+        "id": "attJAqBCTJntghHXx",
+        "width": 1200,
+        "height": 1500,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/VZ84rWHwQGqSwsvmv60cla3zZtnkXCzswsEASxdwUa0",
+        "filename": "틀린그림찾기_01_썸네일.jpg",
+        "size": 1076959,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/yd6IqhoaKCAEjsqHfCFM_bAay_ROUzksD_eRU0oo0W4",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/IZxk0_Fs99VnOV6ySjTDnufbDkeLCX2_qvuWzU3NVe0",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/nzNZW5_v5VQLlEaXNt5QlX7D6VOmLg3cnm6TTR95gX4",
+            "width": 1200,
+            "height": 1500
+          }
+        }
+      }
+    ],
+    "*액티비티 타이틀": "틀린그림찾기",
+    "*메인 장르": [
+      "recMavqY7S3SC4ZLl"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 5,
+    "*활동 설명": "우리의 눈썰미를 알아보는 시간! 우리가 가지고 있는 다양한 물건들로 틀린그림찾기 문제를 만들어봅시다! ",
+    "*역량(기본보상)": [
+      "recY8umGdXeQp4EkL"
+    ],
+    "준비물 데이터": [
+      "recYeGXD75RJiiMxs"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attLRGivOxzxYy4A1",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/FD5h0J2JfPLUiCKh_1Vbv5dUtlZrfxYbgbRCiNnEhrg",
+        "filename": "틀린그림찾기_s1.jpg",
+        "size": 13523870,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/FoFllUfE2JSbgbjvY5Zcmk6LfcXopDEtTTsOHIH5TvU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/iMMQt3a0skQAznsRN0yeBXYFqNY4cNu58VJkYlDAyqc",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/CUK0nSLuu0dZGn1BLPTAfy8qgUvRnhSFHCakM7_z71Y",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "책상 위에 올려 둘 수 있는 물건들을 모아보세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attyLJwEw7YoWkO1J",
+        "width": 3780,
+        "height": 3024,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/vNpED-D4g34aSeINQhQrI_78hnTyiHlNsjAgNHSY7os",
+        "filename": "틀린그림찾기_s2.jpg",
+        "size": 5461831,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/w9_mYoe1dYq4iCMaEaUtZ3xWeIyhea-ZRH6sgepYo4M",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-TOKHGa5vlMpLU6vVV-HpoNuGxrUe1BqMBi5zK_fXzo",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/Wdz4DhvlEWLbCRDIR5oo3Eql9MyXD-fC_Kbm62mgQaY",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "책상 위에 물건들을 고른 뒤 배치하세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "att5msofI0n5Ogxed",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/5E_dpRKndL_C_EGg56vPo8MRAXolnbEhSwJmvmWOrpc",
+        "filename": "틀린그림찾기_s3.jpg",
+        "size": 13715678,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/TrUgK_E0QovQHHyf2i_4sHYj5f_lhIr7lTrLkeMfybE",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/dhM0pcZo16YbH8u8n1_UByWssqVfaOafYFXHbER2bUI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/UYc2m6EsKV6-J89qRccIVsB6ISPb0IQsqdzTIsC2c-I",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "배치가 끝난 물건들의 첫 번째 사진을 찍으세요!",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attPuozblyosV4mQ7",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/MpCs5lgaX_O4uO_tu4ATfcGck5H2GGYY3xCeu13QKFM",
+        "filename": "틀린그림찾기_s4.jpg",
+        "size": 15107511,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/uGlD1xy1ZnmyNemeSzxUwhY3ojW35pyEZ6ECG95G-fo",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/9N3-8pTf0uwFDzamtcB1Uk3Gzz8N94UhnfoKxWr3JaU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/G3CeFRzOUiPAnbFzLpYvHY2ccJVZXpCXD_E-ciyMovQ",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "우선 다섯 군데만 바꿔볼까요?  기존에 배치한 물건의 방향이나 위치를 바꾸거나 다른 물건들로 교체해 보세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attiioJ3trVgdn0sk",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/1LAjeNRW7veyv3NyCoSVtKpMtJI_Pq07yHXeB5mziGs",
+        "filename": "틀린그림찾기_s5.jpg",
+        "size": 11714558,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/Hc1S0QnVdzYx8KAvQlss0f4d9kDY0qhsFJ3yRtmdbVs",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/DcknS-lkKlN5Y73oVZvIYDjwpTXXM8NmMmUTqHNedYc",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/UaC0ebQfLo0_ne7kGfialMrP_zO2QjTwAZbf-XgSMuc",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "첫 번째로 찍은 사진과 같은 위치와 구도에서 두 번째 사진을 찍으세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attaNjbfxDHnp2KUX",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Zx8atfFiN5dY_4yLOUYrgSpa_X5kgWNRvL5z_yZu6aI",
+        "filename": "틀린그림찾기_6.mp4",
+        "size": 2992843,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "어디가 바뀌었는지 바꾼 나도 헷갈리진 않나요? 첫 번째 사진과 두 번째 사진을 친구들과 공유해서 틀린그림찾기 미션을 완수하세요!",
+    "추천 활동": [
+      "rec1EgXd42fRGAVGZ",
+      "recPV7vNhWKeXfmSn"
+    ],
+    "활동 가이드_1_팁": "연필, 지우개, 종이 조각, 필통... 내 책상 위에서 흔히 찾을 수 있는 물건들이면 뭐든지 좋아!",
+    "활동 가이드_5_팁": "첫 번째 사진과 두 번째 사진의 틀린 그림을 찾을거야!",
+    "활동 가이드_6_팁": "틀린 그림 찾기 10개도 도전에 볼까?!",
+    "활동 가이드 1_이미지_제작디렉션": "책상 위에 다양한 물건 디스플레이; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "활동 가이드 1_이미지를 핸드폰으로 촬영하는 모습; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "활동 가이드 1_이미지에서 물건의 위치를 바꾸는 모습; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "활동 가이드 3_이미지를 핸드폰으로 촬영하는 모습; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "아하오호 앱에서 사진을 업로드 하는 캡쳐화면 사용?",
+    "활동 가이드 6_이미지_제작디렉션": "틀린 그림에 동그라미 5-10개를 하고있는 mp4; 부감+캡쳐본 (포토샵?)",
+    "액티비티썸네일_이미지_제작디렉션": "활동가이드 6_이미지 사용",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recTwzaPTXKplBVG1"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recUOYXhTVWeRxCm8",
+    "액티비티 ID": 23,
+    "*액티비티 썸네일": [
+      {
+        "id": "att4Nz7RhZ2S38Ypf",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/BDl_E_K7mC5XfL9F6VUEWNpsSk3ANPSHgJaXmYxQPKc",
+        "filename": "클릭커_thumb_fin.mp4",
+        "size": 12222868,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "클릭! 클릭! 커지는 캐릭터 게임 만들기",
+    "*메인 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*서브 장르": [
+      "recMavqY7S3SC4ZLl"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 30,
+    "*활동 설명": "옥토스튜디오(OctoStudio)는 스마트폰에서 상호작용하는 애니메이션과 게임을 만들 수 있는 블록코딩 앱 입니다. 옥토스튜디오 앱으로 캐릭터를 키우는 클릭커 게임을 만들어봅니다.\n*클릭커 게임 : 게임 요소를 클릭해서 즐기는 게임",
+    "준비물 데이터": [
+      "recWbtmRCs0UIwfJz"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attXhKZSoP9mg5mPk",
+        "width": 1179,
+        "height": 2556,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/7SPxJgGSMnlSmr-5g7aFLCjsPxR2cr4RlQtidCSTqUo",
+        "filename": "ios_octostudio_appstore.jpeg",
+        "size": 1004027,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/DcLzclFD49DKQYjaiqh6m8YYILyjHEew8Ooo3p13rj8",
+            "width": 17,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/AXNJ_-qqc0oQaXDurbqKKox7qsqOoCAvTOf38Gl8zJA",
+            "width": 512,
+            "height": 1110
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/cRjmDbQ4nqhKzBLHU0ntC-G9mOe8npLaNjpH8hf57_k",
+            "width": 1179,
+            "height": 2556
+          }
+        }
+      },
+      {
+        "id": "attypmojWtWQTYgUa",
+        "width": 1080,
+        "height": 2400,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/q9vJJlfXdml6U64M3eDnmmEcSChdoJKcs44kGi6bVl4",
+        "filename": "aos_octostudio_playstore (1).jpeg",
+        "size": 351433,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/wVHqVu50EjXz7ZnXgV2RP9nyG-Duwc0uxv6omwtxuo0",
+            "width": 16,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/a25OgB_fLWQQTeql0GoFMxJOQ-y6uP_L2Pf6d9FJClc",
+            "width": 512,
+            "height": 1138
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/gPjfP_vmsJr5Q-qYeJ9yz8gwKXddpaiihL8yM4eXKhg",
+            "width": 1080,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": "앱 스토어 또는 Play스토어에서 OctoStudio를 검색해 앱을 설치합니다.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "atttIe8U9UkycevHY",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/lTYiCgDnEBU546kpWTCKoCkVI1NXDuWsqHoxS288p18",
+        "filename": "클릭커게임_Sub_01.00.mp4",
+        "size": 4785687,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "옥토스튜디오 앱을 실행시켜, 새 프로젝트 만들기를 클릭해 키우고 싶은 캐릭터의 스프라이트와 캐릭터가 살 배경을 선택합니다.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attmukPwYs6hJFLTH",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/pCP2sbaoNd3_K5rnAbbOcZVvPMEZiCzhUy9ppG7dZSA",
+        "filename": "클릭커게임_Sub_02.00.mp4",
+        "size": 4678717,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 2_설명": "'재생버튼 클릭하면' 블록 아래에 '무한반복' 블록과 '사이즈 150%로 설정하기' 블록을 붙입니다.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attTIsdH3d5zn4R52",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/vLIfPO81DZhMHSo7UxDr9Cdj9487i-iFip7Gbx5SaBQ",
+        "filename": "클릭커게임_Sub_03.00.mp4",
+        "size": 2349857,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "추가 카테고리의 동그란 모양의 '변수' 블록을 '150%' 부분에 넣어주세요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attJkP1tnh9hzEFji",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Xeo_nqM-t36uxyeq-DFM3zvbu-p4Pz560fKKp6S5iCE",
+        "filename": "클릭커게임_Sub_04.00.mp4",
+        "size": 6373351,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 4_설명": "'스프라이트를 누르면' 블록에 '변수 [점수]를 1만큼 바꾸기' 블록을 붙여주세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attHUYhPxffhjCND0",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/8HYjUQRq6CHXbjiKg5sHs6RNGG0Sz-gZA-fokBgBZoQ",
+        "filename": "클릭커게임_Sub_05.00.mp4",
+        "size": 5790755,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 5_설명": "플레이어가 캐릭터를 누른 것을 알 수 있도록 '스프라이트를 누르면' 블록에 '소리 동시에 재생하기'를  추가합니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attNXMELSNssufoii",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/3aqf9tAJUHTsQt4xpXVkhiQQ0sQZQaqWoWmKRhwR3oI",
+        "filename": "클릭커게임_Sub_06.00.mp4",
+        "size": 2178041,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "재생 버튼을 누를 때마다 게임을 다시 시작할 수 있도록 '재생버튼 클릭하면' 블록 아래에 '변수 설정하기' 블록을 붙여줍니다.",
+    "추천 활동": [
+      "recU78SfzTZlR8OaT",
+      "rec8UEVKZ91CI2p6a"
+    ],
+    "활동 가이드_1_팁": "키우고 싶은 캐릭터를 상상하며 스프라이트를 직접 그려보세요.",
+    "활동 가이드_5_팁": "'반짝이기'블록이나 '색 변경' 블록을 사용해 꾸며봐!",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "rectHHUx7qqzCNgsL"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recvovgwSMBQ2Iz8a"
+    ],
+    "활동 가이드 7_이미지": [
+      {
+        "id": "attDuAhn9umiUta1d",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/xGdtO8HsUYaROoL1kN868ipsJb9y_IaEuDVge4DiKNA",
+        "filename": "클릭커게임_thumb_fin.mov",
+        "size": 309805920,
+        "type": "video/quicktime"
+      }
+    ],
+    "활동 가이드 7_설명": "캐릭터를 마구마구 클릭해 키우는 클릭커 게임을 즐겨보세요!",
+    "활동가이드 4:5(세로가긴) 비율로 노출되나요?": true,
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrPAGESHARE00000",
+      "email": "anonymous+formpage@noreply.airtable.com",
+      "name": "Anonymous"
+    }
+  },
+  {
+    "id": "recPV7vNhWKeXfmSn",
+    "액티비티 ID": 24,
+    "*액티비티 썸네일": [
+      {
+        "id": "attV7MdoTYMN4debX",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Fbqik0mieBjqcW_ppdaeYFr_LpF7kA3lM-saOu1H0LI",
+        "filename": "미니레고 낙하산 01_썸네일_수정_Fin.mp4",
+        "size": 12344136,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "미니레고 낙하산 레이싱",
+    "*메인 장르": [
+      "recMavqY7S3SC4ZLl"
+    ],
+    "*서브 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*난이도": [
+      "recoBBOrhMi5aLmPo"
+    ],
+    "*예상 소요시간": 20,
+    "*활동 설명": "비닐봉지를 이용해 낙하산을 만들어봅시다. 더 늦게 떨어지는 사람 혹은 더 빨리 떨어지는 사람이 이기는 게임을 할 수도 있어요. 바람의 저항을 이용하세요!",
+    "준비물 데이터": [
+      "recYcV5vRkaZr51rG",
+      "recAn9KLWwAGoqjlK",
+      "recBM5DWH9Q6bKDZ9",
+      "recXDqCbCZybRrPPq",
+      "recHlP8FT1Of2FqHL"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attiRwXEb9tVTujCc",
+        "width": 5858,
+        "height": 4686,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/dlB8hd5e9T1iaUQYq9tTZ2gaGRSut1ZUzdDBQ6ujEUY",
+        "filename": "미니레고 낙하산 레이싱_s1.jpg",
+        "size": 10108143,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/RP0UYLEcmGSRthorGLAeOU7Vx59eKf0Ph9KN6VOo5Ks",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/XWY2HHlBbHo01Tly_lmdjVlfrT16a9OUq7llK0_PV4Q",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/T-7ORNIMJ8_Rnbxt95hmoPPh-ivUrJwlPnGmfY2ddNM",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "30cm 정도로 자른 낚시줄을 두가닥 준비해 주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "att3ujYXyxz9Owv7V",
+        "width": 5604,
+        "height": 4483,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/T2-tWQbcHTQZ9pufz2o6aCmUCJzHVe53VTxmJnCxDpg",
+        "filename": "미니레고 낙하산 레이싱_s2.jpg",
+        "size": 10802253,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/x5FWNkXKuvNQ-MhVbT4WjV0c1s8am8jZNR1XD5Cyh5Q",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/ML0R61Qqo1jqMcaD3rqwvhX4FrDI5pPmJdIqLleMhwA",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/-y0R1KIp2ebdyFTCNuoQTX6PDZDot6eYoysuaL8Z6-E",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "낚싯줄을 미니 피규어 팔 양쪽에 튼튼하게 묶어주세요.\n",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attgEIFYpGPcAcK20",
+        "width": 5858,
+        "height": 4686,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/kUBf5Q8ihRl5j3LO09agHBvG6Ox0XGhxEUa1DOmcpUg",
+        "filename": "미니레고 낙하산 레이싱_s3.jpg",
+        "size": 10661390,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/SpeQRTs7ppUDhCwhWf2VE0Ub1QfAtgYTlpuJiUz0eVo",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/b1uVERNDzh6wHhYOZt0QmUSR-TEuaaJ5Cc3ha1ziU5U",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/Jfd0Ey_qwC3KJUazS7k0Z10SVfXj1RMpGNlsJ6MXSxs",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "투명 테이프로 비닐봉지 손잡이 안쪽에 낚싯줄을 붙여 주세요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attYU5N4EQXaPfkxW",
+        "width": 5463,
+        "height": 4370,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/3LXgf14RXhkVVeIjC68nQQmmDig_2lH0CQcECQyCPQo",
+        "filename": "미니레고 낙하산 레이싱_s4.jpg",
+        "size": 8789290,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/UoPIqjK9cwNpxc6SttNCN-vBCmME6l5ZdryeHxjbwR4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/mS2Fvmi_NhCcklc203a8xKlE8V9w71xWT0ZxY4myhlI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/ir0ZoTCY7ptqhhaun2tsudktq33O_xvMlECX1pFSYZE",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "매직펜으로 비닐봉지를 꾸며볼까요? 멋진 낙하산이 완성하세요!",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attl8hg0az1rnZTRb",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/_43JGVv_GDYGVXKAVvKOpYeR4iyltjF8vPnh0NZ-D9s",
+        "filename": "미니레고 낙하산 레이싱_5.mp4",
+        "size": 1871484,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 5_설명": "미니 레고와 비닐이  잘 연결되었는지 잡아당겨보면서 확인해 주세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attg0VMT0LB1PEJEj",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/iYHZQ08-O4iUcurX4FPLRw2GNNa-TMDgYb0WQILlaiM",
+        "filename": "미니레고 낙하산 레이싱_6.mp4",
+        "size": 3936023,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "자, 이제 경주할 시간! 높은 곳에서 미니 레고 낙하산을 날려보세요. 집안이나 야외, 어디든지 좋아요!",
+    "추천 활동": [
+      "recPRHpK9OUED6W2w",
+      "recBQUEH35XtFleTt"
+    ],
+    "활동 가이드_3_팁": "테이프가 없다면 비닐봉지 손잡이에 낚시줄을 묶어도 괜찮아!",
+    "활동 가이드_6_팁": "낙하산을 던지는 대신, 높은 곳에서 살짝 놓으면 더 안전하게 착지시킬 수 있어!",
+    "활동 가이드 1_이미지_제작디렉션": "자에 대고 낚싯줄을 30cm로 자르는 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "미니 피규어 팔에 낚싯줄을 묶는 모습; 클로즈업 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "비닐 봉지 손잡이 안쪽에 낚싯줄을 투명테이프로 붙이는 모습; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "매직펜으로 비닐봉지 꾸미기; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "미니 피규어를 쭉 당겨서 연결이 잘 되었나 확인해보는 mp4; 부감샷",
+    "활동 가이드 6_이미지_제작디렉션": "낙하산이 떨어지는 mp4 - 야외, 멀리서 찍어도 괜찮을듯. 낙하하는 모습이 잘 보이게.",
+    "액티비티썸네일_이미지_제작디렉션": "야외 배경에서 낙하산이 떨어지는 모습 gif",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "P형 포스트 가이드": [
+      "recwshz2yPRkQl6ev"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "15~30분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recH5EZR7VHjGfOsl",
+    "액티비티 ID": 29,
+    "*액티비티 썸네일": [
+      {
+        "id": "attuurbm4wNHl2gBe",
+        "width": 4013,
+        "height": 5017,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/KixOdhrBeCtfhV6ukAvFbwP3_3UyOPb1XGTY-26Yvl8",
+        "filename": "도전! 패턴 콜렉터_01_썸네일.jpg",
+        "size": 10487688,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/-Y7cp3BnpByKVBtcnDa00zHZR3GVdnO3mDrM7M2Gqx4",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/jEBCDQ9zawfUSZWJu3HcSJ4mB1e11j2qjyIWIGSUQu4",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/E9nYBcGEReIoX0LVjfGVeG8O72tKN9fTaz8doW4kSW0",
+            "width": 2400,
+            "height": 3000
+          }
+        }
+      }
+    ],
+    "*액티비티 타이틀": "도전! 패턴 콜렉터",
+    "*메인 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 5,
+    "*활동 설명": "되풀이되는 사건이나 물체의 형태를 패턴이라고 합니다. 패턴 콜렉터가 되어보세요. 콜렉터의 눈으로 주변을 둘러보세요. 우리 주변의 수많은 패턴을 찾아보세요!",
+    "준비물 데이터": [
+      "recYeGXD75RJiiMxs"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "att4R1jEOjxYRfHKM",
+        "width": 1500,
+        "height": 1200,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/GR7FgfrcMgspn9i23y_ghXh4xWb8rTWMoK2WlUvrpm8",
+        "filename": "도전! 패턴 콜렉터_s1.jpg",
+        "size": 1787116,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ZhyiNDtrG3q24r8bqYg_2l-DA4uZXBQIsCIIVcBY1mA",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/i_CWDZ9PEqr3D76v9QSgZ_QkRTZb1T1PxL_HCKf_48U",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/4DBo-6H41wOKlOAT7MtbCLRc_Iji7r9JxOxFXeCRvGc",
+            "width": 1500,
+            "height": 1200
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "좋아하는 과자나 화분 위의 나뭇잎들, 애완동물! 우리 주변의 패턴을 찾아보세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attxD4UzqM5atz02u",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/NRjKLXP_R1CaJsZL5p1GYC99HWgnqz2Tx8lPYHi1UzQ",
+        "filename": "도전! 패턴 콜렉터_s2.jpg",
+        "size": 15354943,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/65cIRqBoVnyNknLe2XZ7AUcan44rN22DOE2nVR6ucRg",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/CYQZjvp2o9ICnomoVk4Dgw87cCrcXqEa0PfL4ilVYtU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/jWqH1Syq7l5C8mHhDo_zWeGnhUMM2yJeFO8JtGX1Iy0",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "모바일 기기로 사진을 찍어 발견한 패턴을 기록해 보세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attFhmHvxvlYlhsVI",
+        "width": 3780,
+        "height": 3024,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/D8IGgA510QCppOWpbleBa2Cx_U3dnt8qORP9ewWUJUA",
+        "filename": "도전! 패턴 콜렉터_s3.jpg",
+        "size": 9796015,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/nWAdRmh0lV25U2H6E9VMq8gfAAzvHUyoxBMSTMNZngA",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/71QFFJOtnyVNQNUEDLQsqqXNfOt6hMVhE8x3vmGDQ2A",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/eHb0mXoRjD2_Uqz5sP_xYCGV1T2bJr43DJREZIQqAMs",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "패턴들을 수집해보세요. 어디를 찍었을까요?",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attUjBQkrUsJSvnd8",
+        "width": 3024,
+        "height": 2419,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/PRLGUuEEUgaWGCHQCcSjYDr2AgtFB_IHHfKtS-Iik_M",
+        "filename": "도전! 패턴 콜렉터_s4.jpg",
+        "size": 2938977,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/SSEoomF9DNXml8HBx-5-eVi0l2vXunFHsGEP-ebIaRU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/i2PXMh4BPlC4dN6TxRkvaGedX4l1yfQivCgculpTclY",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/3u6j7QGUBQt6mZOfDb8RD5F2RO5_H3JtLUNsAxyWDjk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "패턴들을 수집해보세요. 이런것도 가능해요!",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attPK7iGsBN27PHWy",
+        "width": 998,
+        "height": 798,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/E0XDt_P7zhteuZbEHT6WD19Az6RhtpKSXEKtBg7djNk",
+        "filename": "도전! 패턴 콜렉터_s5.jpeg",
+        "size": 668670,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/BgvDWUMFFjfOtK3u-i60xbTfbYMemv7wU3RhpG75qok",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/fvwPY0aXRw-91ps4cI1yG5CSmmjHqBt6-uDap8r02qQ",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/7WBPBkjRqjD28SpLzCXVc8v_pFNkrV7QAdzt7eFpS0s",
+            "width": 998,
+            "height": 798
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "사진함에서 수집한 패턴을 꺼내 이미지를 만들어볼까요? ",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attibIM0YrrgSEwRF",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/0lkCMhlBg6E5yY-vk9uqF5FoI71qsBAfeuKWuqJqcU4",
+        "filename": "도전! 패턴 콜렉터_6.mp4",
+        "size": 11047321,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "멋진 패턴지 완성! 내가 만든 하나뿐인 패턴 이미지를 배경화면이나 잠금 화면으로 설정하고, 친구들과도 공유해 보세요.",
+    "추천 활동": [
+      "rec1EgXd42fRGAVGZ",
+      "recBQUEH35XtFleTt",
+      "recbA3ExUP1uuRFel",
+      "recEqt6lbEa2AD14x",
+      "recEo1WmzEATbFApd"
+    ],
+    "활동 가이드_5_팁": "모바일 기기에서 사진의  [편집]기능을 활용해 좋아하는 문구나 드로잉을 추가해봐!",
+    "활동 가이드 1_이미지_제작디렉션": "일상 속 패턴 (ex. 과자 포장지, 자연, 길거리 등) 4분할컷",
+    "활동가이드 2_이미지_제작디렉션": "발견한 패턴을 핸드폰으로 촬영하는 모습; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "일상 속 패턴 예시 1",
+    "활동 가이드 4_이미지_제작디렉션": "일상 속 패턴 예시 2",
+    "활동 가이드 5_이미지_제작디렉션": "핸드폰 화면 캡쳐본 사용.",
+    "활동 가이드 6_이미지_제작디렉션": "3-4대의 휴대폰/태블릿pc. 일상 속 패턴 사진을 잠금화면이나 배경화면으로 설정 후 공유하는 사진; 부감샷",
+    "액티비티썸네일_이미지_제작디렉션": "패턴이미지",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recTwzaPTXKplBVG1"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recEqt6lbEa2AD14x",
+    "액티비티 ID": 30,
+    "*액티비티 썸네일": [
+      {
+        "id": "atteRn33jo01EqoL8",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/2U3pZhSNI2iBpZmCtUVXfYy97TH40kZcLctPIEO9000",
+        "filename": "패브릭 매칭 코디헬퍼_썸네일.mp4",
+        "size": 3869760,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "패브릭 매칭 코디헬퍼!",
+    "*메인 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 15,
+    "*활동 설명": "퍼스널컬러찾기! 내게 어울리는 패턴은?! 모바일 기기에서 친구의 얼굴을 찾아 빈칸에 맞춰 여러가지 종이나 패브릭을 매칭해보세요! 내가 해줄께! 너의 코디헬퍼!",
+    "*역량(기본보상)": [
+      "recq7dC1fQ5yy9Zoe"
+    ],
+    "준비물 데이터": [
+      "recnLzhk2KNfMpXLV",
+      "recqW9czHgr6Nm41J",
+      "reciBoU1fCOEUMOGJ",
+      "recNbzkHcLExk0uef",
+      "reclyQxLElc8PZnsY",
+      "recXDqCbCZybRrPPq"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attOs28ZIfloRNPaS",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/8kGsn6USTqKzN8vlqzQ07rYFvO8TWd5UJAT8cLVIt6A",
+        "filename": "패브릭 매칭 코디헬퍼_s1.jpg",
+        "size": 12653813,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ZzS_dAJrQfGdC672K9qYFvEfqMiFuNUcfhw8v2ET2pY",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/9Z9F4glnEQmATcjqDzzd8Gz6Zzuwb9d82sqeXiAgSBI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/p9vThb0L4dbeQQ2LraZtqGS4A5L5o_Pf05u9LUaUWv8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "A4 크기로 자른 박스지 2장과 3x10cm 종이 2장을 준비해 주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "att6ns7iofoRvnNiH",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/3uCSIy8E3zukZdR-zausjO2QTcoIKMzt7pzm0hoZd6o",
+        "filename": "패브릭 매칭 코디헬퍼_s2.jpg",
+        "size": 13009631,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/VXLN977KPTlC2xYHALTNQQomeyvfE7pzSJo4Q1dJyKM",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/S3wzgXB1NDoCrdhAOGh9flEQwrpQdhAhO6G8NIvzcEE",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/tusaGTgoXJUWqv6coIrV3dWgwFdY4IK4_ndyoudH8hk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "첫번째 박스지에 사람 형태를 그린 후 얼굴과 옷부분을 컷터칼로 오려주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attmu4JxommQcy4me",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/YdcPyPBxrw2rKy-HEJCniv_9uk5Y8QZFaE4l6jmmNXc",
+        "filename": "패브릭 매칭 코디헬퍼_3.mp4",
+        "size": 5232908,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "두번째 박스지위에 첫번째 박스지를 올려놓고  얼굴 부분을 따라 그린후 컷터칼로 오려주세요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "att0POLB6ttdLfBto",
+        "width": 6374,
+        "height": 5099,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/aymRyrR9PQNiba_9nurxQf56SMzJQgPydSiFmA5yrMA",
+        "filename": "패브릭 매칭 코디헬퍼_s4.jpg",
+        "size": 13665774,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/aMIDKQquwXd_dq-d2JTzHagKCqytdoLzFW4mb9WpHyI",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/SU84BPDt76lI9JcIqESDrvX5x5jJx_Vcx4OWJVuNe3E",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/tNxa-t2gKxtoIXm2mdBdDxei5O7FdLh8rurTe6ntICo",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "첫번째 박스지를 취향에 맞게 꾸며주세요! ",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attAuBQE4AP8YCmuy",
+        "width": 5839,
+        "height": 4671,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/S6nCgpfaiykHcvmTBXmhkuk5zhBxyjFxUsuX3GY_ZdI",
+        "filename": "패브릭 매칭 코디헬퍼_s5.jpg",
+        "size": 11491284,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/oAE2R9txTAi7Ym7QlYH92bvvdDmz2L43E5dX4QPDB08",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/mB5wX7j3JJAUfbsdA2Two5qCBEIYx3SsEgzS65rj2m8",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/vqCsvZdzWO_9kU8C4oVc9jGLraCeRNVqlK9rrzB5f0Y",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "작은 종이 2장을 부채접기(일정한 간격으로 지그재그)로 접고 양면테이프로 두 번째 박스지 윗면과 첫 번째 박스지 아랫면을 연결합니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attRf0pLqhqcq70mL",
+        "width": 5792,
+        "height": 4634,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/I6epV_UTDcge4Jc9RuoQImpklCXVp4UV-gbFB0Tg30k",
+        "filename": "패브릭 매칭 코디헬퍼_s6.jpg",
+        "size": 11101304,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/gz7qQqEkndv_7VEls3dcijI-w0WMJJrIm9KU-93FnBo",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/NG6oGoKFLkljmFWCn44wnp_JhipF6HaMW_1fbltQJCg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/FMpL6RcgnMx_3762iYlOc5w11g_ieT9xqZRVW9SOKjE",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "코디 헬퍼 완성! 퍼스널 컬러를 찾아볼까요? 구멍이 뚫린 곳에 내 얼굴이나 친구 얼굴을 맞춰서 놓고 다양한 천을 매칭해보세요.",
+    "추천 활동": [
+      "recJ5yDFT399E0gbk",
+      "recmWnt4gRSdWahpG"
+    ],
+    "활동 가이드_2_팁": "바닥을 자르지 않으려면 컷팅패드를 두고 작업해야해!",
+    "활동 가이드_3_팁": "모바일 기기에서 찾은 사진의 얼굴들이 컷터칼로 오린 부분으로 보이게 될거야.",
+    "활동 가이드_4_팁": "헤어스타일, 양말 등을 그리거나 코디에 필요한 팁들을 적어보는 건 어떄?",
+    "활동 가이드_5_팁": "부채접기한 작은 종이는 경첩처럼 박스지를 열고 닫을 수 있도록 만들 때 사용해봐.",
+    "활동 가이드_6_팁": "핸드폰에서 사진을 찾아 얼굴 부분에 맞춰서 사진을 확대하거나 축소시켜 맞춰봐.",
+    "활동 가이드 1_이미지_제작디렉션": "A4 크기로 자른 박스지 2장과 3x10cm 종이 2장 디스플레이; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "박스지 오리는 모습 mp4; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "연필로 따라그리고 커터칼로 오리는 모습 mp4; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "박스지 (윗면)을 마카펜으로 꾸미는 모습; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "종이 조각2를 부채접기하는 모습. 옆에 부채접기 완료한 종이조각1; 측면샷",
+    "활동 가이드 6_이미지_제작디렉션": "박스지 사이에 패브릭을 끼워 코디한 뒤 나 또는 친구의 얼굴 (사진)에 맞춰 보는 모습; 정면/부감 상관없음",
+    "액티비티썸네일_이미지_제작디렉션": "활동가이드 6_이미지 사용- 클로즈업해서 자르기.",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recCZb1RZc0ijaqCs"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "reckm7DEzwhxny5vn",
+    "액티비티 ID": 31,
+    "*액티비티 썸네일": [
+      {
+        "id": "attRzP82I8pnQdSsi",
+        "width": 3972,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/AlzvyNH0QbOZkdta6raLULdISDlx9YRh1RZM95wnkxw",
+        "filename": "맛있는 가구 만들기_01_썸네일.jpg",
+        "size": 8822019,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/N86U18dO9X39fDUTgEoSQQDx3i0hGsCAVTp4s1wWR5Q",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-AG0sCTlT61tyVReT3MyTKE3H6oiL9geBCS8ABMxglk",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/QhWkIYiNsonk0Uy7AGzmWsMaDCh9vb2mxfxLTZFiJAE",
+            "width": 2400,
+            "height": 3000
+          }
+        }
+      }
+    ],
+    "*액티비티 타이틀": "맛있는 가구 만들기",
+    "*메인 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "recoBBOrhMi5aLmPo"
+    ],
+    "*예상 소요시간": 30,
+    "*활동 설명": "냉장고를 열어보세요! 빵과 냉장고에 있는 식재료를 이용해 브레드 퍼니쳐 컴퍼니(빵 가구회사)를 열어봅시다. 소파,침대,식탁,의자 등 다양한 가구에도 도전해보세요.",
+    "*역량(기본보상)": [
+      "recTCJuxFbn83RCJe"
+    ],
+    "준비물 데이터": [
+      "rec5qLO7AP90Cg1gw",
+      "recjt2XrSg8fzjrQX",
+      "recjqhFOfnH2XOIpw",
+      "rec3P0z6172uhWIvT"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attkTzbx1Uqo84jHO",
+        "width": 6208,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/qW9YWz7xqh99a4TZUHlABM2xiBtFrnTEJCpYpxLybMw",
+        "filename": "맛있는 가구 만들기_s1.jpg",
+        "size": 11853989,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/P3WN4FRa_mi7rX4WNdnfNF22giR36cNypW6GBC_h28A",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/wjboWLdBcqGnRrxZl9zX_pSKy85QruaEKfRQVFG5u4M",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/kofqj1-Qy1MTGujTZHzH6oQtTinBLYdnhDHZ1M3chvw",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "먼저 재료를 준비해 주세요. 냉장고에 있는 식재료를 활용해 보세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attFdlugRKRPfyv3I",
+        "width": 6208,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/s8yg8zuy5QQdXPTxx4MYSfnZ9ksx7R2N_vz0J_5FapM",
+        "filename": "맛있는 가구 만들기_s2.jpg",
+        "size": 12700244,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/jqv2PSsriXVgesLGPj6Amo6sH73bce6JijPQ6F7TxJE",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/HxlE0i7alXFKpGJI92Bdmja12QGEOGDZA6ra3S331JE",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/aXedXMCB0PQzcg3VPxeblwr-5lpFbg5LMjlmD3m1gr8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "미리 썰어두면 좋은 재료들은 도마와 칼을 이용해 손질해 주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attnmw31qR6f4PYWH",
+        "width": 6208,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/FT0dyIj5-eGVGYtxd6OZi_G4ON8UaLdIu8txsNw2ZRE",
+        "filename": "맛있는 가구 만들기_s3.jpg",
+        "size": 12458934,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fCxhgAWkQ4agobbRSnypVrefgBK_XdIadZyyYa4cwEs",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/tfHTiD4Zyk1X1SxbbImUvafav2PS5H-Ezu7u9dvCEXE",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/0X5fgTgon9DAvsh8x1KaO_lDUkfO31RS0oKQKWaQSC8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "이제 재료들을 차곡차곡 쌓으면서 어떤 가구로 만들어볼지 생각해 볼까요? 침대, 소파, 의자... 뭐든지 될 수 있어요! ",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attWEAh2ZzEqEd0st",
+        "width": 6208,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/bHkQlvT5vaZAXCku5O11NcNmeYo0fsr1vfxQDR2FS4A",
+        "filename": "맛있는 가구 만들기_s4.jpg",
+        "size": 12137979,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/aMDpCxDAp6pC7H5lqxlRGySSZKGbmP9rb7j4s2-lRzU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/wb61m7n5iyg6s_RXehJWHd-uzNUOpLT0DRWkox8mIYI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/72gnnzPshfZ24_DXx5RZVyOnQYyejOu77f3nBMWM6do",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "재료를 쌓은 뒤 다시 한번 식빵으로 덮어 샌드위치를 완성해 주세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attA9BJlcYXfKcFSq",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/i3jM1g4KQUcebivjzl2WLAWeCMEFD_9n1SHOfClbFuI",
+        "filename": "맛있는 가구 만들기_5.mp4",
+        "size": 6872364,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 5_설명": "샌드위치를 잘라 원하는 가구 모양으로 배치해 보아요. ",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attptM49m4EThGkWV",
+        "width": 6208,
+        "height": 4966,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/iiRKZ-bkt88iBPBNil-gDPL3yzPAm9rCfr-cqxbcLII",
+        "filename": "맛있는 가구 만들기_s6.jpg",
+        "size": 11599242,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/wXbU63k1qrT85ZeTxje3odmRD7KUoD1nOWhC1P9I3MU",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/6s_nzQxCzLUtZi4pvAr5h7eyKc0rHgiW0secBqAgoOs",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/l7DH1sMwbsGEE9RjUGGrxJqKr4taMpt5LzGHd-vLOtc",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "맛있는 가구가 완성되었다면  찰칵! 그리고 간식으로 맛있게 냠냠! ",
+    "추천 활동": [
+      "recNYHBpWsAHf3kKz",
+      "recdQnY2ZBEcnQp1p"
+    ],
+    "활동 가이드_1_팁": "먹어야되니까 미리 씻어두어야 할 야채들이 있다면 씻은 후 물기를 제거해둬~",
+    "활동 가이드_2_팁": "칼을 사용할 땐 주변의 어른에게 도움을 받는 것을 추천할게.",
+    "활동 가이드_3_팁": "잼과 소스는 재료들을 고정시키는 풀 역할을 할꺼야. 식빵 안쪽에 발라 더 튼튼한 가구를 만들어 보자!",
+    "활동 가이드_4_팁": "빵 테두리를 잘라주면 더 깔끔한 결과물 탄생!",
+    "활동 가이드_5_팁": "반으로 자르면 침대나 소파가, 더 작게 자르면 귀여운 의자와 테이블도 만들 수 있어.",
+    "활동 가이드_6_팁": "사진이나 영상으로 기록한 뒤, 친구들과 공유해봐. 친구들의 작품이 많이 모이면 아하오호에도 <브레드 퍼니쳐 컴퍼니> 오픈!",
+    "활동 가이드 1_이미지_제작디렉션": "다양한 식재료 (빵, 치즈, 햄, 양상추, 소스류 등) 접시나 나무 쟁반에 디스플레이; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "칼과 도마를 사용해 잘라야 하는 재료는 손질하는 모습; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "식빵 두쪽 중 한쪽에 재료들을 쌓는 모습; 측면 또는 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "활동 가이드 3_이미지에 식빵을 덮어 샌드위치를 완성하는 모습; 측면 또는 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "샌드위치를 잘라 소파 모양으로 배치한 모습; 측면샷 (진짜 가구처럼 연출되도록)",
+    "활동 가이드 6_이미지_제작디렉션": "그릇에 담겨진 완성된 가구. 이빨 자국이나 포크, 나이프로 먹은 흔적 남기기; 부감샷",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 5_이미지 사용- 그릇에 플레이팅!",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recIAmhTVK8TR7C3y"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "15~30분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recyr0b77Y7zttsaU",
+    "액티비티 ID": 32,
+    "*액티비티 썸네일": [
+      {
+        "id": "attqF5rFc6JdGP8tq",
+        "width": 1200,
+        "height": 1500,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/HIM6nsJdMaXjK7svWaLDc6hXndvzwUNIg_wQk6ykZqw",
+        "filename": "보글보글 천연 물감_01_썸네일.jpg",
+        "size": 421574,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ag55LlxmaTkx86S5JjW4cQx5wzsGEHyJenoafunjUMw",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/mOgSxIFsseJ-evUentHmOQoEpJIbiaxE3ki2eGolI64",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/gEo0elASgbSBMjS6JWqh4WbAiIZLJ96ogmkdkv7Jy_U",
+            "width": 1200,
+            "height": 1500
+          }
+        }
+      }
+    ],
+    "*액티비티 타이틀": "보글보글 천연 물감 만들기",
+    "*메인 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "recLlLTh9n4tA8GCS"
+    ],
+    "*예상 소요시간": 60,
+    "*활동 설명": "냉장고에 있던 재료도 물감이 될 수 있다고요! 천연물감을 만들어봅시다. 우리가 쓰는 물감처럼 선명하지는 않지만 자연스럽고 소박한 아름다움을 가지고 있는 색채를 만들수 있어요. ",
+    "준비물 데이터": [
+      "recR41DiwPbKWW2YZ",
+      "recWCjDHxjRcHSBPs",
+      "recoYmOJpsydUHjTK",
+      "recssG5Hpyha7LedP",
+      "receP12T5hvAJb6XJ",
+      "recrHQO2WFKHkchmC",
+      "recqW9czHgr6Nm41J"
+    ],
+    "준비 Tip 2_이미지": [
+      {
+        "id": "attZcuGgNyiLb7JtX",
+        "width": 5839,
+        "height": 3285,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/3D66vLwNpHi4HGxL7FoUcZmcpB7axRfeGohJhDd-Ahg",
+        "filename": "보글보글 천연 물감_준비팁_2.jpg",
+        "size": 8243432,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/93kN7ABmkKc4TvxcwbubMUwyQ4VvNbeYM24DiXFlRY8",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/D2pFXuXwQuPTUV0gQDgB597UFh4pEXOBEt_Ed2NuqXw",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/TD6BvCB-ctx3NHEX5nU23-ZYlfV8DIudTspPRywqPs4",
+            "width": 3000,
+            "height": 1688
+          }
+        }
+      }
+    ],
+    "준비 Tip 2_설명": "시금치, 석류, 적양배추...쉽게 찾을 수 있는 재료들로 다양한 색깔의 물감을 만들 수 있어요.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attU24wwicQ01g5vQ",
+        "width": 5839,
+        "height": 4671,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/7uQYOGsAsXe7AF8xlzqwY3IUbrs2CLS5px0t-zcdP2I",
+        "filename": "보글보글 천연 물감_s1.jpg",
+        "size": 10669579,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/cM4go9Xpyre-4qMLp9ZYnt4Rj-Jm5SL8PvEWBrZRa74",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/wTnmaBNP_VVhv4dFbanXh6dBBfjXcsZ4dEIewzz-vB0",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/ItrwVY9FoRlivAE1asGOq3csQa48jTNfb4EIdpqmWEo",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "물감으로 만들 식재료를 깨끗이 손질해 주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attplhf1IC8ke9bdV",
+        "width": 5839,
+        "height": 4671,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/QjbC65nmpoj5d77MaazAU1NTYPPuNU6bjQGS_MLNJ9E",
+        "filename": "보글보글 천연 물감_s2.jpg",
+        "size": 10175707,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/RVOc1cr3Pau2B5HpBx6RYE0rMRLuDXoTcJRdtdNy4z0",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-ZUKrbSUZWhGnyJVxwgmLh4dK695e1H5HVoh9Drg-zM",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/bWk-eG9LJ_ko50-oVj6g2YE3dX-Cf3_eJG8wv7ewOj8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "손질한 재료를 냄비에 담고, 적당히 잠길 정도만 물을 부어줍니다.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "att84uClaA9rG43l4",
+        "width": 4864,
+        "height": 3891,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/AGoSk6TCm0DYepExDEqABroZhAEeTPLdtbDCFRXF7JE",
+        "filename": "보글보글 천연 물감_s3.jpg",
+        "size": 6915800,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/uL_onVaGXXj2JwqCcdvwMtaqGI9tfWCRcbjjpqLq6aM",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/mX3kKyElT34Z214t60x86ygZZx-wr67iWC9spM9bGE8",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/pI8ikdSETXLI2pu8YJdJgaG1CUfdyJCeHxe7Dk4LFx0",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "재료를 약-중불에서 뭉근히 끓여주세요. 보글보글 끓는 상태로 40분 이상 끓여주는 것이 좋아요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "att8XjhuKKRAse7oh",
+        "width": 5839,
+        "height": 4671,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/m_TtjfQ9ROaJ2vi5lulVH4i50Prh0lqbd3BvmFLMP_c",
+        "filename": "보글보글 천연 물감_s4.jpg",
+        "size": 9420647,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/B4bPwvkEpCurQlAT4MqU8lp09p930pqh6HJk_sZncxs",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/UBZZ-Q7zHth-WODUax3U2kKU_TFNWGysoNxgMP5K-I0",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/tZw2trUyE4q31JhQ5LGJU7wZpSgnx1lwgSK2lncAecw",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "원하는 색감이 나왔다면 불을 끄고 완전히 식혀줍니다.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "att746JEuXgomogn6",
+        "width": 5839,
+        "height": 4671,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/70-SusHHGBUgvAho4YQ5vB72CaAvt6hjM_dwAsM12tw",
+        "filename": "보글보글 천연 물감_s5.jpg",
+        "size": 10552395,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/C0Fegw0LiURcmH2GW8VL83iB1Jo1EeI1e65q9APc5vk",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/onHXH0Lizz1cBQ0q2pJfJqhdiGcrUJr2Iuf65ptlF4E",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/48fVD1OeZz7FeQ60i4zoLoLAp2Gd-tX1H-M0fmlr_FU",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "냄비에 남은 재료와 불순물은 커피 필터나 면보를 사용하여 걸러 줍니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attfbkGjHPZas4Fs9",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/I1OVAOPGrQD7sV5i3KgLykf_Z0EwQRMWBhq086hNYWA",
+        "filename": "보글보글 천연 물감_6.mp4",
+        "size": 3173945,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "천연 물감을 테스트 해 볼 시간! 종이와 붓으로 수채화느낌의 그림을 그릴 수 있어요. ",
+    "추천 활동": [
+      "reckm7DEzwhxny5vn",
+      "recii6g9jTW5RmNaN"
+    ],
+    "활동 가이드_1_팁": "칼을 사용한다면 주변의 어른에게 도움을 받는 것을 추천할게.",
+    "활동 가이드_2_팁": "이룹빠!처럼 양파를 사용할 친구들은 양파 껍질을 주재료로 사용해봐.",
+    "활동 가이드_3_팁": "끓는 동안 재료가 냄비 바닥에 눌어붙지 않게 한 번씩 저어줘야해. 재료가 팔팔 끓어 증발하거나 타버리지 않도록 주변에 있어줘!",
+    "활동 가이드_4_팁": "끓이는 도중 기다란 종이 조각을 살짝 담궈 물감을 테스트 해볼 수 있어.",
+    "활동 가이드_5_팁": "식은 물감은 빈 유리병이나 물약통에 담으면 쓰기 편해.",
+    "활동 가이드_6_팁": "종이를 물감에 적셔 나만의 패턴지도 만들수도 있어!",
+    "활동 가이드 1_이미지_제작디렉션": "도마 위에 손질된 식재료 (적양파). 껍질만 따로 분리된 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "냄비에 양파 껍질을 담고 물을 붓는 모습; 부감 또는 측면샷",
+    "활동 가이드 3_이미지_제작디렉션": "재료가 약불에 살짝 끓는 모습 mp4; 측면샷",
+    "활동 가이드 4_이미지_제작디렉션": "냄비에 기다란 종이 조각을 넣었다 빼며 색깔 테스트하는 모습; 측면샷",
+    "활동 가이드 5_이미지_제작디렉션": "냄비에 완성된 물감을 커피 필터 또는 면보에 붓는 모습; 정면샷",
+    "활동 가이드 6_이미지_제작디렉션": "그림을 완성된 물감으로 색칠하는 모습. 붓과 종이도 함께 촬영; 부감샷",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 6_이미지 + 양파 함께 디스플레이; 부감 또는 측면샷",
+    "준비 Tip 1_이미지_제작디렉션": "물감이 담긴 물약병을 냉장고에 보관하는 모습; 정면샷",
+    "준비 Tip 2_이미지_제작디렉션": "시금치, 석류, 적양배추 식재료 디스플레이; 부감 또는 측면샷",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recIAmhTVK8TR7C3y"
+    ],
+    "활동 가이드 7_이미지": [
+      {
+        "id": "attArYd0CBeOxQ7cf",
+        "width": 5191,
+        "height": 2919,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/EyaI-6mMDdRA8c9k5PWUoJpcnL88rGS8eZOcoA3b64c",
+        "filename": "보글보글 천연 물감_준비팁_1.jpg",
+        "size": 5424611,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/xGB-5eHkMFlTjJmzYjlX7KKypjtJf7Qh3STNuNSx440",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/oA195v7bRZbtdAiiiTcccXiEgszKBEXhgUFC7G3T9GQ",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/VPNOit0GEKhGQgKcgw60J34LhqeVXT9ETHxwufSbnrE",
+            "width": 3000,
+            "height": 1687
+          }
+        }
+      }
+    ],
+    "활동 가이드 7_설명": "완성하고 남은 물감은 물약병에 담아 냉장고에 보관해 또 사용해 보세요!",
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "큐레이션 리스트": [
+      "recKj5yv630AVxg6e"
+    ],
+    "소요시간 (from *난이도)": [
+      "50~90분"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recPRHpK9OUED6W2w",
+    "액티비티 ID": 33,
+    "*액티비티 썸네일": [
+      {
+        "id": "attaQrjFUn3yYzOQK",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/OuQBkTuwsCgldF8zHaygg6YzRonvNfbIYNXJHA0vjVg",
+        "filename": "페트병 모빌_썸네일.mp4",
+        "size": 2028354,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "페트병 모빌",
+    "*메인 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "recV7hfMsg63rQBbE"
+    ],
+    "*예상 소요시간": 120,
+    "*활동 설명": "모빌은 실,철사 등으로 여러가지 모양의 조각을 매달아 미묘한 균형을 이루게 한 움직이는 조각을 말합니다. 주변에서 쉽게 구할 수 있는 물건을 이용해 시소모빌을 만들어봅시다.",
+    "*역량(기본보상)": [
+      "recmMcDqCYlpZdD2r"
+    ],
+    "준비물 데이터": [
+      "recN2Yad2UtifUmb2",
+      "recI0BnLdGBW7FS0F",
+      "recYfrfdBeBSt2wuH",
+      "recgsS4EuFYfhyzPU",
+      "rec9Xc3n9Ec6qrq81",
+      "recHlP8FT1Of2FqHL",
+      "recC7hPz6UdoQljKG",
+      "reczAVLgwtRgl03vY"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attuL4KUVV4kih4At",
+        "width": 6630,
+        "height": 5304,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/8Bn19HxLX5RuBfmbDfRShNvKTNUzaJe160-jphcroq8",
+        "filename": "페트병 모빌_s1.jpg",
+        "size": 13083935,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/3f7Ru5TmqaY0pbX8RrspDkoZgqnwArYqmHWC1acxkXQ",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/r_Ia10RgZyB-FxdfhrUufkY14IoaJ6FXQG9vJVVciBo",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/aC-HhxCTpvENMJFR770RMX1_1oDM2pQBg2pL74_WDBk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "무거운 물건에 빨대를 테이프로 단단히 고정합니다.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attSzTJe6lMfxhlWA",
+        "width": 6276,
+        "height": 5021,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/haxCFWTOX1PbX1tHVyXjYBe1J_XT1Ju4L-n7D1T9h34",
+        "filename": "페트병 모빌_s2.jpg",
+        "size": 11086194,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/MRPXhcfTnRDpIybnTt4OWaPPVlAgbNJNUDs3_vV05Ys",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/ikQ54vp8NGsSarEg9P_QQdBGbA_jbEzU8iRWdkWXr50",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/xILRNXO1FcJCEeNd5h-KrVhNH0gJvpKTVQEC0xhna4s",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "철사를 크게 휘어서 중심대를 만듭니다. 고리의 끝부분은 ㄴ자로 접듯이 구부려서 걸이 부분을 만들어줍니다. ",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attWZL80KZVPMh6bI",
+        "width": 5830,
+        "height": 4664,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/6wnB3x7fr4XkjvDqUK_1XXE2sSgGl3JJMqEpI0nQgb0",
+        "filename": "페트병 모빌_s3.jpg",
+        "size": 9932738,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/AU8jib5EFVMt_O12bfLTAw7xJifT5oiQjTedfnRpk0c",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/eDmhigqk3A-c05CfRy3p0xS4KxlYaYTH_mqjYI-vjyI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/xMyV-H573tfrGDuoydINvr1EhDe_iLlfcROaVSywN8g",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "약 25cm길이의 다른 철사를 반으로 접어 가운데 고리를 만들고, 양 끝을 ㄴ자로 접어 페트병과 지우개를 걸 수 있게 합니다.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "att2RGtxFDdAMj8eY",
+        "width": 5614,
+        "height": 4491,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/aOQ8xmYZVD1uYJi99h9kqZe5JlIGGtQuIzQxuQHkpas",
+        "filename": "페트병 모빌_s4.jpg",
+        "size": 9371490,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/ShoKux5L_45uhU6UlUb6yx3qv_KNg2Ig5cRnkRxc9tE",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/sRGRlcufpcN_l-rxCcue0n_5OGyzbKMFd2WBdgywrZo",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/wPCkRZEbX8HpXz5BVjJE5O7insI6PU0L8sE3VcEr1F8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "페트병과 지우개는 송곳을 이용하여 구멍을 뚫어주세요. ",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "att8Vmoe0t9689dWJ",
+        "width": 5755,
+        "height": 4604,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ODi9RMyYy6RCP_vGc589JisCodLMkiqDxrAZBlEMXZY",
+        "filename": "페트병 모빌_s5.jpg",
+        "size": 9952920,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/QZ3IoyXVj2Ol_ajdHIbtPcb3ebOu7JEd7yA5ZAwKgFk",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/il1OH2VhVNPQZmdRdTnBsbeQ--9ypqgGXAjqhjE-El4",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/5s2MDoj0ZvA5SIuJ7L1T7NSogvMhhRLqoCpftwrHV44",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "두번째 철사의 양쪽 끝에 페트병을 걸고 지우개는 송곳으로 뚫은 구멍에 꽉 끼워주세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attRf4h7K4Pm53WC7",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/I4gPZskai4X9HKSlVaEu-2vh-aEBoJGFva0YFlrGPMo",
+        "filename": "페트병 모빌_6.mp4",
+        "size": 4180435,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "두번째 철사의 가운데 고리를 중심대의 ㄴ자 걸이에 걸고 병이나 지우개를 톡! 건드려 보세요. ",
+    "추천 활동": [
+      "recdZtTQ4A65t1DAx",
+      "recmWnt4gRSdWahpG"
+    ],
+    "활동 가이드_2_팁": "완성한 중심대는 빨대에 끼워둬.",
+    "활동 가이드_3_팁": "양쪽을 ㄴ자로 접기가 힘들다면 한 쪽은 그대로 두고 지우개를 끼워 놓을 수도 있어!",
+    "활동 가이드_6_팁": "양쪽 끝에 지우개나 페트병 외에도 다양한 사물을 걸거나 끼워 다양한 모빌을 만들어봐!",
+    "활동 가이드 4_이미지_제작디렉션": "페트병->지우개 gif",
+    "활동 가이드 6_이미지_제작디렉션": "전체 모습에서 줌인하여 페트병과 지우개가 시소 타는 모습 mp4",
+    "액티비티썸네일_이미지_제작디렉션": "완성품-돌아가는 gif-시소움직임",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recIAmhTVK8TR7C3y"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "120분 이상"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recNbMLJgcqKtu27Y",
+    "액티비티 ID": 34,
+    "*액티비티 썸네일": [
+      {
+        "id": "attdYqqt96G8vozGZ",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/sEu1nHYhxbWa7bSMLj8TwmQgrsuS5qZ51EuBTlaHYLc",
+        "filename": "감정 연기 연습_썸네일.mp4",
+        "size": 2094685,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "감정 연기 연습",
+    "*메인 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 5,
+    "*활동 설명": "감정을 표현한다는것! 이 것의 예술의 첫 시작이 아닐까요? 아무런 도구도 필요 없어요. 단지 조금의 자신감과 부끄러움을 살짝 내려놓기만 하면 누구나 가능합니다. ",
+    "준비물 데이터": [
+      "recjD5iKbI33V7AOu",
+      "reciYLsn1LdSXtZ9P",
+      "recHlP8FT1Of2FqHL",
+      "recYeGXD75RJiiMxs",
+      "recsyHD5P0wfeQTHy"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "att9YpPI4lVdoqPzd",
+        "width": 5896,
+        "height": 4717,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/NkbSkyho1yj39hU9dtl7UNB99d4-_5Fx5GBU5bLYLaw",
+        "filename": "감정 연기 연습_s1.jpg",
+        "size": 9447381,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/onjMmBHXPd6KSNM-Ph9ZoMHdbHlGsO00pO1Fh8jqyJ8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/cFddqYXJcj0xPqBzhPUWLCz6puIVbSGHaJqPb6t52-4",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/vHojM6JBOa9wtfTtovlqP31lZNT3-8Y97u__CupYD4w",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "색지를 길게 자르세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "att8pph6f71WD15b9",
+        "width": 5896,
+        "height": 4717,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/HrlU2pENknw6B_wFPm6Yhuj4SzkbySlZ_Cvueh9xJPI",
+        "filename": "감정 연기 연습_s2.jpg",
+        "size": 9508096,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/HiIAZx-M34p2zneVKpLa-dOUAPIhYlabI-RhZL_fA3I",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/XUeJT8wxnhviCD8zMyOV7DbE3c8dMS87cIKoYyOvLqA",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/jhViV1BOPaVG1X0bPonOeAS3oLUpeaAFzhSlqk5nQLU",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "거울에 얼굴을 비추고, 눈의 위치에 색지를 둘러서 뒷면에 테이프로 고정하세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attTokRt7OxRQpydp",
+        "width": 5896,
+        "height": 4717,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/jqv_KlM_deX7oGhoOeclM0Lj7HAJ0ikH_Jb9jJdIoDY",
+        "filename": "감정 연기 연습_s3.jpg",
+        "size": 10300395,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/KNYHYVzatd6SkFoyMA6x83paDgjJtw0xcQQ3tMPfAXY",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-MvaEcMQHW0PHgffCmCzWPKkvl1Rb7Aqrr1QqIAAQ68",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/8__Q-c28yEOUuLzuQi9TVmHfw-h0zSjPSNBHggRkHqQ",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "자! 이제 눈이 가려졌습니다. 눈을 제외한 코, 입, 눈썹을 활용해서 표정연기를 시작합니다!",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "atthnbTpHFpH1qzKt",
+        "width": 1500,
+        "height": 1200,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/agTS8f_bFhvxC88BpDBHGElMoPErdZbEo7BjvArLY3U",
+        "filename": "감정 연기 연습_s4.jpg",
+        "size": 824085,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/-rQKADq8KUBgoceA-0FrnVsgbrGo2kYsXvPu3_DO6ZI",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/m0lPt7giJ_v-VdX17GH5ahrXWnjdxeR8R4LaweM4R-w",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/YxL2Cc4eh_4uGIEDLQ5CN2GRK_uWjo230ejLGWpeCmM",
+            "width": 1500,
+            "height": 1200
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "기쁨! 슬픔! 화남! 놀람! 이런 단순한 감정부터 시작해 볼까요?",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "atthK4lsEeopf9BYY",
+        "width": 5896,
+        "height": 4717,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/OtdNvhrreZUB0M3heCNWWtHyCYk70OKcS1BJfNjdsWM",
+        "filename": "감정 연기 연습_s5.jpg",
+        "size": 10235779,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/V5tN2RO6fmo0ynj5aH0VjpDK1ZELnmNV7uirEYYGyEI",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/WskAUIyWcyZKEs1OasS8eKvTvI4GKzNA9TzzazU_aPg",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/_c82YkT6OYH1Qy5VhenWd4O9UV5_TYcBl1zNDyuHrbk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "이번에는 눈으로만 연기해 볼까요? 거울에 붙여둔 색지의 크기와 위치를 바꿔봅니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attOqFzSExEvFmw2g",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/s9YGd9SNiv_ZNBX7u48rhi-ZLbyYuTopUOCw1jikkbU",
+        "filename": "감정 연기 연습_6.mp4",
+        "size": 2316477,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "핸드폰의 셀카모드로 연습하고 촬영까지 해볼 수 있어요. 색지를 눈 위치에 맞춰서 들고 연습해 보세요. ",
+    "추천 활동": [
+      "rec6zlgrvNluCRAod",
+      "recHFEvhNi5vjIpaV"
+    ],
+    "활동 가이드_1_팁": "색지를 거울게 감을 수 있게 가지고 있는 거울의 가로 길이보다 2배 정도 길게 잘라줘!",
+    "활동 가이드_5_팁": "우리 몸의 다양한 부분으로 감정을 표현하는 것을 시도해봐! 콧구멍은 어떄?",
+    "활동 가이드_6_팁": "맘에 드는 표정이 나왔다면 친구들과 공유해봐.",
+    "활동 가이드 1_이미지_제작디렉션": "색지를 세로 방향으로 들고 가위로 길게 자르는 모습; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "거울 위쪽에 색지를 두르고 투명 테이프로 고정시키는 모습; 부감 또는 측면샷",
+    "활동 가이드 3_이미지_제작디렉션": "거울을 보며 표정을 짓는 사람의 뒷모습; 정면샷",
+    "활동 가이드 4_이미지_제작디렉션": "눈을 색지로 가리고 지어 본 두가지 표정 2분할컷; 표정만 잘 나오면 앵글 상관 없음",
+    "활동 가이드 5_이미지_제작디렉션": "더 넓게 자른 색지를 거울 아랫부분에 붙여 눈만 보이게 한 모습; 활동 가이드 3_이미지와 같은 앵글에서 촬영",
+    "활동 가이드 6_이미지_제작디렉션": "핸드폰의 셀카 모드를 키고, 색지를 한쪽 손에 들어 눈을 가리고 표정을 연습하는 모습; 활동 가이드 3_이미지와 같은 앵글에서 촬영 (거울 대신 핸드폰을 들고 있음)",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 4_이미지 활용. 2분할컷",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "rec08sQ459wDbQ4ma"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recii6g9jTW5RmNaN",
+    "액티비티 ID": 35,
+    "*액티비티 썸네일": [
+      {
+        "id": "attCRGNINN9Pg5DEL",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Sp-zgAOG2hfji6ikyELvnB1RGvXwQb5vZNziGt0Qenk",
+        "filename": "스퀴지 페인팅아트_썸네일.mp4",
+        "size": 1987589,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "스퀴지 페인팅아트",
+    "*메인 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*서브 장르": [
+      "reclLlYN8jEv7VKzS"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 15,
+    "*활동 설명": "화장실이나 유리의 물기를 없애는 스퀴지를 다른 방식으로 사용해 볼까요? 물기 대신 물감을 스퀴지로 밀어봅시다. 예상하지 못한 이미지가 눈 앞에 나타납니다. 스퀴지 페이퍼로 카드,포스터 등 다양한 작품도 만들 수 있어요. ",
+    "준비물 데이터": [
+      "recqW9czHgr6Nm41J",
+      "recWJ5AJ7SDQ83gRn",
+      "recC3KpwzzY2J8anX"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attkLUvFgGa6wezK5",
+        "width": 6193,
+        "height": 4954,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/b8D2jiBYFuyZ9ES8m7hdc6JUhXg-sotXybNmoyG0uV4",
+        "filename": "스퀴지 페인팅아트_s1.jpg",
+        "size": 10637044,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/LL-COGOaXUQwS4HzIe1dXDZSWUBw70CgWrozfYDVmO0",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/Z6jrlP8p38F1xEUjmfKaKRkU0K4PWiQTDwUIn-j0p5E",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/kQUiwJzqFMyI5nteJ3vrjR_V5f3WJQc3jp2bxn9_r_4",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "먼저 스퀴지, 종이, 물감을 준비해 주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attw3MWye5RR0vQZi",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/E1u0J1L5ssQvijo_z-Vr7swPit8fi7_Bgp-lr25XJk0",
+        "filename": "스퀴지 페인팅아트_2.mp4",
+        "size": 2428803,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 2_설명": "종이 위쪽에 물감을 자유롭게 짜주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attKUJhWoPC0x5iLS",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/gKqSWabSxJVAyXNzXvPWCr6bFlKd3bLWT_kEHIyfAyM",
+        "filename": "스퀴지 페인팅아트_3.mp4",
+        "size": 3482431,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "한 손으로 종이 윗부분을 잘 잡고, 다른 손에는 스퀴지를 들고 물감을 짜둔 위쪽부터 아래쪽으로 쭈-욱, 한 번에 밀어주세요!",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attbye3Fp6wnyE1X2",
+        "width": 6193,
+        "height": 4954,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/-7qKtsFTpvSdL_KIgLxzNWfUVl-Y1WWlKu98VA9n7IA",
+        "filename": "스퀴지 페인팅아트_s4.jpg",
+        "size": 11014598,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/BCAmj2VP75AxHqZdvGHcOnVrvKsY1HQDanoA6B1gyXc",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/cdI-ugCSkFyswopTpuSWTQA4HE0A32F3uWyyel1xNHQ",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/LdHieyIkQtiU362akMWyIwiUgf6ZQDPWWKL22JB5sL0",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "물감이 잘 묻어났나요? 종이를 완전히 말려주세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attGubbvKayAh9C8c",
+        "width": 6193,
+        "height": 4954,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/DFkh1WRrsren8t2bh6NGV_wq6rIaiLoEjwnvXdMdG3Q",
+        "filename": "스퀴지 페인팅아트_s5.jpg",
+        "size": 12274146,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/0VNeHkzAMIdBw9s8_hwG6VLQ617cWNswo5dEaNkn73o",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/WdmGRxAKR66homi_wu8ZF8iHInIF31iAtH-gJ57jZGU",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/XsyJHlvqAzP32wXhDGLoz6qcrrQD3fDQeEWizO6Qo6Q",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "물감이 마르는 동안 스퀴지에 묻은 물감을 휴지나 물티슈로 닦아주세요. ",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attYEGnwD34GjnO5T",
+        "width": 6193,
+        "height": 4954,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Tr2w4MfZODVEr26fGAtv99zNth1EoxE1QKzM7OheeOM",
+        "filename": "스퀴지 페인팅아트_s6.jpg",
+        "size": 11772417,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/wo1lQEt8YxFdZTSao7zRYwbaRzzRafFODKgrRrb4Sro",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/bXVJygu2YbnyqrpF-dKjNSbiDr9J09rdci83juPdCAA",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/iHJabK4VI1QQ8vVwKW5VugBnf9K5Xlr6mDXrVWAPj7c",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "완성된 스퀴지 페이퍼를 활용할 시간! 위에 그림을 그리거나 모양을 잘라서 생일 카드, 포스터 등으로 재탄생 시켜보세요.",
+    "추천 활동": [
+      "recyr0b77Y7zttsaU",
+      "recEqt6lbEa2AD14x"
+    ],
+    "활동 가이드_2_팁": "색깔을 많이 사용하면 더 알록달록한 결과물이 나오게 되겠지?",
+    "활동 가이드_3_팁": "힘을 적당히 주는 연습이 필요해. 종이가 찢어지거나 움직이지 않게 적당히~",
+    "활동 가이드 1_이미지_제작디렉션": "사용하는 재료 디스플레이; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "종이 상단에 아크릴 물감을 짜는 모습. 5가지 이상 색깔 사용; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "스퀴지를 사용해 활동가이드 2_이미지의 물감을 미는 모습 mp4; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "완성한 스퀴지아트를 말리는 모습. 종이 위쪽을 집게로 집어 벽면에 걸어 둔 연출; 정면샷",
+    "활동 가이드 5_이미지_제작디렉션": "물감이 묻은 스퀴지를 물티슈로 닦아내는 모습; 부감샷",
+    "활동 가이드 6_이미지_제작디렉션": "말린 스퀴지 아트를 활용해서 만든 카드, 엽서, 책갈피 등 디스플레이; 정면샷",
+    "액티비티썸네일_이미지_제작디렉션": "스퀴지 아트를 활용해 만든 카드, 엽서 등 디스플레이 (활동가이드 6)",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recIAmhTVK8TR7C3y"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recmWnt4gRSdWahpG",
+    "액티비티 ID": 36,
+    "*액티비티 썸네일": [
+      {
+        "id": "attQR7vGmhWSGQM2y",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/LRMmLDLI7fU1xFbbXEiBvObQ3_kQ-sUVTcp8exoO-Hg",
+        "filename": "글리터 몬스터_썸네일.mp4",
+        "size": 10007286,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "글리터 몬스터",
+    "*메인 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "recoBBOrhMi5aLmPo"
+    ],
+    "*예상 소요시간": 20,
+    "*활동 설명": "재활용 유리병에 수채화 물감,글리터를 넣어 글리터 몬스터를 만들어봅시다. 구 또는 돔 형태의 투명 용기의 안을 물이나 글리세린으로 채우고 인형, 건물 등의 스케일 모델과 흰가루 등을 넣어, 흔들면 눈이 내리는 것 같은 풍경을 만든 스노우 글로브처럼!",
+    "준비물 데이터": [
+      "recu165AwW0Dc7c3F",
+      "recRQ1oST1MHfM96u",
+      "rec0ddHge59N0pLwH",
+      "recUy8YyGLLLGscky",
+      "recAEfGcSbVJYNlpU",
+      "reccCLABqPsHcNCe2",
+      "reciCGp2nt50Lq2CA",
+      "recNbzkHcLExk0uef",
+      "recXDqCbCZybRrPPq"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attHDAvRE3qhjqF7G",
+        "width": 6284,
+        "height": 3535,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Zf-6FH7vJECqPZV5Wm7aaKEHzGyhFbfx2bHCV0pNaRU",
+        "filename": "글리터 몬스터_준비팁_1.jpg",
+        "size": 11879767,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/NvmLXwW6tppJJeDTeWc2blO-MIQXdVSaq_BVlI9uLgQ",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/MSCr-3LIXedhNuwvPSeFX5U8ZqPAaMVRDmP2OWquOEk",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/U8zsZ5OMUDDjLuLts7Os_z_Rm0OLAYxu49czNrPzAe0",
+            "width": 3000,
+            "height": 1688
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": "핸드폰의 라이트 기능을 조명으로 활용해 보세요.",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attjjL755o9uz9aL1",
+        "width": 6476,
+        "height": 5181,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/vqN6RUIi8ujqVLOSKeHKbHUh6BM1pW1KyJb8e3_23oA",
+        "filename": "글리터 몬스터_s1.jpg",
+        "size": 10772246,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/2WVXEqKis0fi2nDyO2IX8OnyfyojIOT_uIxqWdXHDOk",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/3uVO5R5IMCPD2baXBc1UPqRGxXNldasU11TWIRoGLVs",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/rp5VaHqiUykEfeqjhoQYw1WUe1JAHDDcZKyvw6BsvLc",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "재활용 유리병에 물을 반 정도 채워주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attvZV9sCENDV4Bik",
+        "width": 5619,
+        "height": 4495,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/PwB8dZfMdVeAXuFxWH66ghw1ZllljQd0viRkXdbsRK4",
+        "filename": "글리터 몬스터_s2.jpg",
+        "size": 9283255,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fwAKap0DE29u-HvSlohJi9vtG_zyqzQih4LC87YjNjM",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/GamEuTJPUlHNIiHSTGNeDpyY9CobZQzW0k76MfPv2aY",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/8I7hiEQnJMqrYT8_PONYIsMRBw29Kf2wyqCR7Sv9BEU",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "넘치지않도록 양을 잘 조절해 나머지 공간을 글리세린으로 채워주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attqzavqnVp9fBL5Q",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/A5JdCNo5gEjs35o01Y5OZVwpTXf_lKDamo2lzy9JkAE",
+        "filename": "글리터 몬스터_3.mp4",
+        "size": 6405193,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "원하는 색과 반짝이는 정도가 될 때까지 좋아하는 색의 물감과 글리터를 병안에 조금씩 넣고 나무젓가락처럼 긴 막대로 저어주세요.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attRZPxEJ5J2L1nT1",
+        "width": 5497,
+        "height": 4398,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/-NVapnzahK-J-W3NdJoy7kF7ARkD5J_n5G7ftFXCkLk",
+        "filename": "글리터 몬스터_s4.jpg",
+        "size": 9053609,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/RfwsYuB0-A86GVAkZ8lBQoYyM6M-mG-CmLqBg_2SzHY",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/861u4nhLhAFvQ_oynCFvPvepgbq4ylkYqWtDETJKvkw",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/upM5vxvMf6FOB4bku2qfm-lSstLrrVjUCznBkyDuHAg",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "힘을 주어 뚜껑을 꽉 닫으세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attHbfiGPlivAwjOH",
+        "width": 5704,
+        "height": 4563,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/MIZExMdssHa0t6WS_BqYoTnilshwh5uFcwXguEGdhls",
+        "filename": "글리터 몬스터_s5.jpg",
+        "size": 9952573,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/m555VYTbB0VMPbZcC5Ji9gLpgXbpYnGQZL--DFWt3d4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/9ndmLw0dsFqPGGiyAkLAV0HLtUsT0WW4g9OnAXQRm5M",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/Sg2QNlWtkyOLjvvOLU7kxXI4div4BcaNHoouHFbZInI",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "검정 종이를 병 높이만큼 자른 후, 중앙에 원하는 몬스터의 모양으로 컷터칼을 사용해 오려줍니다.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attZ3EyS4MkvXBIpX",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Zk4MZSwl0sGVCVda1L2HRN2JVSt0QBtC6NrizZqXEpI",
+        "filename": "글리터 몬스터_6.mp4",
+        "size": 13712158,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "완성한 병 아래쪽에 핸드폰의 라이트를 켜고 비춰보세요. ",
+    "추천 활동": [
+      "recu0fLZYtcazLAKO",
+      "recdQnY2ZBEcnQp1p",
+      "recodKDjO9f4b7fzv"
+    ],
+    "활동 가이드_5_팁": "자른 몬스터 모양의 종이는 병에 감아 테이프로 고정하고 눈알을 붙이거나, 마카펜 등으로 몬스터를 더 자세히 그려보세요.",
+    "활동 가이드_6_팁": "물결이 잦아질 때까지 몬스터의 이야기를 상상해보면 어때?",
+    "활동 가이드 1_이미지_제작디렉션": "유리병에 물을 붓는 모습; 정면샷",
+    "활동가이드 2_이미지_제작디렉션": "이어서 글리세린을 붓는 모습; 정면샷",
+    "활동 가이드 3_이미지_제작디렉션": "나무 젓가락으로 물감/글리터 젓는 mp4; 정면 또는 측면샷",
+    "활동 가이드 4_이미지_제작디렉션": "손으로 병 뚜껑을 꽉 닫는 모습; 정면샷",
+    "활동 가이드 5_이미지_제작디렉션": "모양을 잘라서 꾸민 검정 종이를 유리병에 둘러보는 모습; 정면샷 ",
+    "활동 가이드 6_이미지_제작디렉션": "완성된 유리병 아래쪽에 핸드폰 조명을 비추는 모습; mp4",
+    "액티비티썸네일_이미지_제작디렉션": "검정배경지(몬스터) 모양 안에 글리터가 움직이는 gif ",
+    "준비 Tip 1_이미지_제작디렉션": "핸드폰 라이트 기능을 켜고 완성된 유리병 아래쪽에 가져다 대는 모습; 어두운 배경이면 좋을 듯",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recGbE7aQlifMb5Az"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "15~30분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recodKDjO9f4b7fzv",
+    "액티비티 ID": 39,
+    "*액티비티 썸네일": [
+      {
+        "id": "attnjiWCZBpuBjLMo",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/IFH-bi_kM2uUsg2cs1z-BYfNQHsJrs5o3zb-EStJhoQ",
+        "filename": "OO이었다면_썸네일.mp4",
+        "size": 10305546,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "00 이었다면?",
+    "*메인 장르": [
+      "recj5GonSSUrQeMe5"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "reckTaPQewNBiABiC"
+    ],
+    "*예상 소요시간": 5,
+    "*활동 설명": "내가 잠이 들면 가위가 걸어다니고 지우개가 춤을 추다가 내가 푼 문제를 다 지워버리는 상상을 해본적이 있나요? 일상에서 발견하는 멋진 상상의 씨앗은 한 문장으로 시작합니다. 언뜻 떠오르는 상상을 잡아보세요!",
+    "준비물 데이터": [
+      "recqW9czHgr6Nm41J",
+      "recYeGXD75RJiiMxs",
+      "rec0ow0mmTDrEjlD6",
+      "rectzBzaIgbgiVYPe"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attCe5NPagVCrSo1S",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/jdSiwm0x19uxzm7ESPSE_gG36ywIm2EumuO_C0OFfCo",
+        "filename": "OO이었다면?_1.mp4",
+        "size": 156362,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "내가 OO이었다면? (ex. 빨대, 책, 바다생물, 나무)",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attSjWaw7yMAcVZ5O",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/-pzimRJCrhdcjFpOlBxtQRafhkorjhIXyG9OC1asaBM",
+        "filename": "OO이었다면?_2.mp4",
+        "size": 279800,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 2_설명": "OOOO에 있을텐데 (장소를 생각해보세요.)",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attWCvKOTKR3IFelQ",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/yH9R6p9jZWzkH4dTBUwdWyFHlS4QeLGVLEXOrhypN8s",
+        "filename": "OO이었다면?_3.mp4",
+        "size": 238354,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "OO이 된 내가 OOOO에서 무엇을 하고 있을지를 상상합니다.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attIgX7cm5UGrnIG2",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ZwWs7Yp-r7cGvjS4hvQfgp248MySpHp8bDvfOnbiK2U",
+        "filename": "OO이었다면?_s4.jpg",
+        "size": 11363385,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/cksTIx1AS7g5ZxO8lwKqiiQxNIvPnK-ttSBJDsd22Go",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/RQUnjncgbGz1Dn3NmBofuHxjc_mmGmRZb8tXLQ3l8ZE",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/UtBGGDWBRsZvmfsasER59TTNDfBLLyBiutcRrLyx9To",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "앞 단계에서 만든 문장들을 이어서 짧은 글을 만들고, 핸드폰이나 종이, 펜으로 기록해 보세요.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "atth2lDgn1PV25Jzb",
+        "width": 1500,
+        "height": 1200,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Y56yXRVXHbRU1ZsDIVH1ieUwMuwIvbp5F7wjOE0vZu0",
+        "filename": "OO이었다면?_5.jpg",
+        "size": 817531,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/pWeosjvShzvVH_1jQCCczXamJf0nrfVOFC6AqUEd_P4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/cGEc4TK_CjlR_wY6M8ClJuIBe0CEg8GRaWmb7Zge_ps",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/6R3FezygKlugMdXFDJ4MbYam8GcBpmWDmG7yIypPmLk",
+            "width": 1500,
+            "height": 1200
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "내가 만든 문장을 바탕으로 캐릭터의 간단한 프로필을 만들어보세요. 나이, 사는 곳, 취미는 뭘까?!",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attEP1VizhOfoDXFB",
+        "width": 1500,
+        "height": 1200,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/vEYsN5IQ3NWpDXCYpgL6f8ATkgbaDtk1J8iVe1NHg6k",
+        "filename": "OO이었다면?_6.jpg",
+        "size": 396395,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/YELPzx7fu0GMudxXm9RJGsIXPh9d2xp5Y_vy_e_rd_A",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/qv3AgEo0Yw2-LkecZM8QUEK2Y2m3PDK2gqjYCMNS_Gs",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/vvARNXGFX6Vwrsoq5EW6sjjLART7ONIEmWFnISSrXS0",
+            "width": 1500,
+            "height": 1200
+          }
+        }
+      }
+    ],
+    "활동 가이드 6_설명": "내가 만든 문장을 친구들과 공유하고 친구들이 만든 문장도 살펴보세요. ",
+    "추천 활동": [
+      "recmWnt4gRSdWahpG",
+      "receBJmMINBIeN1KO"
+    ],
+    "활동 가이드_1_팁": "OO안에 들어갈 단어를 상상해보세요.",
+    "활동 가이드_4_팁": "OO으로 변신한 내 모습을 간단하게 그림으로도 그려봐!",
+    "활동 가이드_5_팁": "이렇게 때로는 말도 안 되는 상상들이 새로운 이야기의 시작이 될 수 있어!",
+    "활동 가이드_6_팁": "프로젝트 갤러리에 친구들이 올린 프로젝트를 보고 캐릭터의 모습이 떠오르진 않은지 살펴봐~",
+    "활동 가이드 1_이미지_제작디렉션": "OO부분을 예시 단어들로 대체; mp4",
+    "활동가이드 2_이미지_제작디렉션": "OOOO부분을 예시 단어들로 대체; mp4",
+    "활동 가이드 3_이미지_제작디렉션": "OOOO부분을 타이핑해서 내용을 입력하는 애니메이션; mp4",
+    "활동 가이드 4_이미지_제작디렉션": "종이에 싸인펜, 색연필 등으로 앞서 만든 내용을 쓰고, 그려보는 모습; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "다른 친구들이 공유한 이야기를 화면 핸드폰/태블릿pc 화면 스와이핑 하며 보는 mp4",
+    "활동 가이드 6_이미지_제작디렉션": "만든 캐릭터의 간단한 프로필 이미지 제작",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 6_이미지 사용",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "rechTGJVYkJEWBZTV"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recRpd1j2h87amOFy",
+    "액티비티 ID": 40,
+    "*액티비티 썸네일": [
+      {
+        "id": "attLywHL7T5iLm5aS",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/gFkJnw6VEYFst6IcRX-HFJzIPkVbUx8EKMD9qGEAgCg",
+        "filename": "투프레임 애니메이션_썸네일.mp4",
+        "size": 6900715,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "투프레임 애니메이션",
+    "*메인 장르": [
+      "recj5GonSSUrQeMe5"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "rec4Oh6naNixCUeqp"
+    ],
+    "*예상 소요시간": 10,
+    "*활동 설명": "애니메이션은 주로 초당 24프레임을 사용하여 자연스러운 움직임을 드로잉으로 만들어냅니다. 우리는 2프레임으로 단순한 움직임을 만들어봅시다. 애니메이션! 어렵지않아요!",
+    "준비물 데이터": [
+      "recqW9czHgr6Nm41J",
+      "recHlP8FT1Of2FqHL",
+      "recXDqCbCZybRrPPq",
+      "rec9Xc3n9Ec6qrq81"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attEdeiMECzO5cUQG",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ceoYYt4mMvAU8_p0HgJujJ8U1ySxYE-5PCVaf4ABbrI",
+        "filename": "투프레임 애니메이션_s1.jpg",
+        "size": 11010297,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/3IJCEaTivyaxgUJlVtpnXO36ghttfuecIpGrXeMHitI",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/DuiGdUB13unwqht_Shbk2Z7BP3Xin6CoLXfyUa58Cl0",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/Lq2XLTkxfFx12fE1CirBkJ7n6mZk6iZEVVBKg904g0U",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "위로 기다란 직사각형 모양의 종이와 빨대를 준비해 주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attc32OsKkzV66f5r",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/_bgn0TYlXBPm9LFMBgnSJHUjz06L6tkVa-1uMTRy_LA",
+        "filename": "투프레임 애니메이션_s2.jpg",
+        "size": 11255465,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/vcResAb7KuLvkvPHJtV85lGsFXhSAhdywKsaNTw9Yn4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/XoselabnZToAcukhlMm4_ojiRcGWLESF7H0lWpkd-2U",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/B9bLn6PiD8NxYm7Of62n77lf9tAKIEvdChB_cdHFGCk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "종이를 반으로 접어 수첩 모양을 만들어 주세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attqXEDAg5xufSeFN",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/VvvcI5Wn88iInWbnLKDinVfHHILgCec5-3UFT3tGtnk",
+        "filename": "투프레임 애니메이션_s3.jpg",
+        "size": 11186146,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/7ON2omxz8gWC5EllOzK48qKYWvJllhInLmYKspiHsBA",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/HL6FJ8rL28bofKRPMD1Cu4qCodEx-QxcsZaoerX_LwI",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/uHf-0BXzJFh-X0eXVr_ExtskXL7fh07mWQ7lGOCKv6o",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "접은 종이 안쪽에 그림을 그려주세요. ",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attlsjnTFe3NPrXr3",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/oT2nHH3OwXAM3pgiDl3jPmJ2BFyAx4khqXB9TtaOTsw",
+        "filename": "투프레임 애니메이션_s4.jpg",
+        "size": 11536343,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/qMRBehrLvcg4Qen-0S9eZ4jzTQEmVwkqnrzziLeT6oo",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/E7CUJjBzGtyt6MTcHSnfLVNsAgicP4XQPV3I5Qz6Tt4",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/3f2cQdvGw5gH9Jw7ahHfpVY_e1D0puNbKEVGP6hdWVQ",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "이제 접은 종이 바깥쪽에 그림을 그릴 차례! 안쪽에 그린 그림과 이어지지만 조금 다른 모습을 상상하여 그리기!",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attt9reTRlHlQ1kZH",
+        "width": 6159,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/XTvwivqw4zVqI3Gmc2AIH3AMM6lC0BlzCVlR9eODSe4",
+        "filename": "투프레임 애니메이션_s5.jpg",
+        "size": 12479017,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/QT4DEPQfJpLqACtmHELpwewhKerOK4PGvI_T5o4xzC0",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/QbdAnxUsExJ3hgiDAGb26Cp2_WnIXnFVhKJHXe0E-ck",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/5yrpnKyaR542zkrGlUArYONIOXtqNombUGrvsqtjrpk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "바깥쪽 종이 아래쪽에 종이 빨대를 올리고 위로 돌돌 말아주세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attyisHlLwTlMoYmc",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/XDfz3lJbQAqBI12qZxYT1IHD4Zd_c_TLf_NCg1fSiJU",
+        "filename": "투프레임 애니메이션_6.mp4",
+        "size": 6807616,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "투명 테이프로 접힌 종이의 아래쪽과 위쪽을 바닥에 고정시키고 종이 빨대를 위, 아래로 움직여 보세요. 간단한 투프레임 애니메이션 완성!",
+    "추천 활동": [
+      "rec1EgXd42fRGAVGZ",
+      "reccIIMftOt1jJsku"
+    ],
+    "활동 가이드_1_팁": "굵은 빨대가 얇은 빨대보다 튼튼해서 움직임을 만들때 더 편리해!",
+    "활동 가이드_3_팁": "내 얼굴, 우리집, 뭐든지 애니메이션이 될 수 있어~",
+    "활동 가이드_4_팁": "안쪽에 그려둔 그림 선을 참고해서 다음 장면을 상상해 그려봐~",
+    "활동 가이드_6_팁": "투명 테이프로 접힌 종이를 고정시켜야 빨대를 빠르게 움직이기 편해져~",
+    "활동 가이드 1_이미지_제작디렉션": "기다란 종이가 가운데 위치, 재료 디스플레이; 부감샷",
+    "활동가이드 2_이미지_제작디렉션": "활동 가이드 1_이미지에서 종이를 반으로 접는 모습; 부감샷",
+    "활동 가이드 3_이미지_제작디렉션": "접은 종이의 안쪽에 눈알 그리는 모습; 부감샷",
+    "활동 가이드 4_이미지_제작디렉션": "접은 종이의 바깥쪽에 한쪽만 감은 눈알 그리는 모습; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "바깥쪽 종이 아래쪽에 빨대를 놓고, 위쪽으로 돌돌 마는 모습; 부감샷",
+    "활동 가이드 6_이미지_제작디렉션": "빨대를 위,아래로 움직이며 완성된 애니메이션 mp4; 부감샷",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 6_이미지(gif) 사용- 좀더 클로즈업!",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "rec7GYdCReY8mxpYq"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "5~15분 이내"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "receBJmMINBIeN1KO",
+    "액티비티 ID": 42,
+    "*액티비티 썸네일": [
+      {
+        "id": "attUxo2K4pAG1xfHm",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Bo_HeeWmKUvKyQ11GRkus8lULPjNCfCtUegdJOTgad0",
+        "filename": "변신하는 캐릭터_썸네일.mp4",
+        "size": 3249542,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "변신하는 캐릭터",
+    "*메인 장르": [
+      "recj5GonSSUrQeMe5"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "recLlLTh9n4tA8GCS"
+    ],
+    "*예상 소요시간": 90,
+    "*활동 설명": "평소와 다른 색 혹은 패턴의 옷으로 바꿔 입었을 때 다른 사람으로 변신한것 같다는 이야기를 하기도 합니다. 한가지 형태에 여러가지 색과 패턴으로 변신하는 캐릭터 장치를 만들고 다양한 이야기에 응용해보세요.",
+    "준비물 데이터": [
+      "rec0QNmu5qsyd3o1f",
+      "recqW9czHgr6Nm41J",
+      "rec7ptA1jN3j33xlW",
+      "recXDqCbCZybRrPPq",
+      "recJjIVkrV7KIJ16w",
+      "recx4iXSxyOxiVlXM",
+      "recNbzkHcLExk0uef",
+      "recsyHD5P0wfeQTHy",
+      "recTxjXw63cIJF6A4",
+      "rec9Xc3n9Ec6qrq81"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attXZIkas0oxAyeTi",
+        "width": 6329,
+        "height": 5063,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/2pNuNB77ndICVcLa2zJqTbf50MgLqdwdI3j_72pHzX8",
+        "filename": "변신하는 캐릭터_s1.jpg",
+        "size": 14577866,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/FhTQcpe_wPSpwKf9Pdf7Wo2UP7TR5dv2mFckKq0v4To",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/LX6hdbBAk-8BHisd5gZw9Oujjdhwkp5nPiQMcKTC8QE",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/QJdTyjusnucboK9OmJ5IEpJ335VdkECvF2vNeXWF3IA",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "과자 박스 윗면과 아랫면에 펀치를 이용해 구멍을 각각 2개씩 뚫고, 정면에 캐릭터의 모습을 그려 컷터칼로 오려주세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attthjNDgkDKUInQt",
+        "width": 6329,
+        "height": 5063,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/gKk0VvZmTrLa9XR0Jy6vW5MmahMQ0Evn8BGjh8ey3Sg",
+        "filename": "변신하는 캐릭터_s2.jpg",
+        "size": 13859175,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/8rOpetLTJoTPkBx8FvfvX2SoPJoR41D6MWh2Fch1bv0",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/A_4m1LoA7IjREJ5Dh1NjkscfhzwWFswuwsLVpI8xdpc",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/1DGWPGizxemtyD1RA6I6YF5LRQNg5d2n-amnODWhG_4",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "캐릭터 모양을 오린 종이 박스를 마카펜으로 칠해줍니다.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attL6hjq8BU9AWpXi",
+        "width": 6329,
+        "height": 5063,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/0y2u2A3YV3U2oMMC1chO6VzP2YUX_6B3FOCQkn4olRo",
+        "filename": "변신하는 캐릭터_s3.jpg",
+        "size": 12015935,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/qMJATQvSl6H9-h2jJ6EdvpwHkYZ_CSScGO8AOsliqUM",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/7UT5KGDr7ODZc35iAL5qpinMU9Gl5D5NNfmYSZqhW50",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/ltMzB52SWrv9IWwofL8E9wZjNs__5OHpbHS8C8iY2o8",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "과자 박스 안쪽 면에 ohp 필름을 끼워 넣고 붙여준 후 박스 윗면을 꾸며줍니다.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attpdLLwygiFvFYNO",
+        "width": 6329,
+        "height": 5063,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/V5DYt_Yo56upwvcBDqvYtWxI8zse8BkA_fzXSHFFnus",
+        "filename": "변신하는 캐릭터_s4.jpg",
+        "size": 13799380,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/0HUulDx0nE542bHaJ39AW-toVR5x4JYe7JD2qlQWOBs",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/QvEr6V1kOfayFUGD9550L_W9yioKwLIVqidvxn12cqQ",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/kJ9WpW6HhgsAeB1pAbzE7lZDb-ZIXWJvNRRcXB2TEdk",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "안쪽 빨대에 감을 종이는 친구들의 패턴 사진 혹은 내가 모은 패턴 사진을 프린트해서 이어 붙이세요. ",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "atttVNBMcS5qVAhiG",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/ziXRE6vjQQw72IrGCaZ0WR2n0uQ8tzHNongWbjFPADs",
+        "filename": "변신하는 캐릭터_5.mp4",
+        "size": 7773925,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 5_설명": "이어붙인 패턴종이의 양쪽 끝을 빨대 두개에 각각 붙인 후  빨대에 감은 후 빨대를 한쪽씩 박스 안의 위,아래구멍에 맞춰 끼워줍니다.  ",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attCh2lxIwIE5PeJv",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/KyaA8ZUs6uBuo78lyWoWKGrJnmNEu4wHtWfB2ZKKGuo",
+        "filename": "변신하는 캐릭터_6.mp4",
+        "size": 2412412,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "패턴이 잘 돌아가는지 확인해보세요! 패턴에 따라 바뀌는 캐릭터의 이름을 지어보는 건 어떨까요?",
+    "추천 활동": [
+      "recdQnY2ZBEcnQp1p",
+      "recEqt6lbEa2AD14x",
+      "recmWnt4gRSdWahpG"
+    ],
+    "활동 가이드_1_팁": "정면을 컷터칼로 오릴때 뒷면도 같이 오려지지않도록 가운데 두꺼운 종이를 끼운 후 오려줘!",
+    "활동 가이드_2_팁": "검정 마카펜으로 색칠해야 프린트된 패턴들의 색이 잘 보여~하지만 원하는 색으로 칠해도 돼!",
+    "활동 가이드_6_팁": "글루건으로 박스 하단을 붙여서 마무리하면 더욱 튼튼!",
+    "액티비티썸네일_이미지_제작디렉션": "패턴에 따라 바뀌는 캐릭터 이미지 모으기",
+    "준비 Tip 1_이미지_제작디렉션": "이미지모음-포토샵",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recqC6OKtWwq8Y0V9"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "50~90분"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recXRq6qiI2u7m9Ub",
+    "액티비티 ID": 43,
+    "*액티비티 썸네일": [
+      {
+        "id": "attiMy09RFQg7jL4I",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/bY19EQbfgae2eOlJURj4q4z9g-OwAbh9HTbfPFvYDxk",
+        "filename": "스톱 모션 애니메이션_썸네일.mp4",
+        "size": 1704192,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "스톱 모션 애니메이션",
+    "*메인 장르": [
+      "recj5GonSSUrQeMe5"
+    ],
+    "*서브 장르": [
+      "recc4Ygz5wPrk1JFR"
+    ],
+    "*난이도": [
+      "recV7hfMsg63rQBbE"
+    ],
+    "*예상 소요시간": 120,
+    "*활동 설명": "투프레임 애니메이션에 도전 했다면 이번엔 스톱모션앱을 이용해 짧은 애니메이션에 도전 해봅시다. 어떤 이야기를 만들지 고민하지 않아도 괜찮아요. 우선 캐릭터의 움직임을 만드는 것에 도전해보세요. ",
+    "준비물 데이터": [
+      "recx6j2ixPsH8zWeV",
+      "recYeGXD75RJiiMxs",
+      "recow9PwCSZsQZ51i",
+      "recqFN3rDoFZRsl2b",
+      "recdJvWKiqH8Vu263",
+      "reciYLsn1LdSXtZ9P",
+      "recsyHD5P0wfeQTHy",
+      "recTXvdzbADByBHAD",
+      "rectzBzaIgbgiVYPe",
+      "recQRgTHrSzf3H0j7"
+    ],
+    "준비 Tip 1_이미지": [
+      {
+        "id": "attlR5YJ4gG9WvncB",
+        "width": 6397,
+        "height": 3598,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/KKvV311gxsxRL4B5nCjEov2r2rBnRV5sWjeX5naMpeU",
+        "filename": "스톱 모션 애니메이션_준비팁_1.jpg",
+        "size": 10064485,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/2XqLe7FkxKrtYjvOf5eTd60xj0z6WhPjcv3fL_D7HUw",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/6W1N4E-Ukke2BTCaEPUmywoee9qQy1IyP-l2aun69sg",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/CAY530eBYwkrtHurbP9uoiSqgSVIN06_qlweoyMy3pA",
+            "width": 3000,
+            "height": 1687
+          }
+        }
+      }
+    ],
+    "준비 Tip 1_설명": " 기둥을 쌓을 때 책을 사용하면 높이를 조절하기 쉽습니다.",
+    "준비 Tip 2_이미지": [
+      {
+        "id": "attKVRBVnqeZ2hNiZ",
+        "width": 6397,
+        "height": 3598,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/yvMtl0p2raj8F4i0MYqlRGpdkq8ADur5mUp0-y3X8uQ",
+        "filename": "스톱 모션 애니메이션_준비팁_2.jpg",
+        "size": 8758054,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/xhe-TRoF7fqULlqfK3ICQWaOwMT5c0LXgvC__fyI0xg",
+            "width": 64,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/dw6q2TFv0mmDdj7nTMvVjBo03py-7hCTmVH5oHciJbU",
+            "width": 910,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/GSzie04BvuJLIYln3FrO4wHiOYOs4jf-Bou80M1R3Q0",
+            "width": 3000,
+            "height": 1687
+          }
+        }
+      }
+    ],
+    "준비 Tip 2_설명": "탁자 조명이나 스탠드 조명을 이용해 다양한 분위기를 연출해 보세요!",
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "att4lxMXxnGsecYPK",
+        "width": 5367,
+        "height": 4294,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Pfd-PgdlHG7Jvoc0uNQY8qZE-pwIrolnwI5fbalgXl8",
+        "filename": "스톱 모션 애니메이션_1.jpg",
+        "size": 9685034,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/xvJ2qP4UjaiK_Mr94HzCbAXmkV3l7tcuNb9c4Oc_dJM",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/-V0b3eoPfySuchhW7GN3pArrZ42mhJqagIAkGj1FqNQ",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/yA_LkEIeaA0vjS417PNkd8iy014UOgubNf7THpURoAo",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "*활동 가이드 1_설명": "책을 쌓아서 철제 선반을 올려둘 같은 높이의 기둥 2개를 만들고 철제 선반을 올려두세요.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attd1Ubg091UNbABi",
+        "width": 6090,
+        "height": 4872,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/tqloR6Clr4mwN01ReEitbCocVUnJ04C9xf3AeqNBilY",
+        "filename": "스톱 모션 애니메이션_s2.jpg",
+        "size": 16513316,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/iPRF1lVWtD-HBa5V-UgVRnGK1XpPjmUe3vey2-o5ep8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/8XGLwVGy0rb7P7Lpf8lycRK0rWXmEJeuDjEvBnrWpBA",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/yp99m7mALwPjE9yzn6sJ2DMZEMo6RFCSd9a3DseobGY",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 2_설명": "모바일 기기의 카메라 렌즈가 바닥을 향하게 선반 위에 놓고, 카메라를 켯을 때 철제 선반이 안 보이게 위치를 조정하세요.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attgWudZPzSsACUbN",
+        "width": 6158,
+        "height": 4927,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/v10azP4vbuFxioe5GRAlAMZhFaAZsOhIXVZ67LWCcOA",
+        "filename": "스톱 모션 애니메이션_s3.jpg",
+        "size": 17434204,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/OxYFV7MlXj8goAAyhmSBZKUJf5gY7naOx2E1bKxbUaY",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/buDPLSUa2zCwMpaUlcVYpFNUbuHBMofUPr4Pwh0odNs",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/2I9aKwRG4HeTjjkQoMoFN_7SS3qX3BdBFmE4BjT8mvE",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 3_설명": "패드에서 스톱모션 앱을 켠 후  화면의 프레임에 맞춰 책상 위에 마스킹 테이프로 표시를  합니다.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attQEtv6clorBYXD0",
+        "width": 5483,
+        "height": 4387,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/NzsCMr9aiZ_OdSUYyM_gU5XQ0daU15f4mmVMx9NcEII",
+        "filename": "스톱 모션 애니메이션_s4.jpg",
+        "size": 15040524,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/4zY_vHdT4WGDv2wo3dVAL3--tQQZbx_CWOpdOBdc_ag",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/qoYwTklReXsr2lFVqAadQHru70LxZd1TWKDTq4IyR6s",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/vRcH7KQ4jtxWmxNQEP6t75q4vgLKLo3BFR4W2epOP2E",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 4_설명": "책상 위에 표시한 프레임 안에 장난감을 올려두고 움직임을 상상하며 한 컷씩 촬영을 시작합니다.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "attkioscIOIsWZ5xV",
+        "width": 5464,
+        "height": 4371,
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Fo0u0yJKbGXfw25bPHictmOk9ZfMqEGdWBBOekV5i4k",
+        "filename": "스톱 모션 애니메이션_s5.jpg",
+        "size": 13271658,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/CS4YKQS0nKuHwRkxS_RWy2uVjQU1HyvVJHDagpJ6OY8",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/large/nFMgtF7UH6u5aTNZA7OVhhfX3PaAIGmiQbkppU2v-Kw",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/full/vma6SgQXcq2wCMHADFkS9ElnzFhWlVi6JrZ-1gfOZcA",
+            "width": 3000,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "활동 가이드 5_설명": "종이로 말풍선을 오려서 캐릭터의 대사도 추가해 보세요.",
+    "활동 가이드 6_이미지": [
+      {
+        "id": "attRS888goHBcUo34",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/P4zSnKU0UQixfSCA-0MMD0tAytV2OqbpbPfV6t2YGrg",
+        "filename": "스톱 모션 애니메이션_6.mp4",
+        "size": 3315749,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 6_설명": "장난감과 말풍선, 클레이 등으로 만든 캐릭터나 소품을 활용하여 한 장 한 장 사진을 찍어  짧은 애니메이션을 만들어 보세요.",
+    "추천 활동": [
+      "recRpd1j2h87amOFy",
+      "rec1EgXd42fRGAVGZ"
+    ],
+    "활동 가이드_1_팁": "스마트 기기 거치대나 삼각대가 있다면 이 단계를 생략할 수 있어~",
+    "활동 가이드_2_팁": "스마트 기기 거치대나 삼각대가 있다면 이 단계를 생략할 수 있어!",
+    "활동 가이드_4_팁": "이전 컷들이 흐릿하게 보이는 '어니언 모드'를 활용하면 캐릭터의 움직임을 자연스럽게 이어서 촬영하기 쉬어요!",
+    "활동 가이드_6_팁": "내용에 어울리는 배경 음악을 추가할 수도 있어요!",
+    "활동 가이드 1_이미지_제작디렉션": "책으로 쌓은 기둥 2개 위에 철제 선반을 올려둔 모습; 정면 또는 측면샷 (전체적인 세팅이 잘보이는 앵글에서 촬영)",
+    "활동가이드 2_이미지_제작디렉션": "카메라를 킨 태블릿pc를 철제 선반에 올려두고 앵글을 조정하는 모습; 부감 혹은 측면샷",
+    "활동 가이드 3_이미지_제작디렉션": "프레임을 마스킹테이프로 표시해 둔 책상, 철제 선반 위에는 스톱모션 앱을 켜 둔 태블릿pc 화면; 부감샷 (전체적인 세팅이 잘보이는 앵글에서 촬영)",
+    "활동 가이드 4_이미지_제작디렉션": "프레임 안에서 손을 움직이며 미니 장난감을 사용해 촬영하는 모습. 스톱모션 앱 어니언 모드를 활용해 태블릿 화면에 이전 컷이 보이도록; 부감샷",
+    "활동 가이드 5_이미지_제작디렉션": "활동 가이드 4_이미지에 말풍선 추가. 스톱모션 앱 어니언 모드를 활용해 태블릿 화면에 이전 컷이 보이도록; 부감샷",
+    "활동 가이드 6_이미지_제작디렉션": "스톱모션 앱으로 만든 애니메이션 mp4; 애니메이션 내용은 아하오호 앱/세계를 소개하는 짧은 인트로!",
+    "액티비티썸네일_이미지_제작디렉션": "활동 가이드 6_이미지 사용",
+    "준비 Tip 1_이미지_제작디렉션": "같은 높이로 쌓은 기둥 (책) 정면샷",
+    "준비 Tip 2_이미지_제작디렉션": "탁자/스탠드 조명을 촬영에 활용하는 모습; 정면 또는 측면샷",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "recbCtkxyPym75OO7"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recyr860kggUslg9f"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "120분 이상"
+    ],
+    "Created By": {
+      "id": "usrdbwLTYM7jyCZao",
+      "email": "irubba.artworkshop@gmail.com",
+      "name": "irubba lee"
+    }
+  },
+  {
+    "id": "recHFEvhNi5vjIpaV",
+    "액티비티 ID": 45,
+    "*액티비티 썸네일": [
+      {
+        "id": "attGFC9ikpm05OEN4",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/Ou6AEao1nY_HRNYmRmUDffNfz7G5bRNlHqvb584bDAY",
+        "filename": "selfcamera.mp4",
+        "size": 1787854,
+        "type": "video/mp4"
+      }
+    ],
+    "*액티비티 타이틀": "눈 속이기! 색이 바뀌는 종이 만들기",
+    "*메인 장르": [
+      "recSJhRos4dULvbTV"
+    ],
+    "*서브 장르": [
+      "recAM5mv2jUvKAG1z"
+    ],
+    "*난이도": [
+      "recoBBOrhMi5aLmPo"
+    ],
+    "*예상 소요시간": 20,
+    "*활동 설명": "휙, 휙, 돌리면 색이 바뀌는 종이 구조물을 만들어봅니다. 하지만 구조물보다 더 중요한 것은 손놀림과 표정! 함께 만들고 연습해봅시다!",
+    "준비물 데이터": [
+      "recsyHD5P0wfeQTHy",
+      "reczK8d31rv98wGH6",
+      "recHlP8FT1Of2FqHL",
+      "recNMqb4v0qz9jtxf"
+    ],
+    "*활동 가이드 1_이미지": [
+      {
+        "id": "attLOSjbQPAFhFRDJ",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/peVgrnkv5yj0IsbXfX1iU_K0oUaGTzfmqvXgOhgiGb4",
+        "filename": "Timeline 2.mp4",
+        "size": 48406597,
+        "type": "video/mp4"
+      }
+    ],
+    "*활동 가이드 1_설명": "서로 다른 색을 가진 종이 2장을 겹쳐 길게 자릅니다.",
+    "활동 가이드 2_이미지": [
+      {
+        "id": "attvzdO9ZAU4DOmos",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/M_376CzUsCj_TWGdDT87-j4kVd7l4oLl7ETO1xYGCyc",
+        "filename": "Timeline 3.mp4",
+        "size": 52249206,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 2_설명": "풀을 이용해 길게 자른 종이를 붙입니다.",
+    "활동 가이드 3_이미지": [
+      {
+        "id": "attx8tSXwKOgiySV1",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/AEH0xzLNzRqi9W_QUHpOPNlqSjDXi49fPUrQ8NH-aGA",
+        "filename": "Timeline 4.mp4",
+        "size": 44081257,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 3_설명": "그림처럼 종이를 6등분할 수 있도록 접어줍니다.",
+    "활동 가이드 4_이미지": [
+      {
+        "id": "attlAdBcVNTi8Dj6y",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/KplyW-3DkQtIqemxfzKG98vQH5miuVeDCXoWzWgnreE",
+        "filename": "Timeline 5.mp4",
+        "size": 62283591,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 4_설명": "반을 잘라 서로 다른 색깔면을 육각형 모양이 되게 붙입니다.",
+    "활동 가이드 5_이미지": [
+      {
+        "id": "att8kuDBa3x5KET8y",
+        "url": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/tEvL1F2AuwqUMCKKV05YOUl49MxOFD7PbTSxWK_fTjc",
+        "filename": "Timeline 6.mp4",
+        "size": 42247995,
+        "type": "video/mp4"
+      }
+    ],
+    "활동 가이드 5_설명": "셀프 카메라를 켜서 색깔이 바뀌는 모습을 촬영합니다. ",
+    "추천 활동": [
+      "rec6zlgrvNluCRAod",
+      "recNbMLJgcqKtu27Y"
+    ],
+    "활동 가이드_4_팁": "육각형 모양을 잘 만들 수록 착시를 보여주기 더 쉬워져!",
+    "활동 가이드_5_팁": "표정이 핵심이야! 흥미를 끄는 표정도 같이 연습해봐! ",
+    "활동 가이드 1_이미지_제작디렉션": "(움짤) 종이를 겹쳐 두고 자르는 모습",
+    "활동가이드 2_이미지_제작디렉션": "종이를 풀로 붙이는 모습",
+    "활동 가이드 3_이미지_제작디렉션": "(움짤) 접는 모습 - 결과물에 5개의 선이 그려져 있는 모습",
+    "활동 가이드 4_이미지_제작디렉션": "(움짤) 붙이는 모습",
+    "활동 가이드 5_이미지_제작디렉션": "(움짤-화면 캡쳐) 셀프 카메라로 연습하는 모습",
+    "준비 Tip 1_이미지_제작디렉션": "대비가 강한 다른 색상의 종이 2개가 놓여있는 모습 부감샷",
+    "데이터 검수 완료": true,
+    "제작한 데이터로 변경 완료 여부": true,
+    "진행 상황": "데이터 검수 완료",
+    "액티비티 기획자": [
+      "rectHHUx7qqzCNgsL"
+    ],
+    "준비물 데이터 입력": "입력",
+    "P형 포스트 가이드": [
+      "recLe1pFzWEy098r8"
+    ],
+    "Status Field": "Valid",
+    "글자수 체크 완료": true,
+    "소요시간 (from *난이도)": [
+      "15~30분 이내"
+    ],
+    "Created By": {
+      "id": "usrPAGESHARE00000",
+      "email": "anonymous+formpage@noreply.airtable.com",
+      "name": "Anonymous"
+    }
+  }
+]

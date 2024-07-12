@@ -6,11 +6,16 @@ const AWS = require('aws-sdk');
 const { fetchTableData } = require('../middlewares/airtableClient');
 const tableNames = require('./tableNames.json');
 
+const ffmpeg = require('fluent-ffmpeg');
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+ffmpeg.setFfmpegPath(ffmpegPath);
+const os = require('os');
+
 let config;
 
 async function uploadFileFromUrlToS3(url, key) {
     if (!config) {
-        config = await loadConfig(); // config를 로드
+        config = await loadConfig();
     }
 
     const s3 = new AWS.S3({
@@ -25,16 +30,64 @@ async function uploadFileFromUrlToS3(url, key) {
         responseType: 'stream'
     });
 
-    const contentType = response.headers['content-type'] || 'application/octet-stream';
+    const contentType = response.headers['content-type'];
 
-    const uploadParams = {
-        Bucket: config.aws_s3_bucketName, // config에서 bucketName 참조
-        Key: key,
-        Body: response.data,
-        ContentType: contentType,  // Content-Type 설정
-    };
+    // 비디오 파일인 경우 변환
+    if (contentType.startsWith('video/')) {
+        const tempInputPath = path.join(os.tmpdir(), `input_${Date.now()}.mp4`);
+        const tempOutputPath = path.join(os.tmpdir(), `output_${Date.now()}.mp4`);
 
-    return s3.upload(uploadParams).promise();
+        // 임시 파일로 저장
+        await new Promise((resolve, reject) => {
+            const writer = fs.createWriteStream(tempInputPath);
+            response.data.pipe(writer);
+            writer.on('finish', resolve);
+            writer.on('error', reject);
+        });
+
+        // FFmpeg를 사용하여 비디오 변환
+        await new Promise((resolve, reject) => {
+            ffmpeg(tempInputPath)
+                .outputOptions([
+                    '-c:v libx264',
+                    '-crf 23',
+                    '-preset medium',
+                    '-c:a aac',
+                    '-b:a 128k'
+                ])
+                .output(tempOutputPath)
+                .on('end', resolve)
+                .on('error', reject)
+                .run();
+        });
+
+        // 변환된 파일을 S3에 업로드
+        const fileStream = fs.createReadStream(tempOutputPath);
+        const uploadParams = {
+            Bucket: config.aws_s3_bucketName,
+            Key: key,
+            Body: fileStream,
+            ContentType: 'video/mp4',
+        };
+
+        const result = await s3.upload(uploadParams).promise();
+
+        // 임시 파일 삭제
+        fs.unlinkSync(tempInputPath);
+        fs.unlinkSync(tempOutputPath);
+
+        return result;
+    } else {
+        // 비디오 파일이 아닌 경우 기존 로직 수행
+        const uploadParams = {
+            Bucket: config.aws_s3_bucketName,
+            Key: key,
+            Body: response.data,
+            ContentType: contentType,
+        };
+
+        return s3.upload(uploadParams).promise();
+    }
 }
 
 async function processRecord(record, mainKey) {

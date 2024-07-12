@@ -1,8 +1,9 @@
 {
-  "game_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/game_icon.svg",
   "art_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/art_icon.svg",
-  "tech_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/tech_icon.svg",
+  "viewAll_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/viewAll_icon.svg",
+  "game_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/game_icon.svg",
   "make_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/make_icon.svg",
+  "tech_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/tech_icon.svg",
   "daily_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/daily_icon.svg",
-  "viewAll_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/viewAll_icon.svg"
+  "story_icon.svg": "https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/uisrc/story_icon.svg"
 }
