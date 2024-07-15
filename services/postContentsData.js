@@ -72,6 +72,7 @@ function processData(data) {
         // DTO 객체 생성
         const contentDTO = new contentRegistryDTO({
             title: item["*액티비티 타이틀"] || '',
+            contentsId: item["id"] || null, // 변경: airtableId 대신 contentsId 사용
             createrName: item["Created By"] ? item["Created By"].name : '',
             thumbnailUrl: item["*액티비티 썸네일"] && item["*액티비티 썸네일"][0]
                 ? {
@@ -85,6 +86,10 @@ function processData(data) {
             playtime_min: item["*예상 소요시간"] ? Number(item["*예상 소요시간"]) : 0,
             materials: materials,
             preparationTip: preparationTip,
+            postingGuide: item["P형 포스트 가이드"] && item["P형 포스트 가이드"][0] ? item["P형 포스트 가이드"][0] : '',
+            recommendation: Array.isArray(item["추천 활동"]) 
+            ? item["추천 활동"].flat()  // 배열을 평탄화
+            : [],
             activeGuide: activeGuide,
         });
 

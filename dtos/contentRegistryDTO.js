@@ -1,6 +1,7 @@
 class contentRegistryDTO {
-    constructor({ title, createrName, thumbnailUrl, category_main, category_sub, activePlan, playtime_min, materials, preparationTip, activeGuide}) {
+        constructor({ title, contentsId, createrName, thumbnailUrl, category_main, category_sub, activePlan, playtime_min, materials, preparationTip, activeGuide, postingGuide, recommendation }) {
         this.title = title || '';
+        this.contentsId = contentsId || '';
         this.createrName = createrName || '';
         this.thumbnailUrl = thumbnailUrl || { url: '', type: '' };
         this.category_main = category_main || '';
@@ -22,6 +23,8 @@ class contentRegistryDTO {
             guide: guide.guide || '',
             tip: guide.tip || null
         }));
+        this.postingGuide = postingGuide || '';
+        this.recommendation = recommendation || [];
     }
     
     static validate(dto) {
