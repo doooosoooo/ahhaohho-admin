@@ -46,7 +46,7 @@ async function uploadFileFromUrlToS3(url, key) {
         });
 
         // FFmpeg를 사용하여 비디오 변환
-        await new Promise((resolve, reject) => {
+`        await new Promise((resolve, reject) => {
             ffmpeg(tempInputPath)
                 .outputOptions([
                     '-c:v libx264',
@@ -60,7 +60,7 @@ async function uploadFileFromUrlToS3(url, key) {
                 .on('error', reject)
                 .run();
         });
-
+`
         // 변환된 파일을 S3에 업로드
         const fileStream = fs.createReadStream(tempOutputPath);
         const uploadParams = {

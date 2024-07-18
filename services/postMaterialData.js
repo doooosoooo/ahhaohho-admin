@@ -69,8 +69,8 @@ async function main() {
         console.log('Processed Materials Data:', JSON.stringify(processedMaterialsData, null, 2));
 
         if (processedMaterialsData.length > 0) {
-            console.log(`Sending data to API: https://api.dev.doosoo.xyz:4242/manager/reg_material`);
-            const materialResponses = await sendDataToApi(processedMaterialsData, 'https://api.dev.doosoo.xyz:4242/manager/reg_material'); // 백엔드 API URL을 설정하세요.
+            console.log(`Sending data to API: https://api.dev.ahhaohho.com/admin/reg_material`);
+            const materialResponses = await sendDataToApi(processedMaterialsData, 'https://api.dev.ahhaohho.com/admin/reg_material'); // 백엔드 API URL을 설정하세요.
 
             // 반환된 데이터 로그 출력
             console.log('Material Responses:', JSON.stringify(materialResponses, null, 2));

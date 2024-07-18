@@ -15,7 +15,7 @@ class contentRegistryDTO {
         }));
         this.activeGuide = activeGuide.map(guide => ({
             imageUrl: {
-                default: guide.imageUrl.default || null,
+                defaultUrl: guide.imageUrl.default || null,
                 aos: guide.imageUrl.aos || null,
                 ios: guide.imageUrl.ios || null,
                 type: guide.imageUrl.type || null

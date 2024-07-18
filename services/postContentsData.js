@@ -38,7 +38,7 @@ function processData(data) {
                 let imageUrl = {
                     aos: null,
                     ios: null,
-                    default: null,
+                    defaultUrl: null,
                     type: null,
                 };
 
@@ -121,7 +121,7 @@ async function main() {
         const processedData = processData(data); // 데이터를 가공
         console.log('Processed Data:', JSON.stringify(processedData, null, 2));
 
-        await sendDataToApi(processedData, 'https://api.dev.doosoo.xyz:4242/manager/reg_content'); // 백엔드 API URL을 설정하세요.
+        await sendDataToApi(processedData, 'https://api.dev.ahhaohho.com/admin/reg_content'); // 백엔드 API URL을 설정하세요.
     } catch (error) {
         console.error('Error:', error); // 전체 과정 중 에러 발생 시 출력
     }
