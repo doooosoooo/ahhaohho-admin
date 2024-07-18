@@ -18,17 +18,17 @@ function processMaterialsData(data) {
                 id: item.id, // Airtable의 record ID
                 material: item["재료명"] || 'Unknown',
                 materialImage: item["재료사진"] && item["재료사진"][0] ? item["재료사진"][0].url : null,
-                material_tips: []
+                materialTips: []
             });
 
             // Add up to 3 preparation tips
             for (let i = 1; i <= 3; i++) {
-                const tipDescription = item[`준비물Tip ${i} 설명`];
+                const tipDescription = item[`준비물Tip 설명 ${i}`];
                 const tipImages = item[`준비물Tip 이미지 ${i}`];
                 
                 if (tipDescription && tipImages) {
                     tipImages.forEach(tipImage => {
-                        materialDTO.material_tips.push({
+                        materialDTO.materialTips.push({
                             imageUrl: tipImage.url || null,
                             tip: tipDescription || null
                         });

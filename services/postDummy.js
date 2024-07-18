@@ -21,42 +21,29 @@ function createDummyData() {
         userId: randomObjectId(), // Generate a random ObjectId-like string
         nickName: `nick_${randomString(5)}`,
         title: `Title_${randomString(10)}`,
-        imageUrl: 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ',
+        imageUrl: ['https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ'],
         comment: `This is a dummy comment for gallery post. ${randomString(20)}`
     };
-}
-
-// Function to create dummy file
-function createDummyFile() {
-    // Create a dummy File object
-    const dummyContent = new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0]); // Dummy JPEG file header
-    return new File([dummyContent], `dummy_image_${randomString(5)}.jpg`, { type: 'image/jpeg' });
 }
 
 // Function to send dummy data to postGallery endpoint
 async function sendDummyDataToPostGallery() {
     const dummyData = createDummyData();
-    const formData = new FormData();
-
-    // Append dummy data to formData
-    Object.keys(dummyData).forEach(key => {
-        formData.append(key, dummyData[key]);
-    });
-
-    // Append dummy files (1 to 5 files)
-    const fileCount = Math.floor(Math.random() * 5) + 1;
-    for (let i = 0; i < fileCount; i++) {
-        formData.append('files', createDummyFile());
-    }
+    
+    console.log('Sending data:', dummyData);
 
     try {
         const response = await fetch('https://api.dev.ahhaohho.com/challenge/postGallery', {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(dummyData)
         });
 
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            const errorText = await response.text();
+            throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
         }
 
         const result = await response.json();

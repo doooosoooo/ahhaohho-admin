@@ -1,9 +1,9 @@
 class MaterialRegistryDTO {
-    constructor({ id, material, materialImage, material_tips }) {
+    constructor({ id, material, materialImage, materialTips }) {
         this.id = id;
         this.material = material;
         this.materialImage = materialImage;
-        this.material_tips = material_tips;
+        this.materialTips = materialTips;
     }
 
     static validate(dto) {
