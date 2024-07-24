@@ -1,9 +1,9 @@
 class contentRegistryDTO {
-        constructor({ title, contentsId, createrName, thumbnailUrl, category_main, category_sub, activePlan, playtime_min, materials, preparationTip, activeGuide, postingGuide, recommendation }) {
+        constructor({ title, contentsId, createrName, thumbnail, category_main, category_sub, activePlan, playtime_min, materials, preparationTip, activeGuide, postingGuide, recommendation }) {
         this.title = title || '';
         this.contentsId = contentsId || '';
         this.createrName = createrName || '';
-        this.thumbnailUrl = thumbnailUrl || { url: '', type: '' };
+        this.thumbnail = thumbnail || { url: '', type: '' };
         this.category_main = category_main || '';
         this.category_sub = category_sub || '';
         this.activePlan = activePlan || '';

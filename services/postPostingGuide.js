@@ -52,7 +52,7 @@ async function main() {
         const processedData = processPostGuideData(data);
         console.log('Processed Data:', JSON.stringify(processedData, null, 2));
 
-        await sendDataToApi(processedData, 'https://api.dev.doosoo.xyz:4242/manager/postGuide');
+        await sendDataToApi(processedData, 'https://api.dev.ahhaohho.com/manager/postGuide');
     } catch (error) {
         console.error('Error:', error);
     }

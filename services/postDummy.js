@@ -16,12 +16,27 @@ function randomObjectId() {
 
 // Function to create dummy data
 function createDummyData() {
+    // Array of URL and type pairs
+    const thumbnailOptions = [
+        {
+            url: 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/BfScylZ7quJiPWq6zzhdehdbsrU6rnAP2WVkrQkVXdw',
+            type: 'image/jpeg'
+        },
+        {
+            url: 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/UfjU_GepS041uDcHCKG8U0QRJ_2JzxEkV5JrJBNRu50',
+            type: 'video/mp4'
+        }
+    ];
+
+    // Randomly select one of the thumbnail options
+    const thumbnailOption = thumbnailOptions[Math.floor(Math.random() * thumbnailOptions.length)];
+
     return {
         contentsIdx: '6690b04b083f6732711112ba', // Using the provided ObjectId
         userId: randomObjectId(), // Generate a random ObjectId-like string
         nickName: `nick_${randomString(5)}`,
         title: `Title_${randomString(10)}`,
-        imageUrl: ['https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ', 'https://ahhaohho-challege-img.s3.ap-northeast-2.amazonaws.com/contentsData/thumbnails/small/fl6HFOM2S9dfeAj-UhQagvRFwLbgOtoX7n_AIBtV7kQ'],
+        imageUrl: thumbnailOption,
         comment: `This is a dummy comment for gallery post. ${randomString(20)}`
     };
 }

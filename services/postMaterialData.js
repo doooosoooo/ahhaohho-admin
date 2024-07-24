@@ -6,7 +6,6 @@ const {
     sendDataToApi,
     createDirectoryIfNotExists
 } = require('../middlewares/utils');
-const MaterialRegistryDTO = require('../dtos/materialRegistryDTO');
 
 // materials 데이터를 가공하는 함수
 function processMaterialsData(data) {
@@ -14,34 +13,40 @@ function processMaterialsData(data) {
         console.log(`Processing item ${index}:`, item);
 
         try {
-            const materialDTO = new MaterialRegistryDTO({
-                id: item.id, // Airtable의 record ID
+            const processedItem = {
+                id: item.id,
                 material: item["재료명"] || 'Unknown',
-                materialImage: item["재료사진"] && item["재료사진"][0] ? item["재료사진"][0].url : null,
+                materialImage: item["재료사진"] && item["재료사진"][0] ? item["재료사진"][0].thumbnails.large.url : null,
                 materialTips: []
-            });
-
+            };
             // Add up to 3 preparation tips
             for (let i = 1; i <= 3; i++) {
                 const tipDescription = item[`준비물Tip 설명 ${i}`];
                 const tipImages = item[`준비물Tip 이미지 ${i}`];
-                
-                if (tipDescription && tipImages) {
-                    tipImages.forEach(tipImage => {
-                        materialDTO.materialTips.push({
-                            imageUrl: tipImage.url || null,
-                            tip: tipDescription || null
+
+                if (tipDescription) {
+                    if (tipImages && tipImages.length > 0) {
+                        // 이미지가 있는 경우
+                        tipImages.forEach(tipImage => {
+                            processedItem.materialTips.push({
+                                imageUrl: tipImage.url || null,
+                                tip: tipDescription
+                            });
                         });
-                    });
+                    } else {
+                        // 이미지가 없는 경우
+                        processedItem.materialTips.push({
+                            imageUrl: null,
+                            tip: tipDescription
+                        });
+                    }
                 }
             }
 
-            // DTO 유효성 검사
-            MaterialRegistryDTO.validate(materialDTO);
-            console.log(`Processed item ${index}:`, materialDTO);
-            return materialDTO;
-        } catch (validationError) {
-            console.log(`Invalid item ${index}, skipping:`, validationError.message);
+            console.log(`Processed item ${index}:`, processedItem);
+            return processedItem;
+        } catch (error) {
+            console.log(`Error processing item ${index}, skipping:`, error.message);
             return null;
         }
     }).filter(item => item !== null);
@@ -50,11 +55,11 @@ function processMaterialsData(data) {
 async function main() {
     try {
         // materials 데이터 처리
-        const dirPath = path.resolve(__dirname, './contentsRawData'); // JSON 파일이 있는 디렉터리 경로
-        createDirectoryIfNotExists(dirPath); // 디렉토리 생성
-        const materialsPattern = /materialsData-updateAt(\d{8})\.json$/; // 파일명 패턴 (예: materialsData-updateAt20240627.json)
+        const dirPath = path.resolve(__dirname, './contentsRawData');
+        createDirectoryIfNotExists(dirPath);
+        const materialsPattern = /materialsData-updateAt(\d{8})\.json$/;
         console.log(`Looking for files in: ${dirPath} with pattern: ${materialsPattern}`);
-        const latestMaterialsFile = getFileByDatePattern(dirPath, materialsPattern); // 최신 파일 찾기
+        const latestMaterialsFile = getFileByDatePattern(dirPath, materialsPattern);
         if (!latestMaterialsFile) {
             throw new Error('No matching files found');
         }
@@ -62,27 +67,24 @@ async function main() {
 
         const materialsFilePath = path.join(dirPath, latestMaterialsFile);
         console.log(`Reading file: ${materialsFilePath}`);
-        const materialsData = await readDataFromFile(materialsFilePath); // 최신 파일 읽기
+        const materialsData = await readDataFromFile(materialsFilePath);
         console.log('Raw Materials Data:', JSON.stringify(materialsData, null, 2));
 
-        const processedMaterialsData = processMaterialsData(materialsData); // 데이터를 가공
+        const processedMaterialsData = processMaterialsData(materialsData);
         console.log('Processed Materials Data:', JSON.stringify(processedMaterialsData, null, 2));
 
         if (processedMaterialsData.length > 0) {
             console.log(`Sending data to API: https://api.dev.ahhaohho.com/admin/reg_material`);
-            const materialResponses = await sendDataToApi(processedMaterialsData, 'https://api.dev.ahhaohho.com/admin/reg_material'); // 백엔드 API URL을 설정하세요.
+            const materialResponses = await sendDataToApi(processedMaterialsData, 'https://api.dev.ahhaohho.com/admin/reg_material');
 
-            // 반환된 데이터 로그 출력
             console.log('Material Responses:', JSON.stringify(materialResponses, null, 2));
 
-            // 준비물 ID 맵 생성
             if (Array.isArray(materialResponses)) {
                 const materialIdMap = {};
                 for (const response of materialResponses) {
                     materialIdMap[response.id] = response._id;
                 }
 
-                // ID 맵을 파일로 저장
                 const idMapPath = path.join(__dirname, 'materialIdMap.json');
                 console.log(`Writing ID map to file: ${idMapPath}`);
                 fs.writeFileSync(idMapPath, JSON.stringify(materialIdMap));
@@ -94,8 +96,8 @@ async function main() {
         }
 
     } catch (error) {
-        console.error('Error:', error); // 전체 과정 중 에러 발생 시 출력
+        console.error('Error:', error);
     }
 }
 
-main(); // 메인 함수 실행
+main();
