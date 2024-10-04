@@ -1,12 +1,15 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
 
-const BASE_URL = 'https://api.dev.ahhaohho.com';
+const BASE_URL = 'https://develop.ahhaohho.com:4222';
 
 async function readGroupsData() {
     try {
-        const filePath = path.join(__dirname, './contentsRawData/groupsData-updateAt20240723.json');
+        const filePath = path.join(__dirname, './contentsRawData/groupsData-updateAt20241004.json');
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     } catch (error) {
@@ -25,7 +28,7 @@ function transformGroupData(rawData) {
 
 async function postGroup(groupData) {
     try {
-        const response = await axios.post(`${BASE_URL}/admin/group`, groupData);
+        const response = await axios.post(`${BASE_URL}/creator/register/curationList`, groupData);
         console.log(`그룹 "${groupData.groupName}" 생성 성공:`);
         console.log('응답 상태:', response.status);
         console.log('응답 데이터:', JSON.stringify(response.data, null, 2));

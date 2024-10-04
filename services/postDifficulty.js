@@ -54,8 +54,8 @@ async function main() {
         console.log('Processed Activity Data:', JSON.stringify(processedActivityData, null, 2));
 
         if (processedActivityData.length > 0) {
-            console.log(`Sending data to API: https://api.dev.ahhaohho.com/admin/reg_difficulty`);
-            const activityResponses = await sendDataToApi(processedActivityData, 'https://api.dev.ahhaohho.com/admin/reg_difficulty');
+            console.log(`Sending data to API: https://api.dev.ahhaohho.com/creator/register/difficulty`);
+            const activityResponses = await sendDataToApi(processedActivityData, 'https://api.dev.ahhaohho.com/creator/register/difficulty');
 
             console.log('Activity Responses:', JSON.stringify(activityResponses, null, 2));
 

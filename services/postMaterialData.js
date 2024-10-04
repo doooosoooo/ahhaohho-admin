@@ -1,64 +1,126 @@
+// 보안상의 이유로 이 설정은 제거하고 대신 적절한 인증서를 사용하는 것이 좋습니다.
+ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 const path = require('path');
 const fs = require('fs');
+const axios = require('axios');
+
 const {
     getFileByDatePattern,
     readDataFromFile,
-    sendDataToApi,
     createDirectoryIfNotExists
 } = require('../middlewares/utils');
 
-// materials 데이터를 가공하는 함수
-function processMaterialsData(data) {
-    return data.map((item, index) => {
-        console.log(`Processing item ${index}:`, item);
+async function sendDataToApi(processedData, apiUrl) {
+    try {
+        console.log(`Sending data to API. Total items: ${processedData.length}`);
 
+        // 데이터 정제 함수
+        const cleanData = (item) => ({
+            id: item.id,
+            material: item.material,
+            materialImage: item.materialImage,
+            materialTips: item.materialTips.map(tip => ({
+                imageUrl: tip.imageUrl,
+                tip: tip.tip
+            }))
+        });
+
+        const chunkSize = 10;
+        for (let i = 0; i < processedData.length; i += chunkSize) {
+            const chunk = processedData.slice(i, i + chunkSize).map(cleanData);
+            console.log(`Sending chunk ${Math.floor(i / chunkSize) + 1}. Items: ${chunk.length}`);
+
+            const response = await axios({
+                method: 'post',
+                url: apiUrl,
+                data: { materials: chunk },
+                headers: {
+                    'Content-Type': 'application/json',
+                    // 'Authorization': 'Bearer YOUR_TOKEN_HERE'
+                }
+            });
+            console.log(`Chunk ${Math.floor(i / chunkSize) + 1} sent successfully. Response:`, response.data);
+        }
+
+        return { success: true, message: "All data sent successfully" };
+    } catch (error) {
+        console.error('API 요청 중 오류 발생:');
+        if (error.response) {
+            console.error(`상태 코드: ${error.response.status}`);
+            console.error(`오류 메시지: ${error.response.data.message || '알 수 없는 오류'}`);
+            console.error('전체 응답:', JSON.stringify(error.response.data, null, 2));
+        } else if (error.request) {
+            console.error('서버로부터 응답이 없습니다.');
+        } else {
+            console.error(`오류 메시지: ${error.message}`);
+        }
+        throw error;
+    }
+}
+
+function processMaterialsData(data) {
+    let hasErrors = false;
+    let errorMessages = [];
+
+    const processedData = data.map((item, index) => {
         try {
+            if (!item.id || typeof item.id !== 'string') {
+                throw new Error(`Invalid or missing 'id' field`);
+            }
+            if (!item["재료명"] || typeof item["재료명"] !== 'string') {
+                throw new Error(`Invalid or missing '재료명' field`);
+            }
+
+            const materialImage = item["재료사진"]?.[0]?.thumbnails?.large?.url || null;
+
             const processedItem = {
                 id: item.id,
-                material: item["재료명"] || 'Unknown',
-                materialImage: item["재료사진"] && item["재료사진"][0] ? item["재료사진"][0].thumbnails.large.url : null,
+                material: item["재료명"],
+                materialImage: materialImage,
                 materialTips: []
             };
-            // Add up to 3 preparation tips
+
             for (let i = 1; i <= 3; i++) {
                 const tipDescription = item[`준비물Tip 설명 ${i}`];
                 const tipImages = item[`준비물Tip 이미지 ${i}`];
 
                 if (tipDescription) {
-                    if (tipImages && tipImages.length > 0) {
-                        // 이미지가 있는 경우
+                    if (typeof tipDescription !== 'string') {
+                        throw new Error(`Invalid '준비물Tip 설명 ${i}' field`);
+                    }
+
+                    if (tipImages && Array.isArray(tipImages)) {
                         tipImages.forEach(tipImage => {
-                            processedItem.materialTips.push({
-                                imageUrl: tipImage.url || null,
-                                tip: tipDescription
-                            });
+                            if (!tipImage.url || typeof tipImage.url !== 'string') {
+                                throw new Error(`Invalid image URL in '준비물Tip 이미지 ${i}'`);
+                            }
+                            processedItem.materialTips.push({ imageUrl: tipImage.url, tip: tipDescription });
                         });
                     } else {
-                        // 이미지가 없는 경우
-                        processedItem.materialTips.push({
-                            imageUrl: null,
-                            tip: tipDescription
-                        });
+                        processedItem.materialTips.push({ imageUrl: null, tip: tipDescription });
                     }
                 }
             }
 
-            console.log(`Processed item ${index}:`, processedItem);
             return processedItem;
         } catch (error) {
-            console.log(`Error processing item ${index}, skipping:`, error.message);
+            errorMessages.push(`Error in item ${index + 1} (ID: ${item.id}): ${error.message}`);
+            hasErrors = true;
             return null;
         }
-    }).filter(item => item !== null);
+    }).filter(Boolean);
+
+    return { processedData, hasErrors, errorMessages };
 }
 
 async function main() {
     try {
-        // materials 데이터 처리
         const dirPath = path.resolve(__dirname, './contentsRawData');
         createDirectoryIfNotExists(dirPath);
         const materialsPattern = /materialsData-updateAt(\d{8})\.json$/;
         console.log(`Looking for files in: ${dirPath} with pattern: ${materialsPattern}`);
+
         const latestMaterialsFile = getFileByDatePattern(dirPath, materialsPattern);
         if (!latestMaterialsFile) {
             throw new Error('No matching files found');
@@ -67,37 +129,41 @@ async function main() {
 
         const materialsFilePath = path.join(dirPath, latestMaterialsFile);
         console.log(`Reading file: ${materialsFilePath}`);
+
         const materialsData = await readDataFromFile(materialsFilePath);
-        console.log('Raw Materials Data:', JSON.stringify(materialsData, null, 2));
+        console.log(`Total number of items in raw data: ${materialsData.length}`);
 
-        const processedMaterialsData = processMaterialsData(materialsData);
-        console.log('Processed Materials Data:', JSON.stringify(processedMaterialsData, null, 2));
+        const { processedData: processedMaterialsData, hasErrors, errorMessages } = processMaterialsData(materialsData);
+        console.log(`Total number of processed items: ${processedMaterialsData.length}`);
 
-        if (processedMaterialsData.length > 0) {
-            console.log(`Sending data to API: https://api.dev.ahhaohho.com/admin/reg_material`);
-            const materialResponses = await sendDataToApi(processedMaterialsData, 'https://api.dev.ahhaohho.com/admin/reg_material');
-
-            console.log('Material Responses:', JSON.stringify(materialResponses, null, 2));
-
-            if (Array.isArray(materialResponses)) {
-                const materialIdMap = {};
-                for (const response of materialResponses) {
-                    materialIdMap[response.id] = response._id;
-                }
-
-                const idMapPath = path.join(__dirname, 'materialIdMap.json');
-                console.log(`Writing ID map to file: ${idMapPath}`);
-                fs.writeFileSync(idMapPath, JSON.stringify(materialIdMap));
-            } else {
-                console.error('Error: Expected an array from sendDataToApi, but got:', materialResponses);
-            }
-        } else {
-            console.log('No valid data to send to the API.');
+        if (hasErrors) {
+            console.error('\n==== ERROR MESSAGES ====');
+            errorMessages.forEach(msg => console.error(msg));
+            console.error('==========================\n');
+            console.warn('Some errors occurred during data processing. Check the error messages above.');
+            console.log('Continuing with valid items...');
         }
 
+        if (processedMaterialsData.length > 0) {
+            console.log(`Sending ${processedMaterialsData.length} items to API: https://develop.ahhaohho.com:4222/creator/register/material`);
+            try {
+                const result = await sendDataToApi(processedMaterialsData, 'https://develop.ahhaohho.com:4222/creator/register/material');
+                console.log('API 전송 결과:', result);
+            } catch (apiError) {
+                console.error('API 오류:', apiError.message);
+                if (apiError.response) {
+                    console.error('API 응답:', JSON.stringify(apiError.response.data, null, 2));
+                }
+            }
+        } else {
+            console.log('API로 전송할 유효한 데이터가 없습니다.');
+        }
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Critical Error:', error.message);
     }
 }
 
-main();
+main().catch(error => {
+    console.error('Unhandled error in main function:', error);
+    process.exit(1);
+});

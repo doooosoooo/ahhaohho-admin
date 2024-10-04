@@ -1,3 +1,5 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 const path = require('path');
 const fs = require('fs');
 const axios = require('axios');
@@ -22,16 +24,25 @@ function processPostGuideData(data) {
 
 async function sendDataToApi(processedData, apiUrl) {
     try {
-        for (const item of processedData) {
-            const response = await axios.post(apiUrl, item);
-            console.log('API Response for item:', item._id, response.data);
+        console.log(`Sending data to API. Total items: ${processedData.length}`);
+
+        const chunkSize = 10;
+        for (let i = 0; i < processedData.length; i += chunkSize) {
+            const chunk = processedData.slice(i, i + chunkSize);
+            console.log(`Sending chunk ${Math.floor(i / chunkSize) + 1}. Items: ${chunk.length}`);
+
+            const response = await axios.post(apiUrl, { guides: chunk });
+            console.log(`Chunk ${Math.floor(i / chunkSize) + 1} sent successfully. Response:`, response.data);
         }
+
+        return { success: true, message: "All data sent successfully" };
     } catch (error) {
         console.error('Error sending data to API:', error.message);
         if (error.response) {
             console.error('Response data:', error.response.data);
             console.error('Response status:', error.response.status);
         }
+        throw error;
     }
 }
 
@@ -52,7 +63,7 @@ async function main() {
         const processedData = processPostGuideData(data);
         console.log('Processed Data:', JSON.stringify(processedData, null, 2));
 
-        await sendDataToApi(processedData, 'https://api.dev.ahhaohho.com/manager/postGuide');
+        await sendDataToApi(processedData, 'https://develop.ahhaohho.com:4222/creator/register/postingGuide');
     } catch (error) {
         console.error('Error:', error);
     }
