@@ -1,63 +1,104 @@
-const path = require('path');
-const fs = require('fs');
-const {
-    getFileByDatePattern,
-    readDataFromFile,
-    sendDataToApi,
-    createDirectoryIfNotExists
-} = require('../middlewares/utils');
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-// 액티비티 데이터를 가공하는 함수
+const path = require('path');
+const fs = require('fs').promises;
+const axios = require('axios');
+
+function log(message) {
+    console.log(`[${new Date().toISOString()}] ${message}`);
+}
+
+async function getFileByDatePattern(dirPath, pattern) {
+    const files = await fs.readdir(dirPath);
+    const matchingFiles = files.filter(file => pattern.test(file));
+    if (matchingFiles.length === 0) return null;
+    return matchingFiles.sort().pop(); // 가장 최근 파일 반환
+}
+
+async function readDataFromFile(filePath) {
+    const data = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(data);
+}
+
+async function createDirectoryIfNotExists(dirPath) {
+    try {
+        await fs.access(dirPath);
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            await fs.mkdir(dirPath, { recursive: true });
+        } else {
+            throw error;
+        }
+    }
+}
+
 function processActivityData(data) {
     return data.map((item, index) => {
-        console.log(`Processing activity ${index}:`, item);
+        log(`Processing activity ${index}:`, item);
 
         try {
-            const processedItem = {
+            const difficulties = {
                 _id: item["id"],
-                difficulty: item["난이도"],
+                level: item["난이도"],
                 characteristic: item["특징"],
                 duration: item["소요시간"],
-                level: item["수준"],
                 expectedOutput: item["기대하는_output"],
-                challengeList: item["P형 액티비티 콘티"]
+                challengeList: item["P형 챌린지 데이터"]
             };
 
-            console.log(`Processed activity ${index}:`, processedItem);
-            return processedItem;
+            log(`Processed activity ${index}:`, difficulties);
+            return difficulties;
         } catch (error) {
-            console.log(`Error processing activity ${index}, skipping:`, error.message);
+            log(`Error processing activity ${index}, skipping:`, error.message);
             return null;
         }
     }).filter(item => item !== null);
 }
 
+async function sendDataToApi(processedData, apiUrl) {
+    try {
+        log(`Sending data to API. Total items: ${processedData.length}`);
+
+        const response = await axios({
+            method: 'post',
+            url: apiUrl,
+            data: {difficulties: processedData},
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+        log('API Response:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('API 요청 중 오류 발생:', error);
+        throw error;
+    }
+}
+
 async function main() {
     try {
-        // 액티비티 데이터 처리
         const dirPath = path.resolve(__dirname, './contentsRawData');
-        createDirectoryIfNotExists(dirPath);
+        await createDirectoryIfNotExists(dirPath);
         const activityPattern = /difficultyData-updateAt(\d{8})\.json$/;
-        console.log(`Looking for files in: ${dirPath} with pattern: ${activityPattern}`);
-        const latestActivityFile = getFileByDatePattern(dirPath, activityPattern);
+        log(`Looking for files in: ${dirPath} with pattern: ${activityPattern}`);
+        const latestActivityFile = await getFileByDatePattern(dirPath, activityPattern);
         if (!latestActivityFile) {
             throw new Error('No matching files found');
         }
-        console.log(`Found latest activity file: ${latestActivityFile}`);
+        log(`Found latest activity file: ${latestActivityFile}`);
 
         const activityFilePath = path.join(dirPath, latestActivityFile);
-        console.log(`Reading file: ${activityFilePath}`);
+        log(`Reading file: ${activityFilePath}`);
         const activityData = await readDataFromFile(activityFilePath);
-        console.log('Raw Activity Data:', JSON.stringify(activityData, null, 2));
+        log('Raw Activity Data:', JSON.stringify(activityData, null, 2));
 
         const processedActivityData = processActivityData(activityData);
-        console.log('Processed Activity Data:', JSON.stringify(processedActivityData, null, 2));
+        log('Processed Activity Data:', JSON.stringify(processedActivityData, null, 2));
 
         if (processedActivityData.length > 0) {
-            console.log(`Sending data to API: https://api.dev.ahhaohho.com/creator/register/difficulty`);
-            const activityResponses = await sendDataToApi(processedActivityData, 'https://api.dev.ahhaohho.com/creator/register/difficulty');
+            log(`Sending data to API: https://develop.ahhaohho.com:4222/creator/register/difficulty`);
+            const activityResponses = await sendDataToApi(processedActivityData, 'https://develop.ahhaohho.com:4222/creator/register/difficulty');
 
-            console.log('Activity Responses:', JSON.stringify(activityResponses, null, 2));
+            log('Activity Responses:', JSON.stringify(activityResponses, null, 2));
 
             if (Array.isArray(activityResponses)) {
                 const activityIdMap = {};
@@ -66,13 +107,13 @@ async function main() {
                 }
 
                 const idMapPath = path.join(__dirname, 'activityIdMap.json');
-                console.log(`Writing ID map to file: ${idMapPath}`);
-                fs.writeFileSync(idMapPath, JSON.stringify(activityIdMap));
+                log(`Writing ID map to file: ${idMapPath}`);
+                await fs.writeFile(idMapPath, JSON.stringify(activityIdMap));
             } else {
                 console.error('Error: Expected an array from sendDataToApi, but got:', activityResponses);
             }
         } else {
-            console.log('No valid data to send to the API.');
+            log('No valid data to send to the API.');
         }
 
     } catch (error) {

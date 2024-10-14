@@ -9,7 +9,7 @@ const BASE_URL = 'https://develop.ahhaohho.com:4222';
 
 async function readGroupsData() {
     try {
-        const filePath = path.join(__dirname, './contentsRawData/groupsData-updateAt20241004.json');
+        const filePath = path.join(__dirname, './contentsRawData/groupsData-updateAt20241014.json');
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     } catch (error) {

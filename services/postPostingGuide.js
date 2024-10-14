@@ -50,7 +50,7 @@ async function main() {
     try {
         const dirPath = path.resolve(__dirname, './contentsRawData');
         createDirectoryIfNotExists(dirPath);
-        const pattern = /postingGuide-updateAt(\d{8})\.json$/;
+        const pattern = /postingGuideData-updateAt(\d{8})\.json$/;
         console.log(`Looking for files in: ${dirPath} with pattern: ${pattern}`);
         const latestFile = getFileByDatePattern(dirPath, pattern);
         if (!latestFile) {

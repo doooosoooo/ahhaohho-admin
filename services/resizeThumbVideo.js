@@ -1,5 +1,6 @@
-const AWS = require('aws-sdk');
-const { MongoClient } = require('mongodb');
+// Remove this line
+const mongoose = require('mongoose');
+const { S3Client, GetObjectCommand, PutObjectCommand } = require("@aws-sdk/client-s3");
 const fs = require('fs');
 const path = require('path');
 const ffmpeg = require('fluent-ffmpeg');
@@ -9,14 +10,38 @@ const os = require('os');
 
 // MongoDB 설정
 const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://dsoojung:wjdentnqw12!@cluster-0.7gagbcd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-0';
-const DB_NAME = 'challengeDB';
-const COLLECTION_NAME = 'contents';
 
-let s3;
+let s3Client;
 let config;
 
 function log(message) {
     console.log(`[${new Date().toISOString()}] ${message}`);
+}
+
+// Mongoose 스키마 정의
+const contentSchema = new mongoose.Schema({
+    thumbnail: {
+        type: { type: String },
+        defaultUrl: String
+    }
+});
+
+const Content = mongoose.model('Content', contentSchema, 'contents');
+
+async function connectToMongoDB() {
+    try {
+        log('Connecting to MongoDB...');
+        await mongoose.connect(MONGO_URI, {
+            ssl: true,
+            tls: true,
+            tlsAllowInvalidCertificates: false,
+            tlsAllowInvalidHostnames: false
+        });
+        log('Connected to MongoDB');
+    } catch (error) {
+        log(`Error connecting to MongoDB: ${error.message}`);
+        throw error;
+    }
 }
 
 async function initializeS3Client() {
@@ -26,7 +51,7 @@ async function initializeS3Client() {
             config = await loadConfig();
             log('Config loaded successfully.');
         }
-        s3 = new AWS.S3({
+        s3Client = new S3Client({
             region: config.aws_region,
             credentials: {
                 accessKeyId: config.aws_accessKeyId,
@@ -41,64 +66,60 @@ async function initializeS3Client() {
 }
 
 async function downloadFile(fullPath, localPath) {
-    if (!s3) await initializeS3Client();
+    if (!s3Client) await initializeS3Client();
 
     log(`Downloading file: ${fullPath}`);
-    return new Promise((resolve, reject) => {
-        const params = {
-            Bucket: config.aws_s3_bucketName,
-            Key: fullPath
-        };
-        log(`Download params: ${JSON.stringify(params)}`);
-        const file = fs.createWriteStream(localPath);
+    const params = {
+        Bucket: config.aws_s3_bucketName,
+        Key: fullPath
+    };
+    log(`Download params: ${JSON.stringify(params)}`);
 
-        s3.getObject(params)
-            .createReadStream()
-            .pipe(file)
-            .on('close', () => {
-                log(`File downloaded successfully: ${fullPath}`);
-                resolve(localPath);
-            })
-            .on('error', (error) => {
-                log(`Error downloading file ${fullPath}: ${error.message}`);
-                reject(error);
-            });
-    });
+    try {
+        const { Body } = await s3Client.send(new GetObjectCommand(params));
+        const writeStream = fs.createWriteStream(localPath);
+        await new Promise((resolve, reject) => {
+            Body.pipe(writeStream)
+                .on('finish', resolve)
+                .on('error', reject);
+        });
+        log(`File downloaded successfully: ${fullPath}`);
+        return localPath;
+    } catch (error) {
+        log(`Error downloading file ${fullPath}: ${error.message}`);
+        throw error;
+    }
 }
 
 async function uploadFile(localPath, fullPath) {
-    if (!s3) await initializeS3Client();
+    if (!s3Client) await initializeS3Client();
 
     fullPath = fullPath.replace(/\.mp4\.mp4/, '.mp4');
 
     log(`Uploading file: ${fullPath}`);
-    return new Promise((resolve, reject) => {
-        const fileStream = fs.createReadStream(localPath);
-        const params = {
-            Bucket: config.aws_s3_bucketName,
-            Key: fullPath,
-            Body: fileStream,
-            ContentType: 'video/mp4',
-            ContentDisposition: 'inline',
-            CacheControl: 'max-age=31536000',
-            Metadata: {
-                'x-amz-meta-Cache-Control': 'max-age=31536000'
-            }
-        };
-        log(`Upload params: ${JSON.stringify(params)}`);
+    const fileStream = fs.createReadStream(localPath);
+    const params = {
+        Bucket: config.aws_s3_bucketName,
+        Key: fullPath,
+        Body: fileStream,
+        ContentType: 'video/mp4',
+        ContentDisposition: 'inline',
+        CacheControl: 'max-age=31536000',
+        Metadata: {
+            'x-amz-meta-Cache-Control': 'max-age=31536000'
+        }
+    };
+    log(`Upload params: ${JSON.stringify(params)}`);
 
-        s3.upload(params, (err, data) => {
-            if (err) {
-                log(`Error uploading file ${fullPath}: ${err.message}`);
-                reject(err);
-            } else {
-                log(`File uploaded successfully: ${fullPath}`);
-                // S3 URL 대신 CDN URL 생성
-                const cdnUrl = `https://cdn-challenge.ahhaohho.com/${fullPath}`;
-                resolve(cdnUrl);
-            }
-        });
-    });
+    try {
+        await s3Client.send(new PutObjectCommand(params));
+        log(`File uploaded successfully: ${fullPath}`);
+        const cdnUrl = `https://cdn-challenge.ahhaohho.com/${fullPath}`;
+        return cdnUrl;
+    } catch (error) {
+        log(`Error uploading file ${fullPath}: ${error.message}`);
+        throw error;
+    }
 }
 
 async function resizeAndCropVideo(inputPath, outputPath, targetWidth, targetHeight) {
@@ -110,13 +131,13 @@ async function resizeAndCropVideo(inputPath, outputPath, targetWidth, targetHeig
                 '-c:v libx264',
                 '-preset fast',
                 '-crf 23',
-                '-profile:v baseline',  // 'high10'에서 'main'으로 변경
-                '-level:v 2.2',     // 레벨도 낮춤
+                '-profile:v baseline',
+                '-level:v 2.2',
                 '-c:a aac',
                 '-b:a 128k',
                 '-movflags +faststart',
                 '-max_muxing_queue_size 9999',
-                `-vf scale=${targetWidth}:${targetHeight}:force_original_aspect_ratio=decrease,pad=${targetWidth}:${targetHeight}:(ow-iw)/2:(oh-ih)/2,setsar=1,format=yuv420p`,  // 8-bit로 변환
+                `-vf scale=${targetWidth}:${targetHeight}:force_original_aspect_ratio=decrease,pad=${targetWidth}:${targetHeight}:(ow-iw)/2:(oh-ih)/2,setsar=1,format=yuv420p`,
                 '-maxrate 2M',
                 '-bufsize 4M',
                 '-r 30',
@@ -148,27 +169,29 @@ async function resizeAndCropVideo(inputPath, outputPath, targetWidth, targetHeig
 }
 
 async function processVideos() {
-    const client = new MongoClient(MONGO_URI);
-
     try {
         log('Starting video processing...');
         await initializeS3Client();
-        await client.connect();
+        await connectToMongoDB();
+        
+        log('Connecting to MongoDB...');
+        await mongoose.connect(MONGO_URI, {
+            ssl: true,
+            tls: true,
+            tlsAllowInvalidCertificates: false,
+            tlsAllowInvalidHostnames: false
+        });
         log('Connected to MongoDB');
 
-        const db = client.db(DB_NAME);
-        const collection = db.collection(COLLECTION_NAME);
+        const totalCount = await Content.countDocuments({ 'thumbnail.type': 'video/mp4' });
+        log(`Total documents with video thumbnails: ${totalCount}`);
 
-        const cursor = collection.find({ 'thumbnail.type': 'video/mp4' });
-        let totalCount = 0;
         let processedCount = 0;
         let errorCount = 0;
 
-        totalCount = await collection.countDocuments({ 'thumbnail.type': 'video/mp4' });
-        log(`Total documents with video thumbnails: ${totalCount}`);
+        const cursor = Content.find({ 'thumbnail.type': 'video/mp4' }).cursor();
 
-        while (await cursor.hasNext()) {
-            const doc = await cursor.next();
+        for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {
             log(`Processing document: ${doc._id}`);
 
             const thumbnail = doc.thumbnail;
@@ -193,10 +216,8 @@ async function processVideos() {
 
                     const newUrl = await uploadFile(localOutput, fullPath);
 
-                    await collection.updateOne(
-                        { _id: doc._id },
-                        { $set: { 'thumbnail.defaultUrl': newUrl } }
-                    );
+                    doc.thumbnail.defaultUrl = newUrl;
+                    await doc.save();
                     log(`Updated MongoDB document with new URL: ${newUrl}`);
 
                     log(`Successfully processed and updated ${fullPath}`);
@@ -216,8 +237,12 @@ async function processVideos() {
         log(`Processing completed. Total: ${totalCount}, Processed: ${processedCount}, Errors: ${errorCount}, Skipped: ${totalCount - processedCount - errorCount}`);
     } catch (error) {
         log(`Fatal error: ${error.message}`);
+        if (error.stack) log(`Error stack: ${error.stack}`);
+        if (error.code) log(`Error code: ${error.code}`);
+        if (error.name) log(`Error name: ${error.name}`);
+        if (error.cause) log(`Error cause: ${JSON.stringify(error.cause)}`);
     } finally {
-        await client.close();
+        await mongoose.disconnect();
         log('MongoDB connection closed');
     }
 }

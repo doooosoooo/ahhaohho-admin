@@ -1,96 +1,21 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
+const { loadConfig } = require('../config/config');
 const path = require('path');
-const fs = require('fs');
-const {
-    getFileByDatePattern,
-    readDataFromFile,
-    createDirectoryIfNotExists
-} = require('../middlewares/utils');
+const fs = require('fs').promises;
 const axios = require('axios');
 
-async function sendDataToApi(processedData, apiUrl) {
-    try {
-        console.log(`Sending data to API. Total items: ${processedData.length}`);
+let config;
 
-        // 데이터 정제 함수
-        const cleanData = (item) => ({
-            index: item.index, // 'id' 대신 'index'를 사용합니다.
-            title: item.title,
-            difficulty: item.difficulty,
-            sound: item.sound,
-            createrName: item.createrName,
-            thumbnail: item.thumbnail,
-            categoryMain: item.categoryMain,
-            categorySub: item.categorySub,
-            activePlan: item.activePlan,
-            essentialInfo: item.essentialInfo,
-            leadSentence: item.leadSentence,
-            playtime: item.playtime,
-            materials: item.materials,
-            preparationTip: item.preparationTip,
-            postingGuide: item.postingGuide,
-            recommendation: item.recommendation,
-            activeGuide: item.activeGuide
-        });
-
-        const chunkSize = 10;
-        for (let i = 0; i < processedData.length; i += chunkSize) {
-            const chunk = processedData.slice(i, i + chunkSize).map(cleanData);
-            console.log(`Sending chunk ${Math.floor(i / chunkSize) + 1}. Items: ${chunk.length}`);
-
-            const validatedChunk = chunk.map(item => {
-                if (!item.difficulty || !['1', '2', '3', '4', '5'].includes(item.difficulty)) {
-                    console.warn(`Invalid difficulty for item ${item.id}, setting to default '1'`);
-                    return { ...item, difficulty: '1' };
-                }
-                return item;
-            });
-
-            const response = await axios({
-                method: 'post',
-                url: apiUrl,
-                data: { contents: validatedChunk },
-                headers: {
-                    'Content-Type': 'application/json',
-                    // 'Authorization': 'Bearer YOUR_TOKEN_HERE'
-                }
-            });
-            console.log(`Chunk ${Math.floor(i / chunkSize) + 1} sent successfully. Response:`, response.data);
-        }
-
-        return { success: true, message: "All data sent successfully" };
-    } catch (error) {
-        console.error('API 요청 중 오류 발생:');
-        if (error.response) {
-            console.error(`상태 코드: ${error.response.status}`);
-            console.error(`오류 메시지: ${error.response.data.message || '알 수 없는 오류'}`);
-            if (error.response.data.errors) {
-                console.error('상세 오류:');
-                error.response.data.errors.forEach((err, index) => {
-                    console.error(`  ${index + 1}. ${err.message}`);
-                });
-            }
-        } else if (error.request) {
-            console.error('서버로부터 응답이 없습니다.');
-        } else {
-            console.error(`오류 메시지: ${error.message}`);
-        }
-        throw error;
-    }
+function log(message) {
+    console.log(`[${new Date().toISOString()}] ${message}`);
 }
 
-function safeJsonStringify(obj) {
-    const cache = new Set();
-    return JSON.stringify(obj, (key, value) => {
-        if (typeof value === 'object' && value !== null) {
-            if (cache.has(value)) {
-                return '[Circular]';
-            }
-            cache.add(value);
-        }
-        return value;
-    }, 2);
+async function initializeConfig() {
+    if (!config) {
+        config = await loadConfig();
+    }
+    log('Configuration loaded successfully.');
 }
 
 function validateField(value, fieldName) {
@@ -100,44 +25,49 @@ function validateField(value, fieldName) {
     return value;
 }
 
-function processItem(item) {
+function getMediaUrl(media) {
+    if (media.type === 'video/mp4') {
+        return media.url;
+    } else if (media.type === 'image/jpeg' || media.type === 'image/png') {
+        return media.thumbnails?.large?.url || media.url;
+    }
+    return null;
+}
+
+async function processItem(item) {
     try {
+        log(`Processing item: ${item.id}`);
+        
         const preparationTip = [];
         const activeGuide = [];
-
-        // 'recommendation' 필드 추출, 기본값은 빈 배열로 설정
         const recommendation = Array.isArray(item["추천 활동"]) ? item["추천 활동"] : [];
 
-        // 준비 Tip 데이터를 가공 (최대 3개)
+        // 준비 Tip 처리
         for (let i = 1; i <= 3; i++) {
             const tipImages = item[`준비 Tip ${i}_이미지`];
             const tipDescription = item[`준비 Tip ${i}_설명`];
-
             if (tipImages && Array.isArray(tipImages) && tipImages.length > 0) {
                 preparationTip.push({
                     mediaUrl: {
                         type: tipImages[0].type,
-                        defaultUrl: tipImages[0].thumbnails?.large?.url || null,
+                        defaultUrl: getMediaUrl(tipImages[0]),
                     },
                     comment: tipDescription || null,
                 });
             }
         }
 
-        let difficulty = '';
-        if (Array.isArray(item["*난이도"]) && item["*난이도"].length > 0) {
-            difficulty = item["*난이도"][0];
-        } else if (typeof item["*난이도"] === 'string') {
-            difficulty = item["*난이도"];
+        // 난이도 처리
+        let level = parseInt(item["*난이도"], 10);
+        if (isNaN(level) || level < 1 || level > 5) {
+            console.warn(`Invalid level value for item ${item.id}: ${level}`);
+            level = 1;
+        } else {
+            level = level <= 2 ? 1 : (level === 3 ? 2 : 3);
         }
+        
 
-        // difficulty가 유효한 값인지 확인 (예: '1', '2', '3', '4', '5' 중 하나)
-        if (!['1', '2', '3', '4', '5'].includes(difficulty)) {
-            console.warn(`Invalid difficulty value for item ${item.id}: ${difficulty}`);
-            difficulty = '1'; // 기본값 설정
-        }
-
-        // 활동 가이드 데이터를 가공 (최대 9개)
+        // 활동 가이드 처리
         for (let i = 1; i <= 9; i++) {
             const mediaKey = i === 1 ? '*활동 가이드 1_이미지' : `활동 가이드 ${i}_이미지`;
             const descKey = i === 1 ? '*활동 가이드 1_설명' : `활동 가이드 ${i}_설명`;
@@ -147,108 +77,178 @@ function processItem(item) {
             const tip = item[`활동 가이드_${i}_팁`];
             const portrait = item[`활동가이드 4:5(세로가긴) 비율로 노출되나요?`];
 
-            if (medias && Array.isArray(medias)) {
+            if (medias && Array.isArray(medias) && medias.length > 0) {
                 let mediaUrl = {
                     aos: null,
                     ios: null,
                     defaultUrl: null,
-                    type: medias[0]?.type || null,
+                    type: medias[0].type,
                     portrait: portrait,
                     sound: sound,
                 };
 
-                if (medias.length === 1) {
-                    mediaUrl.defaultUrl = medias[0].url;
-                } else {
-                    medias.forEach(img => {
-                        if (img.filename?.includes('aos') && img.type?.includes('image')) {
-                            mediaUrl.aos = img.thumbnails?.large?.url || null;
-                        } else if (img.filename?.includes('ios') && img.type?.includes('image')) {
-                            mediaUrl.ios = img.thumbnails?.large?.url || null;
-                        } else if (img.filename?.includes('aos') && img.type?.includes('video')) {
-                            mediaUrl.defaultUrl = img.url || null;
-                        } else if (img.filename?.includes('ios') && img.type?.includes('video')) {
-                            mediaUrl.defaultUrl = img.url || null;
+                for (const media of medias) {
+                    const url = getMediaUrl(media);
+                    if (url) {
+                        if (media.filename?.toLowerCase().includes('aos')) {
+                            mediaUrl.aos = url;
+                        } else if (media.filename?.toLowerCase().includes('ios')) {
+                            mediaUrl.ios = url;
+                        } else {
+                            mediaUrl.defaultUrl = url;
                         }
-                    });
+                    }
                 }
 
-                activeGuide.push({
-                    mediaUrl: mediaUrl,
-                    guide: guide || '',
-                    tip: tip || null,
-                });
+                if (!mediaUrl.defaultUrl) {
+                    mediaUrl.defaultUrl = mediaUrl.aos || mediaUrl.ios;
+                }
+
+                if (mediaUrl.defaultUrl) {
+                    activeGuide.push({
+                        mediaUrl: mediaUrl,
+                        guide: guide || '',
+                        tip: tip || null,
+                    });
+                } else {
+                    console.warn(`Warning: No valid media URL for activeGuide[${i-1}] in item ${item.id}`);
+                }
             }
         }
 
-        const materials = Array.isArray(item["준비물 데이터"])
-            ? item["준비물 데이터"].map(mat => typeof mat === 'object' && mat._id ? mat._id : mat)
-            : [];
+        // 썸네일 처리
+        let thumbnail = null;
+        if (item["*액티비티 썸네일"] && Array.isArray(item["*액티비티 썸네일"]) && item["*액티비티 썸네일"][0]) {
+            const thumbnailItem = item["*액티비티 썸네일"][0];
+            thumbnail = {
+                defaultUrl: getMediaUrl(thumbnailItem),
+                type: thumbnailItem.type,
+                sound: item["\b썸네일_소리출력"] || false,
+                width: thumbnailItem.width,
+                height: thumbnailItem.height,
+            };
+        }
+
+        const activePlan = item["*활동 설명"] || "이 활동에 대한 설명이 곧 제공될 예정입니다. 기대해 주세요!";
 
         return {
             title: validateField(item["*액티비티 타이틀"], 'title'),
             index: validateField(item["id"], 'index'),
-            difficulty: validateField(difficulty, 'difficulty'),
+            level: level, // validateField를 제거하고 직접 숫자 값을 사용합니다.
             sound: item["\b썸네일_소리출력"] || '',
             createrName: validateField(Array.isArray(item["액티비티 기획자"]) ? item["액티비티 기획자"][0] : null, 'createrName'),
-            thumbnail: validateField(item["*액티비티 썸네일"] && Array.isArray(item["*액티비티 썸네일"]) && item["*액티비티 썸네일"][0]
-                ? {
-                    defaultUrl: item["*액티비티 썸네일"][0].url,
-                    type: item["*액티비티 썸네일"][0].type
-                }
-                : null, 'thumbnail'),
+            thumbnail: validateField(thumbnail, 'thumbnail'),
             categoryMain: validateField(Array.isArray(item["*메인 장르"]) ? item["*메인 장르"][0] : '', 'categoryMain'),
             categorySub: validateField(Array.isArray(item["*서브 장르"]) ? item["*서브 장르"][0] : '', 'categorySub'),
-            activePlan: validateField(item["*활동 설명"], 'activePlan'),
-            essentialInfo: item["* 필수 항목 안내 문구"] || '기본 필수 정보', // 기본값 설정
-            leadSentence: validateField(item["* 활동 시작 발문"], 'leadSentence'),
+            activePlan: validateField(activePlan, 'activePlan'),
+            essentialInfo: item["* 필수 항목 안내 문구(퓨처랩)"] || '기본 필수 정보',
+            leadSentence: validateField(item["* 활동 시작 발문(퓨처랩)"], 'leadSentence'),
             playtime: validateField(item["*예상 소요시간"] ? Number(item["*예상 소요시간"]) : 0, 'playtime'),
-            materials: validateField(materials, 'materials'),
+            materials: validateField(Array.isArray(item["준비물 데이터"]) ? item["준비물 데이터"] : [], 'materials'),
             preparationTip: preparationTip,
             postingGuide: validateField(Array.isArray(item["P형 포스트 가이드"]) ? item["P형 포스트 가이드"][0] : '', 'postingGuide'),
-            recommendation: recommendation, // 'recommendation' 필드 추가
+            recommendation: recommendation,
             activeGuide: validateField(activeGuide, 'activeGuide'),
         };
     } catch (error) {
-        console.error(`Error processing item: ${error.message}`);
-        console.error(`Problematic item: ${safeJsonStringify(item)}`);
+        console.error(`Error processing item ${item.id}: ${error.message}`);
         return null;
     }
 }
-
 
 async function processDataInChunks(data, chunkSize = 10) {
     const results = [];
     for (let i = 0; i < data.length; i += chunkSize) {
         const chunk = data.slice(i, i + chunkSize);
-        const processedChunk = chunk.map(processItem).filter(Boolean);
-        results.push(...processedChunk);
-        console.log(`Processed ${results.length} out of ${data.length} items`);
+        const processedChunk = await Promise.all(chunk.map(processItem));
+        const filteredChunk = processedChunk.filter(Boolean);
+        results.push(...filteredChunk);
+        log(`Processed ${results.length} out of ${data.length} items`);
     }
     return results;
 }
 
+async function sendUpdatedDataToApi(processedData, apiUrl) {
+    try {
+        log(`Sending updated data to API. Total items: ${processedData.length}`);
+
+        for (let i = 0; i < processedData.length; i++) {
+            log(`Sending item ${i + 1}/${processedData.length}: ${processedData[i].index}`);
+            
+            try {
+                const response = await axios.post(apiUrl, { contents: [processedData[i]] });
+                log(`Item ${processedData[i].index} sent successfully`);
+            } catch (error) {
+                console.error(`Error sending item ${processedData[i].index}:`, error.response?.data || error.message);
+            }
+        }
+
+        log('Data sending process completed');
+
+        return { success: true, message: `Updated ${processedData.length} items` };
+    } catch (error) {
+        console.error('API 요청 중 오류 발생:', error);
+        throw error;
+    }
+}
+
+async function getFileByDatePattern(dirPath, pattern) {
+    const files = await fs.readdir(dirPath);
+    const matchingFiles = files.filter(file => pattern.test(file));
+    if (matchingFiles.length === 0) return null;
+    return matchingFiles.sort().pop();
+}
+
+async function readDataFromFile(filePath) {
+    const data = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(data);
+}
+
+async function createDirectoryIfNotExists(dirPath) {
+    try {
+        await fs.access(dirPath);
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            await fs.mkdir(dirPath, { recursive: true });
+        } else {
+            throw error;
+        }
+    }
+}
+
+async function getExistingData(apiUrl) {
+    try {
+        const response = await axios.get(apiUrl);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching existing data:', error);
+        return [];
+    }
+}
+
+
 async function main() {
     try {
+        await initializeConfig();
+
         const dirPath = path.resolve(__dirname, './contentsRawData');
-        createDirectoryIfNotExists(dirPath);
+        await createDirectoryIfNotExists(dirPath);
         const pattern = /contentsData-updateAt(\d{8})\.json$/;
-        console.log(`Looking for files in: ${dirPath} with pattern: ${pattern}`);
-        const latestFile = getFileByDatePattern(dirPath, pattern);
+        log(`Looking for files in: ${dirPath} with pattern: ${pattern}`);
+        const latestFile = await getFileByDatePattern(dirPath, pattern);
         if (!latestFile) {
             throw new Error('No matching files found');
         }
-        console.log(`Found latest file: ${latestFile}`);
+        log(`Found latest file: ${latestFile}`);
 
         const data = await readDataFromFile(path.join(dirPath, latestFile));
-        console.log(`Read ${data.length} items from file`);
+        log(`Read ${data.length} items from file`);
 
         const processedData = await processDataInChunks(data);
-        console.log(`Successfully processed ${processedData.length} items`);
+        log(`Successfully processed ${processedData.length} items`);
 
         const apiUrl = 'https://develop.ahhaohho.com:4222/creator/register/challenge';
-        await sendDataToApi(processedData, apiUrl);
-        console.log('Data sent to API successfully');
+        await sendUpdatedDataToApi(processedData, apiUrl);
     } catch (error) {
         console.error('Error in main function:', error);
     }
