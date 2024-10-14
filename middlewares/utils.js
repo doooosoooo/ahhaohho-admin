@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const axios = require('axios'); // axios 추가
+
 
 // 특정 패턴에 맞는 파일 찾기
 function getFileByDatePattern(dir, pattern) {
@@ -42,18 +44,34 @@ function readDataFromFile(filePath) {
 }
 
 // API로 데이터를 전송하는 함수
-async function sendDataToApi(data, url) {
+async function sendDataToApi(processedData, apiUrl) {
     try {
-        const axios = require('axios');
-        console.log('Sending data to API:', JSON.stringify(data, null, 2));
-        const response = await axios.post(url, data, {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        return response.data;
+        // 데이터 크기 로깅
+        console.log(`Sending data to API. Total items: ${processedData.length}`);
+        console.log(`Data size: ${JSON.stringify(processedData).length} characters`);
+
+        // 데이터를 더 작은 청크로 나누기 (예: 50개씩)
+        const chunkSize = 50;
+        for (let i = 0; i < processedData.length; i += chunkSize) {
+            const chunk = processedData.slice(i, i + chunkSize);
+            console.log(`Sending chunk ${i / chunkSize + 1}. Items: ${chunk.length}`);
+
+            const response = await axios.post(apiUrl, { materials: chunk });
+            console.log(`Chunk ${i / chunkSize + 1} sent successfully. Response:`, response.data);
+        }
+
+        return { success: true, message: "All data sent successfully" };
     } catch (error) {
-        console.error('Error sending data to API:');
+        console.error('API 요청 중 오류 발생:');
+        if (error.response) {
+            console.error(`상태 코드: ${error.response.status}`);
+            console.error(`오류 메시지: ${error.response.data.message || '알 수 없는 오류'}`);
+            console.error('전체 응답:', JSON.stringify(error.response.data, null, 2));
+        } else if (error.request) {
+            console.error('서버로부터 응답이 없습니다.');
+        } else {
+            console.error(`오류 메시지: ${error.message}`);
+        }
         throw error;
     }
 }

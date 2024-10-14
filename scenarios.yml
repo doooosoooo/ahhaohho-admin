@@ -1,0 +1,19 @@
+config:
+  target: "https://api.dev.ahhaohho.com"
+  phases:
+    - duration: 60
+      arrivalRate: 10
+      name: Warm up
+    - duration: 180
+      arrivalRate: 10
+      rampTo: 100
+      name: Ramp up load
+    - duration: 300
+      arrivalRate: 100
+      name: Sustained high load
+
+scenarios:
+  - name: "getRoot"
+    flow:
+      - get:
+          url: "/challenge/getRoot"
