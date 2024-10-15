@@ -32,6 +32,7 @@ async function connectToMongoDB() {
     try {
         log('Connecting to MongoDB...');
         await mongoose.connect(MONGO_URI, {
+            dbName: 'challengeDB',
             ssl: true,
             tls: true,
             tlsAllowInvalidCertificates: false,

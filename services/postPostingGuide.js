@@ -10,16 +10,28 @@ const {
 } = require('../middlewares/utils');
 
 function processPostGuideData(data) {
-    return data.map(function (item) {
+    const processedData = data.map(function (item) {
         return {
             _id: item.id,
             guides: {
-                mediaGuide: item['*미디어 촬영/선택 가이드 텍스트'],
+                mediaGuide: item['*미디어 촬영/선택 가이드 텍스트'], 
                 titleGuide: item['*제목 작성 가이드 텍스트'],
                 descGuide: item['설명 작성 가이드 텍스트']
             }
         };
     });
+
+    // Add the additional data
+    processedData.push({
+        _id: "nocontents",
+        guides: {
+            mediaGuide: "생김새나 작동하는 모습이 잘 보이는 사진이나 영상을 올려줘.",
+            titleGuide: "핵심 키워드나 특징을 담은 제목을 지어줘. 간결할 수록 좋아.",
+            descGuide: "생김새나 작동법, 작업하면서 든 고민이나 새롭게 알게된 것을 적어줘."
+        }
+    });
+
+    return processedData;
 }
 
 async function sendDataToApi(processedData, apiUrl) {
