@@ -58,7 +58,7 @@ async function processItem(item) {
         }
 
         // 난이도 처리
-        let level = parseInt(item["*난이도"], 10);
+        let level = parseInt(item["난이도"], 10);
         if (isNaN(level) || level < 1 || level > 5) {
             console.warn(`Invalid level value for item ${item.id}: ${level}`);
             level = 1;
