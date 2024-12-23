@@ -8,7 +8,7 @@ const path = require('path');
 const ffmpeg = require('fluent-ffmpeg');
 const sharp = require('sharp');
 const axios = require('axios');
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
 const crypto = require('crypto');
 const os = require('os');
 

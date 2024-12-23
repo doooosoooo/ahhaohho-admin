@@ -1,17 +1,27 @@
+/*global process*/
+
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
 const { S3Client } = require("@aws-sdk/client-s3");
 const { Upload } = require("@aws-sdk/lib-storage");
-const { fetchTableData } = require('../middlewares/airtableClient');
+const { fetchTableData } = require('../../middlewares/airtableClient');
 const tableNames = require('./tableNames.json');
+const https = require('https');
+
+
 
 let config;
 let s3Client;
+
+const axiosInstance = axios.create({
+    httpsAgent: new https.Agent({  
+        rejectUnauthorized: false // 개발 환경용 설정
+    })
+});
 
 function log(message) {
     console.log(`[${new Date().toISOString()}] ${message}`);
@@ -36,10 +46,10 @@ async function uploadFileFromUrlToS3(url, key) {
         await initializeS3Client();
     }
 
-    const response = await axios({
+    const response = await axiosInstance({  // 이 줄만 수정 (axios -> axiosInstance)
         url,
         method: 'GET',
-        responseType: 'arraybuffer'
+        responseType: 'stream'
     });
 
     const contentType = response.headers['content-type'];
@@ -47,7 +57,7 @@ async function uploadFileFromUrlToS3(url, key) {
     const upload = new Upload({
         client: s3Client,
         params: {
-            Bucket: "ahhaohho-user-profile",
+            Bucket: config.world_bucketName,
             Key: key,
             Body: response.data,
             ContentType: contentType,
@@ -61,18 +71,18 @@ async function uploadFileFromUrlToS3(url, key) {
 
     await upload.done();
 
-    return { Location: `https://cdn-user-profile.ahhaohho.com/${key}` };
+    return { Location: `https://cdn-world.ahhaohho.com/${key}` }
 }
 
-async function processRecord(record, mainKey) {
+async function processRecord(record, mainKey, currentIndex, totalRecords) {
+    log(`Processing record ${currentIndex + 1}/${totalRecords} for ${mainKey}`);
     for (let key in record) {
         if (Array.isArray(record[key])) {
             for (let file of record[key]) {
                 if (file && file.url) {
-                    let i = 0;
                     const url = file.url;
                     const fileName = path.basename(url);
-                    const s3Key = `parts/${mainKey}/${fileName}`;
+                    const s3Key = `${mainKey}/${fileName}`;
 
                     // URL에서 S3로 직접 업로드
                     const s3Response = await uploadFileFromUrlToS3(url, s3Key);
@@ -80,9 +90,22 @@ async function processRecord(record, mainKey) {
                     // URL 교체
                     file.url = s3Response.Location;
 
-                    // 썸네일 URL 제거
-                    delete file.thumbnails;
-                    console.log(`Uploaded ${url} to ${s3Key} ${i++}`);
+                    // 썸네일 URL도 교체
+                    if (file.thumbnails) {
+                        for (let size in file.thumbnails) {
+                            if (file.thumbnails[size].url) {
+                                const thumbUrl = file.thumbnails[size].url;
+                                const thumbFileName = path.basename(thumbUrl);
+                                const thumbS3Key = `${mainKey}/thumbnails/${size}/${thumbFileName}`;
+
+                                // 썸네일 URL에서 S3로 직접 업로드
+                                const thumbS3Response = await uploadFileFromUrlToS3(thumbUrl, thumbS3Key);
+
+                                // 썸네일 URL 교체
+                                file.thumbnails[size].url = thumbS3Response.Location;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -107,13 +130,18 @@ async function main() {
     await initializeS3Client();
 
     const updateDate = new Date().toISOString().split('T')[0].replace(/-/g, '');
-    const dataDir = path.join(__dirname, 'contentsRawData');
+    const dataDir = path.join(process.cwd(), './services/world/rawData');
 
     await fs.mkdir(dataDir, { recursive: true });
 
+    const totalTables = Object.keys(tableNames).length;
+    let currentTableIndex = 0;
+
     for (const [mainKey, { tableName, viewName }] of Object.entries(tableNames)) {
+        currentTableIndex++;
         try {
-            const tableData = await fetchTableData(tableName, viewName);
+            log(`Processing table ${currentTableIndex}/${totalTables}: ${tableName}`);
+            const tableData = await fetchTableData('world', tableName, viewName);
 
             // Load existing data
             const existingData = await fetchExistingData(mainKey, dataDir);
@@ -121,12 +149,15 @@ async function main() {
 
             // Process only new or updated records
             const newRecords = [];
-            for (let record of tableData) {
+            for (let i = 0; i < tableData.length; i++) {
+                const record = tableData[i];
                 if (!existingIds.has(record.id)) {
-                    const processedRecord = await processRecord(record, mainKey);
+                    const processedRecord = await processRecord(record, mainKey, i, tableData.length);
                     newRecords.push(processedRecord);
                 }
             }
+
+            log(`Processed ${newRecords.length} new records for ${tableName}`);
 
             // Combine new records with existing data
             const updatedData = [...existingData, ...newRecords];
@@ -139,7 +170,7 @@ async function main() {
             const mainKeyPattern = new RegExp(`${mainKey}-updateAt\\d{8}.json`);
             const files = await fs.readdir(dataDir);
             for (const file of files) {
-                if (mainKeyPattern.test(file) && file !== fileName) {
+                if (mainKeyPattern.test(file)) {
                     await fs.unlink(path.join(dataDir, file));
                 }
             }

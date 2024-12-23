@@ -7,7 +7,7 @@ const {
     getFileByDatePattern,
     readDataFromFile,
     createDirectoryIfNotExists
-} = require('../middlewares/utils');
+} = require('../../middlewares/utils');
 
 function processPostGuideData(data) {
     const processedData = data.map(function (item) {

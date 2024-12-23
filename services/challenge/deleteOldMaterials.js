@@ -1,5 +1,5 @@
 const { S3Client, ListObjectsV2Command, DeleteObjectsCommand } = require("@aws-sdk/client-s3");
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
 
 let config;
 let s3Client;

@@ -1,10 +1,11 @@
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
+const process = require('process');
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
 const { S3Client } = require("@aws-sdk/client-s3");
 const { Upload } = require("@aws-sdk/lib-storage");
-const { fetchTableData } = require('../middlewares/airtableClient');
+const { fetchTableData } = require('../../middlewares/airtableClient');
 const tableNames = require('./tableNames.json');
 
 let config;
@@ -44,7 +45,7 @@ async function uploadFileFromUrlToS3(url, key) {
     const upload = new Upload({
         client: s3Client,
         params: {
-            Bucket: config.aws_s3_bucketName,
+            Bucket: config.challenge_bucketName,
             Key: key,
             Body: response.data,
             ContentType: contentType,
@@ -58,7 +59,7 @@ async function uploadFileFromUrlToS3(url, key) {
 
     await upload.done();
 
-    return { Location: `https://cdn-challenge.ahhaohho.com/${key}` };
+    return { Location: `https://cdn-challenge.ahhaohho.com/${key}` }
 }
 
 async function processRecord(record, mainKey, currentIndex, totalRecords) {
@@ -117,7 +118,7 @@ async function main() {
     await initializeS3Client();
 
     const updateDate = new Date().toISOString().split('T')[0].replace(/-/g, '');
-    const dataDir = path.join(__dirname, 'contentsRawData');
+    const dataDir = path.join(process.cwd(), 'contentsRawData');
 
     await fs.mkdir(dataDir, { recursive: true });
 
@@ -128,7 +129,7 @@ async function main() {
         currentTableIndex++;
         try {
             log(`Processing table ${currentTableIndex}/${totalTables}: ${tableName}`);
-            const tableData = await fetchTableData(tableName, viewName);
+            const tableData = await fetchTableData('challenge', tableName, viewName);
 
             // Load existing data
             const existingData = await fetchExistingData(mainKey, dataDir);

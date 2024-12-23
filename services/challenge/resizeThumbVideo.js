@@ -4,12 +4,13 @@ const { S3Client, GetObjectCommand, PutObjectCommand } = require("@aws-sdk/clien
 const fs = require('fs');
 const path = require('path');
 const ffmpeg = require('fluent-ffmpeg');
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
 const crypto = require('crypto');
 const os = require('os');
+const process = require('process');
 
 // MongoDB 설정
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://dsoojung:wjdentnqw12!@cluster-0.7gagbcd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-0';
+const MONGO_URI = process.env.MONGO_URI;
 
 let s3Client;
 let config;
@@ -127,45 +128,65 @@ async function resizeAndCropVideo(inputPath, outputPath, targetWidth, targetHeig
     log(`Resizing and cropping video: ${inputPath}`);
     
     return new Promise((resolve, reject) => {
-        ffmpeg(inputPath)
-            .outputOptions([
-                '-c:v libx264',
-                '-preset fast',
-                '-crf 23',
-                '-profile:v baseline',
-                '-level:v 2.2',
-                '-c:a aac',
-                '-b:a 128k',
-                '-movflags +faststart',
-                '-max_muxing_queue_size 9999',
-                `-vf scale=${targetWidth}:${targetHeight}:force_original_aspect_ratio=decrease,pad=${targetWidth}:${targetHeight}:(ow-iw)/2:(oh-ih)/2,setsar=1,format=yuv420p`,
-                '-maxrate 2M',
-                '-bufsize 4M',
-                '-r 30',
-                '-g 60',
-                '-sc_threshold 0',
-                '-keyint_min 60'
-            ])
-            .outputOption('-threads 0')
-            .videoCodec('libx264')
-            .audioCodec('aac')
-            .on('start', (commandLine) => {
-                log(`FFmpeg command: ${commandLine}`);
-            })
-            .on('progress', (progress) => {
-                log(`Processing: ${progress.percent}% done`);
-            })
-            .on('end', () => {
-                log(`Video processed successfully: ${outputPath}`);
-                resolve();
-            })
-            .on('error', (error, stdout, stderr) => {
-                log(`Error processing video ${inputPath}: ${error.message}`);
-                log(`FFmpeg stdout: ${stdout}`);
-                log(`FFmpeg stderr: ${stderr}`);
-                reject(error);
-            })
-            .save(outputPath);
+        // 먼저 입력 파일의 코덱 정보를 확인합니다.
+        ffmpeg.ffprobe(inputPath, (err, metadata) => {
+            if (err) {
+                log(`Error probing file: ${err.message}`);
+                return reject(err);
+            }
+
+            const videoStream = metadata.streams.find(stream => stream.codec_type === 'video');
+            const inputCodec = videoStream ? videoStream.codec_name : 'unknown';
+            log(`Input video codec: ${inputCodec}`);
+
+            let ffmpegCommand = ffmpeg(inputPath);
+
+            // 입력 코덱에 따라 적절한 디코더를 선택합니다.
+            if (inputCodec === 'hevc') {
+                ffmpegCommand = ffmpegCommand.inputOption('-c:v hevc_videotoolbox');  // macOS의 경우
+                // ffmpegCommand = ffmpegCommand.inputOption('-c:v hevc_cuvid');  // NVIDIA GPU가 있는 경우
+            }
+
+            ffmpegCommand
+                .outputOptions([
+                    '-c:v libx264',  // 항상 H.264로 인코딩
+                    '-preset medium',
+                    '-crf 23',
+                    '-profile:v main',
+                    '-level:v 4.0',
+                    '-c:a aac',
+                    '-b:a 128k',
+                    '-movflags +faststart',
+                    '-max_muxing_queue_size 9999',
+                    `-vf scale=${targetWidth}:${targetHeight}:force_original_aspect_ratio=decrease,pad=${targetWidth}:${targetHeight}:(ow-iw)/2:(oh-ih)/2,setsar=1,format=yuv420p`,
+                    '-maxrate 4M',
+                    '-bufsize 8M',
+                    '-r 30',
+                    '-g 60',
+                    '-sc_threshold 0',
+                    '-keyint_min 60'
+                ])
+                .outputOption('-threads 0')
+                .videoCodec('libx264')
+                .audioCodec('aac')
+                .on('start', (commandLine) => {
+                    log(`FFmpeg command: ${commandLine}`);
+                })
+                .on('progress', (progress) => {
+                    log(`Processing: ${progress.percent}% done`);
+                })
+                .on('end', () => {
+                    log(`Video processed successfully: ${outputPath}`);
+                    resolve();
+                })
+                .on('error', (error, stdout, stderr) => {
+                    log(`Error processing video ${inputPath}: ${error.message}`);
+                    log(`FFmpeg stdout: ${stdout}`);
+                    log(`FFmpeg stderr: ${stderr}`);
+                    reject(error);
+                })
+                .save(outputPath);
+        });
     });
 }
 

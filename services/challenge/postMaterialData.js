@@ -9,7 +9,7 @@ const {
     getFileByDatePattern,
     readDataFromFile,
     createDirectoryIfNotExists
-} = require('../middlewares/utils');
+} = require('../../middlewares/utils');
 
 async function sendDataToApi(processedData, apiUrl) {
     try {

@@ -1,6 +1,6 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-
+const process = require('process');
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
@@ -9,7 +9,7 @@ const BASE_URL = 'https://develop.ahhaohho.com:4222';
 
 async function readGroupsData() {
     try {
-        const filePath = path.join(__dirname, './contentsRawData/groupsData-updateAt20241014.json');
+        const filePath = path.join(process.cwd(), './contentsRawData/groupsData-updateAt20241018.json');
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     } catch (error) {

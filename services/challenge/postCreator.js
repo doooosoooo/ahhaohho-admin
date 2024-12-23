@@ -9,7 +9,7 @@ const {
     getFileByDatePattern,
     readDataFromFile,
     createDirectoryIfNotExists
-} = require('../middlewares/utils');
+} = require('../../middlewares/utils');
 
 // API에 데이터를 전송하는 함수
 async function sendDataToApi(processedData, apiUrl) {

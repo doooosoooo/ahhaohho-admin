@@ -1,0 +1,1568 @@
+[
+  {
+    "id": "recv0gCrvqcNMERiD",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "쓸모가 없어진 물건이나, 늘 우리 주변에 있는 평범한 재료를 활용해 상상의 도시에서 살아갈 나의 캐릭터를 만들어볼까요?",
+    "챌린지명": "캐릭터 만들기",
+    "slug": "makecharacter",
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recsVqF9PxmMi9TGj"
+    ],
+    "그룹 구분": "A. 온보딩",
+    "그룹명": [
+      "rec16H7fHV0DwTIEP"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "2",
+    "그룹 탐험 순서": [
+      0
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "rec6fYqk86DGI47mY",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "인류 최초의 집은 자연의 위험으로부터 나를 보호하기 위해 생겨났어요. 내 캐릭터에게 딱 맞는 집을 상상해 볼까요?",
+    "챌린지명": "거주지 만들기",
+    "slug": "makehome",
+    "챌린지 썸네일": [
+      {
+        "id": "attvRVlVswjDSxAdJ",
+        "width": 853,
+        "height": 480,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/ZysJpewD5-kK6wuLEd0XR2Rkilu2eyHmdN9RJofVOGs",
+        "filename": "0. 캐릭터만들기 썸네일(최종아님).gif",
+        "size": 312602,
+        "type": "image/gif",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/YfFXTu79xf67k8GvU8-yupBXdLZmGeUQ0993WvyLpyg",
+            "width": 63,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/bYeRRocQvuxek87IpBl1eg02X62RkgIvlWlU_NBh9tU",
+            "width": 853,
+            "height": 480
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/ka5ucBbVKHXX8uXFOBk9f3ccN4bqDp_GIzdOB1PfIb8",
+            "width": 853,
+            "height": 480
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recCaX7OMrgmZ0G7q"
+    ],
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recFB2a2cYIekyC20"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "recmPuq1aF5QmcZu0",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "무거운 것을 운반하거나, 빠르고 쉽게 이동하기 위해 탈 것이 생겨났다고 해요. 나에게 필요한 탈 것을 알아볼까요?",
+    "챌린지명": "탈 것 만들기",
+    "slug": "makecar",
+    "챌린지 썸네일": [
+      {
+        "id": "attD57bWictAVBMmj",
+        "width": 853,
+        "height": 480,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/3YBUR6itgMdxVVBt8mBOxCmAsif76ryeqwOflp_wq94",
+        "filename": "0. 캐릭터만들기 썸네일(최종아님).gif",
+        "size": 312602,
+        "type": "image/gif",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/mObnokeDRxHu24b11hh4o4CwDVOWxjl8dil0chUVrnA",
+            "width": 63,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/Qe8b-CmIMiESEJZc2jebzK0buusexxmjq77ebAwrNH4",
+            "width": 853,
+            "height": 480
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/-sjUNreVktnayQSEnxEmO6xJesgZfChadSeYn59RHjY",
+            "width": 853,
+            "height": 480
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recmg7PAhQww9544F"
+    ],
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recFB2a2cYIekyC20"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "rec9mZFfzb8NjgsRj",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "유명한 도시에는 대표적인 랜드마크가 있어요. 우리 도시를 상징할 멋진 건물을 만들어볼까요?",
+    "챌린지명": "눈에 띄는 건축물 세우기",
+    "slug": "makelandmark",
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recXs0eMzeW4h8kjF"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recTQVRkMBXMSgGam"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "rec2OnjUZVu3xxUVE",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "나의 도시를 한 문장으로 말한다면? 특징을 잘 담은 문구를 만들고 표현해봅시다!",
+    "챌린지명": "대표 문구 만들기",
+    "slug": "makeslogan",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recryfyg7jKdkI14f"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recTQVRkMBXMSgGam"
+    ],
+    "서브장르": "미디어",
+    "난이도": "2",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "recqXuH3hwCqcTCun",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "재활용품",
+    "챌린지명": "규칙 안내판 세우기",
+    "slug": "makenoticepad",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "reczkgPOVHYf9xZUk"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "reccZ7LWxbY4f0fzh"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "recQ628V0OWtk3BbV",
+    "재료/상태 유저 체크리스트 B": "조용한 방",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "눈을 감고 세상을 귀로만 탐험해보는 시간! 실내에 침입한 지구의 소리들을 찾아보자. 불을 끄고 친구와 함께 소리에만 집중해보면, 평소엔 보이지 않던 새로운 풍경이 소리로 그려질 거야. 지구가 우리에게 속삭이는 비밀을 찾아보자!",
+    "챌린지명": "소리 침입자",
+    "slug": "GGB-A-01",
+    "챌린지 썸네일": [
+      {
+        "id": "attXfk9ZkOAtG5J0x",
+        "width": 580,
+        "height": 634,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/vuRT_pKofDm4uZvlD_-gC2chqv6UgT4pf4s1FY8PTdo",
+        "filename": "78723f04-80bd-4cef-b42a-cbbb052459f4.png",
+        "size": 173595,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/sEPwNZEETNSGUmQc1Af0RuBdrmpz9UqZUEydD6FRRxo",
+            "width": 33,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/NlsmXANAIcOVsYrga3evFs-GnJ-uW_D6MJFDIVMTifk",
+            "width": 512,
+            "height": 560
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/ZFi73FZOyzLhdq4Ta5wbal3Udf3-EC0wY3DQH7siXes",
+            "width": 580,
+            "height": 634
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "recFfKY4d6NnQrVw5"
+    ],
+    "재료/상태 유저 체크리스트 A": "스마트폰",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "2",
+    "재료/상태 유저 체크리스트 C": "때로는 친구들",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec62GkaiAmo2vyIg",
+    "챌린지 소개 텍스트": "습관기록 식물펫 활동에서는 온실가스 줄이기 실천을 습관으로 만들어가. 자신이 온실가스를 줄이기 위해 한 행동들을 기록하면서, 그에 맞춰 식물펫이 성장하는 가상 시나리오를 만들어. 이때, 종이공예나 디지털 아트를 활용해 직접 식물펫을 만들고, 기록에 따라 발전하는 모습을 관리하고 공유하는 시간을 가져.",
+    "챌린지명": "온실가스는 줄이Go, 지구는 살리Go!",
+    "slug": "FB-",
+    "메인장르": "스토리텔링",
+    "재료/상태 유저 체크리스트 A": "다양한 종이, 색칠도구 등",
+    "그룹 구분": "B. 그룹1",
+    "서브장르": "미디어",
+    "난이도": "4"
+  },
+  {
+    "id": "recHjgW9W1pvkkNAQ",
+    "재료/상태 유저 체크리스트 B": "색종이",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "용돈을 평펑 써서 후회한 적이 있다고?\n쳐다보기만 해도 저금하고 싶게 만드는 저금통을 만들어보자!",
+    "챌린지명": "머니 어드벤처",
+    "slug": "FB-moneyadventure",
+    "챌린지 썸네일": [
+      {
+        "id": "attmYZqRqj3tMS4a7",
+        "width": 578,
+        "height": 566,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/DrHQkrvzrhDoLZGfp8uHvjkWejH7wPC7LnqCfeDMSPc",
+        "filename": "저금통.png",
+        "size": 411767,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/xpv4zM7XkG7SZZuOo8TiqC7qVjqgNKx61uHXG7434gg",
+            "width": 37,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/AjentBR6i1V1v--FTv6FBiHoNn8h5KOrPectA8OiZQI",
+            "width": 523,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/CHRXjCJ3v096lPH4DlyhuQXwcThYBk5Ot6QCMQTvmuI",
+            "width": 578,
+            "height": 566
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recykll1ueLCAX9dg"
+    ],
+    "재료/상태 유저 체크리스트 A": "저금통으로 사용할 상자",
+    "그룹 구분": "B. 그룹1",
+    "재료/상태 유저 체크리스트 D": "풀",
+    "그룹명": [
+      "recakN2v0LvOCHnP7"
+    ],
+    "서브장르": "일상 관찰",
+    "재료/상태 유저 체크리스트 E": "가위",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "여러 색의 매직",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recUoA3HCEHInrA4i",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "일회용품이 환경에 미치는 영향을 알아보고 일회용품 대안 아이디어를 떠올려보자!",
+    "챌린지명": "에코 챌린지-일회용품 안녕!",
+    "slug": "FB-ecochallenge",
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recLgf4FTaP45xtAM"
+    ],
+    "재료/상태 유저 체크리스트 A": "일회용품이 필요해!",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recakN2v0LvOCHnP7"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "rec39f2Q4py9qBzXD",
+    "재료/상태 유저 체크리스트 B": "일상의 물건들",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "빨주노초파남보, 이 7가지 색을 모두 찾아보는 미션! 집 안에서 무지개의 색깔을 가진 물건들을 찾아내고, 그 색깔로 무지개를 만들어 사진을 찍어보자. 무지개를 만드는 작은 사냥꾼이 되어봐!",
+    "챌린지명": "무지개 사냥꾼",
+    "slug": "GGB-A-02",
+    "챌린지 썸네일": [
+      {
+        "id": "attT57LL4ne0tTJbS",
+        "width": 605,
+        "height": 456,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/NjxC9MrFynddOOU6hDvyupofcCNyXYEKhtgdKSaHIds",
+        "filename": "GGB-A-02.png",
+        "size": 587326,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/neJzoQENVJZYMrqlPTRhJCCvzPnaL3ejyD5ZaqnpM_w",
+            "width": 48,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/JdRZhzd_pbucqlzqCrEyDQ-wJbBCY_JVhuH0YM3VYlY",
+            "width": 605,
+            "height": 456
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/6WFtn_GgPL96u4FEN7kePnVQLJ-s8X7uRf52Jerd4zQ",
+            "width": 605,
+            "height": 456
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recFUNURTaU0hxFbG"
+    ],
+    "재료/상태 유저 체크리스트 A": "스마트폰 카메라",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "미디어",
+    "난이도": "2",
+    "재료/상태 유저 체크리스트 C": "때로는 친구들",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "reczSVFD4lRVfAdk1",
+    "재료/상태 유저 체크리스트 B": "관찰하는 눈",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "화분 속 작은 식물들을 정글이라고 생각해보자! 그 정글 속에서 상상 속 동물들이 살고 있을지도 몰라. 이 탐험에서 무슨 일이 벌어질까? 그곳에선 어떤 모험이 기다리고 있을지, 너만의 상상으로 기록해보자. 실내의 작은 정글이 거대한 세계로 변신할 거야!",
+    "챌린지명": "실내 정글 탐험",
+    "slug": "GGB-A-03",
+    "챌린지 썸네일": [
+      {
+        "id": "attObWNReXLINtDAI",
+        "width": 589,
+        "height": 523,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/CYskERBKNfaKvSFwcyudBCxo26rL_HpdN2xTJPhTdaU",
+        "filename": "GGB-A-03.png",
+        "size": 466537,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/CdbWcLPJ_0fxcm3nzrT3nfOUeQaB5fUFxm5npSLZI2I",
+            "width": 41,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/M22lTuM2vEU_cP945gb8QCoa2PiU4BGwabCk2YdAlkw",
+            "width": 577,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/l7J1pyYJ7Yi5koFGm2pWi1QDyDuVZnB46n_iW8HXwfU",
+            "width": 589,
+            "height": 523
+          }
+        }
+      }
+    ],
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recBJ3B9JzaeUhO5t"
+    ],
+    "재료/상태 유저 체크리스트 A": "화분",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "그림 그릴 준비",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec3mKIsqStJ88V6H",
+    "재료/상태 유저 체크리스트 B": "신문지 또는 얆은 종이",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "창틀에 쌓인 먼지나 작은 흙들을 보고, 그곳이 하나의 작은 세계라고 상상해보자. 그 작은 세계 안에서 무슨 일이 벌어질까? 창틀이 그 세계의 경계라면, 그 너머엔 어떤 미지의 세계가 펼쳐져 있을까? 상상의 날개를 펼쳐보는 시간!",
+    "챌린지명": "세계의 경계",
+    "slug": "GGB-A-04",
+    "챌린지 썸네일": [
+      {
+        "id": "attZ8ietIK7yVt2Fj",
+        "width": 577,
+        "height": 521,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/cz6jn-DAGDUpSR8VjEA9I61r29sY5w39doWFW-Jdccc",
+        "filename": "GGB-A-04.png",
+        "size": 479478,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/-nbHbc9w0Pe0sNgS7Dov1lxZd7nYthxFzFjd-_jcZGQ",
+            "width": 40,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/6mnuMjOPr6a8-YGy4XlWz07fKUgzwe1rEOKn085uIY0",
+            "width": 567,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/w6fygpaEMer9q08ORx1tmqobt9QBB65qzP0wL3f4k24",
+            "width": 577,
+            "height": 521
+          }
+        }
+      }
+    ],
+    "메인장르": "과학 실험",
+    "챌린지 상세 페이지": [
+      "recZoklYLDzC7ewZl"
+    ],
+    "재료/상태 유저 체크리스트 A": "먼지 쌓인 창틀",
+    "그룹 구분": "B. 그룹1",
+    "재료/상태 유저 체크리스트 D": "젖은 종이를 말릴 시간",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "드로잉",
+    "재료/상태 유저 체크리스트 E": "굵은 펜",
+    "난이도": "4",
+    "재료/상태 유저 체크리스트 C": "물을 채운 분무기",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recMaORkx7ro285lr",
+    "재료/상태 유저 체크리스트 B": "그림 그릴 준비",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "신발 한 켤레를 보고, 그 신발이 어디를 다녀왔는지 상상해보자구! 신발이 밟아온 길을 따라가면 어떤 모험이 기다리고 있을까? 작은 모래알이나 먼지가 그 여정을 증명해줄지도 몰라. 신발의 놀라운 이야기를 만들어보자.",
+    "챌린지명": "신발-드의 모험",
+    "slug": "GGB-A-05",
+    "챌린지 썸네일": [
+      {
+        "id": "attNwEgMtTn18gOBO",
+        "width": 597,
+        "height": 446,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/OLKYTCZsSbGn3hnpR24gBtsaUmCatLl6nd8kiLgQ8Dk",
+        "filename": "GGB-A-05.png",
+        "size": 354970,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/T9INzEfwqAjAZgCEWBxt5nKnXJ0veaWAQD0TIBQfvUQ",
+            "width": 48,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/8OadGt0TFdNxTsXeKTtq7SitmEO-9PnhG3r9PGicZ4E",
+            "width": 597,
+            "height": 446
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/qqPAnwOTiCq1LE-vfF_QBApBr52GpmGCGKJuIbFS7kM",
+            "width": 597,
+            "height": 446
+          }
+        }
+      }
+    ],
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recgnxmHZl0ENCcfD"
+    ],
+    "재료/상태 유저 체크리스트 A": "친구의 신발",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recOYZMSG6KjACWqJ",
+    "재료/상태 유저 체크리스트 B": "작은 재활용품들",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "맨발로 천천히 바닥을 걸어보자. 바닥의 질감과 무늬, 작은 틈을 발로 느끼며, 그곳이 머나먼 우주의 행성이라고 상상해보자. 그 행성의 표면은 어떤 모습일까? 그리고 그곳의 주민은 어떤 존재일까? 새로운 우주를 탐험하는 방랑자가 되어보는 시간!",
+    "챌린지명": "맨발 우주 방랑자",
+    "slug": "GGB-A-06",
+    "챌린지 썸네일": [
+      {
+        "id": "attEbmqCPL2wWSIOy",
+        "width": 424,
+        "height": 395,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/Whew8zPxR_pkXatzgYqnw2sLfTDFVpqO8RQjDRR-AkU",
+        "filename": "GGB-A-06.png",
+        "size": 299907,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/3IOoa6dweFCBH8Mp3u65divQjdwUNdUsco-NVpjNNHQ",
+            "width": 39,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/_09RvZ5X4DmAp3f6a69rofQDoNptJphrjMxFFapIUog",
+            "width": 424,
+            "height": 395
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/RViY6DPBdqYvnR3s_DBy1sx_YmoUS63YS20Kis2jMQ8",
+            "width": 424,
+            "height": 395
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recVhP6pTY5zmAvwm"
+    ],
+    "재료/상태 유저 체크리스트 A": "맨발로 걸을 준비",
+    "그룹 구분": "B. 그룹1",
+    "재료/상태 유저 체크리스트 D": "특별히 글루건",
+    "그룹명": [
+      "rec7F3hPEfsXKnOEq"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "4",
+    "재료/상태 유저 체크리스트 C": "만들기 준비",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec3M0ScJCSTErRx6",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "경제활동을 하기 위해서는 화폐가 필요해요. 우리 도시에서 쓰일 특별한 화폐를 만들어봅시다!",
+    "챌린지명": "화폐 만들기",
+    "slug": "makepete",
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "reckWMJUJTW8zgNg3"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "reccZ7LWxbY4f0fzh"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 3,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "reccnegEaFORD21ZR",
+    "챌린지 소개 텍스트": "프리덤덤시티에는 이런 직업도 있다고?! 러비쉬안들이 신나게 살아갈 수 있도록 지구에는 없는 독특하고 재미있는 직업을 소개해줘!",
+    "챌린지명": "(신규 업데이트 시 반영) 직업 카드 만들기",
+    "slug": "makenewjob",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "rece6XlxAgEN2gSG1"
+    ],
+    "재료/상태 유저 체크리스트 A": "열린 마음",
+    "서브장르": "일상 관찰",
+    "난이도": "3"
+  },
+  {
+    "id": "rec8t9GLu8WTJ50Le",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "우리 주변의 문제 상황을 관찰하고 이를 사진으로 잘 담아보자!",
+    "챌린지명": "찰칵찰칵 어린이 탐정단",
+    "slug": "FB-takepictures",
+    "챌린지 썸네일": [
+      {
+        "id": "attpAWON1cTe87mKT",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/ZkzQ6RjISiKZ1gg6Yo66ddNnaKd8UmuzJxHg6S1DU_0",
+        "filename": "_917822da-9a6d-42dd-bdf7-e6c78f102235.jfif",
+        "size": 214700,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/1KFRN6Buip6m06TFz58d0cvqoEOE3NGzljrINROc4VA",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/zZBcwg_kloN2i7DXUIVgYK8rISKjFi4Co0f4rcodDJk",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/0jcWNoQZZQoNtQCiwIXAnwvlYknU3EsKqEGbvdQKQ88",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      },
+      {
+        "id": "attOFMr0x0RB80OBb",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/xGw7DTLJmeANIc0NHVeZcQdjONEqyY9jhvVBRJKyP_k",
+        "filename": "_3e803a12-2f55-4143-b962-86be1d795a53.jfif",
+        "size": 229416,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/Pp8CnugHFOd8YB9woCZbApeMfhwuupv7llxPTwwqMEQ",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/RwB6edg_zgxvFEK52TeBqMW72NZSNVFGkQocVtZM9QU",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/9JAROPq6exgkgQpXnAeKF5-CDcOScLWGFYyEFb-UyDs",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recqAphvVDyQu2VjP"
+    ],
+    "그룹 구분": "A. 온보딩",
+    "그룹명": [
+      "recBNbQdZAjLFIF1K"
+    ],
+    "서브장르": "미디어",
+    "난이도": "1",
+    "그룹 탐험 순서": [
+      0
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recZKdecdmM2eTYxn",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "물 1리터로 무엇을 할 수 있을 것 같아?\n지구에 점점 물이 부족해지고 있어! 물 1리터로 하루 사는 방법 보여주자고!",
+    "챌린지명": "1리터의 힘!",
+    "slug": "FB-powerof1liter",
+    "챌린지 썸네일": [
+      {
+        "id": "attgWGkPTw2KTdeye",
+        "width": 863,
+        "height": 835,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/1GZofDIeqd72YKyCZdSGh7WEK3NVcGr1DUQp2Y0xiVQ",
+        "filename": "1리터의 힘.png",
+        "size": 813051,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/xKLsEvCzSkrG8f17zMbENQHT9r_6KOPkaq8wsI9_paE",
+            "width": 37,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/WjsahfNxTWt5fApDln4_OQYqp7NnggSoVDBvs8yOfMc",
+            "width": 529,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/Xh6GvS6-ySn6XImIfBva-QYajhPTJgc1049ZoJRNY9g",
+            "width": 863,
+            "height": 835
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recx3WoQFWrOVNwSD"
+    ],
+    "재료/상태 유저 체크리스트 A": "물을 담을 수 있는 페트병이 준비되면 눌러줘!",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recakN2v0LvOCHnP7"
+    ],
+    "서브장르": "과학 실험",
+    "난이도": "4",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recIdDziF1JkdGO0p",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "온실가스를 줄이는 행동으로 지구를 살릴 수 있다고 믿어?\n온실가스가 계속 증가하면서 지구의 기온이 높아지고, 우리의 환경이 점점 악화되고 있어!\n온실가스를 줄이는 작은 행동을 시작해보자고!",
+    "챌린지명": "온실가스는 줄이Go, 지구는 살리Go!",
+    "slug": "FB-reduceGHG",
+    "챌린지 썸네일": [
+      {
+        "id": "att6MmaeKC4zkTPVy",
+        "width": 379,
+        "height": 386,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/ccdhtfHRlvVRJqWxpzhqsLTFsrkJ7E917qzRmyqCVt0",
+        "filename": "image.png",
+        "size": 256598,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/uQvB5IINg7YPD6FCvEytOZ1TBiikAmbXTnlcwdICBow",
+            "width": 35,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/C023-ddKxrgcH5G5vrsrnEiO-xaCSaEPZsuBFOI0Z5c",
+            "width": 379,
+            "height": 386
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/hJIaFbZw0n8VBYMciXtV_nqtFFwQemhbDPBVt3YJa3w",
+            "width": 379,
+            "height": 386
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "rec1eXGfwGTNPWL6h"
+    ],
+    "재료/상태 유저 체크리스트 A": "디지털 기기에 옥토 스튜디오 앱을 설치해줘.",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recakN2v0LvOCHnP7"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "4",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recmxC0tsQ3ffvYuY",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "의류 과소비가 환경에 미치는 영향을 알아보고 나만의 캡슐 옷장을 만들어보자!",
+    "챌린지명": "지구를 위한 옷장",
+    "slug": "FB-wardrobe",
+    "챌린지 썸네일": [
+      {
+        "id": "attuIOcVSWFaSqgse",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/bKl3kIjUbsyycDtf-J2jOkWBCPIxBqKCSOIfbDM7cAM",
+        "filename": "캡술 옷장",
+        "size": 177122,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/WZY_WP96ODPMnWgPf_gCPyDWIPHOU3NmdMHz-gB7h5Q",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/V1MM2OC2qsani7UzyqmMH3m9V03GiBubP47wKsE5F7c",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/MlZ2Fze4Fv3hdZZAdleKjPtT00B624t1UOxLCudNYj4",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "rec2AocAhHYqlWAWZ"
+    ],
+    "재료/상태 유저 체크리스트 A": "안 입는 옷",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "recakN2v0LvOCHnP7"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "rec1HG2c6ex1fB9px",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "주변 이웃의 어려움을 이해하고 이웃을 위한 반려 로봇을 만들어보자!",
+    "챌린지명": "이웃을 위한 작은 기적",
+    "slug": "FB-littlemiracle",
+    "챌린지 썸네일": [
+      {
+        "id": "attQ0igdG3coCSCYs",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/DsNNt2FxR_JX6uB8vkN9KYeh6scbxlRVPfJyheg91qA",
+        "filename": "이웃을 돕는 반려로봇",
+        "size": 160581,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/ncebl2K_u797eDsqY2Ja_CUtysQ1oVH7GFL7itafgxI",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/gyi0Kh5dk5EdVpdTwRyuZKaEVMDy9JRgLLo3gvizdoc",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/seFNvV4kgRtZPJPUWJ9NdTDRulLi682jAVsnnLL3hPc",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recUCeEGUhxF0lbMR"
+    ],
+    "재료/상태 유저 체크리스트 A": "마이크로비트 혹은 핸드폰",
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "만들기",
+    "난이도": "4",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recBa7fxA3XGLGt4P",
+    "재료/상태 유저 체크리스트 B": "메이키메이키, 전기가 흐르는 물체(젤리, 과일, 알루미늄 포일, 클레이점토 등)",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "누구나 악기를 연주해 볼 수 있다고 믿어?\n악기를 연주하는 것은 음악을 통해 자신을 표현하고, 함께 즐거움을 나눌 수 있는 멋진 방법이야! \n하지만 모두가 악기를 쉽게 배울 기회를 가지는 건 아니지.\n메이키메이키를 사용해서 누구나 쉽게 악기를 연주할 수 있는 기회를 만들어 보자!",
+    "챌린지명": "누구나 악기를 연주해요",
+    "slug": "FB-instrumentmaking",
+    "챌린지 썸네일": [
+      {
+        "id": "attgtXtgUdxhQeuoL",
+        "width": 565,
+        "height": 307,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/KE_G6yCcGkNl2dBDpDmeL9PoUtngXSljn3dkGi1TiHg",
+        "filename": "image.png",
+        "size": 372741,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/UzSfuGjIQvUi5rg__aYId4A12ZgEU8CvzrQwhbRA89w",
+            "width": 66,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/oTSmE0wyIJMlV-__49U4kumcVMZ06b9kJmG2NwUtj5w",
+            "width": 565,
+            "height": 307
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/r59gqiAJH_9nTcWwLqia8xUoUMx3gt0YnPCtxBxdmSg",
+            "width": 565,
+            "height": 307
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recwguMBFntRP6Wv2"
+    ],
+    "재료/상태 유저 체크리스트 A": "디지털 기기에 옥토 스튜디오 앱을 설치해줘.",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recNuaO4VYGyvNGme"
+    ],
+    "서브장르": "미디어",
+    "난이도": "4",
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recm1DSLqFjRAlN89",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "안전한 복도가 학교 생활에 얼마나 중요한지 알고 있어?\n복도에서 뛰거나 장난치다가 다치는 일이 생기면 모두에게 위험할 수 있어!\n우리 모두가 안전하게 다닐 수 있도록 복도에서 지켜야 할 규칙들을 표지판으로 만들어 보자.\n작은 실천이지만, 안전한 학교를 만드는 데 큰 도움이 될 거야!",
+    "챌린지명": "복도 안전 레벨 업",
+    "slug": "FB-hallwaysafetylevelup",
+    "챌린지 썸네일": [
+      {
+        "id": "att5mjyr9olrYewz3",
+        "width": 384,
+        "height": 388,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/nyDODMYYM5i25oASivt9eMkeT5-O5dDDRkKh_GRRhtw",
+        "filename": "image.png",
+        "size": 407610,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/pzZRlrqKWP7MonAc8qOrObDzBpgGGuEjihkuzrrJJgU",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/NGMk_-7WL90eete1RZ2nmAo3LJCtNY4LcL-yhxC997U",
+            "width": 384,
+            "height": 388
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/qS99vYWnK9pKegrH5qQvE2jqOV3O4teIWHXiqz7MxcY",
+            "width": 384,
+            "height": 388
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "rectT8fUaLCL8XOCr"
+    ],
+    "재료/상태 유저 체크리스트 A": "종이, 보드, 마커, 스티커, 테이프, 가위 등을 준비해줘.",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recNuaO4VYGyvNGme"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "reclcTEhbkND4AxCb",
+    "재료/상태 유저 체크리스트 B": "접시",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "일상의 음식에 약간의 즐거운 변화를 줘서 우리 도시만의 향토 음식을 만들어볼까요?",
+    "챌린지명": "향토 음식 만들기",
+    "slug": "makedelifood",
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recaWJrkTDeAVphGq"
+    ],
+    "재료/상태 유저 체크리스트 A": "먹을 수 있는 식재료",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "reci9yx5KJm0GxEyB"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "도마와 칼",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "recfGThpNz9fjd5qi",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "재활용의 날 축제를 가득 채울 프리덤덤시티만의 자유로운 음악을 만들어볼까요?",
+    "챌린지명": "축제 음악 만들기",
+    "slug": "makethesound",
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "rec0LdSoHPabGnPvc"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "reci9yx5KJm0GxEyB"
+    ],
+    "서브장르": "과학 실험",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "rec4w5DjiKFB5P3F9",
+    "재료/상태 유저 체크리스트 B": "가위",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "양말, 낡은 옷처럼 사용하지 않는 천을 활용해 축제에 가져갈 멋진 아이템을 만들어볼까요?",
+    "챌린지명": "특별한 아이템 만들기",
+    "slug": "makespeicalitem",
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recemV5YPPFVdV0w6"
+    ],
+    "재료/상태 유저 체크리스트 A": "낡은 천",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "reci9yx5KJm0GxEyB"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "바늘과 실",
+    "챌린지 노출 순서": 3,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "recGkRjE9o2WUitlX",
+    "재료/상태 유저 체크리스트 B": "필기도구",
+    "월드명": "프리덤덤시티",
+    "챌린지 소개 텍스트": "언어는 의사소통을 위한 가장 중요한 규칙이에요. 우리 도시만의 약속, 문자를 만들어봅시다!",
+    "챌린지명": "문자 만들기",
+    "slug": "makesecretcode",
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recfH8YxFShTmezMK"
+    ],
+    "재료/상태 유저 체크리스트 A": "종이",
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "reccZ7LWxbY4f0fzh"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  },
+  {
+    "id": "reczlHOp3SNbkIhhM",
+    "재료/상태 유저 체크리스트 B": "색종이, 가위, 풀",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "학교가는 길에 많은 것을 볼 수 있지?\n때로는 우리를 위험하게 하는 것들이 있어!\n모두가 안전하게 학교에 갈 수 있도록 안전하게 학교가는 길을 만들어볼까?",
+    "챌린지명": "학교가는 길",
+    "slug": "FB-waytoschool",
+    "챌린지 썸네일": [
+      {
+        "id": "attc1OE8FbX1OxTlo",
+        "width": 388,
+        "height": 388,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/oYcQtXLWp1JITfcEeNxUkLOaPpqio2FebUiVKsjGTk8",
+        "filename": "학교가는길.png",
+        "size": 216543,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/jqpMaRS8qKD3oN394HS8yha5GOzRLfrsPFrW7J15ofE",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/YOnwmZt9P32pE_l9rGgD0GMUDQS1IyZSxwmOPDc-lPQ",
+            "width": 388,
+            "height": 388
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/r_VOtylUeGRm2xhgD3icoCK0OVcAO-W2F_zimx8r108",
+            "width": 388,
+            "height": 388
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recT6qfqyF22NX5P3"
+    ],
+    "재료/상태 유저 체크리스트 A": "도화지",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recNuaO4VYGyvNGme"
+    ],
+    "서브장르": "만들기",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "그 밖에 학교가는 길을 꾸밀만한 잡다한 재료들",
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recEvsI3iB0LbRTme",
+    "재료/상태 유저 체크리스트 B": "내가 좋아하는 음식 재료",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "급식이 맛이 없어서 남겼다고?\n세계의 식량자원이 점점 고갈되고 있어!\n남긴 재료를 맛있는 요리로 변신시켜보자!",
+    "챌린지명": "식량자원 확보",
+    "slug": "FB-foodresources",
+    "챌린지 썸네일": [
+      {
+        "id": "attaK35zO0DdqSmoX",
+        "width": 568,
+        "height": 579,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/yY6kTJTQ5H1NrUnpIavld7ak5gQnwr-2CbzjkwyPhFY",
+        "filename": "요리2.png",
+        "size": 684173,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/PX7YCDkpFj0DSgsNIrEIg0_DD0vDuUXIqhQimk9LS8s",
+            "width": 35,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/Ft3gr_bRkAuh-Zs_rOoCoQCvO6WDLlQG--8wWyY2u9g",
+            "width": 512,
+            "height": 522
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/M8yU_uZk_2h1FUSWeeB7Y6u-XqVMQSYzkzC1Bz9zEpc",
+            "width": 568,
+            "height": 579
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recZyZ0axd7cqGyjb"
+    ],
+    "재료/상태 유저 체크리스트 A": "내가 잘 안먹는 요리 재료",
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recNuaO4VYGyvNGme"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "재료/상태 유저 체크리스트 C": "간단한 조리 도구",
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recHd3kL37z1FIKmx",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "폭염 속 동물들의 어려움을 이해하고 동물 쉼터를 제작해보자!",
+    "챌린지명": "따뜻한 마음, 시원한 도움",
+    "slug": "FB-coolhelp",
+    "챌린지 썸네일": [
+      {
+        "id": "attSUOHjblki3kXlO",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/aUJj-zS8Gz1kZacDSumd_ZlEBd81RIh7K3Px4V-y7oE",
+        "filename": "폭염을 피하는 동물",
+        "size": 193094,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/qoOYLzvk1fwjQzjtIi75Mmtp2FP12FR6khXETIzjP7Y",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/FpS9eYjJYNDfLLjFnWklKwjaLGmgsvXlwZlleRTVIEE",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/qhjFDbq8E8m4INpH1HOcX86HcTazkLrsd6e8tt02xDo",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recAvhkZsZSifm6RV"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recqcOc3AHnzXmbem",
+    "재료/상태 유저 체크리스트 B": "가위, 풀, 테이프, 글루건",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "여러분을 태양열 에너지 요리사로 초대합니다. 햇빛만을 이용해 음식을 만들어야 하는 환경에서 멋지게 도전해보세요!",
+    "챌린지명": "햇빛 요리사",
+    "slug": "FB-solaroven",
+    "챌린지 썸네일": [
+      {
+        "id": "attdgUiB5cS9YzLkK",
+        "width": 575,
+        "height": 582,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/Z_2Nk07uwUuDZ_F_r6Gytnri7myL6ekeoDBN1F_wcL8",
+        "filename": "solaroven.png",
+        "size": 640265,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/6zFLxPFShU3CWocpaMDqqAV6C81elx_QXEzLDzpICCM",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/Hy3eyXlLW-JtFkjETTIuyerAiIdfi6_zNtC1Zge2328",
+            "width": 512,
+            "height": 518
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/OZoGObKzjrTzU50UNdfG6m9KWbnlbl0ZIZDjQRMdWNM",
+            "width": 575,
+            "height": 582
+          }
+        }
+      }
+    ],
+    "메인장르": "과학 실험",
+    "챌린지 상세 페이지": [
+      "recHDG4HZp3ufMZxd"
+    ],
+    "재료/상태 유저 체크리스트 A": "알루미늄 호일, 두꺼운 종이, 검은 도화지",
+    "그룹 구분": "D. 그룹3",
+    "재료/상태 유저 체크리스트 D": "날달걀 한개",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "만들기",
+    "난이도": "4",
+    "재료/상태 유저 체크리스트 C": "나무젓가락",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "rechE05cp5pbgGAEJ",
+    "재료/상태 유저 체크리스트 B": "핸드폰",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "우리 마을을 위협하는 산불에 대해 알아보고 산불 탐지기를 준비해보자!",
+    "챌린지명": "나도 소방관!",
+    "slug": "FB-firefighter",
+    "챌린지 썸네일": [
+      {
+        "id": "attVXAxLS56KqkkFs",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/clemupVu5eBtG8hBxQ5rgtwVEGx5knoooBfNnt5esrQ",
+        "filename": "나도 소방관!",
+        "size": 257473,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/zVHBLm5BxupDNCU54iII17qbhKhWE8IqCAFtQY8F0JY",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/tpFauRT10GP9skZmZd0iVG4jmVYvKp-YKzrNovSx4Ew",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/On3UUThE4GlGUqrrIRQOlNPzId2TM8boC19YL76K1ko",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recurKaVzyp3TyJrU"
+    ],
+    "재료/상태 유저 체크리스트 A": "마이크로비트",
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "만들기",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recqANKPirNay9ci3",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "우리 마을의 빈 공간을 멋지게 바꿀 수 있다고 믿어?\n지금은 삭막하지만, 우리가 함께하면 푸릇푸릇한 정원으로 변할 수 있어!\n아이디어를 함께 시작해보자!",
+    "챌린지명": "빈 곳에 초록을 심어요",
+    "slug": "FB-greeningemptyspaces",
+    "챌린지 썸네일": [
+      {
+        "id": "attRNU0FvjZ6SevWo",
+        "width": 385,
+        "height": 376,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/PNhFbT5lty_os5Sp1FC-ocCBd_de0ZRyGWEynWFMYE4",
+        "filename": "image.png",
+        "size": 407990,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/-pLfICZgRq97xPMgNplnxsj0aDwhNPiqYRDe129b0JI",
+            "width": 37,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/CyzHoODCauVDUZHoazvg5T4bweaQQYgcEICzoKbdk5I",
+            "width": 385,
+            "height": 376
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/hRn0VKRCU8VjKiXoUbv9sRCdTlOKhgbucDS8G9ZW1n8",
+            "width": 385,
+            "height": 376
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "rec1JevdqPPQy8bls"
+    ],
+    "재료/상태 유저 체크리스트 A": "종이, 보드, 마커, 채색도구, 스티커, 테이프, 가위 등을 준비해줘.",
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recZN7XqjD6VFjgr5",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "우리 마을, 깨끗하게 만들고 싶지 않아?\n플로깅으로 운동도 하고 환경도 지킬 수 있어!\n작은 실천으로 반짝이는 마을을 만들어보자!",
+    "챌린지명": "플로깅으로 마을 건강 회복하기",
+    "slug": "FB-ploggingtools",
+    "챌린지 썸네일": [
+      {
+        "id": "attZfbJde3C061XFy",
+        "width": 391,
+        "height": 378,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/iyrhhkAqlztkO-K0dfl-dKv55PnrlnkXLaOOXwkhMlc",
+        "filename": "image.png",
+        "size": 422113,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/VYlqVCprA8AfBgWC7PK0zO1zfSfLRUJwsKExw77ckHg",
+            "width": 37,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/8Yw2OTl46hb47km2rqT4DCZXv5xjt6T4k5Bo0FB0ZUM",
+            "width": 391,
+            "height": 378
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/aGR5eduYupY-7SSc3Dql_5hXjYGoP1GLys1vH3h_bhg",
+            "width": 391,
+            "height": 378
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recQEdeGJpACJi1Oz"
+    ],
+    "재료/상태 유저 체크리스트 A": "재활용품,  테이프, 가위 등을 준비해줘.",
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recdHQtUzzvv5IbNc"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "3",
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
+  },
+  {
+    "id": "recwzitwklANqNV01",
+    "챌린지명": "샘플데이터"
+  },
+  {
+    "id": "recLV8L4cLlLV1qNl",
+    "챌린지 소개 텍스트": "3",
+    "챌린지명": "테스트",
+    "slug": "magicmagic",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recfLTNlgovNPUY7q"
+    ],
+    "재료/상태 유저 체크리스트 A": "4",
+    "그룹 구분": "B. 그룹1",
+    "그룹명": [
+      "rechq45P67pZBJfhG"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "4",
+    "챌린지 노출 순서": 5,
+    "그룹 탐험 순서": [
+      1
+    ]
+  },
+  {
+    "id": "recOJ0o2VOHIlpKZA",
+    "챌린지명": "맨발 지구 선언",
+    "slug": "GGB-B-01",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "월드명": "지진방",
+    "챌린지 노출 순서": 1,
+    "챌린지 소개 텍스트": "지구가 우리 발바닥에 자기 얼굴을 느껴보라고 초대했어!  발바닥으로 지구의 표면을 느끼보자구!",
+    "메인장르": "드로잉",
+    "서브장르": "일상 관찰",
+    "난이도": "2",
+    "재료/상태 유저 체크리스트 B": "드로잉 준비",
+    "재료/상태 유저 체크리스트 A": "맨발로 걸을 용기"
+  }
+]

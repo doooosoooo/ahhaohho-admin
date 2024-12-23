@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const AWS = require('aws-sdk');
-const { loadConfig } = require('../config/config');
+const { loadConfig } = require('../../config/config');
 
 async function uploadDirectoryToS3AndSaveUrls(localPath, s3Prefix, outputJsonPath) {
     const config = await loadConfig();
