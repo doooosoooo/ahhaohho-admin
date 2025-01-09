@@ -13,7 +13,7 @@ class GroupDataTransformer {
       title: data["그룹명"].trim(),
       groupIdx: data.id || null,
       order: data["그룹 탐험 순서"],
-      openChat: data["월드맵(매개자-유저 대화)"]?.[0] || null,
+      openChatIdxs: data["월드맵(매개자-유저 대화)"]?.[0] || null,
       badge: 'https://cdn-world.ahhaohho.com/sampleAsset/world-badge.svg',
       challengeIdxs: this._transformChallengeIdxs(data["챌린지 소개 페이지"])
     };
