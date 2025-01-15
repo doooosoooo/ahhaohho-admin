@@ -1,15 +1,5 @@
 [
   {
-    "id": "recvRikiuwbxugFPy",
-    "그룹명": "샘플데이터",
-    "월드 메인 화면": [
-      "recFpFRvPb5ttx3G2"
-    ],
-    "월드맵(매개자-유저 대화)": [
-      "reczpqxpiun3BdawA"
-    ]
-  },
-  {
     "id": "rec16H7fHV0DwTIEP",
     "그룹명": "온보딩",
     "월드 메인 화면": [
@@ -172,7 +162,10 @@
     "월드맵(매개자-유저 대화)": [
       "rec1I2ZtyqlAnY6PD"
     ],
-    "그룹 구분": "onboarding"
+    "그룹 구분": "onboarding",
+    "챌린지 소개 페이지": [
+      "recohem1iJU3bj6Lr"
+    ]
   },
   {
     "id": "rec7F3hPEfsXKnOEq",
@@ -201,7 +194,18 @@
       "rechvVfNzFb3ZZUlm"
     ],
     "그룹 탐험 순서": 2,
-    "그룹 구분": "common"
+    "월드맵(매개자-유저 대화)": [
+      "rec0cJSLNLOZ17ywh"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "recOJ0o2VOHIlpKZA",
+      "reccxdIsjqGraz3xv",
+      "recm5owddgLNejyU5",
+      "recaLm8YrgTD8p5dE",
+      "recfHQJMNiqU0AmBY",
+      "recKBTFmyKsjYb3Pl"
+    ]
   },
   {
     "id": "recU08CZSMQeytkfo",
@@ -210,7 +214,18 @@
       "rechvVfNzFb3ZZUlm"
     ],
     "그룹 탐험 순서": 3,
-    "그룹 구분": "common"
+    "월드맵(매개자-유저 대화)": [
+      "reccq2u6Ew8CRHxO6"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "recog6TPnpN8NcLQc",
+      "recYR7ckJqvOFzcBy",
+      "recH3JiSFEec3Sp9M",
+      "recu7yM3NE0cBSjdB",
+      "recNPoW8VzNtVAo6a",
+      "rec73z152uAw9lrOM"
+    ]
   },
   {
     "id": "recI0XKXODf3ZiZ1Z",
@@ -219,21 +234,82 @@
       "rechvVfNzFb3ZZUlm"
     ],
     "그룹 탐험 순서": 4,
-    "그룹 구분": "common"
+    "월드맵(매개자-유저 대화)": [
+      "recWYwJ6vS1hvWevB"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "rec0xZphL3VWFbskF",
+      "recHipbt93PDGASy9",
+      "recoYXgf9sWqI589Z",
+      "reciQkUcEmKCavTY5",
+      "rec7kgsTDnkGiRtFQ",
+      "rec3jwBoYjcToo0eE"
+    ]
   },
   {
     "id": "rechq45P67pZBJfhG",
     "그룹명": "카멜레온의 신비",
     "그룹 탐험 순서": 1,
-    "그룹 구분": "common",
-    "챌린지 소개 페이지": [
-      "recLV8L4cLlLV1qNl"
-    ]
+    "그룹 구분": "common"
   },
   {
     "id": "rec3E5X1soWglD077",
     "그룹명": "온보딩",
+    "월드 메인 화면": [
+      "recJdOMytVE2FaQP2"
+    ],
     "그룹 탐험 순서": 0,
+    "월드맵(매개자-유저 대화)": [
+      "recstEiHHLSJAkO06"
+    ],
     "그룹 구분": "onboarding"
+  },
+  {
+    "id": "rec9P0tcRLDxJYxzR",
+    "그룹명": "버튼반응형 샘플 그룹",
+    "월드 메인 화면": [
+      "recJdOMytVE2FaQP2"
+    ],
+    "그룹 탐험 순서": 1,
+    "월드맵(매개자-유저 대화)": [
+      "recYXP5C0Y5olfqjd"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "recsVYWqw4ZrpaL54",
+      "recSTNvIGc86wGsjS"
+    ]
+  },
+  {
+    "id": "recyI9Hjkb98ubobw",
+    "그룹명": "인터랙션형 샘플 그룹",
+    "월드 메인 화면": [
+      "recJdOMytVE2FaQP2"
+    ],
+    "그룹 탐험 순서": 2,
+    "월드맵(매개자-유저 대화)": [
+      "recXhY3HNodBgXHRe"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "reciPMjQzjHmEZD4L",
+      "recDsvd79fiWLK7l6"
+    ]
+  },
+  {
+    "id": "rec5OyCAHzPk5VdeB",
+    "그룹명": "오픈월드",
+    "월드 메인 화면": [
+      "reciTGUJuePxlP2fH"
+    ],
+    "그룹 탐험 순서": 4,
+    "월드맵(매개자-유저 대화)": [
+      "rec4XEUJkk7AoEJe6"
+    ],
+    "그룹 구분": "common",
+    "챌린지 소개 페이지": [
+      "recJrValnMuUNwvc1"
+    ]
   }
 ]

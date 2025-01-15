@@ -51,7 +51,7 @@ class ChatDataTransformer {
       case '모듈2 : 인터랙션형':
         return this._transformMediatorInteractionType(data, moduleNum);
       case '모듈3 : 타이핑형':
-        return this._transformTypingType(data, moduleNum);
+        return this._transformTypingTypeMediator(data, moduleNum);
       default:
         return null;
     }
@@ -63,6 +63,8 @@ class ChatDataTransformer {
         return this._transformUserButtonResponse(data, moduleNum);
       case '모듈2 : 인터랙션형':
         return this._transformUserInteractionResponse(data, moduleNum);
+      case '모듈3 : 타이핑형':
+        return this._transformTypingType();
       default:
         return null;
     }
@@ -87,9 +89,10 @@ class ChatDataTransformer {
     };
   }
 
-  static _transformUserButtonResponse(data, moduleNum) {
+static _transformUserButtonResponse(data, moduleNum) {
     const prompts = [];
     let hasImage = false;
+    let hasText = false;
 
     for (let i = 1; i <= 2; i++) {
       const content = data[`버튼 반응형-유저 선택지 내용 ${i} / 모듈 선택 ${moduleNum}`];
@@ -98,6 +101,7 @@ class ChatDataTransformer {
       if (content || image) {
         const media = image ? this._transformMediaToDTO(image[0]) : null;
         if (media) hasImage = true;
+        if (content) hasText = true;
         prompts.push({
           text: content || null,
           media
@@ -105,13 +109,22 @@ class ChatDataTransformer {
       }
     }
 
-    return prompts.length > 0 ? {
-      type: hasImage ? 'text+image' : 'text',
+    if (prompts.length === 0) return null;
+
+    let type = 'text';
+    if (hasImage && hasText) {
+      type = 'text+image';
+    } else if (hasImage && !hasText) {
+      type = 'image';
+    }
+
+    return {
+      type,
       talker: 'user',
       hasOpts: true,
       prompts
-    } : null;
-  }
+    };
+}
 
   static _transformMediatorInteractionType(data, moduleNum) {
     const mediatorText = data[`인터랙션형-매개자 대사 / 모듈 선택 ${moduleNum}`];
@@ -129,8 +142,7 @@ class ChatDataTransformer {
   }
 
   static _transformUserInteractionResponse(data, moduleNum) {
-    const prompts = [];
-    let hasImage = false;
+    const medias = [];
 
     for (let i = 1; i <= 4; i++) {
       const buttonTitle = data[`인터랙션형-유저선택 버튼 이미지 ${i} 설명 텍스트 / 모듈 선택 ${moduleNum}`];
@@ -139,31 +151,26 @@ class ChatDataTransformer {
       const responseText = data[`인터랙션형-선택지 ${i} 응답 텍스트 / 모듈 선택 ${moduleNum}`];
 
       if (buttonImage || responseImage || responseText) {
-        const mediaObj = {
-          title: buttonTitle || null,
-          image: [
-            buttonImage ? this._transformMediaImage(buttonImage[0]) : null,
-            responseImage ? this._transformMediaImage(responseImage[0]) : null
-          ].filter(img => img !== null), // null 값 제거
-          imageDescription: responseText || null
-        };
-
-        if (mediaObj.image.length > 0) {
-          hasImage = true;
-        }
-
-        prompts.push({
-          text: null,
-          media: [mediaObj] // media를 배열로 만듦
-        });
+        medias.push(  // 외부 배열
+          {           // 단일 미디어 객체
+            title: buttonTitle || null,  // buttonTitle 추가
+            image: [
+              buttonImage ? this._transformMediaImage(buttonImage[0]) : null,
+              responseImage ? this._transformMediaImage(responseImage[0]) : null
+            ].filter(img => img !== null),
+            imageDescription: responseText || null
+          }
+        );
       }
     }
 
-    return prompts.length > 1 ? {
-      type: hasImage ? 'text+image' : 'text',
-      talker: 'user',
-      hasOpts: true,
-      prompts
+    return medias.length > 0 ? {
+      type: 'text+image',
+      talker: 'prompt',
+      prompts: [{
+        text: null,
+        media: medias
+      }]
     } : null;
   }
 
@@ -179,10 +186,21 @@ class ChatDataTransformer {
     };
   }
   
-  static _transformTypingType(data, moduleNum) {
-    const text = data[`타이핑형-매개자 대사 / 모듈 선택 ${moduleNum}`];
-    if (!text) return null;
+  static _transformTypingType() {    
+    return {
+      type: 'userTyping',
+      talker: 'user',
+      hasOpts: false,
+      prompts: [{
+        text: null,
+        media: null
+      }]
+    };
+  }
 
+  static _transformTypingTypeMediator(data, moduleNum) {
+    const text = data[`타이핑형-매개자 대사 / 모듈 선택 ${moduleNum}`];
+    
     return {
       type: 'text',
       talker: 'ahhaohho',

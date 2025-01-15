@@ -1518,31 +1518,6 @@
     ]
   },
   {
-    "id": "recwzitwklANqNV01",
-    "챌린지명": "샘플데이터"
-  },
-  {
-    "id": "recLV8L4cLlLV1qNl",
-    "챌린지 소개 텍스트": "3",
-    "챌린지명": "테스트",
-    "slug": "magicmagic",
-    "메인장르": "스토리텔링",
-    "챌린지 상세 페이지": [
-      "recfLTNlgovNPUY7q"
-    ],
-    "재료/상태 유저 체크리스트 A": "4",
-    "그룹 구분": "B. 그룹1",
-    "그룹명": [
-      "rechq45P67pZBJfhG"
-    ],
-    "서브장르": "드로잉",
-    "난이도": "4",
-    "챌린지 노출 순서": 5,
-    "그룹 탐험 순서": [
-      1
-    ]
-  },
-  {
     "id": "recOJ0o2VOHIlpKZA",
     "챌린지명": "맨발 지구 선언",
     "slug": "GGB-B-01",
@@ -1564,5 +1539,1119 @@
     "난이도": "2",
     "재료/상태 유저 체크리스트 B": "드로잉 준비",
     "재료/상태 유저 체크리스트 A": "맨발로 걸을 용기"
+  },
+  {
+    "id": "reccxdIsjqGraz3xv",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "우리와 함께 살아가는 나무들은 각기 다른 개성과 이야기를 가지고 있어. 너의 진짜 친구를 만들어보지 않을래?",
+    "챌린지명": "이제부터 너를 00이라 부르겠어",
+    "slug": "GGB-B-02",
+    "챌린지 썸네일": [
+      {
+        "id": "attyU8dzPUOFSaNXB",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/1auMZWZRxNTT-JPIUWMD1svw9HQLDW_9_HW4eVMYN5U",
+        "filename": "B-2.jpg",
+        "size": 804532,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/dsvv5VaZWQVB7NdWV0bbwgahSMAUlBgf7wP1e4N0kg8",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/Id-SqOF0jH_LXtmmuBqYRRwolWHjYZ-DpdzFcUFhrL4",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/40zReTtSDkyKi4gHkXa2K-aiLVbKnDCyk0Scj6Mvqgg",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "reck5uxP8jjVUuwtd"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recm5owddgLNejyU5",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "잡초들은 아주 작고 흔하지만 놀라운 생명력을 지녔어! 그들은 사실 세상의 역경을 이겨낸 지구 최고의 강자들이야!",
+    "챌린지명": "약한 아이들은 다 죽었어",
+    "slug": "GGB-B-03",
+    "챌린지 썸네일": [
+      {
+        "id": "attXmqq2GpDUnaioS",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/f1LeEQMjNwfVrKVqqN6k0szvfIGXJWdPyiV0BChCHOE",
+        "filename": "B-3.jpg",
+        "size": 182434,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/_ZCxAZj5ySgyb5thXA_BS8JpHvHO_GvihK280M_5mVo",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/NGjZMsNOYIo5GRmu0XGVK6YMcd5Avr2npn5SZFAQXyQ",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/Rj_lX7siO25spIUR0RZ4LqHSoKHYfjnY4oY9l6mpscM",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recEDnqAjDlZstydY"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 3,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recaLm8YrgTD8p5dE",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "나뭇잎 배를 물 위에 띄우고 물살에 따라 모험이 시작되는 순간을 상상해봐! 나뭇잎 배와 함께 모험을 떠나볼 준비됐어?",
+    "챌린지명": "위대한 나뭇잎 배",
+    "slug": "GGB-B-04",
+    "챌린지 썸네일": [
+      {
+        "id": "attQ4CFEHmhPHAMQX",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/RfocXCeDnV28SK23NniD1t-pLHwVOFm_zd55R_5R_yw",
+        "filename": "B-4.4.jpg",
+        "size": 346575,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/VPshMJiIH6ltSP9GYFCZdErOCyBs2-UaSKq0Hh4XjDc",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/QmNh7vRpXcMpQqWGEMdeISKzOH4aDpM7bZSS1PxLSWA",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/mt1lZ0ovLd4_7ZBW_Tz5sqvaGAdG8t7bHrF_UJLKE9U",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recotggIYsjHPhHmr"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "서브장르": "미디어",
+    "난이도": "3",
+    "챌린지 노출 순서": 4,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recfHQJMNiqU0AmBY",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "돌을 하나씩 쌓아 올리며 균형을 잡아보자! 지구의 무게를 느낄 수 있는 너만의 탑을 만들어보라구!",
+    "챌린지명": "아슬아슬! 돌탑",
+    "slug": "GGB-B-05",
+    "챌린지 썸네일": [
+      {
+        "id": "att2q4PZdo0GlZV5O",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/9GWfVjKbJeoJEu-eWsEIiZGpmKv8S9FqlZWwYYeMd_A",
+        "filename": "B-5.jpg",
+        "size": 496103,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/2EOZuhXQIW6AeQrXwM_5SrF7wezdBvGpNUeM3AbwEDQ",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/IFYmdzuDhkIael4MeIdowuQXUnmoFvVOS-VOLBIuZQw",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/C3qlxIY4gAokXXW4i7ycJYTCZ6q_XfZkN686vMeuNWc",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "과학 실험",
+    "챌린지 상세 페이지": [
+      "rec0LLKFSYHJnPwJw"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 5,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recKBTFmyKsjYb3Pl",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "작은 돌, 나뭇가지, 이끼 같은 재료들을 모아 아주아주 가까이 들여다보자! 새로운 미세 지구 유니버스가 펼쳐질거야!",
+    "챌린지명": "미세 지구 유니버스",
+    "slug": "GGB-B-06",
+    "챌린지 썸네일": [
+      {
+        "id": "attTLsYUSo8UCul7S",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/82hESY7LrpIU8D_21w9KW-lbkO0echFDeElSq47ir1g",
+        "filename": "B-6.jpg",
+        "size": 472447,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/nU8NKBesPaMF3wt5C-XQsI4BWBEIcGJ8LLyL2AelTno",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/pfW19zH6Ke_FS6JlQHA_yir1VOLIM83LWNtFxgR09_w",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/QpCDP2Ai_HV89q9ARHcWsPkm-v3vBdBVUCX_fTfan-4",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recWTBu3QbMlPwBPO"
+    ],
+    "그룹 구분": "C. 그룹2",
+    "그룹명": [
+      "recB03sNOlu8X7tBp"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 6,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recog6TPnpN8NcLQc",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "물이 든 팩을 눈 위에 올려놓고 편안히 누워봐. 세상이 흐릿하게, 모든 게 아주아주 느리게 움직이는 게 느껴질 거야!",
+    "챌린지명": "시간을 멈추는 법",
+    "slug": "GGB-C-01",
+    "챌린지 썸네일": [
+      {
+        "id": "attIxid5tpVfCVUlZ",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/QwGz7R4VibWy6aspOC9eRNjHwFsXeNDswiEUyhE7RF4",
+        "filename": "C-1.jpg",
+        "size": 749385,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/BxE7bVM5elb7DWAh0dAxadSYDArEwiFH0mrtDC24otI",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/gobjWUW6NcJoBrwodTOvKmwoMku18r0--EsKNXjEMU4",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/rzP3iU-ANTJElrI0w4kK7ssu8fhe5ZSqi4trF0QNYIw",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recTLwwKJpOz6W6eR"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "과학 실험",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recYR7ckJqvOFzcBy",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "과거의 내가 남긴 선물을 발견한다면 어떤 기분일까? 지금의 너가 좋아하는 것들, 특별한 추억을 타임캡슐에 담아보자! ",
+    "챌린지명": "일시 정지 방학",
+    "slug": "GGB-C-02",
+    "챌린지 썸네일": [
+      {
+        "id": "attHsbLnyqR0OdTz5",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/yTdgdysrcSAOWgWhRxaENZfT-W3U5fBzH2YUIHZmf-4",
+        "filename": "C-2.jpg",
+        "size": 453590,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/66fut-Y2pZEtvhyjla5noKDJdXxPc3jVEcON-Anw304",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/9U2E9482P2K7I2gNoXnmBPzKdgawQ9K1ryfB4YKVsUw",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/QVzXA8weJfUIRxqYgUG1rfVt0-_rQ9v6xyaf9lrjVQc",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recJH6SlZWoEoUZt5"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recH3JiSFEec3Sp9M",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "천천히, 더 천천히…  거꾸로 걸어보자! 그 걸음을 영상에 담아 거꾸로 재생한다면 마법이 펼쳐질거야!",
+    "챌린지명": "거꾸로 슬로모",
+    "slug": "GGB-C-03",
+    "챌린지 썸네일": [
+      {
+        "id": "attymiDpHHyAshQhr",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/UwdbXRvX15bNJ1gP_EETYMaw7h85iudoaEW9jsuEWY0",
+        "filename": "C-3.jpg",
+        "size": 211409,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/eawDFo4K0VEFXeT9tWBtfBUNkZo-8u2VAU0orpWR3aA",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/C3Zl74-boFIkqxPcGnswLzbaTIwdJWQ2wkEU5Wf0lCQ",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/789PAPqL3S0QJ4vHTHNKca_eut9O7MR5zBkje1RXKDc",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "recc5Lnswt0sBzNoH"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 3,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recu7yM3NE0cBSjdB",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "지구랑 춤을 춰보자! 준비? 그저 지구의 리듬에 몸을 맡기면 돼! 지구와 함께하는 듀엣 무대 시작!",
+    "챌린지명": "중력의 리듬에 몸을 맡겨",
+    "slug": "GGB-C-04",
+    "챌린지 썸네일": [
+      {
+        "id": "attFEWU30YcfrqK9F",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/qae8fSow9WTQFmd2Kym3QZztqTdK0_UvN2f3dc56xeM",
+        "filename": "C-4.jpg",
+        "size": 548923,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/fiNQ63CXyVJEKIorNhSVVXj3KnNwhDKe9gjZhQKw_q4",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/MpI7dqGhydpk9Cfw4d6Eqzb9IdM2nxUAIiCjU5cVLBM",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/ooy81zxYHUjgNibdFtJKyxgdPfYwrottUpudr_7-bL4",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "recp9X41rYyklkh35"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "과학 실험",
+    "난이도": "3",
+    "챌린지 노출 순서": 4,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recNPoW8VzNtVAo6a",
+    "Inspiration Board": [
+      "recRRiF3UUGVKCo39"
+    ],
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "시간이 멈춘 지구! 태양빛이 비치면 그림자 정령들이 나타나! 숨을 참고 그들의 모습을 관찰해봐!",
+    "챌린지명": "그림자 정령",
+    "slug": "GGB-C-05",
+    "챌린지 썸네일": [
+      {
+        "id": "attksWrtM1gTErJM4",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/usWibxQ6z6aAowLORFaVMHNZvVEte_j0KMicB0feIxo",
+        "filename": "C-5.jpg",
+        "size": 574125,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/pki18YWTbPw-9lEkVo8bnWqOqDWmDEZMdvi4AtRIg3I",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/eGbe-lX_1uXIDoNlPLp5HADyq0ZpXimR96yfLNKKddU",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/wnvGDWznnGBTHrzCBqaJ2uBaTh-t35JWjKNbQfQrCT0",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "rec6tYOBGLGad1ZlQ"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "3",
+    "챌린지 노출 순서": 5,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec73z152uAw9lrOM",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "숲에서 길을 잃으면, 나뭇잎으로 안경을 만들어봐! 땅에 안경이 널려으니까!",
+    "챌린지명": "돌아온 방-글라쓰",
+    "slug": "GGB-C-06",
+    "챌린지 썸네일": [
+      {
+        "id": "attbLpoeDGWnk9sLL",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/l2dj1jIbVDWOmo7ZEPbE30ZLdred0acypT1RCD10e6M",
+        "filename": "C-6.jpg",
+        "size": 648210,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/TYyxWCTCYLeL0mZsv-tcoyNTEMpdNw36yIuRA7vENhM",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/YEcvJzxnq1Lro7RpSZoADx3uXDkJr-yb8b7jj0K2ee8",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/NmN02aH8bY8cTKscaQbi738zj71IbyyPaAY6vY57W5E",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "일상 관찰",
+    "챌린지 상세 페이지": [
+      "recsb92s23PHWC36l"
+    ],
+    "그룹 구분": "D. 그룹3",
+    "그룹명": [
+      "recU08CZSMQeytkfo"
+    ],
+    "서브장르": "드로잉",
+    "난이도": "3",
+    "챌린지 노출 순서": 6,
+    "그룹 탐험 순서": [
+      3
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec0xZphL3VWFbskF",
+    "Inspiration Board": [
+      "rec80Ciy7vJsplXDV"
+    ],
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "세상에 알려지지 않은 나만의 비밀 휴식처, 그런 곳을 찾는 건 진짜 지구 여행자만이 할 수 있는 일이야! ",
+    "챌린지명": "지구 여행자를 위한 가이드",
+    "slug": "GGB-D-01",
+    "챌린지 썸네일": [
+      {
+        "id": "attWOeMJ4SwJ70xVp",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/iJqxf2kRTG-Ub0Tc4LSenFbBmYg144c20lj5EF125eM",
+        "filename": "D-1.jpg",
+        "size": 889278,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/losZ6j_9d8q5L7ZZk8SCYkwl7H82UTVRDBFXS4dW-QY",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/_h5Sd8YnUaVULE2DrwhcnPcHBKY38VQA5Vm5SK0ntM8",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/qxYTrDD3HKDxy_O8bM9NnrPjYh0lR67abpd9E_OVEDs",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "recPYOh0cdxRUqOIS"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recHipbt93PDGASy9",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "나만의 비밀 캠프를 만들어보자! 별빛이 반짝이는 아지트 속에서, 아무도 모르는 비밀 이야기를 상상해보자구!",
+    "챌린지명": " 별빛 아래 비밀 아지트",
+    "slug": "GGB-D-02",
+    "챌린지 썸네일": [
+      {
+        "id": "attgyhPh3Cqv1Ll34",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/30Bk3TVj6_J5lSZmPmThWi31bIVsNRbxfTJuhPkesJY",
+        "filename": "D-2.jpg",
+        "size": 725834,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/-I_gAvn7-X8n8ZISyquVKhtBTKw07MMaJdTQifaINDg",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/WppPKA-jtEtFZgQcBNzdg1i5akLvvaa2It1qqmc7CKE",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/-eqb4ZFvyU3HwnZWcChYzpdHTx1rt7jqSRs0M9aWJhI",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "reckczO4VwkQ7kYFc"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recoYXgf9sWqI589Z",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "지구의 비밀을 너만의 눈으로 발견해보자! 꼴라쥬와 이미지 변형으로 지구를 다시 바라보는 재미있는 도전!",
+    "챌린지명": "뱅크시의 눈",
+    "slug": "GGB-D-03",
+    "챌린지 썸네일": [
+      {
+        "id": "attalNeRDq6463GrD",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/ooo7Fwqt_oMkT9ymhHFGLh1FC9MUjv-ldbpOTOfLlg8",
+        "filename": "D-3.jpg",
+        "size": 450547,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/W2eCCpz6dw_e5O-PNRss_eiv6tAxQ885HvdFkuJXa_M",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/U-GhghVm-6JxcXMkQwKBFBNUIcJPCkxMKKM0vyT3Bxo",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/_iJ_S29JOgSAM65uMy6gStumyrpTZ9wrxkc_Mg-tTvU",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "미디어",
+    "챌린지 상세 페이지": [
+      "recU76nAp3jmP3GYt"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 3,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "reciQkUcEmKCavTY5",
+    "Inspiration Board": [
+      "recoNUfCNpo5wxXDz"
+    ],
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "우주 멀리서 온 존재에게 지구를 소개한다면 어떤 이야기를 들려주고 싶어? 그런데 말야, 이들은 한글을 모른데!",
+    "챌린지명": "비밀 코드 지구 소개서 ",
+    "slug": "GGB-D-04",
+    "챌린지 썸네일": [
+      {
+        "id": "attOl4reINhVdnZGe",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/63Lkj5h242-ncaDGWlGRWztUqen94Kt9Jw8ywr6Vq-Y",
+        "filename": "D-4.jpg",
+        "size": 808116,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/ODQhjUcEIzRu2LcqupXO04OdO29cQGqwYJdP957c1KE",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/FikcKywhpZyJGTT0BmFw8Ioq3rHsNSbYMW6et_Munjw",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/1ws4WLkdap2PECcyvZjqqRAUktgwOP7torkxU2x5bHA",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recUQnFifgpHrqNDS"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "과학 실험",
+    "난이도": "3",
+    "챌린지 노출 순서": 4,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec7kgsTDnkGiRtFQ",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "너만이 열 수 있는 비밀 상점이 등장할 차례! 지진방을 통해 만들어진 독특한 작품이나 물건들을 한자리에 모아봐!",
+    "챌린지명": "지구 팝업 스토어",
+    "slug": "GGB-D-05",
+    "챌린지 썸네일": [
+      {
+        "id": "attoAeSYg2jBKh6Ua",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/2QMCfO2Sd0gss4JpZtz2F5FBviXZADfPvJZWESeUn4w",
+        "filename": "D-5.jpg",
+        "size": 497419,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/D7rh19wQSM5HJnDCla1r7PQlRr6RY_0WgSjkoGjomFM",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/0cXC3t1d-2kFFpWxlBM-UJGDyl6bv5xbzYcJlL1xCzc",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/aXTRx9hcCMiMFgJx7pQreBYEwPaHx_lNtpC8vbr3jBA",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "드로잉",
+    "챌린지 상세 페이지": [
+      "recUkXw6zOQNjVdCQ"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 5,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "rec3jwBoYjcToo0eE",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "냉장고에 숨겨진 비밀 재료들로 너만의 비밀 칵테일을 만들어보자! 너만의 색과 맛을 가진 칵테일! 자랑할 준비 됐어?",
+    "챌린지명": "비장의 냉장고 칵테일",
+    "slug": "GGB-D-06",
+    "챌린지 썸네일": [
+      {
+        "id": "attizDjHfD6u1JkCq",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/BldzWxV455JCFm2hsGbxU7xjgHYTbhmTSLLCI2-SHRQ",
+        "filename": "D-6.jpg",
+        "size": 356414,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/bQUw1JZm5z-SduR_Lf8AuaHpisiTBEQdBPKjYQ3-iis",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/RjBWFyHqYmbpHyOfQevolKr0r19rcafBTH8F8Uct4zs",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/UDyUBVXGMdWwtZBeMhpon1RbU_mBBWNnUClsoYIEBa8",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recUwctlFLAYLck2Q"
+    ],
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "recI0XKXODf3ZiZ1Z"
+    ],
+    "서브장르": "스토리텔링",
+    "난이도": "3",
+    "챌린지 노출 순서": 6,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recohem1iJU3bj6Lr",
+    "월드명": "지진방",
+    "챌린지 소개 텍스트": "[쉬엄쉬엄 방학 만끽러]가 되기 위한\n약속의 증거 만들기!",
+    "챌린지명": "지진 방글라-쓰🕶️",
+    "slug": "GGB-onboarding",
+    "챌린지 썸네일": [
+      {
+        "id": "attCB6o8unR7d576g",
+        "width": 1920,
+        "height": 2400,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/maF9-n23lOz2KCWrgrSCe5vfsIN46Md6VyXkcjjTaOE",
+        "filename": "_on-boarding.jpg",
+        "size": 498604,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/bwhG4kBumuAyZkIJYrZ20Lqc6r3YrxFKzmLZXMs3VG8",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/E4WkO3iZyjkSbmsA-Yew87NgBLzIOx5lTPzNv0uwCQU",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/os9APSHRzyvi883WXZU1lIx1TDehZJemwO-EsVCSM7s",
+            "width": 1920,
+            "height": 2400
+          }
+        }
+      }
+    ],
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "rec4iR63Mtvm0COFn"
+    ],
+    "그룹 구분": "A. 온보딩",
+    "그룹명": [
+      "recVRgNpzIgGkZzXx"
+    ],
+    "서브장르": "일상 관찰",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      0
+    ],
+    "연결된 월드": [
+      "rechvVfNzFb3ZZUlm"
+    ]
+  },
+  {
+    "id": "recsVYWqw4ZrpaL54",
+    "재료/상태 유저 체크리스트 B": "쳌2",
+    "월드명": "샘플 월드",
+    "챌린지 소개 텍스트": "버튼 반응형 케이스를 살펴볼 수 있는 샘플 첫 번째.",
+    "챌린지명": "버튼 반응형 샘플 1",
+    "slug": "button-sample-1",
+    "메인장르": "과학 실험",
+    "챌린지 상세 페이지": [
+      "recgjCeOORrKGlAp6"
+    ],
+    "재료/상태 유저 체크리스트 A": "쳌1",
+    "그룹 구분": "B. 그룹1",
+    "재료/상태 유저 체크리스트 D": "쳌4",
+    "그룹명": [
+      "rec9P0tcRLDxJYxzR"
+    ],
+    "서브장르": "미디어",
+    "재료/상태 유저 체크리스트 E": "췍5",
+    "난이도": "5",
+    "재료/상태 유저 체크리스트 C": "쳌3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "recJdOMytVE2FaQP2"
+    ]
+  },
+  {
+    "id": "recSTNvIGc86wGsjS",
+    "재료/상태 유저 체크리스트 B": "쳌2222222-2",
+    "월드명": "샘플 월드",
+    "챌린지 소개 텍스트": "버튼 반응형 케이스를 살펴볼 수 있는 샘플 두 번\n째.",
+    "챌린지명": "버튼반응형 샘플2",
+    "slug": "button-sample-2",
+    "메인장르": "만들기",
+    "챌린지 상세 페이지": [
+      "recmvWzfGg7rnwT1s"
+    ],
+    "재료/상태 유저 체크리스트 A": "22222222222222-1",
+    "그룹 구분": "B. 그룹1",
+    "재료/상태 유저 체크리스트 D": "쳌4222222-4",
+    "그룹명": [
+      "rec9P0tcRLDxJYxzR"
+    ],
+    "서브장르": "드로잉",
+    "재료/상태 유저 체크리스트 E": "췍5222222-5",
+    "난이도": "5",
+    "재료/상태 유저 체크리스트 C": "쳌3222222-3",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      1
+    ],
+    "연결된 월드": [
+      "recJdOMytVE2FaQP2"
+    ]
+  },
+  {
+    "id": "reciPMjQzjHmEZD4L",
+    "재료/상태 유저 체크리스트 B": "7",
+    "월드명": "샘플 월드",
+    "챌린지 소개 텍스트": "인터랙션형 샘플 두 번째",
+    "챌린지명": "인터랙션형 샘플 2(타이틀 유)",
+    "slug": "interaction-sample-2",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recfkBlh50R3LbZcb"
+    ],
+    "재료/상태 유저 체크리스트 A": "6\n",
+    "그룹 구분": "C. 그룹2",
+    "재료/상태 유저 체크리스트 D": "9\n",
+    "그룹명": [
+      "recyI9Hjkb98ubobw"
+    ],
+    "서브장르": "드로잉",
+    "재료/상태 유저 체크리스트 E": "10, 넘버블럭스",
+    "난이도": "5",
+    "재료/상태 유저 체크리스트 C": "8\n",
+    "챌린지 노출 순서": 2,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "recJdOMytVE2FaQP2"
+    ]
+  },
+  {
+    "id": "recDsvd79fiWLK7l6",
+    "재료/상태 유저 체크리스트 B": "2",
+    "월드명": "샘플 월드",
+    "챌린지 소개 텍스트": "인터랙션형 샘플 첫 번째",
+    "챌린지명": "인터랙션형 샘플 1(타이틀 무)",
+    "slug": "interaction-sample-1",
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recK5MiXhyr8Zn24K"
+    ],
+    "재료/상태 유저 체크리스트 A": "1",
+    "그룹 구분": "C. 그룹2",
+    "재료/상태 유저 체크리스트 D": "4",
+    "그룹명": [
+      "recyI9Hjkb98ubobw"
+    ],
+    "서브장르": "드로잉",
+    "재료/상태 유저 체크리스트 E": "5, 넘버블럭스",
+    "난이도": "5",
+    "재료/상태 유저 체크리스트 C": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      2
+    ],
+    "연결된 월드": [
+      "recJdOMytVE2FaQP2"
+    ]
+  },
+  {
+    "id": "recJrValnMuUNwvc1",
+    "월드명": "퓨처비 월드",
+    "챌린지 소개 텍스트": "일상생활 속 문제를 탐색하고 창의적으로 해결해보자!",
+    "챌린지명": "일상 속 발견, 창의적 해결!",
+    "slug": "FB-everyday, creative",
+    "챌린지 썸네일": [
+      {
+        "id": "attTr32a03ZFVekPP",
+        "width": 1024,
+        "height": 1024,
+        "url": "https://cdn-world.ahhaohho.com/challengeData/CEsA_EmP6-YAKQfnV87q8emOL40FU799V3kOXnf4J68",
+        "filename": "일상 생활 속 문제 해결.jpg",
+        "size": 207096,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/small/-DkWVkPrFQOHgwphCba1NIxuTEM1A17r5u1WqPMvPWA",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/large/edE3hL_dIe799t3eg4Xr7iAUCpoeA-vMFLZBcC9GOZc",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/challengeData/thumbnails/full/bjsflGkLNmVI8ySoMTEpcQG5KE1-bjr35K_OK_ot44M",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    ],
+    "메인장르": "스토리텔링",
+    "챌린지 상세 페이지": [
+      "recZjWWek2mISE4pX"
+    ],
+    "재료/상태 유저 체크리스트 A": "기록 노트",
+    "그룹 구분": "E. 그룹4",
+    "그룹명": [
+      "rec5OyCAHzPk5VdeB"
+    ],
+    "서브장르": "만들기",
+    "난이도": "3",
+    "챌린지 노출 순서": 1,
+    "그룹 탐험 순서": [
+      4
+    ],
+    "연결된 월드": [
+      "reciTGUJuePxlP2fH"
+    ]
   }
 ]

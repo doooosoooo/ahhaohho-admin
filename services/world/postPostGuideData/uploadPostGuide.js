@@ -8,7 +8,7 @@ const path = require('path');
 
 async function loadAndUploadPostGuideData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/chatData-updateAt20241223.json');
+    const filePath = path.join(__dirname, '../rawData/chatData-updateAt20250110.json');
     const rawData = await fs.readFile(filePath, 'utf8');
     const postGuidesData = JSON.parse(rawData);
 

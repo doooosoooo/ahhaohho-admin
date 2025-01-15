@@ -6,7 +6,7 @@ const path = require('path');
 
 async function loadAndUploadGroupData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/groupData-updateAt20241223.json');
+    const filePath = path.join(__dirname, '../rawData/groupData-updateAt20250110.json');
     const rawData = await fs.readFile(filePath, 'utf8');
     const groupsData = JSON.parse(rawData);
 

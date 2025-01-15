@@ -283,5 +283,20 @@
     "월드 핵심 키워드 C": "혼자 있어도 함께 하기",
     "매개자 이름": "머드 (AKA 작은 지구)",
     "월드 소개 텍스트": "지진방에서는 모든 순간이 방학! 특별한 계획? 그런 건 필요 없어! 그저 너만의 방식으로 순간을 누리면 돼. 지금 이 순간도 방학이니까!"
+  },
+  {
+    "id": "recJdOMytVE2FaQP2",
+    "월드맵(매개자-유저 대화)": [
+      "recstEiHHLSJAkO06",
+      "recYXP5C0Y5olfqjd",
+      "recXhY3HNodBgXHRe"
+    ],
+    "그룹 이름": [
+      "rec9P0tcRLDxJYxzR",
+      "recyI9Hjkb98ubobw",
+      "rec3E5X1soWglD077"
+    ],
+    "월드명": "샘플 월드",
+    "월드 ID": 10
   }
 ]
