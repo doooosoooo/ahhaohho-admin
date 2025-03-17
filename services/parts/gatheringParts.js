@@ -1,3 +1,5 @@
+/* global process, __dirname */
+
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 
@@ -113,7 +115,7 @@ async function main() {
 
     for (const [mainKey, { tableName, viewName }] of Object.entries(tableNames)) {
         try {
-            const tableData = await fetchTableData(tableName, viewName);
+            const tableData = await fetchTableData('parts', tableName, viewName);
 
             // Load existing data
             const existingData = await fetchExistingData(mainKey, dataDir);

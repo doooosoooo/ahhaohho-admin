@@ -1,0 +1,922 @@
+[
+  {
+    "id": "recgPwbEXh6iUOEeI",
+    "월드명": "프리덤덤시티",
+    "월드 소개 텍스트": "재활용품과 일상용품을 활용해서 만드는 나만의 도시, 프리덤덤시티! 뚝딱뚝딱 세상에 하나뿐인 자유롭고 엉뚱한 도시를 건설해보자!",
+    "월드 썸네일_Front": [
+      {
+        "id": "attWbkRO65A5VMUMe",
+        "width": 1500,
+        "height": 940,
+        "url": "https://cdn-world.ahhaohho.com/worldData/vEhFXTCNFJwi16RyLljO7-BVerG0JpK3S3uwpE-rKwg",
+        "filename": "프리덤덤_Foreground.png",
+        "size": 519245,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/_LTbyNga_KKKCwElG1maXNHJwZaIH8DJ0RiFmd3iHVk",
+            "width": 57,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/QjsscA5kZiSaX7J7mNLiEmwCUJpkopCGCotS4AMTrto",
+            "width": 817,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/mcOSrLoVfOmPf3jn8kflVNlnXWpMl4mVvy7MXOfzHWg",
+            "width": 1500,
+            "height": 940
+          }
+        }
+      }
+    ],
+    "월드맵(매개자-유저 대화)": [
+      "recnsP505rlNjKp6b",
+      "recKiCE6bi96Wllt4",
+      "rec4v1bS1hyyAsPKi",
+      "recREgoo3bQVEKnjy",
+      "reclm7V04rN5cFUet"
+    ],
+    "매개자 이름": "아하하핫",
+    "매개자 이미지": [
+      {
+        "id": "attAJoqeGw5OJZLsX",
+        "width": 834,
+        "height": 662,
+        "url": "https://cdn-world.ahhaohho.com/worldData/0MvLz0G9cEhMIitcyEuTdgb2JDOgUoHs2rQ1cY6NztU",
+        "filename": "0. 캐릭터 만들기(1).png",
+        "size": 376785,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/br0au41kpn90cHIPCNHsn0FOk9xflzkv8AsvIwIUWbo",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/EyT8nTMOnhRzkGrIQsgNUAImq-LwO4YdUnNtAwdn9Lk",
+            "width": 645,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/Y2iJgHRRuN9juy3gvplUgkU6Itc9OUZWldtESOxnvq0",
+            "width": 834,
+            "height": 662
+          }
+        }
+      }
+    ],
+    "월드 ID": 1,
+    "월드 핵심 키워드 A": "도시건설",
+    "월드 핵심 키워드 B": "만들기",
+    "월드 핵심 키워드 C": "재활용품",
+    "월드 썸네일_Middle": [
+      {
+        "id": "attpZgxny1OSvVDZw",
+        "width": 1500,
+        "height": 936,
+        "url": "https://cdn-world.ahhaohho.com/worldData/bP9m0z2VmLwuQpBWBlw1RbBTYkASEWWQv6ZsYmplAFs",
+        "filename": "프리덤덤_MID.png",
+        "size": 1471627,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/bZSegMHYFqSwJXoPw_j3n5C9luR0kZ99WiWXeKBm1yQ",
+            "width": 58,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/iimnt7w4wXMPttUet0Ra1hSxTt4nHf7EUGmJsiMhzmc",
+            "width": 821,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/MsmNua9Ina7u89fF9HRgqhL8sgE35wIIJVpgN_J6gJQ",
+            "width": 1500,
+            "height": 936
+          }
+        }
+      }
+    ],
+    "월드 썸네일_Back": [
+      {
+        "id": "attJVRHUXBv7tsmwM",
+        "width": 1500,
+        "height": 1031,
+        "url": "https://cdn-world.ahhaohho.com/worldData/he3jddVnN9e8TGO_dEUks1qOnOZ32RBPlMrj5q6m8R4",
+        "filename": "프리덤덤_BACK.png",
+        "size": 561080,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/Y4GwyKTDIbKSQEq5rE_esGsz__a89xYq7Ljm7wuMKXM",
+            "width": 52,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/qdWXq41BxCqTNsTIJZFYiGbpo9wLi4TMy-Eku1Axjt8",
+            "width": 745,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/ZvPoW22eUq_mbAp1XWUZ7DPhPkhCOQpd2RLH3dmQQr0",
+            "width": 1500,
+            "height": 1031
+          }
+        }
+      }
+    ],
+    "그룹 이름": [
+      "recFB2a2cYIekyC20",
+      "recTQVRkMBXMSgGam",
+      "reccZ7LWxbY4f0fzh",
+      "reci9yx5KJm0GxEyB",
+      "rec16H7fHV0DwTIEP"
+    ],
+    "월드맵 환영 문구": "안녕, {username}! 오늘은 프리덤덤시티에 어떤 것들을 추가해볼까?",
+    "입력 상태(디창)": "입력완료",
+    "검토 상태(창의)": "검토완료",
+    "오버뷰 썸네일": [
+      {
+        "id": "attDrq5nRPhK8egoi",
+        "url": "https://cdn-world.ahhaohho.com/worldData/LyXT5fU9SlSN3WeP4_0X2PXULIEiCS7u480Y2tVnKaI",
+        "filename": "250207_프리덤덤_GIF_원본.mp4",
+        "size": 26275866,
+        "type": "video/mp4"
+      }
+    ],
+    "월드 썸네일_BG": [
+      {
+        "id": "attN56MKDX15dVeM7",
+        "width": 1500,
+        "height": 920,
+        "url": "https://cdn-world.ahhaohho.com/worldData/_99K3ScmcvtXBWSTRGMR6XYygyVnVBDhBuzx823fmG8",
+        "filename": "프리덤덤_BG.png",
+        "size": 1463602,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/mXJfWZfks_4-cU8-geL4-G_YQIK8IqUfYa0jhPcwtWg",
+            "width": 59,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/tljhT5LC8V3VjM_oz9wjWprEN8my4sFYEcvLCEfvVQM",
+            "width": 835,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/lQ2LExmA2cjE-il-wA0Wr2EOhkyTU3pVm7ErdE9xC6s",
+            "width": 1500,
+            "height": 920
+          }
+        }
+      }
+    ],
+    "오버뷰 배경": [
+      {
+        "id": "attOU7fBnOTmif8uV",
+        "width": 1500,
+        "height": 1920,
+        "url": "https://cdn-world.ahhaohho.com/worldData/EffbjikFgFOhJUxfQsh-gsr-rEdbVhdzCJ2ecspVzmU",
+        "filename": "프리덤덤_ui_big.png",
+        "size": 577761,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/MqVvjTJg9QwgEhyxAx1JMeeAB4y9yXwK60dCixy0NXQ",
+            "width": 28,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/_nY-WGH9LIoziPH2EcQh08gKA6dgUi5ny-Qu7XX8a7s",
+            "width": 512,
+            "height": 655
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/L0PWaq-QQ9pQw1z4kmudUj5tu6oBhhejy6XHTTYYwZ4",
+            "width": 1500,
+            "height": 1920
+          }
+        }
+      }
+    ],
+    "오버뷰 그룹배경": [
+      {
+        "id": "attHQO4wfUsGfYDdZ",
+        "width": 711,
+        "height": 288,
+        "url": "https://cdn-world.ahhaohho.com/worldData/i-eB_JuEJy0-EaN4apdg_OeJ_GyKYF-7GI8cO2Ni0rM",
+        "filename": "프리덤덤_title_back.png",
+        "size": 237581,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/MbQLSwtOyXxlv5Q3cHbfE_gSbz_Wg2m0FCcM6SP_RlQ",
+            "width": 89,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/PcgHa7R2z_IGhq2_gsd4cqdAnrrTDX6PbFFa2wH5qnY",
+            "width": 711,
+            "height": 288
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/cdBeiAt17F0Vr7XaFQP6hvybqT1G1BckvU5p_pwnhGw",
+            "width": 711,
+            "height": 288
+          }
+        }
+      }
+    ],
+    "오버뷰 갤러리배경": [
+      {
+        "id": "attnjTjHOrn0K1jS8",
+        "width": 288,
+        "height": 312,
+        "url": "https://cdn-world.ahhaohho.com/worldData/ipGf-DIgJlhIcwQCjIohNEGPYWMjqQSacTZsKryuLfs",
+        "filename": "tape_0227.png",
+        "size": 11294,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/OfggiJ0djhphFxXgKzrIAVHL54WhZLOoPS9UxMKGUkU",
+            "width": 33,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/406VrVRwj8Bssd1bc4OsAq41C_Aehg2Yx0uK-b0QDsg",
+            "width": 288,
+            "height": 312
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/48hwUZ8nf1JcKxA9Mv9x9hGduwX4jMRap768tF6C4sI",
+            "width": 288,
+            "height": 312
+          }
+        }
+      },
+      {
+        "id": "att6xQHX3E904aIhA",
+        "width": 288,
+        "height": 288,
+        "url": "https://cdn-world.ahhaohho.com/worldData/jiuOQDv7qiSQkdZlUP9Z-4RyIEOQEGmXEJyB46zNgH8",
+        "filename": "프리덤덤_ui_small_edited.png",
+        "size": 42863,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/UrL7bqe654GI_Fu9vSoynza8IsaRxf6E5_ytgC757Fs",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/AaPJXgX8Z64nvE4xFTR-zxqrEjtF452nIiJDRtnDw9U",
+            "width": 288,
+            "height": 288
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/gU0JhHcYZPQnPCgN0F0fEe1_HQnOXqF53LRlhUI9ZLY",
+            "width": 288,
+            "height": 288
+          }
+        }
+      }
+    ],
+    "월드 기획자": "퓨처랩",
+    "채팅 배경 색상": "#E8CBAB",
+    "오버뷰 NavBG": [
+      {
+        "id": "attKTKi4kjLfWK7CW",
+        "width": 1477,
+        "height": 239,
+        "url": "https://cdn-world.ahhaohho.com/worldData/1rdqkmeZcejH_E01KeH1PFW1NQpXbKnLHyhRaygrF2k",
+        "filename": "nav background.png",
+        "size": 647992,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/DnDnOOQUffQLIPeSuo5NL1kD6yam9FjcnH6zbIJ6Fcg",
+            "width": 222,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/No4Yr1z0vlZRrL_S5AvLSYABMsQEg7FlNaD5ggWcWiw",
+            "width": 1477,
+            "height": 239
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/SFFbEcfdwNgAebbh_mSwnk0ykCNrsFSDS6FS3DMsbJM",
+            "width": 1477,
+            "height": 239
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "recjpfNCqQaiEluNr",
+    "월드명": "퓨처-비(BEE) 챌린지",
+    "월드 소개 텍스트": "작은 날갯짓으로 세상의 긍정적인 변화를 일으키는 꿀벌처럼 더 나은 세상을 만들어볼래? 일상의 문제를 함께 해결해 보며 지구를 건강하게 지켜보자!",
+    "월드 썸네일_Front": [
+      {
+        "id": "attOSBPSXThZI09Rv",
+        "width": 1500,
+        "height": 994,
+        "url": "https://cdn-world.ahhaohho.com/worldData/c78LAMSiBn426OQWhiAEx2J80leEW7F6A3t2LQHtIpo",
+        "filename": "퓨처피_FRONT.png",
+        "size": 544155,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/zCqTIJWGg6qeCsaryhEObhW1pYaRq90nWdVHNLEWyX0",
+            "width": 54,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/F_trLjOmqko5P5tvf5JoXHQ-Lq8E2v9frbWlie232Zo",
+            "width": 773,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/_09iRvRixSGPU9NUxMYuh_R459H8aEanJ8QKoESNiDQ",
+            "width": 1500,
+            "height": 994
+          }
+        }
+      }
+    ],
+    "월드맵(매개자-유저 대화)": [
+      "recVB6KY83yWaWyW7",
+      "recZs5GHt9OUxPEzT",
+      "rec5AZ90varEfk3TI",
+      "reczw2tV6W23vInIp",
+      "recJjoHg81rcvwwcX"
+    ],
+    "매개자 이름": "퓨처비",
+    "월드 ID": 12,
+    "월드 핵심 키워드 A": "지속 가능한 발전",
+    "월드 핵심 키워드 B": "일상의 문제 해결",
+    "월드 핵심 키워드 C": "디지털 기술 활용",
+    "월드 썸네일_Middle": [
+      {
+        "id": "attY5p0EGCGC3GCal",
+        "width": 1500,
+        "height": 999,
+        "url": "https://cdn-world.ahhaohho.com/worldData/ilZ_vMAOdVl_yfA4noZYwU3AuXrONE3tzAaryWO8jw4",
+        "filename": "퓨처비_MID.png",
+        "size": 281536,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/EYuHDi4Crj5UNwhQjEd-NfI1qzwBBfX8OjBn8YcULDw",
+            "width": 54,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/MhBQu3rzQAjVlyNKalWzunvEhqRHAiZWgw1LSifsucI",
+            "width": 769,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/5du1pTGHgbn9V0vD_FBuyhnaI_HDh46QF210BlKtKm0",
+            "width": 1500,
+            "height": 999
+          }
+        }
+      }
+    ],
+    "월드 썸네일_Back": [
+      {
+        "id": "att41BYU3dPcBDpR5",
+        "width": 1500,
+        "height": 893,
+        "url": "https://cdn-world.ahhaohho.com/worldData/iZ1OZ-siq0vBgCq04n7r2-Q2gey6C0nXY-JMOEpVU_U",
+        "filename": "퓨처비_Back.png",
+        "size": 513601,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/hpiAdJvsOrH_kcHgx39AVw10Oda3g5NhBJl0wgkJZRk",
+            "width": 60,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/u0zbg7A9Qpd-YKRGQEXuoOv4fDn_-P0p7QMJXCn6dQY",
+            "width": 860,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/NgDkhFL_XT-pEqc3cWwDlffUR21633wDEZWdKpKIqhg",
+            "width": 1500,
+            "height": 893
+          }
+        }
+      }
+    ],
+    "그룹 이름": [
+      "rec63kuwe6uSsOZ2D",
+      "recnm3GFZvxDKL2EA",
+      "rec18HQF916JzJaoo",
+      "recLnWrIcnvMpVadL",
+      "recxlvwizjwwHOrCA"
+    ],
+    "월드맵 환영 문구": "안녕, {username} 챌린저! 위기에 처한 지구를 구할 수 있도록 함께 도전해보자.",
+    "입력 상태(디창)": "입력완료",
+    "검토 상태(창의)": "검토완료",
+    "오버뷰 썸네일": [
+      {
+        "id": "att6O3SugtCLsMdpO",
+        "url": "https://cdn-world.ahhaohho.com/worldData/ZaMxY5-DoZKsBgH4pSk8NMMEXLdS1QdX0viKT7EjO2A",
+        "filename": "250219_퓨처비_GIF_원본.mp4",
+        "size": 28490062,
+        "type": "video/mp4"
+      }
+    ],
+    "월드 썸네일_BG": [
+      {
+        "id": "att0gHX9iMpvpZUfX",
+        "width": 1500,
+        "height": 940,
+        "url": "https://cdn-world.ahhaohho.com/worldData/iGQyw2WkMi-pjRaju7tfCXCAhB_XZ1TiBwxkPl4Cceg",
+        "filename": "퓨처비_BG.png",
+        "size": 8507,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/D1FKkSxSz67m_B7SSzmy3KD7XmQC2rYaTu-n7SGshSA",
+            "width": 57,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/wjWsHDtPYi4p7iPYB52VG77bk550pogyMbD-0FNmUrM",
+            "width": 817,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/uo96i8Csgs6ckzcO1CQjuj98iOJ8bf7g1JxdKm2_bvA",
+            "width": 1500,
+            "height": 940
+          }
+        }
+      }
+    ],
+    "오버뷰 배경": [
+      {
+        "id": "attKFIXuQ6wp8hATN",
+        "width": 1500,
+        "height": 1920,
+        "url": "https://cdn-world.ahhaohho.com/worldData/Q-rZtsfRG5QeSbTyalOuCCAcXTmvijNIfhycPzCdlAA",
+        "filename": "퓨처비_ui_bg.png",
+        "size": 3822520,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/uLyvQ4T9wGue4xpqtk5yOOIZiwx_E9HBYm1EdQqPJeQ",
+            "width": 28,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/6NDvRosYp9X8rvhmiew1kWa6pSW6xdQnBfYpe71D210",
+            "width": 512,
+            "height": 655
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/JkNJXr6sj2bNP37wICcht7fbqE0LYd3mYTGHeqbxl58",
+            "width": 1500,
+            "height": 1920
+          }
+        }
+      }
+    ],
+    "오버뷰 그룹배경": [
+      {
+        "id": "attQ6E9fkbT8SewUh",
+        "width": 711,
+        "height": 288,
+        "url": "https://cdn-world.ahhaohho.com/worldData/iJZVni17KRS6n8NY2avYq6EwkLFrgYSAdkjx1aT1FFM",
+        "filename": "퓨처비_ui_big.png",
+        "size": 112459,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/N_E2cGOve-dFvRkO6rRhp9V6eA4uQC1VLQ83bTpQBXI",
+            "width": 89,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/r3liWA9vlPwx9i1VH6il_Bt21lppSzIX58dTfst9c6s",
+            "width": 711,
+            "height": 288
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/rUT-L5FpzloWKZJKtOFJHeE_q9iJ1EQeRPJ5AdSrvfs",
+            "width": 711,
+            "height": 288
+          }
+        }
+      }
+    ],
+    "오버뷰 갤러리배경": [
+      {
+        "id": "attlpxNWd9Q9XnGgU",
+        "width": 288,
+        "height": 312,
+        "url": "https://cdn-world.ahhaohho.com/worldData/Tjqdj0-8gwt8KlpIOKiHg2MetYdQtPqI3ql9zuHvf88",
+        "filename": "퓨처비_ui_imageframe.png",
+        "size": 5021,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/KMrZiMcoF7MVU6khr5O6T4hmTqBikrbQChQosKWKgaA",
+            "width": 33,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/wGC4cCyOKH8-L-denVGUpE2vd-E1grROsgOsDiDBRHY",
+            "width": 288,
+            "height": 312
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/UdX8FjWs_ha48oKARbGE95EKP6xzRtytjCfYfp1pGEo",
+            "width": 288,
+            "height": 312
+          }
+        }
+      },
+      {
+        "id": "attNVbZq5blw0Eadp",
+        "width": 288,
+        "height": 288,
+        "url": "https://cdn-world.ahhaohho.com/worldData/7qQrJxIVTANxermDLUDWrL50Nw3u6b3M4Uijd-DFmeE",
+        "filename": "퓨처비_ui_small.png",
+        "size": 47558,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/XHwmHYgUUUsuQ_j610LR-kmKONkXpydC_17mILVzLS8",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/WNBGvcsudd6pax_ZrYPpEhop5VF9RQ_jCGm8Czxne9I",
+            "width": 288,
+            "height": 288
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/dIzUzmHzeYH5ejfnNIvtqsIE9DM6s7lvoKXNpeqEZyk",
+            "width": 288,
+            "height": 288
+          }
+        }
+      }
+    ],
+    "월드 기획자": "초등교사 최상현, 임지원, 원호준",
+    "채팅 배경 색상": "#FCEB4F",
+    "오버뷰 NavBG": [
+      {
+        "id": "attvPcvDfejI7uDkZ",
+        "width": 1125,
+        "height": 192,
+        "url": "https://cdn-world.ahhaohho.com/worldData/uLOD1I2mubra5KtrhWXF2tMEYa7yBAShy47da5ypXMk",
+        "filename": "Horizontal Container.png",
+        "size": 224577,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/WToNsEdZNus4BPbd3uBxywBtaqd7z5BCdK90yEnz0uo",
+            "width": 211,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/9CfHcfJU_LV55nJAdLe1cry_rCG8Z9vait5Fu-7GGR8",
+            "width": 1125,
+            "height": 192
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/NXwev3S72H_E4dckFfMJQG2pdZNP5jstJ86RMIxNHeM",
+            "width": 1125,
+            "height": 192
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "rechvVfNzFb3ZZUlm",
+    "월드명": "지진방",
+    "월드 소개 텍스트": "지진방에서는 모든 순간이 방학! 특별한 계획? 그런 건 필요 없어! 그저 너만의 방식으로 순간을 누리면 돼. 지금 이 순간도 방학이니까!",
+    "월드 썸네일_Front": [
+      {
+        "id": "attwbcIGQUvkzpQ4O",
+        "width": 1500,
+        "height": 1057,
+        "url": "https://cdn-world.ahhaohho.com/worldData/iUSWp8BVe0L8OsZIp8cgxoWdviTR0Mn2ioj71G8NWdM",
+        "filename": "지진방_Foreground.png",
+        "size": 424024,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/eLIRcOTuo7PRnNidubigTkIkHzbzZFE3NNR5JYrD-Ug",
+            "width": 51,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/j5XpBMv6bpN6jCl3_hs6wUUGHXBI8vYL1dhc5d-Xogc",
+            "width": 727,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/hiBP-KgZGgq5UmBMqP69F3FgGK6DhVymwJ60lcYEmvo",
+            "width": 1500,
+            "height": 1057
+          }
+        }
+      }
+    ],
+    "월드맵(매개자-유저 대화)": [
+      "rec1I2ZtyqlAnY6PD",
+      "rec3f62SlJs5h5dBX",
+      "rec0cJSLNLOZ17ywh",
+      "reccq2u6Ew8CRHxO6",
+      "recWYwJ6vS1hvWevB"
+    ],
+    "매개자 이름": "머드 (AKA 작은 지구)",
+    "매개자 이미지": [
+      {
+        "id": "attODuVNEhqLgBnL0",
+        "width": 1600,
+        "height": 1600,
+        "url": "https://cdn-world.ahhaohho.com/worldData/NBSjxwHycCvt9i5xXwID9PQ3aFs-gmH4-DXiC9j7RyQ",
+        "filename": "2024-10-04_img_00074_ (1).png",
+        "size": 1598935,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/myqA5fBgpNMLU9IJZv-t8p_twx6O0rFg6fSBapIyFd4",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/WdT5jg8ZpRKuO8etx11qyeGUeE7-3OWKm7Ryyif63Zg",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/NNf5FxwsMt0fMLbHlieIYX5ySE3AzMUa2mvjO_sO__Y",
+            "width": 1600,
+            "height": 1600
+          }
+        }
+      }
+    ],
+    "월드 ID": 5,
+    "월드 핵심 키워드 A": "느긋한 방학",
+    "월드 핵심 키워드 B": "진짜 지구 발견",
+    "월드 핵심 키워드 C": "나만의 시간",
+    "월드 썸네일_Middle": [
+      {
+        "id": "attKLmABS5GoOecV8",
+        "width": 1500,
+        "height": 1052,
+        "url": "https://cdn-world.ahhaohho.com/worldData/7Rwx_JTcfRM8lLw_YUvPHEZZrsjMEo9xcJ2Hm9KGCF4",
+        "filename": "지진방_Mid_edit_0221.png",
+        "size": 555483,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/vYEslwWIcgrnsxob2qdXUqYxOkTCUT9kdpUqEUToXcw",
+            "width": 51,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/FiiD5ma5hE3dLs0IZTmUrRDGPeT3m4-yzKl57kj4APM",
+            "width": 730,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/CmSQeEbmHaj-mOddGil_oCw48m5VjyPiRRnZWTmSNw0",
+            "width": 1500,
+            "height": 1052
+          }
+        }
+      }
+    ],
+    "월드 썸네일_Back": [
+      {
+        "id": "att1PcTr2HRL6ZduS",
+        "width": 1500,
+        "height": 1058,
+        "url": "https://cdn-world.ahhaohho.com/worldData/Bkd0GBOK0mkt-rsJWP12gXL4mtIdb-oe3Ek_DDjWo3w",
+        "filename": "지진방_Back_edited.png",
+        "size": 1190103,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/G7sMMl-A_xgspddesOd3tfXvx1NTb6zUzPGp09BFtzA",
+            "width": 51,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/q5reqJxZ27sd9eqzE9Kcw1_YHV_PzPGAg1C-7s3szX4",
+            "width": 726,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/48cL0DlKpubLvaNzWdoSIKN9R8sCfwuZkasxIadFEQQ",
+            "width": 1500,
+            "height": 1058
+          }
+        }
+      }
+    ],
+    "그룹 이름": [
+      "rec7F3hPEfsXKnOEq",
+      "recB03sNOlu8X7tBp",
+      "recU08CZSMQeytkfo",
+      "recI0XKXODf3ZiZ1Z",
+      "recVRgNpzIgGkZzXx"
+    ],
+    "월드맵 환영 문구": "어서와 [쉬엄쉬엄 방학 만끽러] {username}!\n작은 지구 머드와 함께 지구의 숨겨진 비밀을 알아보자!",
+    "입력 상태(디창)": "입력완료",
+    "검토 상태(창의)": "검토중",
+    "오버뷰 썸네일": [
+      {
+        "id": "attvCTWK8IzCcDi4D",
+        "url": "https://cdn-world.ahhaohho.com/worldData/_aZpaeEjg9v9Q0XW-8csxC10WZCBpLONN-xw16V2bIg",
+        "filename": "지진방_GIF_LARGE_원본.mp4",
+        "size": 54372852,
+        "type": "video/mp4"
+      }
+    ],
+    "월드 썸네일_BG": [
+      {
+        "id": "attG5ujbIcoVNGSRn",
+        "width": 1500,
+        "height": 920,
+        "url": "https://cdn-world.ahhaohho.com/worldData/IifX_Hnp9vP9YG4eTrV-3NKDYNtAWa9RQuaV-3SRIo4",
+        "filename": "지진방_BG.png",
+        "size": 2548117,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/Vs7htxklK2Mxv6H8-sMH-DQEYZG14Gxy5hRJjARTzhc",
+            "width": 59,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/jNvegvoWa1oRU2D324d6QcH8LnL7kPpn8FVLqD2fR8Q",
+            "width": 835,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/HSGquIuQ-NNhV1b5eYFDCzjN2ALhmoRoVAsdzX84818",
+            "width": 1500,
+            "height": 920
+          }
+        }
+      }
+    ],
+    "오버뷰 배경": [
+      {
+        "id": "attKG8WjvqPkzMn2f",
+        "width": 1500,
+        "height": 1920,
+        "url": "https://cdn-world.ahhaohho.com/worldData/Tv7L_x-6Va9znOWy-4VUYIt1_6MqrrkvWvuSqE56Xfw",
+        "filename": "지진방 sub BG.png",
+        "size": 4520098,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/qwUOZ9LUI5rG7m75GCbxqNOUnTp23V65Mt5a3rXrS0E",
+            "width": 28,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/J9JgU0NA62vM3Riq3oywk8G77jwzKz50tOprjxIbAz8",
+            "width": 512,
+            "height": 655
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/WKhCtc9gQU3WHgWIrcqD93i-NN_czc2j_FxYAOR-FZE",
+            "width": 1500,
+            "height": 1920
+          }
+        }
+      }
+    ],
+    "오버뷰 그룹배경": [
+      {
+        "id": "attyqYPqUfvKySfvo",
+        "width": 930,
+        "height": 352,
+        "url": "https://cdn-world.ahhaohho.com/worldData/PJ6pRKfJR47Stw2d0USGSKgKszISGpf-id5fOOvxn54",
+        "filename": "지진방_ui_big_edited.png",
+        "size": 351082,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/M9bddR7hTfwiVimhbjj-fe41MLBm1aTgVc7ujn1t9XY",
+            "width": 95,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/gFpooDAhmQxWhirx2145ICl2J2zWxft59UmKDU7x7ds",
+            "width": 930,
+            "height": 352
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/2B0sI1PsT3l2Yz_hoUAPgPh1ZvAeEefgdkcFEI6xXC8",
+            "width": 930,
+            "height": 352
+          }
+        }
+      }
+    ],
+    "오버뷰 갤러리배경": [
+      {
+        "id": "attoSNrkIL0w7RcJT",
+        "width": 288,
+        "height": 312,
+        "url": "https://cdn-world.ahhaohho.com/worldData/pbqTpGs8_e_JGw1CUPYj-5orW1kZwAhmjAceC83yk7I",
+        "filename": "지진방 imageframe.png",
+        "size": 49237,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/Xhsq0SAiLDkE5olFo6XdxuhJNFVGfdRT0ZlmkWCi3Ok",
+            "width": 33,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/4dNqWjBrZ0Iy3njctzcK8hh_vmC6JUJLs_ZeSDCR2Wg",
+            "width": 288,
+            "height": 312
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/JNxwfN90ciEwUssPedeWWB2WIyp4kC6R4BsAgRwwEEE",
+            "width": 288,
+            "height": 312
+          }
+        }
+      },
+      {
+        "id": "att09ehP9viT2Xzr5",
+        "width": 376,
+        "height": 380,
+        "url": "https://cdn-world.ahhaohho.com/worldData/j7prFbOAvCa68DaQ-_BAfUbXrB6CEo-_o8QY3vp5k8E",
+        "filename": "지진방_ui_small_edited.png",
+        "size": 167637,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/Cl11kEtoVKR5Ig2lLYXxmfjulhsU0bv8BBN6Kx6lpJg",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/I2jmJXdYwveka0TOCac4qhvneb5-YK-leIqrnIOEm2U",
+            "width": 376,
+            "height": 380
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/guJGWfWgoWvKqkhj1pqAX1M-puFPuzeMhIPkujGf_io",
+            "width": 376,
+            "height": 380
+          }
+        }
+      }
+    ],
+    "월드 기획자": "아르동",
+    "채팅 배경 색상": "#C6EBF2",
+    "오버뷰 NavBG": [
+      {
+        "id": "attOdhmWLpxFAlJhl",
+        "width": 1125,
+        "height": 192,
+        "url": "https://cdn-world.ahhaohho.com/worldData/1ZQ6nUjJjQq6KbIWDIKAWQG550KNuVD6XT5Aj6da4MM",
+        "filename": "Horizontal Container.png",
+        "size": 197760,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/small/1w2ouxzCaXHyxMi-ltW4mDw-t8HrDgizH0UHjA4bo-M",
+            "width": 211,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/large/Y25P-CGcr2qm4sO7P_UvLiSCE35Y0_A5hDSWMxNFAw8",
+            "width": 1125,
+            "height": 192
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/worldData/thumbnails/full/o3RL-4rPThUPBaCF1m63JeywNQiYGRPmRi1gAoAeisI",
+            "width": 1125,
+            "height": 192
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "recRuNmjPTurk5Q7s",
+    "비고": "같은 타입*색상은 4개의 버전으로 구성되며 순차적으로 제공",
+    "제공방식": "포스트 게시 후 지정된 색과 매칭되어 제공. 색은 장르 6개+자율 포스트 1개에 따름",
+    "종류": "뿌듯함",
+    "파츠명": "typeA",
+    "ver.1": [
+      {
+        "id": "atteBAw0l4uUqSFXQ",
+        "width": 48,
+        "height": 47,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Hi0S_w75jPD65CP9mtdbBPk4LOQu8LHSiL9-I_3BGKQ",
+        "filename": "type=A, version=1.svg",
+        "size": 416,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.2": [
+      {
+        "id": "attrwI9hn19TAC8Wx",
+        "width": 48,
+        "height": 37,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Z2Nl9w-rX03xhXjS-FzmrCY3017iay0A-mlfVKk7Sjg",
+        "filename": "type=A, version=2.svg",
+        "size": 583,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.3": [
+      {
+        "id": "attEvmcLI5fVtsuLg",
+        "width": 49,
+        "height": 46,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/CO3pBuFl7MnMs0gP4rDWfKS4Yi5aACC8nj_NK-kdDyg",
+        "filename": "type=A, version=3.svg",
+        "size": 559,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.4": [
+      {
+        "id": "att7duoMngWw6wkC8",
+        "width": 49,
+        "height": 44,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Lz1t8y-pRCcABx-ynI3mwUD2AUr3t38fU4KUHGwvDkQ",
+        "filename": "type=A, version=4.svg",
+        "size": 636,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recTWG7oHeVEh1ruO",
+    "비고": "같은 타입*색상은 4개의 버전으로 구성되며 순차적으로 제공",
+    "제공방식": "포스트 게시 후 지정된 색과 매칭되어 제공. 색은 장르 6개+자율 포스트 1개에 따름",
+    "종류": "용기",
+    "파츠명": "typeB",
+    "ver.1": [
+      {
+        "id": "attedhAN89YpW4L4h",
+        "width": 44,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/zDNW_9F-7UTKikfMi6zBq1jpguUNsICTahZMBaTPDzc",
+        "filename": "type=_B, version=1.svg",
+        "size": 351,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.2": [
+      {
+        "id": "attJzcuBnAUO6c3h0",
+        "width": 48,
+        "height": 29,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Og4z_Ii_5FHGJl_GaLw07_VWM3yI7wC5i7b1mvawo-o",
+        "filename": "type=_B, version=2.svg",
+        "size": 502,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.3": [
+      {
+        "id": "attW6grVwrh59Ctfe",
+        "width": 38,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/6gI75Jj_txKHFWlrGqI0xLNy0PBgPVZIo3tI3GyVtHg",
+        "filename": "type=_B, version=3.svg",
+        "size": 487,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.4": [
+      {
+        "id": "attrXw7SbFoTyrvwm",
+        "width": 48,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/MG5Enur8tlejmFgzGUsFgMIsz1yYlLzXjD1G-WA1wGY",
+        "filename": "type=_B, version=4.svg",
+        "size": 607,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recYS7ZWOqa9Z7nx5",
+    "비고": "같은 타입*색상은 4개의 버전으로 구성되며 순차적으로 제공",
+    "제공방식": "포스트 게시 후 지정된 색과 매칭되어 제공. 색은 장르 6개+자율 포스트 1개에 따름",
+    "종류": "공감",
+    "파츠명": "typeC",
+    "ver.1": [
+      {
+        "id": "attGDqMlfOfnzQQR1",
+        "width": 48,
+        "height": 18,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Kz8OxkIiYrOlNWCfkZQLjMhIrse_G2oJfcaHbHG200E",
+        "filename": "type=C, version=1.svg",
+        "size": 451,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.2": [
+      {
+        "id": "attnScGPy1XlcL1Ud",
+        "width": 48,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/V5r-SocZ28LyGIDdXaWbkd2g_91gqju7joKFlgHj_LY",
+        "filename": "type=C, version=2.svg",
+        "size": 562,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.3": [
+      {
+        "id": "attcXG6Dk3C0Rxro2",
+        "width": 48,
+        "height": 34,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/bXoIl6GTVlxbbU9kqy0rbun_RrXOQtS0LgLCTwaOt98",
+        "filename": "type=C, version=3.svg",
+        "size": 1411,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.4": [
+      {
+        "id": "att77M8xwFZcS16ns",
+        "width": 40,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/VA9rsLyhBDak7clRRQqt6nQIX0mpWIZ8etdcFSoVvPQ",
+        "filename": "type=C, version=4.svg",
+        "size": 1055,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "rech3RbDWepKPqQmE",
+    "비고": "같은 타입*색상은 4개의 버전으로 구성되며 순차적으로 제공",
+    "제공방식": "포스트 게시 후 지정된 색과 매칭되어 제공. 색은 장르 6개+자율 포스트 1개에 따름",
+    "종류": "재미",
+    "파츠명": "typeD",
+    "ver.1": [
+      {
+        "id": "attqk9lJX1LiuunIG",
+        "width": 48,
+        "height": 47,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/lleR9j8yTFKA3wc3zoGalTAKdlCdiEAJaCyoZZqLF5A",
+        "filename": "type=D, version=1.svg",
+        "size": 490,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.2": [
+      {
+        "id": "att7rSGiYo0QOFaqq",
+        "width": 48,
+        "height": 42,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/88y3UgVNEHjYjWu_h_Iz19V_9mXet1vCl_Mp-l-3d3E",
+        "filename": "type=D, version=2.svg",
+        "size": 594,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.3": [
+      {
+        "id": "attUkSyDklC8ddRI1",
+        "width": 48,
+        "height": 48,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/Kh8tUUBy_13vl9VbIz1986KLLgzDBjKz5ROaXHZ4f3c",
+        "filename": "type=D, version=3.svg",
+        "size": 1607,
+        "type": "image/svg+xml"
+      }
+    ],
+    "ver.4": [
+      {
+        "id": "attS3Iq7QdOodjxnm",
+        "width": 48,
+        "height": 40,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/creativeParts/dVQU8-MF48CI77wr7_-FM0Q9SvWIZG9AO-8j5pSxjwE",
+        "filename": "type=D, version=4.svg",
+        "size": 826,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recszVM5sxv0cSbnp",
+    "비고": "단, 선택한 장르가 4개 미만인 경우, 선택한 장르 내에서 중복 제공 / 4개 초과인 경우, 선택한 장르 내에서 선정 제공",
+    "제공방식": "단, 온보딩 시 각 타입의 ver.1을 제공한다. 색은 선택한 장르에 따른다."
+  }
+]

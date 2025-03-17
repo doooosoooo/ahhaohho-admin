@@ -1,0 +1,212 @@
+[
+  {
+    "id": "recmg7PAhQww9544F",
+    "ID": "makecar",
+    "버튼 반응형-매개자 대사 1 / 모듈 선택 1": "있잖아 {username}, 나는 탈 것 하면 바퀴가 달린 자전거나 자동차가 제일 먼저 떠올라.＼바퀴는 물레에서 시작된 거 알아? 기원전 4000년 전, 도공이 쓰는 물레에서 바퀴 모양을 처음 발견했대.",
+    "버튼 반응형-유저 선택지 내용 1 / 모듈 선택 1": "물레?",
+    "모듈 선택 1": "모듈1 : 버튼 반응형",
+    "챌린지명": [
+      "recmPuq1aF5QmcZu0"
+    ],
+    "모듈 선택 2": "모듈1 : 버튼 반응형",
+    "버튼 반응형-매개자 대사 1 / 모듈 선택 2": "응! 물레에서 시작된 바퀴가 자전거, 그리고 자동차에서까지 활용될 줄이야!",
+    "버튼 반응형-매개자 이미지 1 / 모듈 선택 2": [
+      {
+        "id": "attPXbKXYsBejuqNq",
+        "width": 1214,
+        "height": 625,
+        "url": "https://cdn-world.ahhaohho.com/chatData/ZlDJYQ6T6ytqkCMrt_zyAkx22Otcbl5INHwYbVHcj-Q",
+        "filename": "캡처4.JPG",
+        "size": 35406,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/tohy8O_CrCRi5ROc80w1Y6tDwJeWtKxGgS4RvgQ1ZOk",
+            "width": 69,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/ZZ1-YWlithyGtO6ZuCfYgZIxuyxgS9DM6b2uhSnnKx8",
+            "width": 995,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/Sg44pB-mGrqDP1amyBQflYcRF-d3pRY8MZ6lJiHLpYE",
+            "width": 1214,
+            "height": 625
+          }
+        }
+      }
+    ],
+    "모듈 선택 3": "모듈2 : 인터랙션형",
+    "인터랙션형-매개자 대사 / 모듈 선택 3": "우리 프리덤덤시티에도 재활용품으로 만든 여러 이동 수단이 다니고 있어.",
+    "인터랙션형-유저선택 버튼 이미지 1 / 모듈 선택 3": [
+      {
+        "id": "atttxT7W0l0tb7Mno",
+        "width": 780,
+        "height": 975,
+        "url": "https://cdn-world.ahhaohho.com/chatData/iXK_lNFFUsneCt4N9PNuEarNqxLChlBi8k9MuCyYLl8",
+        "filename": "3.1.Vehicle.png",
+        "size": 269975,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/HeBl5x8hvfDiZ5WOGT03dqD4zZ3yq7sCVb7CgdFViMU",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/F3vJ3gog2x9AO62gYXw8AFJItsu56Gdhh5Vf76NY9_g",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/RtUnaahs3O8mww9Xy5FfgqyDEevDPMD89B7j5ZzBM4g",
+            "width": 780,
+            "height": 975
+          }
+        }
+      }
+    ],
+    "인터랙션형-선택지 1 응답 텍스트 / 모듈 선택 3": "세 명이 타고 다닐 수 있는 관광 열차야.",
+    "인터랙션형-유저선택 버튼 이미지 2 / 모듈 선택 3": [
+      {
+        "id": "att7mJhawVjghpPoJ",
+        "width": 780,
+        "height": 975,
+        "url": "https://cdn-world.ahhaohho.com/chatData/_KTav3xp5XCSPcorx50JosmowX1_ZoUdONRYp5RrtMo",
+        "filename": "3.2.Vehicle.png",
+        "size": 342021,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/DTFNTFkUxW47U4Ja0_DwrPf2QsjbJZlmC3OQqnbrB1w",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/zk74u9xq1qybUEHo50zaQbSbnZAzEoxKOFb7UL1xQR4",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/TP8rhbpzC7EE3Y7fIQPjHIffIAjfEIfXAdmDu8Hd-jc",
+            "width": 780,
+            "height": 975
+          }
+        }
+      }
+    ],
+    "인터랙션형-선택지 2 응답 텍스트 / 모듈 선택 3": "햇빛을 받으면 움직이는 짐 수레야.",
+    "인터랙션형-유저선택 버튼 이미지 3 / 모듈 선택 3": [
+      {
+        "id": "attAF062bnMm9AzVZ",
+        "width": 780,
+        "height": 975,
+        "url": "https://cdn-world.ahhaohho.com/chatData/WGm8toPlhaUdYUZ3_uvmfiaO1WiMLFt3UpUUUMFx5f4",
+        "filename": "3.3.Vehicle.png",
+        "size": 512747,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/GtJxnqcWpFo7kuFrTWG_IhKzr9ARuB21A9V57Uv2mlM",
+            "width": 29,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/s2Lcg9bkZHZ51X_ugZKyb2TvjtLwXwELsgbnZYJmbg8",
+            "width": 512,
+            "height": 640
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/E3vP4Pw_eAknFfSvcEm3CuOp-Peko4YD2ERQ9dLS-aM",
+            "width": 780,
+            "height": 975
+          }
+        }
+      }
+    ],
+    "인터랙션형-선택지 3 응답 텍스트 / 모듈 선택 3": "바퀴 없이 붕 떠 다니는 공중버스야.",
+    "모듈 선택 4": "모듈3 : 타이핑형",
+    "타이핑형-매개자 대사 / 모듈 선택 4": "{username}, 너는 프리덤덤시티에서 살다보면 언제 이동 수단이 필요할 거 같아?",
+    "모듈 선택 5": "모듈1 : 버튼 반응형",
+    "버튼 반응형-매개자 대사 1 / 모듈 선택 5": "음, 확실히 이동 수단이 생기면 다니기 편해질 거야!＼만들었던 캐릭터의 특징을 탈 것에도 담아보면 어떨까?",
+    "버튼 반응형-유저 선택지 내용 1 / 모듈 선택 5": "오, 좋은 생각이야!",
+    "버튼 반응형-유저 선택지 내용 2 / 모듈 선택 5": "음.. 어떻게?",
+    "모듈 선택 6": "모듈1 : 버튼 반응형",
+    "버튼 반응형-매개자 대사 1 / 모듈 선택 6": "만약 이 캐릭터한테 탈 것을 만들어준다고 상상해봐.",
+    "버튼 반응형-유저 선택지 이미지 1 / 모듈 선택 6": [
+      {
+        "id": "attDTpkYglWnvSbMc",
+        "width": 975,
+        "height": 780,
+        "url": "https://cdn-world.ahhaohho.com/chatData/AdyY1nVwENPO4O8aGJfqoPLToUOhgNHQYphLvuIc7H0",
+        "filename": "3.4.2.Vehicle.png",
+        "size": 347750,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/udx90zI7pH6KBkzbF9WmvJnWyKclukwCxX0iNnffydA",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/2r0yg5c96ulx5HIsk01DzmFBJ_m32H0FziAwdtV2ZBY",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/Dy5GxrZHEZej3dF9Piqtd8YIU5e9x_p-BR-1MhSRRfs",
+            "width": 975,
+            "height": 780
+          }
+        }
+      }
+    ],
+    "버튼 반응형-유저 선택지 내용 1 / 모듈 선택 6": "날개로 이동하기 어려운 곳을 날아갈 수 있는 전용 비행기가 필요할 거 같아.",
+    "모듈 선택 7": "모듈1 : 버튼 반응형",
+    "버튼 반응형-매개자 대사 1 / 모듈 선택 7": "훌륭해! {username}의 캐릭터에도 필요한 이동 수단을 만들어보자!＼프리덤덤시티의 특징을 고려해봐도 좋아!",
+    "모듈 4 대화 종료 매개자 대사": "프리덤덤시티에서 잘 이동할 수 있도록, 캐릭터에게 필요한 탈 것을 만들어보자!",
+    "매개자 사진/영상 제출 유도 대사": "어떤 모습인지 궁금한 걸? 움직이는 영상을 찍어서 나한테 보여줘!",
+    "매개자 AI 피드백 여부": true,
+    "매개자 AI 프롬프트": "아래 [페르소나]를 바탕으로 [요청]에 3문장 이내로 응답하세요.\n\n[페르소나]\n• 이름: 아하하핫\n• 세계관: '프리덤덤시티'라는 일상의 물건과 재활용품으로 만들어진, 자유롭고 엉뚱한 도시에 살고 있음\n• 역할: '프리덤덤시티'를 설계하는 데에 도움을 주는 도시 건설사\n• 성격: 엉뚱하고 유쾌함\n• 특징적인 말투:\n- 친구처럼 반말을 사용\n- 제안하고 독려하는 말투\n\n[요청]\n• 유저가 제출한 이미지는 {핵심경험}과 관련된 프로젝트 사진입니다:\n{핵심경험} = '프리덤덤시티'에서 타고 이동할 수 있는 탈 것 만들기\n\n• 프로젝트 사진을 분석해 아래 지침에 따라 응답하세요:\n- 사용된 사물 중 가장 잘 인식할 수 있는 것 하나를 언급하고, 어떻게 움직이는 이동 수단일지 상상을 더하는 피드백 제공\n- 이미지 속 한글, 영어 등 문자에 대해 인식 확신도가 95% 이상일 경우에만 언급\n- “창의적이다” 같은 추상적인 피드백이나 정답과 같은 확정적인 내용은 지양, 프로젝트의 구체적인 특징과 연결된 칭찬 제공\n- \"작품\"이라는 말 대신 가급적 \"프로젝트\"라는 단어 사용\n\n• 유저가 프로젝트를 다음 단계(게시하기)로 자연스럽게 이어가도록 유도합니다.",
+    "프로젝트 설명하기 가이드 문구": "멋진 이름을 지어줘! 그리고 어떤 방식으로  움직이는지 알려줘.",
+    "버튼 반응형-매개자 이미지 1 / 모듈 선택 6": [
+      {
+        "id": "attSOfeg1pYjOKiHH",
+        "width": 975,
+        "height": 780,
+        "url": "https://cdn-world.ahhaohho.com/chatData/zxkTVI3X6JYzK3qI342HGVweFiWI8XjcGeIX63-5b0I",
+        "filename": "3.4.1.Vehicle.png",
+        "size": 401088,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/small/OVElmia1L-s-_zuabLi-UsrLESRoMU3pYlCbfmpDXI4",
+            "width": 45,
+            "height": 36
+          },
+          "large": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/large/O82DQbe2MW0tUZuNrUmqWyGefqFV174ikM6dAKaWQZs",
+            "width": 640,
+            "height": 512
+          },
+          "full": {
+            "url": "https://cdn-world.ahhaohho.com/chatData/thumbnails/full/o2drg1psfi_7zsA2XBRe7hEZeenys79bqHlVLShHcnI",
+            "width": 975,
+            "height": 780
+          }
+        }
+      }
+    ],
+    "그룹명": [
+      "recFB2a2cYIekyC20"
+    ],
+    "챌린지명(버블용)": "탈 것 만들기",
+    "입력 상태(디창)": "입력완료",
+    "검토 상태(창의)": "검토중",
+    "월드명": [
+      "recgPwbEXh6iUOEeI"
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "recBviphyzmhkG1Xz",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye1",
+    "Assets": [
+      {
+        "id": "attcIDXTmAqteKm2u",
+        "width": 28,
+        "height": 32,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/YKxEPW7DCZ5Q3up4KkF_LEV72KqFBC6gCeqa3sfGj3U",
+        "filename": "type=A, version=none.svg",
+        "size": 814,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recKS4yejXxC5fjwH",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye2",
+    "Assets": [
+      {
+        "id": "attOGmaYauRn1pADJ",
+        "width": 40,
+        "height": 15,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/OOH3hADe3fdBrmIp3-ZpXLXffHhzMqAWXXqteu4CEFc",
+        "filename": "type=B, version=none.svg",
+        "size": 983,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recsbatIqdwChJ9Cz",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye3",
+    "Assets": [
+      {
+        "id": "attVg4Xi083VKd1wI",
+        "width": 30,
+        "height": 30,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/LfHWexAUonUPOfKCE9sCDRt48SP-kR5PrfQzpbOlu2Q",
+        "filename": "type=C, version=none.svg",
+        "size": 618,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recCoTdIgRqNntHQ3",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye4",
+    "Assets": [
+      {
+        "id": "att9BjsjV6eijB0Hk",
+        "width": 36,
+        "height": 18,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/Nh_beZkf_IDXWZ7pnQ7mdBsQm_6PxOpr2D9_0qBFmOo",
+        "filename": "type=D, version=none.svg",
+        "size": 784,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "reckVNVzfHNP9uWoW",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye5",
+    "Assets": [
+      {
+        "id": "att60iEEvRGK1PbNH",
+        "width": 32,
+        "height": 26,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/X7OomPA45-C02w_yFb-QfqgEBxaohnohmY4cTP5nGuU",
+        "filename": "type=E, version=none.svg",
+        "size": 986,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recw7aYjBiW4JUIuC",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye6",
+    "Assets": [
+      {
+        "id": "att2NktscpH4qgCxV",
+        "width": 36,
+        "height": 20,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/Vfe9K_2abU4b4ButwwO2XyNdshCAnW564ICsiLIgJRo",
+        "filename": "type=F, version=none.svg",
+        "size": 771,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recjaDrV8pqsEL3BR",
+    "제공 방식": "기본 제공",
+    "종류": "눈",
+    "비고": "3개씩 제공",
+    "파츠명": "eye7",
+    "Assets": [
+      {
+        "id": "attVkwNDqlx7pyrBY",
+        "width": 24,
+        "height": 24,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/basicParts/qpxEDuJgP4WveQtrkRN8aTCCscEWbHv5AtEetxC4YiA",
+        "filename": "type=G, version=none.svg",
+        "size": 733,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recrUVHr4Ilq5qrUp",
+    "비고": "보상 시스템 참고: https://docs.google.com/spreadsheets/d/1reqDY-7LZQgfw0-wnDa7SbkdTHLMrpSwg-swZpiyl5E/edit?gid=0#gid=0"
+  }
+]

@@ -1,8 +1,6 @@
+
 {
-    "difficultyData" : { "tableName" : "tblcfgGty7AyqbvBE", "viewName" : "viwzz9YFRzsHB8JPE" },
-    "contentsData" : { "tableName" : "tblVTZaWyooATIsfO", "viewName" : "viw1ySHuJrnGBeQbu" },
-    "groupsData" : { "tableName" : "tblJFOXn6hfLu4CT5", "viewName" : "viwje1HY4Sid5Lnq9" },
-    "materialsData" : { "tableName" : "tblq38Igx5Mi9mQF1", "viewName" : "viwtbOO2L4UyjxZSc" },
-    "postingGuideData" : { "tableName" : "tbl08YQjobglpiI7F", "viewName" : "viwcvdem5A4TWOJ6D" },
-    "creatorsData" : { "tableName" : "tblFajGaV5PN9dOhE", "viewName" : "viwznXHjjOXLbSSLS" }
+    
+    "contentsData" : { "tableName" : "tblVTZaWyooATIsfO", "viewName" : "viw1ySHuJrnGBeQbu" }
+    
 }

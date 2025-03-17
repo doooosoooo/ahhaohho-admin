@@ -7,6 +7,7 @@ async function loadConfig() {
         airtableApiKey: process.env.AIRTABLE_API_KEY,
         challengeBaseId: process.env.CHALLENGE_BASE_ID,
         worldBaseId: process.env.WORLD_BASE_ID,
+        partsBaseId: process.env.PARTS_BASE_ID,
         airtableEndpointUrl: process.env.AIRTABLE_ENDPOINT_URL,
         aws_region: process.env.AWS_REGION,
         aws_accessKeyId: process.env.AWS_ACCESS_KEY_ID,

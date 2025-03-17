@@ -6,7 +6,7 @@ const path = require('path');
 
 async function loadAndUploadChatData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/openChatData-updateAt20250110.json');
+    const filePath = path.join(__dirname, '../rawData/openChatData-updateAt20250312.json');
     const rawData = await fs.readFile(filePath, 'utf8');
     const chatsData = JSON.parse(rawData);
 

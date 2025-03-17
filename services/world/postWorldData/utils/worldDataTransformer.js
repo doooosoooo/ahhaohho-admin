@@ -21,7 +21,8 @@ class WorldDataTransformer {
       description: data["월드 소개 텍스트"]?.trim() || null,
       keywords: this._transformKeywords(data),
       creatorName: this._transformCreatorNames(data["매개자 이름"]),
-      groupIdxs: this._safeArrayTransform(data["그룹 이름"])
+      groupIdxs: this._safeArrayTransform(data["그룹 이름"]),
+      themeColor: data["채팅 배경 색상"]?.trim() || null,
     };
   }
 
@@ -34,10 +35,16 @@ class WorldDataTransformer {
 
   static _transformOverview(data) {
     return {
+      overviewThumbnail: data["오버뷰 썸네일"][0]?.url || null,
       overview: {
         leadSentence: data["월드맵 환영 문구"]?.trim() || null,
-        bgImage: 'https://cdn-world.ahhaohho.com/sampleAsset/world-map-bg.jpeg',
-        bgGallery: 'https://cdn-world.ahhaohho.com/sampleAsset/world-postit.png'
+        mapBg: data["오버뷰 배경"][0]?.url || null,
+        galleryBg: {
+          bg: data["오버뷰 갤러리배경"][1]?.url || null,
+          acc: data["오버뷰 갤러리배경"][0]?.url || null
+        },
+        groupBg: data["오버뷰 그룹배경"][0]?.url || null,
+        groupNavBg: data["오버뷰 NavBG"][0]?.url || null,
       }
     };
   }
@@ -48,13 +55,7 @@ class WorldDataTransformer {
         type: "image",
         defaultUrl: this._safeGetUrl(data["월드 소개 영상"]),
         sound: null,
-        mainAssets: this._transformMainAssets(data),
-        animationAssets: [
-          'https://cdn-world.ahhaohho.com/sampleAsset/BlowingLeaf.png',
-          'https://cdn-world.ahhaohho.com/sampleAsset/CloudSmall.png',
-          'https://cdn-world.ahhaohho.com/sampleAsset/CloudLarge.png',
-          'https://cdn-world.ahhaohho.com/sampleAsset/Tree.png',
-        ]
+        mainAssets: this._transformMainAssets(data)
       }
     };
   }
@@ -70,9 +71,10 @@ class WorldDataTransformer {
 
   static _transformMainAssets(data) {
     return {
-      back: this._safeGetUrl(data["월드 썸네일_Back"]) || 'https://cdn-world.ahhaohho.com/worldData/xUuW1JkPWi2OQJkA4U2UZHtSYWTKguS6edGzxp2nBeo',
-      middle: this._safeGetUrl(data["월드 썸네일_Middle"]) || 'https://cdn-world.ahhaohho.com/worldData/1gzoMeI5n6E9JOdO3gTXhpl4sIljYkhTBMTq8_mUEjs',
-      front: this._safeGetUrl(data["월드 썸네일_Front"]) || 'https://cdn-world.ahhaohho.com/worldData/lKRvavWxKdwL7njs9WAzyY1bIJqtGTuKNkDrV3_V-MQ'
+      back: this._safeGetUrl(data["월드 썸네일_Back"]) || null,
+      middle: this._safeGetUrl(data["월드 썸네일_Middle"]) || null,
+      front: this._safeGetUrl(data["월드 썸네일_Front"]) || null,
+      background: this._safeGetUrl(data["월드 썸네일_BG"]) || null
     };
   }
 

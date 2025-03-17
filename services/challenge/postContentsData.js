@@ -1,3 +1,4 @@
+/* global process, __dirname */
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const { loadConfig } = require('../../config/config');
@@ -26,14 +27,37 @@ function validateField(value, fieldName) {
 }
 
 function getMediaUrl(media) {
-    if (media.type === 'video/mp4') {
-        return media.url;
-    } else if (media.type === 'image/jpeg' || media.type === 'image/png') {
-        return media.thumbnails?.large?.url || media.url;
+    // 미디어가 없거나 URL이 없는 경우
+    if (!media || !media.url) {
+        return null;
     }
+
+    // 비디오 타입인 경우
+    if (media.type === 'video/mp4') {
+        // 비디오는 기본 URL 반환
+        return media.url;
+    } 
+    // 이미지 타입인 경우
+    else if (media.type === 'image/jpeg' || media.type === 'image/png') {
+        // 썸네일이 있는 경우
+        if (media.thumbnails) {
+            // 썸네일 정보가 포함된 객체 반환
+            return {
+                defaultUrl: media.url,
+                type: media.type,
+                thumbnail: {
+                    tiny: media.thumbnails.small?.url || media.thumbnails.tiny?.url || '',
+                    small: media.thumbnails.large?.url || '',
+                    medium: media.thumbnails.large?.url || '',
+                    large: media.thumbnails.full?.url || ''                }
+            };
+        }
+        // 썸네일이 없는 경우 URL만 반환
+        return media.url;
+    }
+    // 기타 타입인 경우
     return null;
 }
-
 async function processItem(item) {
     try {
         log(`Processing item: ${item.id}`);
@@ -67,6 +91,7 @@ async function processItem(item) {
         }
         
 
+        // 활동 가이드 처리 부분도 수정
         // 활동 가이드 처리
         for (let i = 1; i <= 9; i++) {
             const mediaKey = i === 1 ? '*활동 가이드 1_이미지' : `활동 가이드 ${i}_이미지`;
@@ -85,17 +110,41 @@ async function processItem(item) {
                     type: medias[0].type,
                     portrait: portrait,
                     sound: sound,
+                    thumbnail: {
+                        tiny: '',
+                        small: '',
+                        medium: '',
+                        large: '',
+                        full: ''
+                    }
                 };
 
                 for (const media of medias) {
-                    const url = getMediaUrl(media);
-                    if (url) {
-                        if (media.filename?.toLowerCase().includes('aos')) {
-                            mediaUrl.aos = url;
-                        } else if (media.filename?.toLowerCase().includes('ios')) {
-                            mediaUrl.ios = url;
-                        } else {
-                            mediaUrl.defaultUrl = url;
+                    const mediaResult = getMediaUrl(media);
+                    
+                    if (mediaResult) {
+                        // 객체인 경우 (이미지 + 썸네일)
+                        if (typeof mediaResult === 'object') {
+                            if (media.filename?.toLowerCase().includes('aos')) {
+                                mediaUrl.aos = mediaResult.defaultUrl;
+                                mediaUrl.thumbnail = mediaResult.thumbnail;
+                            } else if (media.filename?.toLowerCase().includes('ios')) {
+                                mediaUrl.ios = mediaResult.defaultUrl;
+                                mediaUrl.thumbnail = mediaResult.thumbnail;
+                            } else {
+                                mediaUrl.defaultUrl = mediaResult.defaultUrl;
+                                mediaUrl.thumbnail = mediaResult.thumbnail;
+                            }
+                        } 
+                        // 문자열인 경우 (비디오 또는 썸네일 없는 이미지)
+                        else {
+                            if (media.filename?.toLowerCase().includes('aos')) {
+                                mediaUrl.aos = mediaResult;
+                            } else if (media.filename?.toLowerCase().includes('ios')) {
+                                mediaUrl.ios = mediaResult;
+                            } else {
+                                mediaUrl.defaultUrl = mediaResult;
+                            }
                         }
                     }
                 }
@@ -120,14 +169,32 @@ async function processItem(item) {
         let thumbnail = null;
         if (item["*액티비티 썸네일"] && Array.isArray(item["*액티비티 썸네일"]) && item["*액티비티 썸네일"][0]) {
             const thumbnailItem = item["*액티비티 썸네일"][0];
-            thumbnail = {
-                defaultUrl: getMediaUrl(thumbnailItem),
-                type: thumbnailItem.type,
-                sound: item["\b썸네일_소리출력"] || false,
-                width: thumbnailItem.width,
-                height: thumbnailItem.height,
-            };
+            const mediaUrlResult = getMediaUrl(thumbnailItem);
+            
+            // getMediaUrl의 반환값이 객체인 경우 (이미지 + 썸네일이 있는 경우)
+            if (mediaUrlResult && typeof mediaUrlResult === 'object') {
+                thumbnail = {
+                    defaultUrl: mediaUrlResult.defaultUrl,
+                    type: thumbnailItem.type,
+                    sound: item["\b썸네일_소리출력"] || false,
+                    thumbnail: mediaUrlResult.thumbnail
+                };
+            } 
+            // getMediaUrl의 반환값이 문자열인 경우 (비디오 또는, 썸네일 없는 이미지)
+            else if (mediaUrlResult) {
+                thumbnail = {
+                    defaultUrl: mediaUrlResult,
+                    type: thumbnailItem.type,
+                    sound: item["\b썸네일_소리출력"] || false,
+                    thumbnail: {
+                        tiny: '',
+                        small: '',
+                        medium: '',
+                        large: ''            }
+                };
+            }
         }
+
 
         const activePlan = item["*활동 설명"] || "이 활동에 대한 설명이 곧 제공될 예정입니다. 기대해 주세요!";
 
@@ -143,6 +210,7 @@ async function processItem(item) {
             activePlan: validateField(activePlan, 'activePlan'),
             essentialInfo: item["* 필수 항목 안내 문구(퓨처랩)"] || '기본 필수 정보',
             leadSentence: validateField(item["* 활동 시작 발문(퓨처랩)"], 'leadSentence'),
+            aiPrompt: validateField(item["*챌린지 설명(콘텐츠 맵)"], 'aiPrompt'),
             playtime: validateField(item["*예상 소요시간"] ? Number(item["*예상 소요시간"]) : 0, 'playtime'),
             materials: validateField(Array.isArray(item["준비물 데이터"]) ? item["준비물 데이터"] : [], 'materials'),
             preparationTip: preparationTip,
@@ -176,7 +244,7 @@ async function sendUpdatedDataToApi(processedData, apiUrl) {
             log(`Sending item ${i + 1}/${processedData.length}: ${processedData[i].index}`);
             
             try {
-                const response = await axios.post(apiUrl, { contents: [processedData[i]] });
+                await axios.post(apiUrl, { contents: [processedData[i]] });
                 log(`Item ${processedData[i].index} sent successfully`);
             } catch (error) {
                 console.error(`Error sending item ${processedData[i].index}:`, error.response?.data || error.message);
@@ -213,16 +281,6 @@ async function createDirectoryIfNotExists(dirPath) {
         } else {
             throw error;
         }
-    }
-}
-
-async function getExistingData(apiUrl) {
-    try {
-        const response = await axios.get(apiUrl);
-        return response.data;
-    } catch (error) {
-        console.error('Error fetching existing data:', error);
-        return [];
     }
 }
 

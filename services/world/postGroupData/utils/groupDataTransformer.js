@@ -14,7 +14,7 @@ class GroupDataTransformer {
       groupIdx: data.id || null,
       order: data["그룹 탐험 순서"],
       openChatIdxs: data["월드맵(매개자-유저 대화)"]?.[0] || null,
-      badge: 'https://cdn-world.ahhaohho.com/sampleAsset/world-badge.svg',
+      badge: data["뱃지"][0]?.url || null,
       challengeIdxs: this._transformChallengeIdxs(data["챌린지 소개 페이지"])
     };
   }

@@ -40,10 +40,22 @@ class ChallengeDataTransformer {
       .filter(item => item != null && item !== '');
   }
 
-  static _transformLevel(level) {
-    const parsedLevel = parseInt(level, 10);
-    return isNaN(parsedLevel) ? 1 : parsedLevel;
-  }
+static _transformLevel(level) {
+  // Parse the input level to a number, default to 1 if invalid
+  const parsedLevel = parseInt(level, 10);
+  if (isNaN(parsedLevel)) return 1;
+  
+  // Transform level based on rules:
+  // 1-2 → 1
+  // 3 → 2
+  // 4-5 → 3
+  if (parsedLevel <= 2) return 1;
+  if (parsedLevel === 3) return 2;
+  if (parsedLevel >= 4 && parsedLevel <= 5) return 3;
+  
+  // For any other values, return 3 as the maximum level
+  return 3;
+}
 
   static _transformMedia(thumbnailData) {
     if (!Array.isArray(thumbnailData) || thumbnailData.length === 0) {

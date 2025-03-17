@@ -1,0 +1,182 @@
+[
+  {
+    "id": "rec9zGwgNAtTTvhUG",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction1",
+    "Assets": [
+      {
+        "id": "att2WdiPw7i3ejmUR",
+        "width": 48,
+        "height": 10,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/gb1P444fWxNjXcKMgy_0bRN9E4c-QvKI9A9zxOH2rz8",
+        "filename": "type=A, version=none.svg",
+        "size": 1365,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recsSkifEpcrW8gTM",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction2\n",
+    "Assets": [
+      {
+        "id": "attfs5wxRD7CFLzg0",
+        "width": 48,
+        "height": 18,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/Ti8xgTBtvidgfp7Nusi4Ad_l-r8iu5VKaj015HmnzOg",
+        "filename": "type=B, version=none.svg",
+        "size": 1011,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recpaCw5D8sjPjjMo",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction3",
+    "Assets": [
+      {
+        "id": "attUr4euE2DdUHbDO",
+        "width": 45,
+        "height": 19,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/EaM_C9Etr7xRBVs61lUvgqIRqWqBI44cd5WrtN4PI0c",
+        "filename": "type=C, version=none.svg",
+        "size": 421,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "reczbtc6vpkYMOgeI",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction4",
+    "Assets": [
+      {
+        "id": "attxNh0Iu3ONrPm7m",
+        "width": 40,
+        "height": 20,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/dMAlJlEzD7IT6bydxNyandRdCitQSPrsJfBJDh4BpnA",
+        "filename": "type=D, version=none.svg",
+        "size": 373,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "rec2RVzzepYZsnQAe",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction5",
+    "Assets": [
+      {
+        "id": "attCynKkapzbQpjd2",
+        "width": 48,
+        "height": 16,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/7feo-HY6L2uBJuh_meYwfcKEQMKlhAvxvXYEZZg9OAI",
+        "filename": "type=E, version=none.svg",
+        "size": 2711,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recDSLMw6GMDW3o5c",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction6",
+    "Assets": [
+      {
+        "id": "attAvQp8yxrOAJVZA",
+        "width": 37,
+        "height": 23,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/XSJ67F8D63Ng0OKwS-R4Kuq9g51Ct8qnL4A5HZ9bIsk",
+        "filename": "type=F, version=none.svg",
+        "size": 735,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recW1CWDtOjGc2dKK",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction7",
+    "Assets": [
+      {
+        "id": "attpEulHNbf5a4eju",
+        "width": 48,
+        "height": 20,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/iObZmO0RiGKCPp_2b3LMPVgnnMp3e7uzSVtQAhOAhBE",
+        "filename": "type=G, version=none.svg",
+        "size": 1393,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recii11F967w8BzXI",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction8",
+    "Assets": [
+      {
+        "id": "attekUM0mTyW0jEIA",
+        "width": 22,
+        "height": 24,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/Q_9wdek_hWu4aDPCHO201obLQRv1AxuUh5he8Oj9Zr8",
+        "filename": "type=H, version=none.svg",
+        "size": 539,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recdd1Offl7WZuciK",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction9",
+    "Assets": [
+      {
+        "id": "attqvhro6W3dnGWqg",
+        "width": 20,
+        "height": 24,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/eRoye1qpwGWoWWa7N8Z4USyii4Laxc0zrfTEmztEvTc",
+        "filename": "type=I, version=none.svg",
+        "size": 654,
+        "type": "image/svg+xml"
+      }
+    ]
+  },
+  {
+    "id": "recUH214CbzkdtY5z",
+    "종류": "리액션",
+    "비고": "조건: 다른 5개의 게시글(나의 게시글 제외)에 1번 이상 이모티콘을 남겼을 때",
+    "제공방식": "조건 충족 시 순차적 제공",
+    "파츠명": "reaction10",
+    "Assets": [
+      {
+        "id": "attASjFWXs6N5mdUQ",
+        "width": 24,
+        "height": 14,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/specialParts/88ZISGBl6hVeQz-2hIjzn06TsV8pcib8pMV-YbepfEA",
+        "filename": "type=J, version=none.svg",
+        "size": 476,
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+]
