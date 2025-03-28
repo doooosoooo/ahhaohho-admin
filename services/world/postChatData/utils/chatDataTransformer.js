@@ -107,7 +107,7 @@ class ChatDataTransformer {
     const endMessage = data['모듈 4 대화 종료 매개자 대사'];
     if (endMessage) {
       // 종료 메시지는 talker가 'prompt'여야 함
-      const endMessageItems = this._processTextWithBackslash(endMessage, 'prompt');
+      const endMessageItems = this._processTextWithBackslash(endMessage, 'endChat');
       if (Array.isArray(endMessageItems)) {
         chatArray.push(...endMessageItems);
       } else {
@@ -334,7 +334,7 @@ class ChatDataTransformer {
 
   static _createMediatorMessage(text) {
     // 종료 메시지는 talker가 'prompt'여야 함
-    return this._processTextWithBackslash(text, 'prompt');
+    return this._processTextWithBackslash(text, 'endChat');
   }
   
   static _transformTypingType() {    
@@ -354,7 +354,7 @@ class ChatDataTransformer {
     if (!text) return null;
     
     // 백슬래시 처리 - 타이핑형 매개자는 talker가 'prompt'여야 함
-    return this._processTextWithBackslash(text, 'prompt');
+    return this._processTextWithBackslash(text, 'user');
   }
 
   static _transformMediaToDTO(mediaData) {

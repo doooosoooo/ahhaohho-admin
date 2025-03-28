@@ -17,6 +17,7 @@ class ChallengeDataTransformer {
       title: data["챌린지명"].trim(),
       challengeIdx: data.id,
       description: data["챌린지 소개 텍스트"].trim(),
+      order: data["챌린지 노출 순서"] || 0,
       level: this._transformLevel(data["난이도"]),
       media: this._transformMedia(data["챌린지 썸네일"]),
       categoryMain: data["메인장르"]?.trim() || null,
