@@ -12,65 +12,8 @@ class ChatDataTransformer {
       chat: this._transformChat(data)
     };
     
-    // 모든 변환이 끝난 후, 백슬래시 메시지 후처리 적용
-    transformedData.chat = this._processBackslashesInFinalChat(transformedData.chat);
-
     console.log('DEBUG - Transformed request data:', JSON.stringify(transformedData, null, 2));
     return transformedData;
-  }
-
-  // 최종 chat 배열에 대한 백슬래시 후처리
-  static _processBackslashesInFinalChat(chatArray) {
-    const result = [];
-    
-    for (const message of chatArray) {
-      // 각 메시지의 prompts 배열 확인
-      if (message.prompts && message.prompts.length > 0) {
-        // 각 프롬프트의 텍스트 확인
-        const prompt = message.prompts[0];
-        
-        // 텍스트가 있고 백슬래시를 포함하는 경우에만 처리
-        if (prompt.text && (prompt.text.includes('\\') || prompt.text.includes('＼'))) {
-          // 일반 백슬래시와 전각 백슬래시 모두 처리
-          const parts = prompt.text.split(/[\\＼]/).map(part => part.trim()).filter(part => part);
-          
-          if (parts.length > 1) {
-            // 첫 번째 부분은 원래 메시지의 미디어와 함께 사용
-            const firstMessage = {
-              ...message,
-              prompts: [{
-                ...prompt,
-                text: parts[0]
-              }]
-            };
-            result.push(firstMessage);
-            
-            // 나머지 부분은 별도의 메시지로 추가 (미디어 없음)
-            for (let i = 1; i < parts.length; i++) {
-              const newMessage = {
-                ...message,
-                prompts: [{
-                  text: parts[i],
-                  media: null
-                }]
-              };
-              result.push(newMessage);
-            }
-          } else {
-            // 백슬래시가 있지만 분리된 부분이 하나뿐인 경우 (빈 부분이 필터링됨)
-            result.push(message);
-          }
-        } else {
-          // 백슬래시가 없는 경우 그대로 추가
-          result.push(message);
-        }
-      } else {
-        // prompts 배열이 없거나 비어있는 경우 그대로 추가
-        result.push(message);
-      }
-    }
-    
-    return result;
   }
 
   static _transformChat(data) {
@@ -353,8 +296,51 @@ class ChatDataTransformer {
     const text = data[`타이핑형-매개자 대사 / 모듈 선택 ${moduleNum}`];
     if (!text) return null;
     
-    // 백슬래시 처리 - 타이핑형 매개자는 talker가 'prompt'여야 함
-    return this._processTextWithBackslash(text, 'user');
+    // 백슬래시가 있는지 확인
+    const hasBackslash = text.includes('\\') || text.includes('＼');
+    
+    if (!hasBackslash) {
+      // 백슬래시가 없으면 단일 메시지 반환
+      return {
+        type: 'text',
+        talker: 'prompt',
+        hasOpts: false,
+        prompts: [{
+          text: text,
+          media: null
+        }]
+      };
+    }
+    
+    // 백슬래시로 텍스트 분리
+    const parts = text.split(/[\\＼]/).map(part => part.trim()).filter(part => part);
+    
+    // 결과 배열 초기화
+    const result = [];
+    
+    // userTyping 객체 생성
+    const userTypingObj = this._transformTypingType();
+    
+    // 각 부분에 대해 메시지와 userTyping 교대로 추가
+    for (let i = 0; i < parts.length; i++) {
+      // 매개자 메시지 추가
+      result.push({
+        type: 'text',
+        talker: 'prompt',
+        hasOpts: false,
+        prompts: [{
+          text: parts[i],
+          media: null
+        }]
+      });
+      
+      // 각 메시지 뒤에 userTyping 추가 (마지막 메시지 제외)
+      if (i < parts.length) {
+        result.push({...userTypingObj});
+      }
+    }
+    
+    return result;
   }
 
   static _transformMediaToDTO(mediaData) {

@@ -20,7 +20,7 @@ class WorldDataTransformer {
       title: data["월드명"].trim(),
       description: data["월드 소개 텍스트"]?.trim() || null,
       keywords: this._transformKeywords(data),
-      creatorName: this._transformCreatorNames(data["매개자 이름"]),
+      creatorName: this._transformCreatorNames(data["월드 기획자"]),
       groupIdxs: this._safeArrayTransform(data["그룹 이름"]),
       themeColor: data["채팅 배경 색상"]?.trim() || null,
     };

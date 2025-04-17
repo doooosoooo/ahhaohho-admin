@@ -6,7 +6,7 @@ const path = require('path');
 
 async function loadAndUploadWorldData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/worldData-updateAt20250318.json');
+    const filePath = path.join(__dirname, '../rawData/worldData-updateAt20250414.json');
     const rawData = await fs.readFile(filePath, 'utf8');
     const worldsData = JSON.parse(rawData);
 

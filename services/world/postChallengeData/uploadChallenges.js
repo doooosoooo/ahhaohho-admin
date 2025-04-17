@@ -7,7 +7,7 @@ const path = require('path');
 
 async function loadAndUploadChallengeData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/challengeData-updateAt20250318.json');
+    const filePath = path.join(__dirname, '../rawData/challengeData-updateAt20250414.json');
     const rawData = await fs.readFile(filePath, 'utf8');
     const challengesData = JSON.parse(rawData);
 
