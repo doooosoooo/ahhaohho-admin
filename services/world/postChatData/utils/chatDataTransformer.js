@@ -335,7 +335,7 @@ class ChatDataTransformer {
       });
       
       // 각 메시지 뒤에 userTyping 추가 (마지막 메시지 제외)
-      if (i < parts.length) {
+      if (i < parts.length - 1) {
         result.push({...userTypingObj});
       }
     }

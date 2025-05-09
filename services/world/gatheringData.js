@@ -167,7 +167,7 @@ async function uploadFileFromUrlToS3(url, key) {
             });
             
             // 업로드 완료 및 오류 처리
-            managedUpload.send((err, data) => {
+            managedUpload.send((err) => {
                 if (err) {
                     log(`Upload failed for ${key}: ${err.message}`, true);
                     reject(err);
