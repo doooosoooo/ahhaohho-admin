@@ -22,16 +22,16 @@ class ChatUploadService {
     }
     
     try {
-      // 필드 이름이 chatIdx인 경우를 처리
-      const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatIdx=${encodeURIComponent(id)}`, {
+      // 필드 이름이 chatId인 경우를 처리
+      const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatId=${encodeURIComponent(id)}`, {
         headers: { 'Content-Type': 'application/json' },
         timeout: 15000, // 타임아웃 증가 (15초)
         httpsAgent: this.httpsAgent
       });
       
-      // 결과가 배열인 경우 chatIdx가 정확히 일치하는 항목만 필터링
+      // 결과가 배열인 경우 chatId가 정확히 일치하는 항목만 필터링
       if (Array.isArray(response.data)) {
-        const exactMatch = response.data.find(chat => chat.chatIdx === id);
+        const exactMatch = response.data.find(chat => chat.chatId === id);
         return exactMatch || null;
       }
       
@@ -94,16 +94,16 @@ class ChatUploadService {
         transformedData: JSON.stringify(transformedData, null, 2)
       });
       
-      // chatIdx로 기존 데이터 검색
-      const existingChat = await this.getChatById(transformedData.chatIdx);
+      // chatId로 기존 데이터 검색
+      const existingChat = await this.getChatById(transformedData.chatId);
       
       if (!existingChat) {
-        console.log(`Chat with chatIdx '${transformedData.chatIdx}' not found, creating a new one`);
+        console.log(`Chat with chatId '${transformedData.chatId}' not found, creating a new one`);
         // 기존 데이터가 없으면 새로 생성
         return this.uploadSingleChat(chatData);
       }
       
-      console.log(`Found existing chat with chatIdx '${transformedData.chatIdx}', _id: ${existingChat._id}`);
+      console.log(`Found existing chat with chatId '${transformedData.chatId}', _id: ${existingChat._id}`);
       
       // PATCH 요청으로 기존 데이터 업데이트
       const response = await this.axios.patch(
