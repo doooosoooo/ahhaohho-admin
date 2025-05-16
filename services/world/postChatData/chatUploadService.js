@@ -6,9 +6,13 @@ class ChatUploadService {
     this.BASE_URL = 'https://world.ahhaohho.com';
     this.axios = require('axios');
     
-    // SSL 인증서 검증 비활성화
+    // 향상된 HTTPS 에이전트 설정
     this.httpsAgent = new (require('https').Agent)({
-      rejectUnauthorized: false
+      rejectUnauthorized: true, // SSL 인증서 검증 활성화
+      secureProtocol: 'TLS_method', // 최신 TLS 버전 사용
+      timeout: 30000, // 소켓 타임아웃 증가 (30초)
+      keepAlive: true, // 연결 유지
+      maxSockets: 5 // 동시 연결 제한
     });
   }
   
@@ -21,7 +25,7 @@ class ChatUploadService {
       // 필드 이름이 chatIdx인 경우를 처리
       const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatIdx=${encodeURIComponent(id)}`, {
         headers: { 'Content-Type': 'application/json' },
-        timeout: 5000,
+        timeout: 15000, // 타임아웃 증가 (15초)
         httpsAgent: this.httpsAgent
       });
       
@@ -57,7 +61,7 @@ class ChatUploadService {
         transformedData,
         {
           headers: { 'Content-Type': 'application/json' },
-          timeout: 10000, // 10초 타임아웃 설정
+          timeout: 30000, // 30초 타임아웃 설정
           httpsAgent: this.httpsAgent
         }
       );
@@ -107,7 +111,7 @@ class ChatUploadService {
         transformedData,
         {
           headers: { 'Content-Type': 'application/json' },
-          timeout: 10000, // 10초 타임아웃 설정
+          timeout: 30000, // 30초 타임아웃 설정
           httpsAgent: this.httpsAgent
         }
       );
@@ -128,23 +132,23 @@ class ChatUploadService {
 
   async uploadMultipleChats(chatsData) {
     const dataArray = Array.isArray(chatsData) ? chatsData : [chatsData];
-    const batchSize = 5; // 동시에 처리할 요청 수 제한
+    const batchSize = 3; // 동시에 처리할 요청 수 제한 (5에서 3으로 줄임)
     const results = [];
     
     for (let i = 0; i < dataArray.length; i += batchSize) {
       const batch = dataArray.slice(i, i + batchSize);
       const batchResults = await Promise.all(
         batch.map(chatData => 
-          this.uploadSingleChat(chatData)
+          this._retryOperation(() => this.uploadSingleChat(chatData))
             .then(result => this._createSuccessResult(chatData, result))
             .catch(error => this._createErrorResult(chatData, error.message))
         )
       );
       results.push(...batchResults);
       
-      // 배치 간 짧은 딜레이
+      // 배치 간 딜레이 증가
       if (i + batchSize < dataArray.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 3000)); // 1초에서 3초로 증가
       }
     }
 
@@ -153,23 +157,23 @@ class ChatUploadService {
   
   async updateMultipleChats(chatsData) {
     const dataArray = Array.isArray(chatsData) ? chatsData : [chatsData];
-    const batchSize = 5; // 동시에 처리할 요청 수 제한
+    const batchSize = 3; // 동시에 처리할 요청 수 제한 (5에서 3으로 줄임)
     const results = [];
     
     for (let i = 0; i < dataArray.length; i += batchSize) {
       const batch = dataArray.slice(i, i + batchSize);
       const batchResults = await Promise.all(
         batch.map(chatData => 
-          this.updateSingleChat(chatData)
+          this._retryOperation(() => this.updateSingleChat(chatData))
             .then(result => this._createSuccessResult(chatData, result, true)) // isUpdate=true
             .catch(error => this._createErrorResult(chatData, error.message))
         )
       );
       results.push(...batchResults);
       
-      // 배치 간 짧은 딜레이
+      // 배치 간 딜레이 증가
       if (i + batchSize < dataArray.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 3000)); // 1초에서 3초로 증가
       }
     }
 
@@ -199,6 +203,39 @@ class ChatUploadService {
       failed: results.filter(r => r.status === 'error').length,
       details: results
     };
+  }
+  
+  // 재시도 로직 구현
+  async _retryOperation(operation, maxRetries = 3, initialDelay = 2000) {
+    let lastError;
+    let delay = initialDelay;
+    
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        return await operation();
+      } catch (error) {
+        lastError = error;
+        
+        // TLS 연결 문제 또는 네트워크 관련 오류인 경우에만 재시도
+        const isNetworkError = error.message.includes('socket') || 
+                              error.message.includes('network') || 
+                              error.message.includes('timeout') ||
+                              error.message.includes('TLS') || 
+                              error.message.includes('connection');
+                              
+        if (!isNetworkError || attempt === maxRetries) {
+          throw error;
+        }
+        
+        console.log(`Retry attempt ${attempt}/${maxRetries} after ${delay}ms. Error: ${error.message}`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        
+        // 지수 백오프 (각 재시도마다 대기 시간 2배 증가)
+        delay *= 2;
+      }
+    }
+    
+    throw lastError;
   }
 }
 
