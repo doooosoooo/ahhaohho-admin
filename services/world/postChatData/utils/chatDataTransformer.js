@@ -13,11 +13,19 @@ class ChatDataTransformer {
     // 서버 DTO 요구사항에 맞게 데이터 변환
     const chatItems = this._transformChat(data);
     
+    // chatId 값이 반드시 전송되도록 보장
+    if (!data.id) {
+      throw new Error('ID field is required in data object');
+    }
+    
     const transformedData = {
-      chatId: data.id,   // PutChatRequestDTO에서 필요한 필드
+      chatId: data.id,   // 중요! PutChatRequestDTO에서 필수 필드
       step: 'challenge', 
       chat: this._transformPromptFormat(chatItems) // prompt 형식으로 변환
     };
+    
+    // chatId가 있는지 디버그 출력
+    console.log(`DEBUG - chatId 확인: ${transformedData.chatId}`);
     
     console.log('DEBUG - Transformed request data:', JSON.stringify(transformedData, null, 2));
     return transformedData;

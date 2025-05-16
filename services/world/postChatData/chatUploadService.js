@@ -56,11 +56,20 @@ class ChatUploadService {
         transformedData: JSON.stringify(transformedData, null, 2)
       });
 
+      // POST 요청 전 chatId 존재 확인
+      if (!transformedData.chatId) {
+        transformedData.chatId = chatData.id; // chatId 명시적 할당
+        console.log(`POST 요청 ChatId 명시적 설정: ${transformedData.chatId}`);
+      }
+      
       const response = await this.axios.post(
         `${this.BASE_URL}/world/chats`, 
         transformedData,
         {
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'X-Debug-ChatId': transformedData.chatId || 'missing' // 디버깅용 헤더 추가
+          },
           timeout: 30000, // 30초 타임아웃 설정
           httpsAgent: this.httpsAgent
         }
@@ -105,12 +114,20 @@ class ChatUploadService {
       
       console.log(`Found existing chat with chatId '${transformedData.chatId}', _id: ${existingChat._id}`);
       
-      // PATCH 요청으로 기존 데이터 업데이트
+      // PATCH 요청으로 기존 데이터 업데이트 (chatId가 반드시 포함되도록 확인)
+      if (!transformedData.chatId) {
+        transformedData.chatId = chatData.id; // chatId 명시적 할당
+        console.log(`ChatId 명시적 설정: ${transformedData.chatId}`);
+      }
+      
       const response = await this.axios.patch(
         `${this.BASE_URL}/world/chats/${existingChat._id}`, 
         transformedData,
         {
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'X-Debug-ChatId': transformedData.chatId || 'missing' // 디버깅용 헤더 추가
+          },
           timeout: 30000, // 30초 타임아웃 설정
           httpsAgent: this.httpsAgent
         }
