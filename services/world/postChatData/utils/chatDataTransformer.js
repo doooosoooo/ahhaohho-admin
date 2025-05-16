@@ -10,17 +10,64 @@ class ChatDataTransformer {
       throw new Error('ID field is required in data object');
     }
 
-    // _id 필드 추가 (서버에서 필요한 경우를 위해)
+    // 서버 DTO 요구사항에 맞게 데이터 변환
+    const chatItems = this._transformChat(data);
+    
     const transformedData = {
-      chatId: data.id,   // 서버에서 요구하는 chatId 필드 추가
-      chatIdx: data.id,  // 기존 chatIdx 필드 유지
-      _id: data.id,      // MongoDB _id 필드 추가 (필요한 경우)
-      step: 'challenge',
-      chat: this._transformChat(data)
+      chatId: data.id,   // PutChatRequestDTO에서 필요한 필드
+      step: 'challenge', 
+      chat: this._transformPromptFormat(chatItems) // prompt 형식으로 변환
     };
     
     console.log('DEBUG - Transformed request data:', JSON.stringify(transformedData, null, 2));
     return transformedData;
+  }
+  
+  // PutChatRequestDTO 형식에 맞게 변환
+  static _transformPromptFormat(chatItems) {
+    if (!chatItems || !Array.isArray(chatItems)) {
+      return [];
+    }
+    
+    return chatItems.map(item => {
+      // DTO 요구사항에 맞게 'prompts'를 'prompt'로 변환
+      if (item.prompts) {
+        return {
+          type: item.type || 'text',
+          talker: item.talker || 'ahhaohho',
+          prompt: item.prompts.map(p => p.text || ''),
+          image: item.prompts
+            .filter(p => p.media)
+            .map(p => this._transformMediaForDTO(p.media))
+            .flat()
+            .filter(Boolean)
+        };
+      }
+      return item;
+    });
+  }
+  
+  // 미디어 데이터를 DTO 형식으로 변환
+  static _transformMediaForDTO(mediaArray) {
+    if (!mediaArray || !Array.isArray(mediaArray)) {
+      return [];
+    }
+    
+    return mediaArray.map(m => {
+      if (!m || !m.image || !Array.isArray(m.image)) {
+        return null;
+      }
+      
+      return m.image.map(img => ({
+        media: {
+          type: img.type,
+          defaultUrl: img.defaultUrl,
+          sound: img.sound || false,
+          thumbnail: img.thumbnail || null
+        },
+        description: m.imageDescription || null
+      }));
+    }).flat().filter(Boolean);
   }
 
   static _transformChat(data) {
