@@ -23,51 +23,86 @@ class ChatDataTransformer {
     return transformedData;
   }
   
-  // PutChatRequestDTO 형식에 맞게 변환
+  // PutChatRequestDTO 형식에 맞게 변환 (서버 DTO 기준)
   static _transformPromptFormat(chatItems) {
     if (!chatItems || !Array.isArray(chatItems)) {
       return [];
     }
     
     return chatItems.map(item => {
-      // DTO 요구사항에 맞게 'prompts'를 'prompt'로 변환
+      // DTO 요구사항에 맞게 변환 (서버 validatePrompt 메서드 참고)
       if (item.prompts) {
+        // type 검증 및 기본값 설정
+        let type = item.type || 'text';
+        if (!['text', 'image', 'text+image'].includes(type)) {
+          type = 'text';
+        }
+        
+        // talker 검증 및 기본값 설정
+        let talker = item.talker || 'ahhaohho';
+        if (!['user', 'ahhaohho', 'prompt'].includes(talker)) {
+          talker = 'ahhaohho';
+        }
+        
+        // 텍스트를 prompt 배열로 변환 (반드시 비어있지 않은 배열이어야 함)
+        const promptTexts = item.prompts
+          .map(p => p.text || '')
+          .filter(text => text !== undefined);
+          
+        // 빈 배열인 경우 기본값 추가
+        const prompt = promptTexts.length > 0 ? promptTexts : [''];
+        
+        // 이미지 처리
+        const image = this._extractImagesFromPrompts(item.prompts);
+        
         return {
-          type: item.type || 'text',
-          talker: item.talker || 'ahhaohho',
-          prompt: item.prompts.map(p => p.text || ''),
-          image: item.prompts
-            .filter(p => p.media)
-            .map(p => this._transformMediaForDTO(p.media))
-            .flat()
-            .filter(Boolean)
+          type,
+          talker,
+          prompt, // 서버 요구사항: 비어있지 않은 문자열 배열
+          ...(image.length > 0 && { image }) // 이미지가 있는 경우에만 필드 추가
         };
       }
       return item;
     });
   }
   
-  // 미디어 데이터를 DTO 형식으로 변환
-  static _transformMediaForDTO(mediaArray) {
-    if (!mediaArray || !Array.isArray(mediaArray)) {
+  // 프롬프트에서 이미지 추출하여 DTO 형식으로 변환
+  static _extractImagesFromPrompts(prompts) {
+    if (!prompts || !Array.isArray(prompts)) {
       return [];
     }
     
-    return mediaArray.map(m => {
-      if (!m || !m.image || !Array.isArray(m.image)) {
-        return null;
+    const images = [];
+    
+    for (const prompt of prompts) {
+      if (prompt.media && Array.isArray(prompt.media)) {
+        for (const mediaItem of prompt.media) {
+          if (mediaItem && mediaItem.image && Array.isArray(mediaItem.image)) {
+            for (const img of mediaItem.image) {
+              if (img) {
+                // 서버 DTO validateMedia 메서드에 맞게 변환
+                images.push({
+                  media: {
+                    type: img.type || '',
+                    defaultUrl: img.defaultUrl || '',
+                    sound: !!img.sound, // boolean 값 보장
+                    thumbnail: {
+                      tiny: img.thumbnail?.tiny || '',
+                      small: img.thumbnail?.small || '',
+                      medium: img.thumbnail?.medium || '',
+                      large: img.thumbnail?.large || ''
+                    }
+                  },
+                  description: mediaItem.imageDescription || ''
+                });
+              }
+            }
+          }
+        }
       }
-      
-      return m.image.map(img => ({
-        media: {
-          type: img.type,
-          defaultUrl: img.defaultUrl,
-          sound: img.sound || false,
-          thumbnail: img.thumbnail || null
-        },
-        description: m.imageDescription || null
-      }));
-    }).flat().filter(Boolean);
+    }
+    
+    return images;
   }
 
   static _transformChat(data) {
