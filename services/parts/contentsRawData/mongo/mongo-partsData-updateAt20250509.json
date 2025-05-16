@@ -1,0 +1,542 @@
+[
+  {
+    "name": "ground_0",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/EQ2giQlJwumtUL57LTEgv9zSnm6fThgMp0qhqmXyTYY"
+  },
+  {
+    "name": "ground_1",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/Qr_sIFJyYUP4FincVuu031rtf8Cwx6xzreaUUNpaPSM"
+  },
+  {
+    "name": "ground_2",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/iXFIzRKEiReNgbMQKhd1Gt1JtjZMrUEerIPITy2XZBI"
+  },
+  {
+    "name": "ground_3",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/TDcaK2F-fxDA4_7-UccK60qZGARJfIRyRgIN6mgQ-Ow"
+  },
+  {
+    "name": "ground_4",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/EqWv_PSKAHyThUcFTcwm5gSSNUj_bZqdFNLwBjJstCA"
+  },
+  {
+    "name": "ground_5",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/DNSQrE2BI4MLhG3_-kVHEOeBwyNbbbgqPs5_Vj98wgY"
+  },
+  {
+    "name": "ground_6",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/ZgrcbhhilhPjV2fGDDmWMi2UrbUkO7dpcVsJzAj7ZVg"
+  },
+  {
+    "name": "ground_7",
+    "spec": {
+      "group": "spatial",
+      "type": "ground",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/lOUESQjT23s4U7e6wPGb-f973JEGm_pLtiS8xdhggBo"
+  },
+  {
+    "name": "wall_0",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/3Frkg2w_jisOwjl2qFYNuUiR5WizUPQz3NvD0X1-NWQ"
+  },
+  {
+    "name": "wall_1",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/yXeEr2YyYbVsv5SyRdonbGwBVnK9bOJk0Ip9kGXoqHU"
+  },
+  {
+    "name": "wall_2",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/lsMsFvAbSwjSuJp2Sxl0Zr65OWY_lQRkdOu_6ZnVnlI"
+  },
+  {
+    "name": "wall_3",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/hFdAPtPBhy13Eg6VSqiv1jOuxtwDaZrEr3JI5tQ-RJc"
+  },
+  {
+    "name": "wall_4",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/AV3Zw2qZjJCInfWsqsXSrrulXmuzl_y85hB8A2spF98"
+  },
+  {
+    "name": "wall_5",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/Zq6R2qX3H-AxzacJWbMPG0gXbrWfa_dgjzAs3cqbbe8"
+  },
+  {
+    "name": "wall_6",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/GJx9j5c9Fzkj762VtKO7Pen3-GU8HFslhxY05sCr7Rg"
+  },
+  {
+    "name": "wall_7",
+    "spec": {
+      "group": "spatial",
+      "type": "wall",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/Ny48a7Eh9-Sgsj6ffwHiavd0ZLL2-2cy05_YfvtVMhA"
+  },
+  {
+    "name": "object_sample_1",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/UCuWAPOpoop6wTWoS8f4fZFGFGSMaJnwxOHl-YlN38Q"
+  },
+  {
+    "name": "object_sample_2",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/Lb-qhuT8WLpn-y1oWVHDomoJUu1LJfj0Krv5rG3GuAI"
+  },
+  {
+    "name": "object_sample_3",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/By36O3LqcuO6RsXJkpoW9_90WTGqxrjnBCxubizwEb8"
+  },
+  {
+    "name": "object_sample_4",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/EslvqhK1j8ZKoUOEOb2WMotN0iQyDlMWQwyAmivtW8E"
+  },
+  {
+    "name": "object_sample_5",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/ZYKxpntLYcOv0_8qa8YwGag_tG4RmHUJdm8WkSpEfCw"
+  },
+  {
+    "name": "object_sample_6",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/9OCOGtZpi8U9cJddiDIQCTVXUlpkzVCsWpiThbIi3s0"
+  },
+  {
+    "name": "object_sample_7",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/27qCCvbES2MKEsrtopv-xPaOKplcZmfECwy4CD7Kr0A"
+  },
+  {
+    "name": "object_sample_8",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/pDHgPqNtGe1f5w3Im1sNrXUUvMEq9EGvnj5AOt-S_PU"
+  },
+  {
+    "name": "object_sample_9",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/3c72EzvWVJfjG379y--J2ZaEeq4uAH3-ZhPXw75aMcY"
+  },
+  {
+    "name": "object_sample_10",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/9JsAgitBFg-VqD-44tNHBaGP8gg7o9cPSQFhe2iq6sQ"
+  },
+  {
+    "name": "object_sample_11",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/_UIcvLbLdCJxPa2zOGdIa7gN07AxEXMdKj4LSpy1tGE"
+  },
+  {
+    "name": "object_sample_12",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/hkqqL9YgkeyQQudzRfdJvwl2HKzLzV8evPPBVBVevvA"
+  },
+  {
+    "name": "object_sample_13",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/CPWxxvVmKGG6xUmE4vMrMyIBKv3U0xoUUWWQPuUGIgw"
+  },
+  {
+    "name": "object_sample_14",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/kadPKXZdkdiYL52aUUVI9HyJ4mSQmI_IctyHIU_55Iw"
+  },
+  {
+    "name": "object_sample_15",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/yCfs1oN_3ffgA0tWqGdInwz9tXDe51KqzXJ2OHtBr2w"
+  },
+  {
+    "name": "object_sample_16",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/3jF4ifdEalVE4IbtLWmPZ9KF3HXYhfWfkHudjdLeRIk"
+  },
+  {
+    "name": "object_sample_17",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/wMi1qth1gdZAcZVeUXfcxHm4GRmFVTFjWZzlPOsLiu0"
+  },
+  {
+    "name": "object_sample_18",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/dzH9yly-OnUX9Ewb5f18k4WAA6ZS_psfaDtWL2-cwLg"
+  },
+  {
+    "name": "object_sample_19",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/Y6V-yR03470qmXln3pRTR9bEmnWOLzJ2zcLE7M_IJKU"
+  },
+  {
+    "name": "object_sample_20",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/4qm4TLy7KyVyMonpHptzMJ4opt58gjfxmA7llEMTAeA"
+  },
+  {
+    "name": "object_sample_21",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/KT2N9Rq8EKUv99jK1b75uhHGfd2E5TbvQytDYWfxKQc"
+  },
+  {
+    "name": "object_sample_22",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/9Zz5qI7zYeIpjwgnm3j044EXb0puluwjj6h4ypYCqiw"
+  },
+  {
+    "name": "object_sample_23",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/eJWq2hFxCRwNB7qRJBaqgfYBWSoz-aDrVlPy_B1grSs"
+  },
+  {
+    "name": "object_sample_24",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/uc9Tdl3sWmrM7GgzhBNIcsvTac3-quhrQL-EJYMxn08"
+  },
+  {
+    "name": "object_sample_25",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/YnlO53BzSjQZ5E9Qork7iE2x2oHtnlTuOy6Qg9E5BMk"
+  },
+  {
+    "name": "object_sample_26",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/ZvRxQN5Zo7JyUZfFfiTIqcxGDRCf6R9EzPA9NfnRiW0"
+  },
+  {
+    "name": "object_sample_27",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/kiK-R0abUlzd7BPIWj27TgQyQjFj6iOtbTkCEv6OV1c"
+  },
+  {
+    "name": "object_sample_28",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/4XAp80LwQIoco_NLUK2rHx9MGCVaIbyBMHcdGJ-EYZ8"
+  },
+  {
+    "name": "object_sample_29",
+    "spec": {
+      "group": "spatial",
+      "type": "object",
+      "color": null,
+      "category": null
+    },
+    "sequence": 0,
+    "tracking": false,
+    "assetUrl": "https://cdn-user-profile.ahhaohho.com/parts/partsData/fCReallVbTBtJJp8_WGc4C-nxTgw4ECEv5k_mQW8I3w"
+  }
+]

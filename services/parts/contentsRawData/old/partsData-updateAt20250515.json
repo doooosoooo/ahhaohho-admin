@@ -1,0 +1,801 @@
+[
+  {
+    "id": "rect2AdGgdkZbNr6s",
+    "파츠명": "ground_0",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attTabrg5niOYDMp0",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/wEVN9E5gcGSQVOdcrE1JgtQ-1Suy3Wxo8_TaB2WCqcA",
+        "filename": "바닥_디폴트바닥.png",
+        "size": 1140,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recLux5xpIXXKuFAq",
+    "파츠명": "ground_1",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att8XaZzWQoYWYI00",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/vA1ynx3Bv-3LDAEOJNzxvx5R18_D8P-fsBpncoaN_Mk",
+        "filename": "바닥_아하오호_1.png",
+        "size": 21655,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rect2i8yk7lhAYTS5",
+    "파츠명": "ground_2",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attXwelmjqYtHuOth",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/-8XiWoCJgx36Gn6Y_qmCTgQWzqRnHYLlKJ79PE0pvos",
+        "filename": "바닥_아하오호_2.png",
+        "size": 72486,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recN25uFk2al0pDQQ",
+    "파츠명": "ground_3",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att9h6LHbcsOWgCey",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/DjEj0I3wbfAyUQcZvsdqjyzKGm52kQvONIfAlya1c-w",
+        "filename": "바닥_지진방_1.png",
+        "size": 379716,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec1V2naY9TJE3Hkc",
+    "파츠명": "ground_4",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attccZqFSlnBpR60c",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/6sonZFXKrzjoCBwz7dWmK7jrrUYxZFHqVm16IaFS4uc",
+        "filename": "바닥_지진방_2.png",
+        "size": 288542,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recgAjKabmUTCAg6P",
+    "파츠명": "ground_5",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attZ9TmdSOyRxHYhK",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/VKW8x-ezn9BXWjdBfrPpCcXgv0o8vXStMLAbFkLIAhY",
+        "filename": "바닥_퓨처비_1.png",
+        "size": 81493,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recPmNRtzXcltbwuK",
+    "파츠명": "ground_6",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attNYMSnznVQeCLIL",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/0r860Hqifop9aivBZGUJzJSgeOJUvWirntZdCb5E3Mw",
+        "filename": "바닥_퓨처비_2.png",
+        "size": 466939,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recuRNA8HxRioJrI2",
+    "파츠명": "ground_7",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attRrQtkdTFLB4CNn",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/HBRJ8z6EvFqjLntstR1AXZIjzlNo_Cft4bpKVMVipNM",
+        "filename": "바닥_프리덤덤시티_1.png",
+        "size": 178613,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec4nXlNDENaQnJd0",
+    "파츠명": "ground_8",
+    "종류": "ground",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attfqnxw0PiT17J38",
+        "width": 1125,
+        "height": 150,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/0xW6BOpB1NKEwMBIcJwGf-rqXbYyyWtlly9LF-JjH8s",
+        "filename": "바닥_프리덤덤시티_2.png",
+        "size": 393189,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recShLR7gJtsblyTl",
+    "파츠명": "wall_0",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "atttEJUxBuJGF5rAo",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/wIF-o7TCw_aqQ9yVWm0uL_um6uooN4jVsNn6xi2FGPg",
+        "filename": "벽_디폴트벽.png",
+        "size": 4555,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recXLpGIVZuWgs44j",
+    "파츠명": "wall_1",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attsOTjcZSZ6801YA",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/XDuFeedvHdl5F9Xh7uoULBqbXROo5gfbVvnTxiG8BjQ",
+        "filename": "벽_아하오호_1.png",
+        "size": 118165,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recJsP3rJ5Zw54n9t",
+    "파츠명": "wall_2",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "atttyqGaLJmBvXGg3",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/hvsqcJTEc8x0ucU1ZtOEfGNcqgCyAtT0RnFVcmiL9Sc",
+        "filename": "벽_아하오호_2.png",
+        "size": 212857,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recPgdWx4iSHmRufw",
+    "파츠명": "wall_3",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "atttXW080SDaDlxCn",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/gxOAxfUMsmyKtJTHsY4MTI7wKvWbCMiRN1zs7afj0pc",
+        "filename": "벽_지진방_1.png",
+        "size": 564606,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recuZaOoPV9AdgH60",
+    "파츠명": "wall_4",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attFZmUHi1hDhkdkt",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/DmNOUAVAc6sEhcELtWbLOSejOY7LaFfTIU8h6sAXU9M",
+        "filename": "벽_지진방_2.png",
+        "size": 374373,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recjKn4MGhVZlnKQz",
+    "파츠명": "wall_5",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attKyzQM8h8i46aFi",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/nAymVdHAF08Fkz3HdAdOnOYoUPxYJBO09yJ1j5_emBE",
+        "filename": "벽_퓨처비_1.png",
+        "size": 123358,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec4XZrhBaUuP0nRE",
+    "파츠명": "wall_6",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attRZ8lK2QuedAUcw",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/UKo33ng7yo0Gl_QJWiB0pjU5neNUCTxZnchMxyVQWHY",
+        "filename": "벽_퓨처비_2.png",
+        "size": 1920418,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recoRKRt7Tnje3NNj",
+    "파츠명": "wall_7",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att8OxANawzi7FlTq",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/oXNccl9WB6lImNqGeeLZ90Gef7-un2A0ZySbh7zL12Y",
+        "filename": "벽_프리덤덤시티_1.png",
+        "size": 1538523,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "reccQRemR5tWyKbvJ",
+    "파츠명": "wall_8",
+    "종류": "wall",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attEvvawfBFkiRgty",
+        "width": 1125,
+        "height": 666,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/TSd2-DcPfPzlEj9y1ncOD0Zi5vcQWrjOkFoe9-iuw1E",
+        "filename": "벽_프리덤덤시티_2.png",
+        "size": 557116,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rechIDPudWZeBGo0Z",
+    "파츠명": "object_sample_1",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att2sBkruiQK4BzB4",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/hczdNic18S4UJn2DI3znuPNiRs5fw72dFSNkY0Z436E",
+        "filename": "오브제_기본_1.png",
+        "size": 889932,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recWeIHFFY8wKIgrG",
+    "파츠명": "object_sample_2",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attdc4PClimhFmLqn",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/x_w94QUysjeL0RPJEUVhHaaQD7dJ8yXpnZ0b1ZWdOhI",
+        "filename": "오브제_기본_2.png",
+        "size": 799893,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec3klVKIT6Iu1Aud",
+    "파츠명": "object_sample_3",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attnFOoP7HZDMn0UJ",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/wQkhFwr2c9mFezU71NbAMS6oqnO1xpkW6L4J3jNjNHU",
+        "filename": "오브제_기본_3.png",
+        "size": 494474,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rechRG7qTwTkDfy1N",
+    "파츠명": "object_sample_4",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attbBEeqweNHUpekW",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/8MOiUnwtBwPASTkBTjS3NhhyDMFxLmxiDxqnhFZfKo0",
+        "filename": "오브제_기본_4.png",
+        "size": 431207,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recebsss7iJnxmprl",
+    "파츠명": "object_sample_5",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attmh8p2zDPGQp5p4",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/TwJrLfosbxmN-qQ7Kg_Q-LgqWM9J3v8GBbX9RPg9O28",
+        "filename": "오브제_기본_5.png",
+        "size": 358681,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recI1BKbNMRLVNEol",
+    "파츠명": "object_sample_6",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attBzrd2Lq8Q4z4OJ",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/7ZiHxVcd9PwbouTNev60Y0WxoBuIuXFRZMuDYjAh5jQ",
+        "filename": "오브제_지진방_1.png",
+        "size": 517274,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recFEIKSV03DJ0l2n",
+    "파츠명": "object_sample_7",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attBHU9wBAFRonZdd",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/J_UEMcMIM95jc7jplL83I2nHLqQ6M5zJkymuGysUJHY",
+        "filename": "오브제_지진방_2.png",
+        "size": 573114,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec0vMK1N0p1yUYmJ",
+    "파츠명": "object_sample_8",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att6dBAPeIl30Yeiq",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/GdRt6KRkkJJ4sYAwkWDuCY-LSB9HFf9YthzCnvo7P44",
+        "filename": "오브제_지진방_3.png",
+        "size": 1201290,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recJVa5PTTx3W5ArJ",
+    "파츠명": "object_sample_9",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att93dfdEVNXpkTi7",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/1gt3bGiVyQWWtMuRAmCAj_khHkkm4IWor20qFgICwuc",
+        "filename": "오브제_지진방_4.png",
+        "size": 849801,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recGgDOSQnVfdCYO4",
+    "파츠명": "object_sample_10",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attHbnbANoDGHyF8M",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/g07CIbD1m4TTQps5v0jkaNkDbT8UKZZamu4fGD9KCiE",
+        "filename": "오브제_지진방_5.png",
+        "size": 1504702,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "reczxTyRY3GHs3vjP",
+    "파츠명": "object_sample_11",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attIcHWJTjHsPxnlN",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/RzB5Itp2YrBRLj6iRYh-gbIRFBwyb6xUTTRQrXWTdD0",
+        "filename": "오브제_지진방_6.png",
+        "size": 579834,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recegJ3NoEBiXtZ27",
+    "파츠명": "object_sample_12",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attbiEkSxJRv39frL",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/23SSBJILyip8X3yMK0zmxAMVkPTm6eNOhlPFEu_Mskw",
+        "filename": "오브제_지진방_7.png",
+        "size": 870358,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec1OwAOfPlXqhZw9",
+    "파츠명": "object_sample_13",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attajWBgImJraYKjN",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/1JyvOWj__sfsmb4zeKft4xyhGQTPEYFgLXPapAAYWUY",
+        "filename": "오브제_지진방_8.png",
+        "size": 249539,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recxqTqZeNfd5xJzu",
+    "파츠명": "object_sample_14",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attn2FG2dbJPHAi78",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/hI00gTqaYO5LzFS82k5QYzSUUL2uPBTjqVUMtuq63g0",
+        "filename": "오브제_퓨처비_1.png",
+        "size": 519414,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recVIjZmwJ1rwk7t3",
+    "파츠명": "object_sample_15",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attY48ymSD8SRHAR2",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/NpsLUywmP-qHxugR7WE78zbf96U53DDEBIbO1lyL03k",
+        "filename": "오브제_퓨처비_2.png",
+        "size": 530274,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recVJLqmNxGnlyNMu",
+    "파츠명": "object_sample_16",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attt0qxINIPyzfErQ",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/71EizGQ2o9iS6Ltwbc_1jscXWibhuWeCKATnFH7rFAA",
+        "filename": "오브제_퓨처비_3.png",
+        "size": 737535,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rech4GqDPDfA0btfg",
+    "파츠명": "object_sample_17",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attusH8kVYe6qfFwR",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/p_NssTezjH7Lbw7SIo2-DZozzXpFCZDBQzjIJPN34sk",
+        "filename": "오브제_퓨처비_4.png",
+        "size": 696398,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recdqCIPHx6mJ2Z8s",
+    "파츠명": "object_sample_18",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "atts98hruVAMaDsdF",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/tg-JH6ygcYqZCiZCdukA_p0QFAxDH4JDEzHPgiKBCn0",
+        "filename": "오브제_퓨처비_5.png",
+        "size": 1310957,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recNliSZ83M0hRNsv",
+    "파츠명": "object_sample_19",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attWQLLpV5QUvc9MD",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/FAB-aRgS5DTYclUlTRrWm89D8tMzlJfod4dKbm5VljY",
+        "filename": "오브제_퓨처비_6.png",
+        "size": 421848,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recYvR7jjKfWLYSTS",
+    "파츠명": "object_sample_20",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att65q8oweGS4VicZ",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/4vNXROe-JADIrJJNzwj8jp6FhHKA__mnHCqYlFiM3D0",
+        "filename": "오브제_퓨처비_7.png",
+        "size": 967474,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rectqUmsSCEwrAp5w",
+    "파츠명": "object_sample_21",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attHWiE2Dz1EG57Bw",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/XxNmA5x8L1nnr4jB1zfM4ufEHaHd00dKIrdAcQ5PEb4",
+        "filename": "오브제_퓨처비_8.png",
+        "size": 991643,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recapEb64MzOUUvT0",
+    "파츠명": "object_sample_22",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attLcphvjqlEaEbtO",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/iPU-2a-oSjSzw5iNBLKL2ITURRPo1Pex7tKScqRbL90",
+        "filename": "오브제_프리덤덤시티_1.png",
+        "size": 648749,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recSXbyn00StG8qaE",
+    "파츠명": "object_sample_23",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attxHq7YC8HH044LA",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/wJj6MDwu0adLaWqkc0vkAP9i1AqwvBIyofquG2KKLkg",
+        "filename": "오브제_프리덤덤시티_2.png",
+        "size": 1077232,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec2MiSBswC85N2Wd",
+    "파츠명": "object_sample_24",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attjDKwi80g7LWIJc",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/SkjUzjpnQaDjfghldnG0KK1ncGrVGvz6rs7UG7YWUcc",
+        "filename": "오브제_프리덤덤시티_3.png",
+        "size": 1396835,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rectTToiLaeo0KuNm",
+    "파츠명": "object_sample_25",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att5aERjhq2Hg8b1P",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/JXLWnxUPSy95_UskDdyQtzKQhSKMOzbLNmQb_C-dYus",
+        "filename": "오브제_프리덤덤시티_4.png",
+        "size": 646217,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recYFjWGI7UrTI9nX",
+    "파츠명": "object_sample_26",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attZaguKoLe2INC0F",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/ri01DubdKjl7oNb2ybcHOGTWjRW4nYjiuKvKI1YSniY",
+        "filename": "오브제_프리덤덤시티_5.png",
+        "size": 1577277,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recnlc1Iknk8qRFg2",
+    "파츠명": "object_sample_27",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att3WkwW3ZaPDdpos",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/CbbihIEHaKrK4XuJlL4kFd7RScKf6F5LnGF6X_8KNGU",
+        "filename": "오브제_프리덤덤시티_6.png",
+        "size": 596811,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "recOPyjdcesyQqYyR",
+    "파츠명": "object_sample_28",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "att31I7L2XEckMYiZ",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/6pAyut8RjLIJwy3ZXxTtvMKeGkPn-eGakYQMrw82yhM",
+        "filename": "오브제_프리덤덤시티_7.png",
+        "size": 1157503,
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "rec5DTuWWlEblRL38",
+    "파츠명": "object_sample_29",
+    "종류": "object",
+    "제공방식": "기본 제공",
+    "Assets": [
+      {
+        "id": "attP4f58j7UADsKzc",
+        "width": 1200,
+        "height": 1200,
+        "url": "https://cdn-user-profile.ahhaohho.com/parts/partsData/LCYC9LbW2aMJk4scpYhydhjCTR-AxyY80YSOEkMso1c",
+        "filename": "오브제_프리덤덤시티_8.png",
+        "size": 582013,
+        "type": "image/png"
+      }
+    ]
+  }
+]

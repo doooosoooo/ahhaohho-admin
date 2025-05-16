@@ -1,4 +1,7 @@
 {
     "worldData" : { "tableName" : "tblkko2WnIS6bGiSz", "viewName" : "viwtaGB8jB6Smygr9" },
-    "challengeData" : { "tableName" : "tbl4mYiNz6Cy4muln", "viewName" : "viwHt055sCy9zJAAL" }
+    "groupData" : { "tableName" : "tblI1VlEZjNCb4XoG", "viewName" : "viwJLQVlWT9MJ8Ieb" },
+    "openChatData" : { "tableName" : "tblUyjgeqQR4WTxDg", "viewName" : "viwa18eSvwZnCOWjm" },
+    "challengeData" : { "tableName" : "tbl4mYiNz6Cy4muln", "viewName" : "viwHt055sCy9zJAAL" },
+    "chatData" : { "tableName" : "tbl25aq9EnkHP8TB7", "viewName" : "viwjdQepICt5aQ51w" }
 } 

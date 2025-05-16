@@ -1,10 +1,40 @@
-// services/chatUploadService.js
+// services/openChatUploadService.js
 const OpenChatDataTransformer = require('./utils/openChatDataTransformer');
 
 class OpenChatUploadService {
   constructor() {
     this.BASE_URL = 'https://develop.ahhaohho.com:4222';
     this.axios = require('axios');
+    
+    // SSL 인증서 검증 비활성화
+    this.httpsAgent = new (require('https').Agent)({
+      rejectUnauthorized: false
+    });
+  }
+  
+  async getChatById(id) {
+    if (!id) {
+      throw new Error('ID is required to search for a chat');
+    }
+    
+    try {
+      const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatIdx=${encodeURIComponent(id)}`, {
+        headers: { 'Content-Type': 'application/json' },
+        timeout: 5000,
+        httpsAgent: this.httpsAgent
+      });
+      
+      // 결과가 배열인 경우 chatIdx가 정확히 일치하는 항목만 필터링
+      if (Array.isArray(response.data)) {
+        const exactMatch = response.data.find(chat => chat.chatIdx === id);
+        return exactMatch || null;
+      }
+      
+      return response.data || null;
+    } catch (error) {
+      console.error(`Error fetching chat by id: ${error.message}`);
+      return null;
+    }
   }
 
   async uploadSingleChat(chatData) {
@@ -18,6 +48,7 @@ class OpenChatUploadService {
       // 디버깅을 위한 로깅 추가
       console.log('Uploading chat:', {
         id: chatData.id,
+        chatIdx: transformedData.chatIdx,
         transformedData: JSON.stringify(transformedData, null, 2)
       });
 
@@ -26,7 +57,8 @@ class OpenChatUploadService {
         transformedData,
         {
           headers: { 'Content-Type': 'application/json' },
-          timeout: 10000 // 10초 타임아웃 설정
+          timeout: 10000, // 10초 타임아웃 설정
+          httpsAgent: this.httpsAgent
         }
       );
 
@@ -35,12 +67,65 @@ class OpenChatUploadService {
       // 에러 상세 정보 로깅
       console.error('Upload error details:', {
         chatId: chatData?.id,
+        chatIdx: OpenChatDataTransformer.transformRequestData(chatData)?.chatIdx,
         status: error.response?.status,
         data: error.response?.data,
         message: error.message
       });
 
       throw new Error(`Upload failed: ${error.response?.data?.message || error.message}`);
+    }
+  }
+  
+  async updateSingleChat(chatData) {
+    try {
+      if (!chatData || typeof chatData !== 'object') {
+        throw new Error('Invalid chat data: expected an object');
+      }
+
+      const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
+      
+      // 디버깅을 위한 로깅 추가
+      console.log('Updating chat:', {
+        id: chatData.id,
+        chatIdx: transformedData.chatIdx,
+        transformedData: JSON.stringify(transformedData, null, 2)
+      });
+      
+      // ID로 기존 데이터 검색
+      const existingChat = await this.getChatById(transformedData.chatIdx);
+      
+      if (!existingChat) {
+        console.log(`Chat with id '${transformedData.chatIdx}' not found, creating a new one`);
+        // 기존 데이터가 없으면 새로 생성
+        return this.uploadSingleChat(chatData);
+      }
+      
+      console.log(`Found existing chat with id '${transformedData.chatIdx}', _id: ${existingChat._id}`);
+      
+      // PATCH 요청으로 기존 데이터 업데이트
+      const response = await this.axios.patch(
+        `${this.BASE_URL}/world/chats/${existingChat._id}`, 
+        transformedData,
+        {
+          headers: { 'Content-Type': 'application/json' },
+          timeout: 10000, // 10초 타임아웃 설정
+          httpsAgent: this.httpsAgent
+        }
+      );
+
+      return response.data;
+    } catch (error) {
+      // 에러 상세 정보 로깅
+      console.error('Update error details:', {
+        chatId: chatData?.id,
+        chatIdx: OpenChatDataTransformer.transformRequestData(chatData)?.chatIdx,
+        status: error.response?.status,
+        data: error.response?.data,
+        message: error.message
+      });
+
+      throw new Error(`Update failed: ${error.response?.data?.message || error.message}`);
     }
   }
 
@@ -68,19 +153,58 @@ class OpenChatUploadService {
 
     return this._createSummary(results);
   }
+  
+  async updateMultipleChats(chatsData) {
+    const dataArray = Array.isArray(chatsData) ? chatsData : [chatsData];
+    const batchSize = 5; // 동시에 처리할 요청 수 제한
+    const results = [];
+    
+    for (let i = 0; i < dataArray.length; i += batchSize) {
+      const batch = dataArray.slice(i, i + batchSize);
+      const batchResults = await Promise.all(
+        batch.map(chatData => 
+          this.updateSingleChat(chatData)
+            .then(result => this._createSuccessResult(chatData, result, true)) // isUpdate=true
+            .catch(error => this._createErrorResult(chatData, error.message))
+        )
+      );
+      results.push(...batchResults);
+      
+      // 배치 간 짧은 딜레이
+      if (i + batchSize < dataArray.length) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    }
+
+    return this._createSummary(results);
+  }
 
   _createErrorResult(chatData, errorMessage) {
+    let chatIdx = 'unknown';
+    try {
+      if (chatData) {
+        const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
+        chatIdx = transformedData.chatIdx;
+      }
+    } catch (err) {
+      console.error('Error transforming data for error result:', err.message);
+    }
+    
     return {
       chatId: chatData?.id || 'unknown',
+      chatIdx: chatIdx,
       status: 'error',
       error: errorMessage
     };
   }
 
-  _createSuccessResult(chatData, result) {
+  _createSuccessResult(chatData, result, isUpdate = false) {
+    const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
     return {
       chatId: chatData.id,
+      chatIdx: transformedData.chatIdx,
       status: 'success',
+      action: isUpdate ? 'updated' : 'created',
       response: result
     };
   }

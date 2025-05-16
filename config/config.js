@@ -13,7 +13,8 @@ async function loadConfig() {
         aws_accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         aws_secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
         challenge_bucketName: process.env.CHALLENGE_BUCKET_NAME,
-        world_bucketName: process.env.WORLD_BUCKET_NAME
+        world_bucketName: process.env.WORLD_BUCKET_NAME,
+        mongodbUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/ahhaohho'
     };
 }
 

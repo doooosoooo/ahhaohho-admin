@@ -10,6 +10,7 @@ const AWS = require('aws-sdk'); // AWS SDK v2 사용 (더 안정적)
 const { fetchTableData } = require('../../middlewares/airtableClient');
 const tableNames = require('./tableNames.json');
 const https = require('https');
+const probe = require('probe-image-size');
 
 let config;
 let s3;
@@ -63,6 +64,193 @@ async function initializeS3Client() {
     logDebug('S3 client initialized successfully with AWS SDK v2.');
     return s3;
 }
+
+// 미디어 파일의 컨텐츠 타입으로부터 타입 결정
+function getMediaTypeFromContentType(contentType) {
+    if (!contentType) return 'unknown';
+    
+    if (contentType.startsWith('image/')) {
+        return 'image';
+    } else if (contentType.startsWith('video/') || contentType.includes('mp4')) {
+        return 'video';
+    } else {
+        return 'unknown';
+    }
+}
+
+// 임시 파일 생성
+async function createTempFile(buffer, extension) {
+    const fs = require('fs').promises;
+    const os = require('os');
+    const path = require('path');
+    
+    const tempDir = os.tmpdir();
+    const tempFilePath = path.join(tempDir, `temp-${Date.now()}-${Math.floor(Math.random() * 10000)}${extension}`);
+    
+    await fs.writeFile(tempFilePath, buffer);
+    return tempFilePath;
+}
+
+// 영상 파일의 크기 가져오기
+async function getVideoDimensions(filePath) {
+    const ffmpeg = require('fluent-ffmpeg');
+    const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+    ffmpeg.setFfmpegPath(ffmpegPath);
+    
+    return new Promise((resolve, reject) => {
+        ffmpeg.ffprobe(filePath, (err, metadata) => {
+            if (err) {
+                return reject(err);
+            }
+            
+            const videoStream = metadata.streams.find(stream => stream.codec_type === 'video');
+            if (!videoStream) {
+                return reject(new Error('No video stream found'));
+            }
+            
+            if (!videoStream.width || !videoStream.height) {
+                return reject(new Error('Invalid video dimensions'));
+            }
+            
+            resolve({
+                width: videoStream.width,
+                height: videoStream.height
+            });
+        });
+    });
+}
+
+// 임시 파일 삭제
+async function removeTempFile(filePath) {
+    try {
+        const fs = require('fs').promises;
+        await fs.unlink(filePath);
+    } catch (error) {
+        log(`Error removing temp file ${filePath}: ${error.message}`, true);
+        // 삭제 실패해도 계속 진행
+    }
+}
+
+async function getMediaDimensions(url) {
+    try {
+        log(`Getting dimensions for media: ${url.substring(0, 60)}...`, false);
+        
+        // 1. 직접 probe 시도 (대부분의 일반 이미지 URL에서 작동)
+        try {
+            // 타임아웃 추가
+            const timeoutPromise = new Promise((_, reject) => 
+                setTimeout(() => reject(new Error('Timeout getting dimensions')), 5000)
+            );
+            
+            // probe와 타임아웃 중 먼저 완료되는 것 사용 (이미지만 지원)
+            const result = await Promise.race([
+                probe(url),
+                timeoutPromise
+            ]);
+            
+            // 유효한 크기인지 확인
+            if (result.width && result.height && result.width > 0 && result.height > 0) {
+                log(`Successfully got dimensions via probe: ${result.width}x${result.height}`, false);
+                return { 
+                    width: result.width, 
+                    height: result.height,
+                    success: true,
+                    method: 'probe',
+                    mediaType: 'image'
+                };
+            } else {
+                log(`Invalid dimensions from probe: ${result.width}x${result.height}`, true);
+                // 계속 진행하여 다른 방법 시도
+            }
+        } catch (probeError) {
+            log(`Probe failed: ${probeError.message}, trying file download method`, false);
+            // 계속 진행하여 다른 방법 시도
+        }
+        
+        // 2. 파일 다운로드 후 처리 (이미지 + 영상 지원)
+        try {
+            // arraybuffer로 다운로드
+            const response = await axiosInstance({
+                url,
+                method: 'GET',
+                responseType: 'arraybuffer',
+                timeout: 15000, // 15초
+                maxContentLength: 30 * 1024 * 1024, // 30MB 제한
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (compatible; FileTransferBot/1.0)'
+                }
+            });
+            
+            // 미디어 타입 결정
+            const contentType = response.headers['content-type'] || '';
+            const mediaType = getMediaTypeFromContentType(contentType);
+            
+            log(`Media type detected: ${mediaType} (${contentType})`, false);
+            
+            // 미디어 타입에 따라 다르게 처리
+            if (mediaType === 'image') {
+                // 이미지인 경우 Sharp 사용
+                const sharp = require('sharp');
+                const metadata = await sharp(response.data).metadata();
+                
+                if (metadata.width && metadata.height && metadata.width > 0 && metadata.height > 0) {
+                    log(`Successfully got image dimensions via sharp: ${metadata.width}x${metadata.height}`, false);
+                    return {
+                        width: metadata.width,
+                        height: metadata.height,
+                        success: true,
+                        method: 'sharp',
+                        mediaType: 'image'
+                    };
+                } else {
+                    throw new Error('Could not get valid dimensions from sharp');
+                }
+            } else if (mediaType === 'video') {
+                // 영상인 경우 ffmpeg 사용
+                // 임시 파일 생성
+                let tempFilePath = null;
+                try {
+                    // 확장자 결정
+                    const extension = contentType.includes('mp4') ? '.mp4' : 
+                                    contentType.includes('quicktime') ? '.mov' : 
+                                    contentType.includes('webm') ? '.webm' : '.mp4';
+                    
+                    tempFilePath = await createTempFile(response.data, extension);
+                    
+                    // ffmpeg로 영상 정보 가져오기
+                    const dimensions = await getVideoDimensions(tempFilePath);
+                    
+                    log(`Successfully got video dimensions via ffmpeg: ${dimensions.width}x${dimensions.height}`, false);
+                    return {
+                        width: dimensions.width,
+                        height: dimensions.height,
+                        success: true,
+                        method: 'ffmpeg',
+                        mediaType: 'video'
+                    };
+                } finally {
+                    // 임시 파일 정리
+                    if (tempFilePath) {
+                        await removeTempFile(tempFilePath);
+                    }
+                }
+            } else {
+                throw new Error(`Unsupported media type: ${contentType}`);
+            }
+            
+        } catch (downloadError) {
+            log(`Download method failed: ${downloadError.message}`, true);
+            throw downloadError; // 에러 재전파
+        }
+    } catch (error) {
+        // 모든 방법 실패 시
+        log(`All dimension retrieval methods failed for ${url.substring(0, 60)}...: ${error.message}`, true);
+        throw error;
+    }
+}
+
+// 기존 함수명 유지 (하위 호환성)
+const getImageDimensions = getMediaDimensions;
 
 async function uploadFileFromUrlToS3(url, key) {
     if (!s3) {
@@ -167,13 +355,41 @@ async function uploadFileFromUrlToS3(url, key) {
             });
             
             // 업로드 완료 및 오류 처리
-            managedUpload.send((err) => {
+            managedUpload.send(async (err) => { // async 추가
                 if (err) {
                     log(`Upload failed for ${key}: ${err.message}`, true);
                     reject(err);
                 } else {
                     log(`Successfully uploaded ${key} to S3`, false);
-                    resolve({ Location: `https://cdn-world.ahhaohho.com/${key}` });
+                    
+                    // 이미지 또는 비디오 크기 가져오기
+                    // 기본 URL (크기 정보 없음)
+                    const baseUrl = `https://cdn-world.ahhaohho.com/${key}`;
+                    
+                    try {
+                        // 여러 방법으로 크기 정보 가져오기 시도
+                        const dimensions = await getImageDimensions(url);
+                        
+                        // 성공적으로 미디어 크기를 가져온 경우
+                        const locationUrl = `${baseUrl}?w=${dimensions.width}&h=${dimensions.height}`;
+                        log(`Generated URL with dimensions (${dimensions.method}, ${dimensions.mediaType}): ${locationUrl}`, false);
+                        resolve({ 
+                            Location: locationUrl, 
+                            width: dimensions.width, 
+                            height: dimensions.height,
+                            dimensions_success: true,
+                            dimensions_method: dimensions.method,
+                            media_type: dimensions.mediaType // 이미지인지 영상인지 저장
+                        });
+                    } catch (dimensionError) {
+                        // 모든 방법이 실패한 경우 기본 URL 사용
+                        log(`Failed to get dimensions for ${key}: ${dimensionError.message}`, true);
+                        resolve({ 
+                            Location: baseUrl, 
+                            dimensions_error: dimensionError.message,
+                            dimensions_success: false 
+                        });
+                    }
                 }
             });
         }).catch(uploadError => {
@@ -204,6 +420,7 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
     let successfulUploads = 0;
     let skippedFiles = 0;
     let failedUploads = 0;
+    let dimensionErrors = []; // 이미지 크기 정보 추출 오류 목록
 
     try {
         for (let key in record) {
@@ -231,6 +448,31 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
                                 successfulUploads++;
                                 // URL 교체
                                 file.url = s3Response.Location;
+                                
+                                // 파일 객체에 너비와 높이 정보 추가 (있는 경우에만)
+                                if (s3Response.width && s3Response.height) {
+                                    file.width = s3Response.width;
+                                    file.height = s3Response.height;
+                                }
+                                
+                                // 크기 정보 상태 저장
+                                if (s3Response.dimensions_success) {
+                                    // 이미 width와 height가 설정됨
+                                    file.dimensions_method = s3Response.dimensions_method;
+                                    // 미디어 타입 저장 (이미지/비디오)
+                                    if (s3Response.media_type) {
+                                        file.media_type = s3Response.media_type;
+                                    }
+                                } else if (s3Response.dimensions_error) {
+                                    // 에러가 발생한 경우 
+                                    file.dimensions_error = s3Response.dimensions_error;
+                                    // 에러 수집
+                                    dimensionErrors.push({
+                                        url: url,
+                                        error: s3Response.dimensions_error,
+                                        type: 'file'
+                                    });
+                                }
                             }
 
                             // 썸네일 URL도 교체 (원본이 스킵되지 않은 경우만)
@@ -254,6 +496,32 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
                                                 successfulUploads++;
                                                 // 썸네일 URL 교체
                                                 file.thumbnails[size].url = thumbS3Response.Location;
+                                                
+                                                // 썸네일 객체에 너비와 높이 정보 추가 (있는 경우에만)
+                                                if (thumbS3Response.width && thumbS3Response.height) {
+                                                    file.thumbnails[size].width = thumbS3Response.width;
+                                                    file.thumbnails[size].height = thumbS3Response.height;
+                                                }
+                                                
+                                                // 크기 정보 상태 저장
+                                                if (thumbS3Response.dimensions_success) {
+                                                    // 이미 width와 height가 설정됨
+                                                    file.thumbnails[size].dimensions_method = thumbS3Response.dimensions_method;
+                                                    // 미디어 타입 저장 (이미지/비디오)
+                                                    if (thumbS3Response.media_type) {
+                                                        file.thumbnails[size].media_type = thumbS3Response.media_type;
+                                                    }
+                                                } else if (thumbS3Response.dimensions_error) {
+                                                    // 에러가 발생한 경우
+                                                    file.thumbnails[size].dimensions_error = thumbS3Response.dimensions_error;
+                                                    // 에러 수집
+                                                    dimensionErrors.push({
+                                                        url: thumbUrl,
+                                                        error: thumbS3Response.dimensions_error,
+                                                        type: 'thumbnail',
+                                                        size: size
+                                                    });
+                                                }
                                             }
                                         } catch (thumbError) {
                                             failedUploads++;
@@ -274,6 +542,25 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
         }
 
         logDebug(`Record ${currentIndex + 1}/${totalRecords} stats - Total: ${totalFiles}, Success: ${successfulUploads}, Skipped: ${skippedFiles}, Failed: ${failedUploads}`);
+        
+        // 이미지 크기 추출 오류 로그 출력
+        if (dimensionErrors.length > 0) {
+            log(`Found ${dimensionErrors.length} dimension errors for record ${currentIndex + 1}/${totalRecords}`, true);
+            for (let i = 0; i < dimensionErrors.length; i++) {
+                const err = dimensionErrors[i];
+                log(`  ${i + 1}. Type: ${err.type}, URL: ${err.url}, Error: ${err.error}`, true);
+            }
+        }
+        
+        // 처리된 레코드 반환 (에러 정보 포함)
+        record._processingStats = {
+            totalFiles,
+            successfulUploads,
+            skippedFiles,
+            failedUploads,
+            dimensionErrors: dimensionErrors.length
+        };
+        
         return record;
     } catch (error) {
         log(`Error in processRecord for ${mainKey}: ${error.message}`, true);
@@ -369,7 +656,40 @@ async function main() {
             }
         }
 
+        // 종합적인 통계 정보 출력
         console.log(`[${new Date().toISOString()}] Summary: Processed ${totalProcessedRecords} records, added ${totalNewRecords} new records, ${totalFailedTables} tables failed.`);
+        
+        // 이미지 크기 관련 오류 정보 종합적으로 출력
+        let totalDimensionErrors = 0;
+        let tableWithDimensionErrors = 0;
+        
+        for (const [mainKey, { tableName }] of Object.entries(tableNames)) {
+            const mainKeyPattern = new RegExp(`${mainKey}-updateAt\\d{8}.json`);
+            const files = await fs.readdir(dataDir);
+            const dataFile = files.find(file => mainKeyPattern.test(file));
+            
+            if (dataFile) {
+                const filePath = path.join(dataDir, dataFile);
+                const data = await fs.readFile(filePath, 'utf8');
+                const records = JSON.parse(data);
+                
+                let tableDimensionErrors = 0;
+                for (const record of records) {
+                    if (record._processingStats && record._processingStats.dimensionErrors > 0) {
+                        tableDimensionErrors += record._processingStats.dimensionErrors;
+                    }
+                }
+                
+                if (tableDimensionErrors > 0) {
+                    tableWithDimensionErrors++;
+                    log(`Table ${tableName}: ${tableDimensionErrors} dimension errors`, true);
+                }
+                
+                totalDimensionErrors += tableDimensionErrors;
+            }
+        }
+        
+        log(`Total dimension errors: ${totalDimensionErrors} across ${tableWithDimensionErrors} tables`, totalDimensionErrors > 0);
     } catch (error) {
         log(`An error occurred in main: ${error.message}`, true);
         console.error('Error details:', error);

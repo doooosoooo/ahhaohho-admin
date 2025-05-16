@@ -105,7 +105,7 @@ async function fetchExistingData(mainKey, dataDir) {
     return [];
 }
 
-async function main() {
+async function gatherData() {
     await initializeS3Client();
 
     const updateDate = new Date().toISOString().split('T')[0].replace(/-/g, '');
@@ -115,7 +115,15 @@ async function main() {
 
     for (const [mainKey, { tableName, viewName }] of Object.entries(tableNames)) {
         try {
-            const tableData = await fetchTableData('parts', tableName, viewName);
+            let tableData;
+            try {
+                tableData = await fetchTableData('parts', tableName, viewName);
+            } catch (airtableError) {
+                console.error(`Airtable에서 데이터를 가져오는 중 오류 발생: ${airtableError.message}`);
+                console.log('기존 데이터를 사용하여 계속 진행합니다.');
+                // 기존 데이터 사용
+                tableData = await fetchExistingData(mainKey, dataDir);
+            }
 
             // Load existing data
             const existingData = await fetchExistingData(mainKey, dataDir);
@@ -136,6 +144,16 @@ async function main() {
 
             const fileName = `${mainKey}-updateAt${updateDate}.json`;
             const filePath = path.join(dataDir, fileName);
+            
+            // MongoDB 형식으로 변환
+            try {
+                const { transformToMongo } = require('./transformToMongo');
+                const mongoOutputPath = path.join(dataDir, `mongo-${mainKey}-updateAt${updateDate}.json`);
+                await transformToMongo(filePath, mongoOutputPath);
+                log(`MongoDB 형식으로 변환 완료: ${mongoOutputPath}`);
+            } catch (transformError) {
+                console.error(`MongoDB 변환 중 오류 발생:`, transformError.message);
+            }
 
             // Delete old file
             const mainKeyPattern = new RegExp(`${mainKey}-updateAt\\d{8}.json`);
@@ -155,6 +173,43 @@ async function main() {
     }
 
     log('All operations completed successfully.');
+}
+
+/**
+ * 기존 데이터를 MongoDB 형식으로 변환하는 함수
+ */
+async function transformExistingData() {
+    const dataDir = path.join(__dirname, 'contentsRawData');
+    
+    try {
+        const { transformAllFiles } = require('./transformToMongo');
+        const mongoDir = path.join(dataDir, 'mongo');
+        
+        log(`기존 데이터를 MongoDB 형식으로 변환합니다...`);
+        await transformAllFiles(dataDir, mongoDir);
+        log(`MongoDB 변환 완료: ${mongoDir}`);
+    } catch (error) {
+        console.error('MongoDB 변환 중 오류 발생:', error.message);
+    }
+}
+
+/**
+ * 메인 함수
+ */
+async function main() {
+    const args = process.argv.slice(2);
+    
+    if (args.includes('--transform-only')) {
+        // 변환만 수행
+        await transformExistingData();
+    } else if (args.includes('--gather-only')) {
+        // 데이터 수집만 수행
+        await gatherData();
+    } else {
+        // 둘 다 수행
+        await gatherData();
+        await transformExistingData();
+    }
 }
 
 main().catch(error => console.error('An error occurred:', error));
