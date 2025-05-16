@@ -3,7 +3,7 @@ const ChatDataTransformer = require('./utils/chatDataTransformer');
 
 class ChatUploadService {
   constructor() {
-    this.BASE_URL = 'https://world.ahhaohho.com';
+    this.BASE_URL = 'https://develop.ahhaohho.com:4222';
     this.axios = require('axios');
     
     // 향상된 HTTPS 에이전트 설정

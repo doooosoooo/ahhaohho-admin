@@ -5,9 +5,16 @@ class ChatDataTransformer {
       throw new Error('Data object is required');
     }
 
-    // 일반적인 변환 처리
+    // 데이터 유효성 검증
+    if (!data.id) {
+      throw new Error('ID field is required in data object');
+    }
+
+    // _id 필드 추가 (서버에서 필요한 경우를 위해)
     const transformedData = {
-      chatIdx: data.id,
+      chatId: data.id,   // 서버에서 요구하는 chatId 필드 추가
+      chatIdx: data.id,  // 기존 chatIdx 필드 유지
+      _id: data.id,      // MongoDB _id 필드 추가 (필요한 경우)
       step: 'challenge',
       chat: this._transformChat(data)
     };
