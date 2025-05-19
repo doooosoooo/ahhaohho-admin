@@ -21,7 +21,7 @@ class ChatDataTransformer {
     const transformedData = {
       chatId: data.id,   // 중요! PutChatRequestDTO에서 필수 필드
       step: 'challenge', 
-      chat: this._transformPromptFormsat(chatItems) // prompt 형식으로 변환
+      chat: this._transformPromptFormat(chatItems) // prompt 형식으로 변환
     };
     
     // chatId가 있는지 디버그 출력
