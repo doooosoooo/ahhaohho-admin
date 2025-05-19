@@ -120,8 +120,9 @@ class ChatUploadService {
         console.log(`ChatId 명시적 설정: ${transformedData.chatId}`);
       }
       
+      // 서버가 _id를 기준으로 요청을 처리하므로 _id 필드 사용
       const response = await this.axios.patch(
-        `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
+        `${this.BASE_URL}/world/chats/${existingChat._id}`, 
         transformedData,
         {
           headers: { 
