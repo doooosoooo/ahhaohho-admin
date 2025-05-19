@@ -358,17 +358,18 @@ class ChatDataTransformer {
         const responseText = data[`인터랙션형-선택지 ${i} 응답 텍스트 / 모듈 선택 ${moduleNum}`];
 
         if (buttonImage || responseImage || responseText) {
-          // buttonImage 변환
-          const transformedButtonImage = buttonImage ? this._transformMediaImage(buttonImage[0]) : null;
-          
-          // responseImage 변환 또는 buttonImage로 대체
-          const transformedResponseImage = responseImage 
-            ? this._transformMediaImage(responseImage[0]) 
-            : transformedButtonImage; // 응답 이미지가 없으면 버튼 이미지를 사용
-          
-          // 이미지 배열 생성 (null인 경우 filter로 제거)
-          const imageArray = [transformedButtonImage, transformedResponseImage].filter(img => img !== null);
-          
+          // 직접 이미지 배열 생성 - 옛 방식으로 복원
+          const imageArray = [
+            buttonImage ? this._transformMediaImage(buttonImage[0]) : null,
+            responseImage ? this._transformMediaImage(responseImage[0]) : null
+          ].filter(img => img !== null);
+
+          // 두 번째 이미지가 없으면 첫 번째 이미지 복제 (서버 DTO 요구사항: 이미지는 2개까지 가능)
+          if (imageArray.length === 1 && !responseImage) {
+            // 응답 이미지가 없으면 버튼 이미지 복제
+            imageArray.push(JSON.parse(JSON.stringify(imageArray[0])));
+          }
+
           medias.push({
             title: buttonTitle || null,
             image: imageArray,
