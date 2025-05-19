@@ -48,7 +48,7 @@ class ChatDataTransformer {
         
         // talker 검증 및 기본값 설정
         let talker = item.talker || 'ahhaohho';
-        if (!['user', 'ahhaohho', 'prompt'].includes(talker)) {
+        if (!['user', 'ahhaohho', 'prompt', 'endChat'].includes(talker)) {
           talker = 'ahhaohho';
         }
         
@@ -66,7 +66,8 @@ class ChatDataTransformer {
         return {
           type,
           talker,
-          prompts: prompt, // 서버 요구사항: prompts는 비어있지 않은 문자열 배열
+          prompts: prompt, // 서버 요구사항: 비어있지 않은 문자열 배열
+          hasOpts: item.hasOpts || false, // hasOpts 필드 보존
           ...(image.length > 0 && { image }) // 이미지가 있는 경우에만 필드 추가
         };
       }
