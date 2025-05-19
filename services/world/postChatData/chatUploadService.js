@@ -298,7 +298,7 @@ class ChatUploadService {
           const existingChat = await this.getChatById(transformedData.chatId);
           
           if (!existingChat) {
-            // 404 오류의 경우: 데이터 없음
+            // GET 요청에서 404 오류 (데이터가 없음)
             if (retryCount < maxRetries) {
               console.log(`[UPDATE] 채팅 없음 (${retryCount+1}/${maxRetries+1} 시도): chatId=${transformedData.chatId} - 재시도 중...`);
               retryCount++;
@@ -306,8 +306,33 @@ class ChatUploadService {
               continue; // 다시 시도
             }
             
-            console.log(`[UPDATE] 채팅을 찾을 수 없어 새로 생성합니다: chatId=${transformedData.chatId}`);
-            return this.uploadSingleChat(chatData);
+            // 재시도 횟수 초과 시 다양한 방법 시도 - 단순히 업로드로 넘기지 않고 더 적극적으로 시도
+            console.log(`[UPDATE] 채팅을 찾을 수 없지만 업데이트 요청이므로 다양한 방법 시도: chatId=${transformedData.chatId}`);
+            
+            // POST 요청을 사용한 upsert 시도 (이 기능이 구현되어 있을 경우)
+            try {
+              console.log(`[UPDATE] 채팅을 찾을 수 없어 POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
+              const response = await this.axios.post(
+                `${this.BASE_URL}/world/chats`, 
+                transformedData,
+                {
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'X-Debug-ChatId': transformedData.chatId || 'missing',
+                    'Cache-Control': 'no-cache', 
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  timeout: 30000,
+                  httpsAgent: this.httpsAgent
+                }
+              );
+              console.log(`[UPDATE] POST 요청 성공 (upsert): chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+              return response.data;
+            } catch (postErr) {
+              console.error(`[UPDATE] 최종 시도 (POST) 실패, 새로 생성으로 전환: ${postErr.message}`);
+              return this.uploadSingleChat(chatData);
+            }
           }
           
           // existingChat이 존재하면 서버 응답의 ID 필드를 확인할 필요 없음
@@ -330,21 +355,122 @@ class ChatUploadService {
           }
           
           // 서버가 chatId를 기준으로 요청을 처리
-          const response = await this.axios.patch(
-            `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
-            transformedData,
-            {
-              headers: { 
-                'Content-Type': 'application/json',
-                'X-Debug-ChatId': transformedData.chatId || 'missing', // 디버깅용 헤더 추가
-                'Cache-Control': 'no-cache' // 캐시 사용 방지
-              },
-              timeout: 30000, // 30초 타임아웃 설정
-              httpsAgent: this.httpsAgent
-            }
-          );
+          console.log(`[UPDATE] PATCH 요청 시작: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
+          console.log(`[UPDATE] PATCH 요청 데이터:`, JSON.stringify({
+            chatId: transformedData.chatId,
+            step: transformedData.step
+          }, null, 2));
           
-          console.log(`[UPDATE] 업데이트 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+          let response;
+          try {
+            // PATCH 대신 PUT 요청 시도
+            console.log(`[UPDATE] PATCH 대신 PUT 요청 시도: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
+            response = await this.axios.put(
+              `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
+              transformedData,
+              {
+                headers: { 
+                  'Content-Type': 'application/json',
+                  'X-Debug-ChatId': transformedData.chatId || 'missing', // 디버깅용 헤더 추가
+                  'Cache-Control': 'no-cache', // 캐시 사용 방지
+                  'Accept': 'application/json', // 응답 형식 명시
+                  'X-Requested-With': 'XMLHttpRequest' // AJAX 요청임을 명시
+                },
+                timeout: 30000, // 30초 타임아웃 설정
+                httpsAgent: this.httpsAgent
+              }
+            );
+            console.log(`[UPDATE] PUT 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+          } catch (putErr) {
+            console.error(`[UPDATE] PUT 요청 실패 상세 정보:`, {
+              status: putErr.response?.status,
+              statusText: putErr.response?.statusText,
+              data: putErr.response?.data,
+              message: putErr.message,
+              code: putErr.code,
+              isAxiosError: putErr.isAxiosError,
+              request: putErr.request ? 'Request object exists' : 'No request object',
+              response: putErr.response ? 'Response object exists' : 'No response object'
+            });
+            
+            try {
+              // PUT 실패 시 원래 PATCH 요청 시도
+              console.log(`[UPDATE] PUT 실패, PATCH 요청 시도: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
+              response = await this.axios.patch(
+                `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
+                transformedData,
+                {
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'X-Debug-ChatId': transformedData.chatId || 'missing',
+                    'Cache-Control': 'no-cache',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  timeout: 30000,
+                  httpsAgent: this.httpsAgent
+                }
+              );
+              console.log(`[UPDATE] PATCH 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+            } catch (patchErr) {
+              console.error(`[UPDATE] PATCH 요청 실패 상세 정보:`, {
+                status: patchErr.response?.status,
+                statusText: patchErr.response?.statusText,
+                data: patchErr.response?.data,
+                message: patchErr.message,
+                code: patchErr.code,
+                isAxiosError: patchErr.isAxiosError,
+                request: patchErr.request ? 'Request object exists' : 'No request object',
+                response: patchErr.response ? 'Response object exists' : 'No response object'
+              });
+              
+              try {
+                // 방법 1: 다른 API 경로를 사용한 PUT/PATCH 시도 (쿼리 매개변수 사용)
+                console.log(`[UPDATE] 대체 경로 시도: ${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`);
+                response = await this.axios.put(
+                  `${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`, 
+                  transformedData,
+                  {
+                    headers: { 
+                      'Content-Type': 'application/json',
+                      'X-Debug-ChatId': transformedData.chatId || 'missing',
+                      'Cache-Control': 'no-cache',
+                      'Accept': 'application/json',
+                      'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    timeout: 30000,
+                    httpsAgent: this.httpsAgent
+                  }
+                );
+                console.log(`[UPDATE] 대체 경로 PUT 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+              } catch (altErr) {
+                console.error(`[UPDATE] 대체 경로 요청 실패 상세 정보:`, {
+                  status: altErr.response?.status,
+                  statusText: altErr.response?.statusText,
+                  message: altErr.message
+                });
+                
+                // 마지막 수단: POST 요청으로 upsert 시도
+                console.log(`[UPDATE] 모든 방법 실패, POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
+                response = await this.axios.post(
+                  `${this.BASE_URL}/world/chats`, 
+                  transformedData,
+                  {
+                    headers: { 
+                      'Content-Type': 'application/json',
+                      'X-Debug-ChatId': transformedData.chatId || 'missing',
+                      'Cache-Control': 'no-cache',
+                      'Accept': 'application/json',
+                      'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    timeout: 30000,
+                    httpsAgent: this.httpsAgent
+                  }
+                );
+                console.log(`[UPDATE] POST 요청 성공 (upsert): chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+              }
+            }
+          }
           
           // 업데이트 후 검증 (확인을 위해 잠시 기다림)
           await new Promise(resolve => setTimeout(resolve, 1000));
