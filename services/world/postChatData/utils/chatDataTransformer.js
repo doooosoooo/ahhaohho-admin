@@ -59,6 +59,12 @@ class ChatDataTransformer {
           
         // 빈 배열인 경우 기본값 추가
         const prompt = promptTexts.length > 0 ? promptTexts : [''];
+          
+        // 서버 DTO 요구사항: prompts는 객체 배열 [{text: "텍스트"}] 형태이어야 함
+        const promptObjects = prompt.map(text => ({
+          text: text,
+          media: null
+        }));
         
         // 이미지 처리
         const image = this._extractImagesFromPrompts(item.prompts);
@@ -66,7 +72,7 @@ class ChatDataTransformer {
         return {
           type,
           talker,
-          prompts: prompt, // 서버 요구사항: 비어있지 않은 문자열 배열
+          prompts: promptObjects, // 서버 요구사항: 객체 배열 형태
           hasOpts: item.hasOpts || false, // hasOpts 필드 보존
           ...(image.length > 0 && { image }) // 이미지가 있는 경우에만 필드 추가
         };
