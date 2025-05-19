@@ -112,7 +112,7 @@ class ChatUploadService {
         return this.uploadSingleChat(chatData);
       }
       
-      console.log(`Found existing chat with chatId '${transformedData.chatId}', _id: ${existingChat._id}`);
+      console.log(`Found existing chat with chatId '${transformedData.chatId}', updating...`);
       
       // PATCH 요청으로 기존 데이터 업데이트 (chatId가 반드시 포함되도록 확인)
       if (!transformedData.chatId) {
@@ -120,9 +120,9 @@ class ChatUploadService {
         console.log(`ChatId 명시적 설정: ${transformedData.chatId}`);
       }
       
-      // 서버가 _id를 기준으로 요청을 처리하므로 _id 필드 사용
+      // 서버가 chatIdx를 기준으로 요청을 처리
       const response = await this.axios.patch(
-        `${this.BASE_URL}/world/chats/${existingChat._id}`, 
+        `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
         transformedData,
         {
           headers: { 
