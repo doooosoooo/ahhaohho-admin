@@ -91,26 +91,34 @@ class ChatDataTransformer {
     
     for (const prompt of prompts) {
       if (prompt.media && Array.isArray(prompt.media)) {
+        // 원래 미디어 구조 유지 - 각 미디어 아이템은 하나의 객체로 변환
         for (const mediaItem of prompt.media) {
           if (mediaItem && mediaItem.image && Array.isArray(mediaItem.image)) {
-            for (const img of mediaItem.image) {
-              if (img) {
-                // 서버 DTO validateMedia 메서드에 맞게 변환
-                images.push({
-                  media: {
-                    type: img.type || '',
-                    defaultUrl: img.defaultUrl || '',
-                    sound: !!img.sound, // boolean 값 보장
-                    thumbnail: {
-                      tiny: img.thumbnail?.tiny || '',
-                      small: img.thumbnail?.small || '',
-                      medium: img.thumbnail?.medium || '',
-                      large: img.thumbnail?.large || ''
-                    }
-                  },
-                  description: mediaItem.imageDescription || ''
-                });
-              }
+            // 서버 DTO validateMedia 메서드에 맞게 변환하되, 이미지 배열을 유지
+            const transformedImages = mediaItem.image.map(img => {
+              if (!img) return null;
+              
+              return {
+                type: img.type || '',
+                defaultUrl: img.defaultUrl || '',
+                sound: !!img.sound, // boolean 값 보장
+                thumbnail: {
+                  tiny: img.thumbnail?.tiny || '',
+                  small: img.thumbnail?.small || '',
+                  medium: img.thumbnail?.medium || '',
+                  large: img.thumbnail?.large || ''
+                }
+              };
+            }).filter(img => img !== null);
+            
+            if (transformedImages.length > 0) {
+              images.push({
+                media: {
+                  title: mediaItem.title || null,
+                  image: transformedImages,
+                  imageDescription: mediaItem.imageDescription || ''
+                }
+              });
             }
           }
         }
