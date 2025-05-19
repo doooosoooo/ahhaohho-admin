@@ -121,7 +121,7 @@ class ChatUploadService {
       }
       
       const response = await this.axios.patch(
-        `${this.BASE_URL}/world/chats/${existingChat._id}`, 
+        `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
         transformedData,
         {
           headers: { 
