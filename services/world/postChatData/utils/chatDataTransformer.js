@@ -27,6 +27,15 @@ class ChatDataTransformer {
     // chatId가 있는지 디버그 출력
     console.log(`DEBUG - chatId 확인: ${transformedData.chatId}`);
     
+    // userTyping 항목이 몇 개 있는지 확인
+    const userTypingCount = transformedData.chat.filter(item => item.type === 'userTyping').length;
+    console.log(`[DEBUG] 최종 변환 결과의 userTyping 항목 수: ${userTypingCount}`);
+    
+    if (userTypingCount > 0) {
+      console.log(`[DEBUG] userTyping 항목 샘플:`, 
+        JSON.stringify(transformedData.chat.filter(item => item.type === 'userTyping')[0]));
+    }
+    
     console.log('DEBUG - Transformed request data:', JSON.stringify(transformedData, null, 2));
     return transformedData;
   }
@@ -37,12 +46,21 @@ class ChatDataTransformer {
       return [];
     }
     
+    // userTyping 형식이 몇 개 있는지 확인
+    const userTypingCount = chatItems.filter(item => item.type === 'userTyping').length;
+    console.log(`[DEBUG] 변환 전 userTyping 항목 수: ${userTypingCount}`);
+    
     return chatItems.map(item => {
       // DTO 요구사항에 맞게 변환 (서버 validatePrompt 메서드 참고)
       if (item.prompts) {
         // type 검증 및 기본값 설정
         let type = item.type || 'text';
-        if (!['text', 'image', 'text+image'].includes(type)) {
+        // userTyping 타입은 그대로 유지 (유효한 타입)
+        if (type === 'userTyping') {
+          console.log(`[DEBUG] userTyping 항목 발견: talker=${item.talker}`);
+          // userTyping 타입은 그대로 유지해야 함
+        } else if (!['text', 'image', 'text+image', 'userTyping'].includes(type)) {
+          console.log(`[DEBUG] 유효하지 않은 타입 변환: ${type} -> text`);
           type = 'text';
         }
         
@@ -79,13 +97,20 @@ class ChatDataTransformer {
           return { ...prompt, media };
         });
         
-        return {
+        const result = {
           type,
           talker,
           prompts: updatedPromptObjects, // 프롬프트에 미디어 정보 포함
           hasOpts: item.hasOpts || false, // hasOpts 필드 보존
           ...(images.length > 0 && { image: images }) // 이미지가 있는 경우에만 필드 추가
         };
+        
+        // userTyping 타입인 경우 디버깅 로그 추가
+        if (type === 'userTyping') {
+          console.log(`[DEBUG] userTyping 항목 최종 변환 결과:`, JSON.stringify(result));
+        }
+        
+        return result;
       }
       return item;
     });
@@ -144,6 +169,8 @@ class ChatDataTransformer {
     for (let i = 1; i <= 15; i++) {
       const moduleType = data[`모듈 선택 ${i}`];
       if (!moduleType) continue;
+      
+      console.log(`[DEBUG] 모듈 ${i} 타입: ${moduleType}`); // 어떤 모듈이 사용되는지 확인
 
       // 매개자 대화 처리
       const mediatorItems = this._transformMediatorDialogue(data, i, moduleType);
@@ -249,7 +276,10 @@ class ChatDataTransformer {
       case '모듈2 : 인터랙션형':
         return this._transformUserInteractionResponse(data, moduleNum);
       case '모듈3 : 타이핑형':
-        return this._transformTypingType();
+        console.log(`[DEBUG] 모듈3 타이핑형 유저 응답 변환 호출 (모듈 ${moduleNum})`);
+        const typingObj = this._transformTypingType();
+        console.log(`[DEBUG] 생성된 userTyping 객체:`, JSON.stringify(typingObj));
+        return typingObj;
       default:
         return null;
     }
@@ -404,7 +434,9 @@ class ChatDataTransformer {
   }
   
   static _transformTypingType() {    
-    return {
+    console.log(`[DEBUG] _transformTypingType 함수 호출됨 - userTyping 객체 생성`);
+    
+    const typingObj = {
       type: 'userTyping',
       talker: 'user',
       hasOpts: false,
@@ -413,17 +445,24 @@ class ChatDataTransformer {
         media: null
       }]
     };
+    
+    console.log(`[DEBUG] 생성된 userTyping 객체:`, JSON.stringify(typingObj));
+    return typingObj;
   }
 
   static _transformTypingTypeMediator(data, moduleNum) {
     const text = data[`타이핑형-매개자 대사 / 모듈 선택 ${moduleNum}`];
+    console.log(`[DEBUG] 타이핑형 매개자 처리 (모듈 ${moduleNum}): ${text ? '텍스트 있음' : '텍스트 없음'}`);
+    
     if (!text) return null;
     
     // 백슬래시가 있는지 확인
     const hasBackslash = text.includes('\\') || text.includes('＼');
+    console.log(`[DEBUG] 백슬래시 포함 여부: ${hasBackslash ? '포함' : '미포함'}`);
     
     if (!hasBackslash) {
       // 백슬래시가 없으면 단일 메시지 반환
+      console.log(`[DEBUG] 백슬래시 없음, 단일 메시지 반환 (type: text, talker: prompt)`);
       return {
         type: 'text',
         talker: 'prompt',
@@ -437,12 +476,14 @@ class ChatDataTransformer {
     
     // 백슬래시로 텍스트 분리
     const parts = text.split(/[\\＼]/).map(part => part.trim()).filter(part => part);
+    console.log(`[DEBUG] 백슬래시로 분리된 텍스트 부분: ${parts.length}개`);
     
     // 결과 배열 초기화
     const result = [];
     
     // userTyping 객체 생성
     const userTypingObj = this._transformTypingType();
+    console.log(`[DEBUG] 생성된 userTyping 객체:`, JSON.stringify(userTypingObj));
     
     // 각 부분에 대해 메시지와 userTyping 교대로 추가
     for (let i = 0; i < parts.length; i++) {
@@ -459,9 +500,15 @@ class ChatDataTransformer {
       
       // 각 메시지 뒤에 userTyping 추가 (마지막 메시지 제외)
       if (i < parts.length - 1) {
+        console.log(`[DEBUG] ${i+1}번째 메시지 뒤에 userTyping 추가`);
         result.push({...userTypingObj});
       }
     }
+    
+    console.log(`[DEBUG] 타이핑형 매개자 처리 결과: ${result.length}개 아이템`);
+    result.forEach((item, idx) => {
+      console.log(`[DEBUG] 결과 항목 ${idx+1}: type=${item.type}, talker=${item.talker}`);
+    });
     
     return result;
   }
