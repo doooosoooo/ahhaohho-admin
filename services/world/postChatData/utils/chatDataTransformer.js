@@ -97,13 +97,19 @@ class ChatDataTransformer {
           return { ...prompt, media };
         });
         
+        // 수정된 구조: image 필드는 중첩구조가 아닌 정규화된 형태로만 추가
+        // 그리고 hasOpts 필드 추가
         const result = {
           type,
           talker,
           prompts: updatedPromptObjects, // 프롬프트에 미디어 정보 포함
-          hasOpts: item.hasOpts || false, // hasOpts 필드 보존
-          ...(images.length > 0 && { image: images }) // 이미지가 있는 경우에만 필드 추가
+          hasOpts: item.hasOpts || false // hasOpts 필드 보존
         };
+        
+        // 디버깅을 위한 로그 (이미지 감지)
+        if (images.length > 0) {
+          console.log(`[DEBUG] 아이템에 이미지 ${images.length}개 있음 (중첩 구조 방지)`);
+        }
         
         // userTyping 타입인 경우 디버깅 로그 추가
         if (type === 'userTyping') {
@@ -147,12 +153,11 @@ class ChatDataTransformer {
             }).filter(img => img !== null);
             
             if (transformedImages.length > 0) {
+              // 중첩된 구조 대신 직접 미디어 객체를 배열에 추가
               images.push({
-                media: {
-                  title: mediaItem.title || null,
-                  image: transformedImages,
-                  imageDescription: mediaItem.imageDescription || ''
-                }
+                title: mediaItem.title || null,
+                image: transformedImages,
+                imageDescription: mediaItem.imageDescription || ''
               });
             }
           }
@@ -419,14 +424,24 @@ class ChatDataTransformer {
         }
       }
 
-      return medias.length > 0 ? {
-        type: 'text+image',
-        talker: 'prompt',
-        prompts: [{
-          text: null,
-          media: medias
-        }]
-      } : null;
+      // 중첩된 이미지 구조를 방지하기 위한 로그 추가
+      console.log(`[DEBUG] 인터랙션형 이미지 처리 - 미디어 개수: ${medias.length}`);
+      
+      if (medias.length > 0) {
+        // 올바른 구조로 반환 - 중첩 구조 제거
+        // prompts에 media 배열은 제공하되, 별도의 image 배열은 생성하지 않음
+        return {
+          type: 'text+image',
+          talker: 'prompt',
+          prompts: [{
+            text: null,
+            media: medias
+          }],
+          hasOpts: false
+        };
+      } else {
+        return null;
+      }
     }
 
   static _createMediatorMessage(text) {
