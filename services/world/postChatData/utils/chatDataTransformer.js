@@ -275,11 +275,12 @@ class ChatDataTransformer {
         return this._transformUserButtonResponse(data, moduleNum);
       case '모듈2 : 인터랙션형':
         return this._transformUserInteractionResponse(data, moduleNum);
-      case '모듈3 : 타이핑형':
+      case '모듈3 : 타이핑형': {
         console.log(`[DEBUG] 모듈3 타이핑형 유저 응답 변환 호출 (모듈 ${moduleNum})`);
         const typingObj = this._transformTypingType();
         console.log(`[DEBUG] 생성된 userTyping 객체:`, JSON.stringify(typingObj));
         return typingObj;
+      }
       default:
         return null;
     }
