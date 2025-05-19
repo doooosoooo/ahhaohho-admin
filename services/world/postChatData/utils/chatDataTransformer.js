@@ -66,7 +66,7 @@ class ChatDataTransformer {
         return {
           type,
           talker,
-          prompt, // 서버 요구사항: 비어있지 않은 문자열 배열
+          prompts: prompt, // 서버 요구사항: prompts는 비어있지 않은 문자열 배열
           ...(image.length > 0 && { image }) // 이미지가 있는 경우에만 필드 추가
         };
       }
