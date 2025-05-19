@@ -55,6 +55,9 @@ class ChatDataTransformer {
         // prompts는 원래 형식을 유지 (객체 배열)
         // 서버 DTO 요구사항: prompts는 {text, media} 객체 배열이어야 함
         
+        // 이미지 처리
+        const image = this._extractImagesFromPrompts(item.prompts);
+        
         return {
           type,
           talker,
