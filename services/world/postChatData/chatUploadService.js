@@ -52,10 +52,18 @@ class ChatUploadService {
       }
       
       if (response.data) {
-        console.log(`[GET] 단일 채팅 응답: ${response.data.chatId}`);
+        // chatId가 있는지 확인
+        if (response.data.chatId) {
+          console.log(`[GET] 단일 채팅 응답: ${response.data.chatId}`);
+          return response.data;
+        } else {
+          // chatId가 없는 경우 상세 로그 추가
+          console.log(`[GET] 응답에 chatId가 없음. 응답 데이터:`, JSON.stringify(response.data).substring(0, 100));
+          return null; // chatId가 없으면 null 반환
+        }
       }
       
-      return response.data || null;
+      return null; // response.data가 없으면 null 반환
     } catch (error) {
       console.error(`[GET] 채팅 조회 오류: ${error.message}`, {
         status: error.response?.status,
@@ -104,13 +112,9 @@ class ChatUploadService {
                   if (!img.defaultUrl) {
                     console.warn(`[UPLOAD] 경고: 누락된 이미지 URL - chat[${index}].image.media.image[${imgIndex}]`);
                   } else {
-                    // URL 검증용 로그 (개발용)
-                    if (process.env.NODE_ENV === 'development') {
-                      console.log(`[UPLOAD] 이미지 URL: ${img.defaultUrl.substring(0, 30)}...`);
-                      if (img.thumbnail) {
-                        console.log(`[UPLOAD] 써네일 tiny: ${img.thumbnail.tiny?.substring(0, 30) || 'null'}...`);
-                      }
-                    }
+                    // URL 검증용 로그 (추가 로그는 제거)
+                    const urlPreview = img.defaultUrl.substring(0, 30) + '...';
+                    console.log(`[UPLOAD] 이미지 URL 개요: ${urlPreview}`);
                   }
                 });
               }
@@ -124,8 +128,13 @@ class ChatUploadService {
       // 새로운 데이터 생성 전에 이미 존재하는지 한 번 더 확인
       const existingChat = await this.getChatById(transformedData.chatId);
       if (existingChat) {
-        console.log(`[UPLOAD] 이미 존재하는 채팅임: ${transformedData.chatId}, 업데이트로 전환합니다`);
-        return this.updateSingleChat(chatData);
+        // 존재하는 채팅이지만, chatId가 없는 경우 새로 생성해야 함
+        if (!existingChat.chatId) {
+          console.log(`[UPLOAD] 채팅을 찾았지만 chatId가 없으미로 새로 생성합니다`);
+        } else {
+          console.log(`[UPLOAD] 이미 존재하는 채팅임: ${transformedData.chatId}, 업데이트로 전환합니다`);
+          return this.updateSingleChat(chatData);
+        }
       }
       
       // POST 요청 전 chatId 존재 확인
@@ -180,7 +189,7 @@ class ChatUploadService {
   async updateSingleChat(chatData) {
     let retryCount = 0;
     const maxRetries = 3;
-    let lastError = null;
+    // lastError 변수 제거 (ESLint 경고)
     
     try {
       if (!chatData || typeof chatData !== 'object') {
@@ -215,6 +224,12 @@ class ChatUploadService {
             }
             
             console.log(`[UPDATE] 채팅을 찾을 수 없어 새로 생성합니다: chatId=${transformedData.chatId}`);
+            return this.uploadSingleChat(chatData);
+          }
+          
+          // 기존 채팅의 chatId가 유효한지 확인
+          if (!existingChat.chatId) {
+            console.log(`[UPDATE] 채팅을 발견했지만 chatId가 없음. 새로 생성합니다.`);
             return this.uploadSingleChat(chatData);
           }
           
@@ -265,7 +280,7 @@ class ChatUploadService {
           }
           
         } catch (err) {
-          lastError = err;
+          // lastError 변수 제거 (사용되지 않음)
           
           if (err.response?.status === 404 && retryCount < maxRetries) {
             console.log(`[UPDATE] 404 오류 발생 (${retryCount+1}/${maxRetries+1} 시도): chatId=${transformedData.chatId} - 재시도 중...`);
@@ -377,14 +392,14 @@ class ChatUploadService {
   
   // 재시도 로직 구현 (404 오류 특별 처리 추가)
   async _retryOperation(operation, maxRetries = 3, initialDelay = 2000) {
-    let lastError;
+    // lastError 변수는 마지막에만 사용되므로 여기서는 선언하지 않음
     let delay = initialDelay;
     
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
         return await operation();
       } catch (error) {
-        lastError = error;
+        // lastError 지정 제거 (ESLint 경고)
         
         // 에러 유형 확인
         const status = error.response?.status || 0;
@@ -427,7 +442,9 @@ class ChatUploadService {
       }
     }
     
-    throw lastError;
+    // 마지막 재시도까지 실패한 경우에는 오류를 반환해야 하지만
+    // 이 지점까지 도달하는 경우는 거의 없음
+    throw new Error(`모든 재시도 실패 (${maxRetries} 회)`);
   }
 }
 
