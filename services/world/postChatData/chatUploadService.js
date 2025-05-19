@@ -354,17 +354,19 @@ class ChatUploadService {
             console.log(`[UPDATE] ChatId 명시적 설정: ${transformedData.chatId}`);
           }
           
-          // 서버가 chatId를 기준으로 요청을 처리
-          console.log(`[UPDATE] PATCH 요청 시작: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
-          console.log(`[UPDATE] PATCH 요청 데이터:`, JSON.stringify({
+          // 서버가 chatId를 기준으로 요청을 처리 - PUT 요청만 사용 (배열 중복 방지)
+          console.log(`[UPDATE] 이미지 필드 중복 방지를 위해 PUT 요청 사용`);
+          console.log(`[UPDATE] PUT 요청 데이터:`, JSON.stringify({
             chatId: transformedData.chatId,
-            step: transformedData.step
+            step: transformedData.step,
+            chatLength: transformedData.chat.length,
+            imageItems: transformedData.chat.filter(item => item.image).length
           }, null, 2));
           
           let response;
           try {
-            // PATCH 대신 PUT 요청 시도
-            console.log(`[UPDATE] PATCH 대신 PUT 요청 시도: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
+            // 항상 PUT 요청 사용 (배열 필드 중복 방지)
+            console.log(`[UPDATE] PUT 요청 URL: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
             response = await this.axios.put(
               `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
               transformedData,
@@ -385,19 +387,16 @@ class ChatUploadService {
             console.error(`[UPDATE] PUT 요청 실패 상세 정보:`, {
               status: putErr.response?.status,
               statusText: putErr.response?.statusText,
-              data: putErr.response?.data,
               message: putErr.message,
               code: putErr.code,
-              isAxiosError: putErr.isAxiosError,
-              request: putErr.request ? 'Request object exists' : 'No request object',
-              response: putErr.response ? 'Response object exists' : 'No response object'
+              isAxiosError: putErr.isAxiosError ? 'Yes' : 'No'
             });
             
             try {
-              // PUT 실패 시 원래 PATCH 요청 시도
-              console.log(`[UPDATE] PUT 실패, PATCH 요청 시도: ${this.BASE_URL}/world/chats/${transformedData.chatId}`);
-              response = await this.axios.patch(
-                `${this.BASE_URL}/world/chats/${transformedData.chatId}`, 
+              // PUT 요청이 실패하면 쿼리 매개변수를 사용한 대체 URL 시도
+              console.log(`[UPDATE] PUT 실패, 대체 URL 시도: ${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`);
+              response = await this.axios.put(
+                `${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`, 
                 transformedData,
                 {
                   headers: { 
@@ -411,47 +410,19 @@ class ChatUploadService {
                   httpsAgent: this.httpsAgent
                 }
               );
-              console.log(`[UPDATE] PATCH 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
-            } catch (patchErr) {
-              console.error(`[UPDATE] PATCH 요청 실패 상세 정보:`, {
-                status: patchErr.response?.status,
-                statusText: patchErr.response?.statusText,
-                data: patchErr.response?.data,
-                message: patchErr.message,
-                code: patchErr.code,
-                isAxiosError: patchErr.isAxiosError,
-                request: patchErr.request ? 'Request object exists' : 'No request object',
-                response: patchErr.response ? 'Response object exists' : 'No response object'
+              console.log(`[UPDATE] 대체 URL PUT 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+            } catch (altErr) {
+              console.error(`[UPDATE] 대체 URL PUT 요청 실패 상세 정보:`, {
+                status: altErr.response?.status,
+                statusText: altErr.response?.statusText,
+                message: altErr.message,
+                code: altErr.code,
+                isAxiosError: altErr.isAxiosError ? 'Yes' : 'No'
               });
               
               try {
-                // 방법 1: 다른 API 경로를 사용한 PUT/PATCH 시도 (쿼리 매개변수 사용)
-                console.log(`[UPDATE] 대체 경로 시도: ${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`);
-                response = await this.axios.put(
-                  `${this.BASE_URL}/world/chats?chatId=${transformedData.chatId}`, 
-                  transformedData,
-                  {
-                    headers: { 
-                      'Content-Type': 'application/json',
-                      'X-Debug-ChatId': transformedData.chatId || 'missing',
-                      'Cache-Control': 'no-cache',
-                      'Accept': 'application/json',
-                      'X-Requested-With': 'XMLHttpRequest'
-                    },
-                    timeout: 30000,
-                    httpsAgent: this.httpsAgent
-                  }
-                );
-                console.log(`[UPDATE] 대체 경로 PUT 요청 성공: chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
-              } catch (altErr) {
-                console.error(`[UPDATE] 대체 경로 요청 실패 상세 정보:`, {
-                  status: altErr.response?.status,
-                  statusText: altErr.response?.statusText,
-                  message: altErr.message
-                });
-                
                 // 마지막 수단: POST 요청으로 upsert 시도
-                console.log(`[UPDATE] 모든 방법 실패, POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
+                console.log(`[UPDATE] PUT 요청 모두 실패, POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
                 response = await this.axios.post(
                   `${this.BASE_URL}/world/chats`, 
                   transformedData,
@@ -468,6 +439,9 @@ class ChatUploadService {
                   }
                 );
                 console.log(`[UPDATE] POST 요청 성공 (upsert): chatId=${transformedData.chatId}, 응답 상태=${response.status}`);
+              } catch (postErr) {
+                console.error(`[UPDATE] POST 요청도 실패: ${postErr.message}`);
+                throw postErr;
               }
             }
           }
