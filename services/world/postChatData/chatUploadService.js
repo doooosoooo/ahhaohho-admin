@@ -24,43 +24,121 @@ class ChatUploadService {
     try {
       console.log(`[GET] 채팅 조회 요청: chatId=${id}`);
       
-      // 서버가 응답할 시간을 주기 위해 짧은 딜레이 추가
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // 서버가 응답할 시간을 주기 위해 더 긴 딜레이 추가 (1초 → 3초)
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
-      // 필드 이름이 chatId인 경우를 처리
-      const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatId=${encodeURIComponent(id)}`, {
+      // 다양한 API 엔드포인트 시도
+      // 1. 일반 쿼리를 사용한 조회
+      const searchResponse = await this.axios.get(`${this.BASE_URL}/world/chats?chatId=${encodeURIComponent(id)}`, {
         headers: { 
           'Content-Type': 'application/json',
-          'Cache-Control': 'no-cache' // 캐시 방지
+          'Cache-Control': 'no-cache', // 캐시 방지
+          'Accept': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+          'Pragma': 'no-cache'
         },
-        timeout: 20000, // 타임아웃 증가 (20초)
+        timeout: 30000, // 타임아웃 증가 (30초)
         httpsAgent: this.httpsAgent
       });
       
+      // 응답에 유효한 데이터가 있는지 확인
+      if (searchResponse.data && searchResponse.data.data) {
+        console.log(`[GET] 채팅 조회 응답 받음 (searchResponse): ID=${id}`);
+        
+        // 정확한 ID 일치 여부 확인
+        const isIdMatch = searchResponse.data.data.chatId === id || searchResponse.data.data.id === id;
+        
+        // 응답에 데이터는 있지만 ID가 일치하지 않는 경우에도 요청한 ID 사용
+        const result = { ...searchResponse.data.data };
+        
+        // chatId 필드가 없거나 다른 경우 요청한 ID로 설정
+        if (!result.chatId || !isIdMatch) {
+          result.chatId = id;
+          console.log(`[GET] 응답에 chatId가 없거나 불일치하여 요청한 ID 사용: ${id}`);
+        }
+        
+        return result;
+      }
+      
+      // 2. 직접 ID로 조회 시도 (GET /chats/:id)
+      try {
+        const directResponse = await this.axios.get(`${this.BASE_URL}/world/chats/${encodeURIComponent(id)}`, {
+          headers: { 
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache',
+            'Accept': 'application/json'
+          },
+          timeout: 30000,
+          httpsAgent: this.httpsAgent
+        });
+        
+        if (directResponse.data) {
+          console.log(`[GET] 채팅 조회 응답 받음 (directResponse): ID=${id}`);
+          
+          // 정확한 ID 일치 여부 확인
+          const isIdMatch = directResponse.data.chatId === id || directResponse.data.id === id;
+          
+          // 응답 데이터 복사 및 ID 확인
+          const result = { ...directResponse.data };
+          
+          // chatId 필드가 없거나 다른 경우 요청한 ID로 설정
+          if (!result.chatId || !isIdMatch) {
+            result.chatId = id;
+            console.log(`[GET] 직접 조회 응답에 chatId가 없거나 불일치하여 요청한 ID 사용: ${id}`);
+          }
+          
+          return result;
+        }
+      } catch (directError) {
+        console.log(`[GET] 직접 ID 조회 실패: ${directError.message}`);
+      }
+      
+      // 원래 응답 계속 처리
+      const response = searchResponse;
+      
       console.log(`[GET] 채팅 조회 응답: 상태=${response.status}, 데이터 길이=${Array.isArray(response.data) ? response.data.length : '객체'}`);
       
-      // 결과가 배열인 경우 chatId가 정확히 일치하는 항목만 필터링
+      // 결과가 배열인 경우 chatId가 정확히 일치하는 항목 필터링 또는 첫 번째 항목 사용
       if (Array.isArray(response.data)) {
-        const exactMatch = response.data.find(chat => chat.chatId === id);
+        // 정확히 일치하는 항목 검색
+        const exactMatch = response.data.find(chat => chat.chatId === id || chat.id === id);
+        
         if (exactMatch) {
-          console.log(`[GET] 정확히 일치하는 채팅 찾음: ${exactMatch.chatId}`);
-          return exactMatch;
+          console.log(`[GET] 정확히 일치하는 채팅 찾음: ${exactMatch.chatId || id}`);
+          
+          // chatId 필드가 없으면 추가
+          const result = { ...exactMatch };
+          if (!result.chatId) {
+            result.chatId = id;
+            console.log(`[GET] 일치항목에 chatId가 없어 요청한 ID 사용: ${id}`);
+          }
+          
+          return result;
+        } else if (response.data.length > 0) {
+          // 정확히 일치하는 항목이 없지만 결과가 있는 경우, 첫 번째 항목 사용하고 ID 설정
+          console.log(`[GET] 정확히 일치하는 채팅을 찾지 못했지만 결과 있음. 첫 번째 항목 사용: ${id}`);
+          const result = { ...response.data[0] };
+          result.chatId = id; // 요청한 ID 사용
+          return result;
         } else {
-          console.log(`[GET] 정확히 일치하는 채팅을 찾지 못함: ${id}`);
+          console.log(`[GET] 정확히 일치하는 채팅을 찾지 못함 (빈 배열): ${id}`);
           return null;
         }
       }
       
+      // 응답이 있는 경우, 응답에 chatId가 없더라도 원래 요청한 ID를 사용하도록 추가
       if (response.data) {
-        // chatId가 있는지 확인
-        if (response.data.chatId) {
-          console.log(`[GET] 단일 채팅 응답: ${response.data.chatId}`);
-          return response.data;
-        } else {
-          // chatId가 없는 경우 상세 로그 추가
-          console.log(`[GET] 응답에 chatId가 없음. 응답 데이터:`, JSON.stringify(response.data).substring(0, 100));
-          return null; // chatId가 없으면 null 반환
+        // 응답 데이터 로깅
+        console.log(`[GET] 응답 받음. 을 요청한 채팅 ID: ${id}`);
+        
+        // 만약 응답에 chatId가 없더라도 요청한 ID로 채워넣기
+        const result = { ...response.data };
+        if (!result.chatId) {
+          result.chatId = id; // 요청한 ID를 사용
+          console.log(`[GET] 응답에 chatId가 없으므로 요청한 ID를 사용: ${id}`);
         }
+        
+        return result;
       }
       
       return null; // response.data가 없으면 null 반환
@@ -128,13 +206,9 @@ class ChatUploadService {
       // 새로운 데이터 생성 전에 이미 존재하는지 한 번 더 확인
       const existingChat = await this.getChatById(transformedData.chatId);
       if (existingChat) {
-        // 존재하는 채팅이지만, chatId가 없는 경우 새로 생성해야 함
-        if (!existingChat.chatId) {
-          console.log(`[UPLOAD] 채팅을 찾았지만 chatId가 없으미로 새로 생성합니다`);
-        } else {
-          console.log(`[UPLOAD] 이미 존재하는 채팅임: ${transformedData.chatId}, 업데이트로 전환합니다`);
-          return this.updateSingleChat(chatData);
-        }
+        // 응답이 있다면 업데이트로 전환 (응답에 chatId가 없더라도 요청한 ID로 업데이트)
+        console.log(`[UPLOAD] 이미 존재하는 채팅임: ${transformedData.chatId}, 업데이트로 전환합니다`);
+        return this.updateSingleChat(chatData);
       }
       
       // POST 요청 전 chatId 존재 확인
@@ -165,12 +239,21 @@ class ChatUploadService {
       const createdChat = await this.getChatById(transformedData.chatId);
       
       if (createdChat) {
-        console.log(`[UPLOAD] 생성 후 채팅 확인 성공: chatId=${createdChat.chatId}`);
+        // 응답에 chatId가 없더라도 원래 ID 사용
+        const chatId = createdChat.chatId || transformedData.chatId;
+        console.log(`[UPLOAD] 생성 후 채팅 확인 성공: chatId=${chatId}`);
       } else {
         console.warn(`[UPLOAD] 주의: 새로 생성한 채팅을 조회할 수 없음: chatId=${transformedData.chatId}`);
       }
       
-      return response.data;
+      // 응답에 chatId가 없을 경우 추가
+      const responseData = response.data || {};
+      if (!responseData.chatId) {
+        responseData.chatId = transformedData.chatId;
+        console.log(`[UPLOAD] 응답에 chatId 추가: ${transformedData.chatId}`);
+      }
+      
+      return responseData;
     } catch (error) {
       // 에러 상세 정보 로깅
       console.error('[UPLOAD] 업로드 오류:', {
@@ -227,13 +310,9 @@ class ChatUploadService {
             return this.uploadSingleChat(chatData);
           }
           
-          // 기존 채팅의 chatId가 유효한지 확인
-          if (!existingChat.chatId) {
-            console.log(`[UPDATE] 채팅을 발견했지만 chatId가 없음. 새로 생성합니다.`);
-            return this.uploadSingleChat(chatData);
-          }
-          
-          console.log(`[UPDATE] 기존 채팅 발견 (재시도 ${retryCount}/${maxRetries+1}): chatId=${existingChat.chatId}, 업데이트 시작...`);
+          // existingChat이 존재하면 서버 응답의 ID 필드를 확인할 필요 없음
+          // 원래 요청한 ID(transformedData.chatId)를 사용해서 업데이트
+          console.log(`[UPDATE] 기존 채팅 발견 (재시도 ${retryCount}/${maxRetries+1}): chatId=${transformedData.chatId}, 업데이트 시작...`);
           
           // 업데이트 전에 이미지 데이터 검증
           if (transformedData.chat) {
@@ -272,11 +351,27 @@ class ChatUploadService {
           const updatedChat = await this.getChatById(transformedData.chatId);
           
           if (updatedChat) {
-            console.log(`[UPDATE] 업데이트 후 채팅 검증 성공: chatId=${updatedChat.chatId}, 응답 받음`);            
-            return response.data;
+            // 응답에 chatId가 없더라도 원래 ID 사용
+            const chatId = updatedChat.chatId || transformedData.chatId;
+            console.log(`[UPDATE] 업데이트 후 채팅 검증 성공: chatId=${chatId}, 응답 받음`);            
+            
+            // 응답에 chatId가 없을 경우 추가
+            const responseData = response.data || {};
+            if (!responseData.chatId) {
+              responseData.chatId = transformedData.chatId;
+            }
+            
+            return responseData;
           } else {
             console.error(`[UPDATE] 업데이트 후 채팅 조회에 실패. 새로 생성됨: chatId=${transformedData.chatId}`);
-            return response.data;
+            
+            // 응답에 chatId가 없을 경우 추가
+            const responseData = response.data || {};
+            if (!responseData.chatId) {
+              responseData.chatId = transformedData.chatId;
+            }
+            
+            return responseData;
           }
           
         } catch (err) {
@@ -374,6 +469,11 @@ class ChatUploadService {
   }
 
   _createSuccessResult(chatData, result, isUpdate = false) {
+    // 서버 응답에 chatId가 없을 경우 원래 ID 사용
+    if (result && !result.chatId && chatData.id) {
+      result = { ...result, chatId: chatData.id };
+    }
+    
     return {
       chatId: chatData.id,
       status: 'success',

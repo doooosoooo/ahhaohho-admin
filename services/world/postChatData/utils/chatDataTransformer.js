@@ -66,15 +66,25 @@ class ChatDataTransformer {
           media: null
         }));
         
-        // 이미지 처리
-        const image = this._extractImagesFromPrompts(item.prompts);
+        // 이미지 처리 - 기존 방식이 아닌 프롬프트 배열에 이미지 포함
+        const images = this._extractImagesFromPrompts(item.prompts);
+        
+        // 프롬프트에 이미지 포함 처리
+        const updatedPromptObjects = promptObjects.map((prompt, index) => {
+          // 원본 프롬프트의 미디어 정보 참조
+          const originalPrompt = item.prompts && item.prompts[index];
+          const media = originalPrompt && originalPrompt.media ? originalPrompt.media : null;
+          
+          // 이미지가 있는 경우 미디어 필드 설정
+          return { ...prompt, media };
+        });
         
         return {
           type,
           talker,
-          prompts: promptObjects, // 서버 요구사항: 객체 배열 형태
+          prompts: updatedPromptObjects, // 프롬프트에 미디어 정보 포함
           hasOpts: item.hasOpts || false, // hasOpts 필드 보존
-          ...(image.length > 0 && { image }) // 이미지가 있는 경우에만 필드 추가
+          ...(images.length > 0 && { image: images }) // 이미지가 있는 경우에만 필드 추가
         };
       }
       return item;
