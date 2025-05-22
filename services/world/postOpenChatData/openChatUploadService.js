@@ -3,7 +3,7 @@ const OpenChatDataTransformer = require('./utils/openChatDataTransformer');
 
 class OpenChatUploadService {
   constructor() {
-    this.BASE_URL = 'https://api.staging.ahhaohho.com:4222';
+    this.BASE_URL = 'https://api.staging.ahhaohho.com';
     this.axios = require('axios');
     
     // SSL 인증서 검증 비활성화
