@@ -10,7 +10,7 @@ const httpsAgent = new https.Agent({
 
 class PostGuideUploadService {
   constructor() {
-    this.BASE_URL = 'https://develop.ahhaohho.com:4222';
+    this.BASE_URL = 'https://api.staging.ahhaohho.com:4222';
   }
   
   async getPostGuideById(id) {

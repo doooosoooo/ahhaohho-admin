@@ -3,12 +3,12 @@ const ChatDataTransformer = require('./utils/chatDataTransformer');
 
 class ChatUploadService {
   constructor() {
-    this.BASE_URL = 'https://develop.ahhaohho.com:4222';
+    this.BASE_URL = 'https://api.staging.ahhaohho.com';
     this.axios = require('axios');
     
     // 향상된 HTTPS 에이전트 설정
     this.httpsAgent = new (require('https').Agent)({
-      rejectUnauthorized: true, // SSL 인증서 검증 활성화
+      rejectUnauthorized: false, // SSL 인증서 검증 활성화
       secureProtocol: 'TLS_method', // 최신 TLS 버전 사용
       timeout: 30000, // 소켓 타임아웃 증가 (30초)
       keepAlive: true, // 연결 유지

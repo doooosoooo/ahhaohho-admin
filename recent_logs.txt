@@ -1,0 +1,1003 @@
+[TAILING] Tailing last 1000 lines for [all] processes (change the value with --lines option)
+/Users/dsoojung/.pm2/pm2.log last 1000 lines:
+PM2        | 2024-05-21T07:36:58: PM2 log: App [devIndex:0] starting in -fork mode-
+PM2        | 2024-05-21T07:36:58: PM2 log: App [devIndex:0] online
+PM2        | 2024-05-21T07:37:14: PM2 log: App [devIndex:1] starting in -fork mode-
+PM2        | 2024-05-21T07:37:14: PM2 log: App [devIndex:1] online
+PM2        | 2024-05-27T08:38:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-05-27T08:38:29: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-05-28T08:38:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-05-28T08:38:31: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-05-29T08:45:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-05-29T08:45:38: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-05-30T08:45:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-05-30T08:45:39: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-05-30T14:18:52: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:52: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:54: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:54: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:54: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:55: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:56: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:57: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:58: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] online
+PM2        | 2024-05-30T14:18:59: PM2 log: App [index:2] exited with code [1] via signal [SIGINT]
+PM2        | 2024-05-30T14:18:59: PM2 log: Script /Users/dsoojung/FLM/nodejs-server-template/index.js had too many unstable restarts (16). Stopped. "errored"
+PM2        | 2024-05-30T14:20:18: PM2 log: App [index:2] starting in -fork mode-
+PM2        | 2024-05-30T14:20:18: PM2 log: App [index:2] online
+PM2        | 2024-05-31T08:45:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-05-31T08:45:40: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-01T08:48:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-01T08:48:28: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-02T08:48:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-02T08:48:28: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-03T08:48:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-03T08:48:28: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-04T08:48:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-04T08:48:29: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-05T08:48:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-05T08:48:30: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-06T08:48:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-06T08:48:31: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-07T08:48:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-07T08:48:32: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-08T08:48:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-08T08:48:32: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-09T08:48:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-09T08:48:33: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-10T08:48:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-10T08:48:33: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-11T08:48:36: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-11T08:48:36: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-13T09:41:19: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-13T09:41:19: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-14T09:41:19: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-14T09:41:19: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-16T09:47:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-16T09:47:56: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-18T10:01:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-18T10:01:42: PM2 log: [PM2] Upgrade to version 5.4.0
+PM2        | 2024-06-19T10:01:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-19T10:01:44: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-06-20T10:01:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-20T10:01:43: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-06-21T10:01:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-21T10:01:44: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-06-27T16:21:45: PM2 log: ===============================================================================
+PM2        | 2024-06-27T16:21:45: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2024-06-27T16:21:45: PM2 log: Time                 : Thu Jun 27 2024 16:21:45 GMT+0900 (대한민국 표준시)
+PM2        | 2024-06-27T16:21:45: PM2 log: PM2 version          : 5.3.1
+PM2        | 2024-06-27T16:21:45: PM2 log: Node.js version      : 20.11.1
+PM2        | 2024-06-27T16:21:45: PM2 log: Current arch         : x64
+PM2        | 2024-06-27T16:21:45: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2024-06-27T16:21:45: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2024-06-27T16:21:45: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2024-06-27T16:21:45: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2024-06-27T16:21:45: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2024-06-27T16:21:45: PM2 log: Worker Interval      : 30000
+PM2        | 2024-06-27T16:21:45: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2024-06-27T16:21:45: PM2 log: Concurrent actions   : 2
+PM2        | 2024-06-27T16:21:45: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2024-06-27T16:21:45: PM2 log: ===============================================================================
+PM2        | 2024-06-27T16:21:45: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:45: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:46: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:47: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:48: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:49: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:21:50: PM2 log: App [index:0] exited with code [1] via signal [SIGINT]
+PM2        | 2024-06-27T16:21:50: PM2 log: Script /Users/dsoojung/FLM/ao-challege-server/index.js had too many unstable restarts (16). Stopped. "errored"
+PM2        | 2024-06-27T16:22:30: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:22:30: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:25:38: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:25:38: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:25:39: PM2 log: pid=53755 msg=process killed
+PM2        | 2024-06-27T16:25:39: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:25:39: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:27:32: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:27:32: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:27:32: PM2 log: pid=56652 msg=process killed
+PM2        | 2024-06-27T16:27:32: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:27:32: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:52:16: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:52:16: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:52:16: PM2 log: pid=57907 msg=process killed
+PM2        | 2024-06-27T16:52:16: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:52:16: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:53:34: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:53:34: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:53:34: PM2 log: pid=72813 msg=process killed
+PM2        | 2024-06-27T16:53:34: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:53:34: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:57:03: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:57:03: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:57:03: PM2 log: pid=74100 msg=process killed
+PM2        | 2024-06-27T16:57:03: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:57:03: PM2 log: App [index:0] online
+PM2        | 2024-06-27T16:58:32: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T16:58:32: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T16:58:32: PM2 log: pid=76728 msg=process killed
+PM2        | 2024-06-27T16:58:32: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T16:58:32: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:00:12: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:00:12: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:00:12: PM2 log: pid=77757 msg=process killed
+PM2        | 2024-06-27T17:00:12: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:00:12: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:00:39: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:00:39: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:00:39: PM2 log: pid=78881 msg=process killed
+PM2        | 2024-06-27T17:00:39: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:00:39: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:01:49: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:01:49: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:01:49: PM2 log: pid=79282 msg=process killed
+PM2        | 2024-06-27T17:01:49: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:01:49: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:04:40: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:04:40: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:04:41: PM2 log: pid=80000 msg=process killed
+PM2        | 2024-06-27T17:04:41: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:04:41: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:04:59: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:04:59: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:04:59: PM2 log: pid=81911 msg=process killed
+PM2        | 2024-06-27T17:05:10: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:05:10: PM2 log: App [index:0] online
+PM2        | 2024-06-27T17:05:57: PM2 log: Stopping app:index id:0
+PM2        | 2024-06-27T17:05:57: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-06-27T17:05:57: PM2 log: pid=82446 msg=process killed
+PM2        | 2024-06-27T17:05:57: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-06-27T17:05:57: PM2 log: App [index:0] online
+PM2        | 2024-06-28T16:21:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-28T16:21:47: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-06-29T16:27:20: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-29T16:27:20: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-06-30T16:45:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-06-30T16:45:41: PM2 log: [PM2] Upgrade to version 5.4.1
+PM2        | 2024-07-09T16:51:53: PM2 log: ===============================================================================
+PM2        | 2024-07-09T16:51:53: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2024-07-09T16:51:53: PM2 log: Time                 : Tue Jul 09 2024 16:51:53 GMT+0900 (대한민국 표준시)
+PM2        | 2024-07-09T16:51:53: PM2 log: PM2 version          : 5.3.1
+PM2        | 2024-07-09T16:51:53: PM2 log: Node.js version      : 20.11.1
+PM2        | 2024-07-09T16:51:53: PM2 log: Current arch         : x64
+PM2        | 2024-07-09T16:51:53: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2024-07-09T16:51:53: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2024-07-09T16:51:53: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2024-07-09T16:51:53: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2024-07-09T16:51:53: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2024-07-09T16:51:53: PM2 log: Worker Interval      : 30000
+PM2        | 2024-07-09T16:51:53: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2024-07-09T16:51:53: PM2 log: Concurrent actions   : 2
+PM2        | 2024-07-09T16:51:53: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2024-07-09T16:51:53: PM2 log: ===============================================================================
+PM2        | 2024-07-09T17:23:45: PM2 log: App [server:0] starting in -fork mode-
+PM2        | 2024-07-09T17:23:45: PM2 log: App [server:0] online
+PM2        | 2024-07-09T17:24:56: PM2 log: Stopping app:server id:0
+PM2        | 2024-07-09T17:24:56: PM2 log: App [server:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-07-09T17:24:56: PM2 log: pid=96377 msg=process killed
+PM2        | 2024-07-09T17:25:14: PM2 log: App [server:1] starting in -fork mode-
+PM2        | 2024-07-09T17:25:14: PM2 log: App [server:1] online
+PM2        | 2024-07-10T07:30:00: PM2 log: Stopping app:server id:1
+PM2        | 2024-07-10T07:30:00: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+PM2        | 2024-07-10T07:30:00: PM2 log: pid=97507 msg=process killed
+PM2        | 2024-07-10T16:58:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-10T16:58:00: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-11T16:57:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-11T16:57:51: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-12T16:57:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-12T16:57:53: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-13T17:08:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-13T17:08:28: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-14T18:04:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-14T18:04:02: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-15T18:04:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-15T18:04:02: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-16T18:04:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-16T18:04:05: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-17T19:31:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-17T19:31:27: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-18T19:31:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-18T19:31:27: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-19T13:48:13: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-07-19T13:48:13: PM2 log: App [index:0] online
+PM2        | 2024-07-19T13:48:34: PM2 log: Stopping app:index id:0
+PM2        | 2024-07-19T13:48:34: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2024-07-19T13:48:34: PM2 log: pid=89359 msg=process killed
+PM2        | 2024-07-19T13:48:45: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2024-07-19T13:48:45: PM2 log: App [index:0] online
+PM2        | 2024-07-19T19:46:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-19T19:46:47: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-20T19:49:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-20T19:49:13: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-21T19:55:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-21T19:55:30: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-22T19:55:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-22T19:55:30: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-23T19:55:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-23T19:55:32: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-24T19:56:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-24T19:56:21: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-25T19:56:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-25T19:56:24: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-26T19:56:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-26T19:56:25: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-27T19:59:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-27T19:59:53: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-28T20:02:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-28T20:02:31: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-29T20:09:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-29T20:09:06: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-07-30T20:09:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-07-30T20:09:07: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-01T20:09:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-01T20:09:09: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-02T20:09:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-02T20:09:09: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-03T20:11:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-03T20:11:59: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-04T20:12:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-04T20:12:11: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-05T20:15:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-05T20:15:06: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-06T20:16:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-06T20:16:32: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-07T20:19:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-07T20:19:00: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-08T20:29:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-08T20:29:38: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-09T20:41:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-09T20:41:31: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-10T20:53:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-10T20:53:45: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-11T20:53:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-11T20:53:45: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-12T20:54:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-12T20:54:21: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-13T20:54:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-13T20:54:21: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-14T21:01:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-14T21:01:21: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-15T21:29:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-15T21:29:33: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-16T21:31:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-16T21:31:33: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-17T21:32:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-17T21:32:03: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-18T21:36:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-18T21:36:51: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-19T21:46:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-19T21:46:03: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-20T21:46:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-20T21:46:03: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-21T21:57:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-21T21:57:41: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-22T21:57:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-22T21:57:42: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-23T22:03:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-23T22:03:44: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-24T22:06:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-24T22:06:48: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-25T22:12:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-25T22:12:53: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-26T22:26:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-26T22:26:24: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-27T22:33:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-27T22:33:43: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-29T22:38:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-29T22:38:09: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-30T22:38:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-30T22:38:10: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-08-31T22:38:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-08-31T22:38:10: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-01T22:38:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-01T22:38:15: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-12T07:31:03: PM2 log: ===============================================================================
+PM2        | 2024-09-12T07:31:03: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2024-09-12T07:31:03: PM2 log: Time                 : Thu Sep 12 2024 07:31:03 GMT+0900 (대한민국 표준시)
+PM2        | 2024-09-12T07:31:03: PM2 log: PM2 version          : 5.3.1
+PM2        | 2024-09-12T07:31:03: PM2 log: Node.js version      : 20.11.1
+PM2        | 2024-09-12T07:31:03: PM2 log: Current arch         : x64
+PM2        | 2024-09-12T07:31:03: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2024-09-12T07:31:03: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2024-09-12T07:31:03: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2024-09-12T07:31:03: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2024-09-12T07:31:03: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2024-09-12T07:31:03: PM2 log: Worker Interval      : 30000
+PM2        | 2024-09-12T07:31:03: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2024-09-12T07:31:03: PM2 log: Concurrent actions   : 2
+PM2        | 2024-09-12T07:31:03: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2024-09-12T07:31:03: PM2 log: ===============================================================================
+PM2        | 2024-09-13T07:31:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-13T07:31:05: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-14T07:41:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-14T07:41:25: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-15T07:54:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-15T07:54:12: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-16T08:23:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-16T08:23:05: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-17T08:31:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-17T08:31:52: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-18T08:44:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-18T08:44:52: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-19T08:44:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-19T08:44:52: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-20T08:44:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-20T08:44:52: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-27T14:17:40: PM2 log: ===============================================================================
+PM2        | 2024-09-27T14:17:40: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2024-09-27T14:17:40: PM2 log: Time                 : Fri Sep 27 2024 14:17:40 GMT+0900 (GMT+09:00)
+PM2        | 2024-09-27T14:17:40: PM2 log: PM2 version          : 5.3.1
+PM2        | 2024-09-27T14:17:40: PM2 log: Node.js version      : 20.11.1
+PM2        | 2024-09-27T14:17:40: PM2 log: Current arch         : x64
+PM2        | 2024-09-27T14:17:40: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2024-09-27T14:17:40: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2024-09-27T14:17:40: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2024-09-27T14:17:40: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2024-09-27T14:17:40: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2024-09-27T14:17:40: PM2 log: Worker Interval      : 30000
+PM2        | 2024-09-27T14:17:40: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2024-09-27T14:17:40: PM2 log: Concurrent actions   : 2
+PM2        | 2024-09-27T14:17:40: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2024-09-27T14:17:40: PM2 log: ===============================================================================
+PM2        | 2024-09-28T14:22:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-28T14:22:31: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-29T14:26:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-29T14:26:47: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-09-30T14:26:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-09-30T14:26:47: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-01T14:26:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-01T14:26:48: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-02T14:26:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-02T14:26:49: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-03T14:56:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-03T14:56:13: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-04T14:56:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-04T14:56:13: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-07T15:11:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-07T15:11:26: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-07T15:50:16: PM2 log: pm2 has been killed by signal, dumping process list before exit...
+PM2        | 2024-10-07T15:50:16: PM2 log: Exited peacefully
+PM2        | 2024-10-10T08:04:46: PM2 log: ===============================================================================
+PM2        | 2024-10-10T08:04:46: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2024-10-10T08:04:46: PM2 log: Time                 : Thu Oct 10 2024 08:04:46 GMT+0900 (GMT+09:00)
+PM2        | 2024-10-10T08:04:46: PM2 log: PM2 version          : 5.3.1
+PM2        | 2024-10-10T08:04:46: PM2 log: Node.js version      : 20.11.1
+PM2        | 2024-10-10T08:04:46: PM2 log: Current arch         : x64
+PM2        | 2024-10-10T08:04:46: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2024-10-10T08:04:46: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2024-10-10T08:04:46: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2024-10-10T08:04:46: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2024-10-10T08:04:46: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2024-10-10T08:04:46: PM2 log: Worker Interval      : 30000
+PM2        | 2024-10-10T08:04:46: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2024-10-10T08:04:46: PM2 log: Concurrent actions   : 2
+PM2        | 2024-10-10T08:04:46: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2024-10-10T08:04:46: PM2 log: ===============================================================================
+PM2        | 2024-10-11T08:04:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-11T08:04:49: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2025-02-20T14:02:09: PM2 log: ===============================================================================
+PM2        | 2025-02-20T14:02:09: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2025-02-20T14:02:09: PM2 log: Time                 : Thu Feb 20 2025 14:02:09 GMT+0900 (GMT+09:00)
+PM2        | 2025-02-20T14:02:09: PM2 log: PM2 version          : 5.3.1
+PM2        | 2025-02-20T14:02:09: PM2 log: Node.js version      : 20.11.1
+PM2        | 2025-02-20T14:02:09: PM2 log: Current arch         : x64
+PM2        | 2025-02-20T14:02:09: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2025-02-20T14:02:09: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2025-02-20T14:02:09: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2025-02-20T14:02:09: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2025-02-20T14:02:09: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2025-02-20T14:02:09: PM2 log: Worker Interval      : 30000
+PM2        | 2025-02-20T14:02:09: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2025-02-20T14:02:09: PM2 log: Concurrent actions   : 2
+PM2        | 2025-02-20T14:02:09: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2025-02-20T14:02:09: PM2 log: ===============================================================================
+PM2        | 2025-02-20T14:02:13: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:13: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:13: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:13: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:13: PM2 log: App [Danal Transaction:2] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:14: PM2 log: App [Danal Transaction:2] online
+PM2        | 2025-02-20T14:02:19: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:19: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:19: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:19: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:19: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:19: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:19: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:19: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:20: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:20: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:20: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:20: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:20: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:20: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:20: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:20: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:21: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:21: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:21: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:21: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:21: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:21: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:21: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:21: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:22: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:22: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:22: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:22: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:22: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:22: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:22: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:22: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:23: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:23: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:23: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:23: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:23: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:23: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:24: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:24: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:24: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:24: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:24: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:24: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:24: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:24: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:25: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:25: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:25: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:25: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:25: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:25: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:25: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:25: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:26: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:26: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:26: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:26: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:26: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:26: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:26: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:26: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:26: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:26: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:26: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:26: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:26: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:26: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:27: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:27: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:27: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:27: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:27: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:27: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:27: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:27: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:27: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:27: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:28: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:28: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:28: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:28: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:28: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:28: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:28: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:28: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:29: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:29: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:29: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:29: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:29: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:29: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:29: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:29: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:30: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:30: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:30: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:30: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:30: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:30: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:30: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:30: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:31: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:31: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:31: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:31: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:31: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:31: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:32: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:32: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:32: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:32: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:32: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:32: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:32: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:32: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:33: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:33: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:33: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:33: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:33: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:33: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:33: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:33: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:34: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:34: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:34: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:34: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:34: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:34: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:34: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:34: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:35: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:35: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:35: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:35: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:35: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:35: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:35: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:35: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:36: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:36: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:36: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:36: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:36: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:36: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:37: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:37: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:37: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:37: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:37: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:37: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:37: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:37: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:38: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:38: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:38: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:38: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:38: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:38: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:38: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:38: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:39: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:39: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:39: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:39: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:39: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:39: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:39: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:39: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:40: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:40: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:40: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:40: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:40: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:40: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:41: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:41: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:41: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:41: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:41: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:41: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:41: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:41: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:42: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:42: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:42: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:42: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:42: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:42: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:42: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:42: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:42: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:42: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:42: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:42: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:42: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:42: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:43: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:43: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:43: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:43: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:43: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:43: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:43: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:43: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:43: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:43: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:44: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:44: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:44: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:44: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:44: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:44: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:44: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:44: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:45: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:45: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:45: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:45: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:45: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:45: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:45: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:45: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:46: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:46: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:46: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:46: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:46: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:46: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:46: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:46: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:47: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:47: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:47: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:47: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:47: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:47: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:47: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:47: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:48: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:48: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:48: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:48: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:48: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:48: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:48: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:48: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:50: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:50: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:50: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:50: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:50: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:50: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:50: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:50: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:51: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:51: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:51: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:51: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:51: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:51: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:51: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:51: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:52: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:52: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:52: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:52: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:52: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:52: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:52: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:52: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:54: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:54: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:54: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:54: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:54: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:54: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:54: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:54: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:55: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:55: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:55: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:55: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:55: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:55: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:55: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:55: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:56: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:56: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:56: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:56: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:56: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:56: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:56: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:56: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:57: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:57: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:57: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:57: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:57: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:57: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:57: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:02:57: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:59: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:02:59: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:59: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:59: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:02:59: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:02:59: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:02:59: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:02:59: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:02: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:02: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:02: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:02: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:02: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:02: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:02: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:02: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:05: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:05: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:05: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:05: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:05: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:05: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:05: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:05: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:12: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:12: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:12: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:12: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:12: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:12: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:12: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:12: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:16: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:16: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:16: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:16: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:16: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:16: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:16: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:16: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:17: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:17: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:17: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:17: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:17: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:17: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:18: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:18: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:47: PM2 log: Stopping app:Internal API id:0
+PM2        | 2025-02-20T14:03:47: PM2 log: Stopping app:External API id:1
+PM2        | 2025-02-20T14:03:48: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:03:48: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:48: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:48: PM2 log: pid=88136 msg=process killed
+PM2        | 2025-02-20T14:03:48: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:48: PM2 log: pid=88135 msg=process killed
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:48: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:03:48: PM2 log: Stopping app:Danal Transaction id:2
+PM2        | 2025-02-20T14:03:48: PM2 log: App name:Danal Transaction id:2 disconnected
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Danal Transaction:2] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:03:48: PM2 log: pid=86748 msg=process killed
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Danal Transaction:2] starting in -cluster mode-
+PM2        | 2025-02-20T14:03:48: PM2 log: App [Danal Transaction:2] online
+PM2        | 2025-02-20T14:04:46: PM2 log: Stopping app:Internal API id:0
+PM2        | 2025-02-20T14:04:46: PM2 log: Stopping app:External API id:1
+PM2        | 2025-02-20T14:04:46: PM2 log: App name:Internal API id:0 disconnected
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Internal API:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:04:46: PM2 log: App name:External API id:1 disconnected
+PM2        | 2025-02-20T14:04:46: PM2 log: App [External API:1] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:04:46: PM2 log: pid=88634 msg=process killed
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Internal API:0] starting in -cluster mode-
+PM2        | 2025-02-20T14:04:46: PM2 log: pid=88633 msg=process killed
+PM2        | 2025-02-20T14:04:46: PM2 log: App [External API:1] starting in -cluster mode-
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Internal API:0] online
+PM2        | 2025-02-20T14:04:46: PM2 log: App [External API:1] online
+PM2        | 2025-02-20T14:04:46: PM2 log: Stopping app:Danal Transaction id:2
+PM2        | 2025-02-20T14:04:46: PM2 log: App name:Danal Transaction id:2 disconnected
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Danal Transaction:2] exited with code [0] via signal [SIGINT]
+PM2        | 2025-02-20T14:04:46: PM2 log: pid=88655 msg=process killed
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Danal Transaction:2] starting in -cluster mode-
+PM2        | 2025-02-20T14:04:46: PM2 log: App [Danal Transaction:2] online
+PM2        | 2025-02-21T14:02:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-02-21T14:02:13: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-02-24T16:22:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-02-24T16:22:53: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-02-25T16:22:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-02-25T16:22:53: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-04T11:37:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-04T11:37:01: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-05T11:37:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-05T11:37:01: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-06T11:37:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-06T11:37:01: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-07T11:37:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-07T11:37:02: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-10T11:48:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-10T11:48:10: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-11T11:48:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-11T11:48:11: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-12T11:48:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-12T11:48:12: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-13T11:48:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-13T11:48:12: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-03-14T11:48:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2025-03-14T11:48:13: PM2 log: [PM2] Upgrade to version 5.4.3
+PM2        | 2025-05-19T12:37:42: PM2 log: ===============================================================================
+PM2        | 2025-05-19T12:37:42: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2025-05-19T12:37:42: PM2 log: Time                 : Mon May 19 2025 12:37:42 GMT+0900 (대한민국 표준시)
+PM2        | 2025-05-19T12:37:42: PM2 log: PM2 version          : 5.3.1
+PM2        | 2025-05-19T12:37:42: PM2 log: Node.js version      : 20.11.1
+PM2        | 2025-05-19T12:37:42: PM2 log: Current arch         : x64
+PM2        | 2025-05-19T12:37:42: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2025-05-19T12:37:42: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2025-05-19T12:37:42: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2025-05-19T12:37:42: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2025-05-19T12:37:42: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2025-05-19T12:37:42: PM2 log: Worker Interval      : 30000
+PM2        | 2025-05-19T12:37:42: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2025-05-19T12:37:42: PM2 log: Concurrent actions   : 2
+PM2        | 2025-05-19T12:37:42: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2025-05-19T12:37:42: PM2 log: ===============================================================================
+PM2        | 2025-05-19T12:37:42: PM2 log: ===============================================================================
+PM2        | 2025-05-19T12:37:42: PM2 log: --- PM2 global error caught ---------------------------------------------------
+PM2        | 2025-05-19T12:37:42: PM2 log: Time                 : Mon May 19 2025 12:37:42 GMT+0900 (대한민국 표준시)
+PM2        | 2025-05-19T12:37:42: PM2 error: write EPIPE
+PM2        | 2025-05-19T12:37:42: PM2 error: Error: write EPIPE
+PM2        |     at target._send (node:internal/child_process:879:20)
+PM2        |     at target.send (node:internal/child_process:752:19)
+PM2        |     at Daemon.sendReady (/Users/dsoojung/.nvm/versions/node/v20.11.1/lib/node_modules/pm2/lib/Daemon.js:315:13)
+PM2        |     at RepSocket.<anonymous> (/Users/dsoojung/.nvm/versions/node/v20.11.1/lib/node_modules/pm2/lib/Daemon.js:153:10)
+PM2        |     at Object.onceWrapper (node:events:632:28)
+PM2        |     at RepSocket.emit (node:events:518:28)
+PM2        |     at RepSocket.emit (node:domain:488:12)
+PM2        |     at Server.emit (node:events:518:28)
+PM2        |     at Server.emit (node:domain:551:15)
+PM2        |     at emitListeningNT (node:net:1906:10)
+PM2        | 2025-05-19T12:37:42: PM2 log: ===============================================================================
+PM2        | 2025-05-19T12:37:42: PM2 error: [PM2] Resurrecting PM2
+PM2        | Be sure to have the latest version by doing `npm install pm2@latest -g` before doing this procedure.
+PM2        | [PM2][WARN] No process found
+PM2        | [PM2] [v] All Applications Stopped
+PM2        | 2025-05-19T12:37:43: PM2 log: PM2 successfully stopped
+PM2        | [PM2] [v] PM2 Daemon Stopped
+PM2        | [PM2] Spawning PM2 daemon with pm2_home=/Users/dsoojung/.pm2
+PM2        | 2025-05-19T12:37:43: PM2 log: ===============================================================================
+PM2        | 2025-05-19T12:37:43: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+PM2        | 2025-05-19T12:37:43: PM2 log: Time                 : Mon May 19 2025 12:37:43 GMT+0900 (대한민국 표준시)
+PM2        | 2025-05-19T12:37:43: PM2 log: PM2 version          : 5.3.1
+PM2        | 2025-05-19T12:37:43: PM2 log: Node.js version      : 20.11.1
+PM2        | 2025-05-19T12:37:43: PM2 log: Current arch         : x64
+PM2        | 2025-05-19T12:37:43: PM2 log: PM2 home             : /Users/dsoojung/.pm2
+PM2        | 2025-05-19T12:37:43: PM2 log: PM2 PID file         : /Users/dsoojung/.pm2/pm2.pid
+PM2        | 2025-05-19T12:37:43: PM2 log: RPC socket file      : /Users/dsoojung/.pm2/rpc.sock
+PM2        | 2025-05-19T12:37:43: PM2 log: BUS socket file      : /Users/dsoojung/.pm2/pub.sock
+PM2        | 2025-05-19T12:37:43: PM2 log: Application log path : /Users/dsoojung/.pm2/logs
+PM2        | 2025-05-19T12:37:43: PM2 log: Worker Interval      : 30000
+PM2        | 2025-05-19T12:37:43: PM2 log: Process dump file    : /Users/dsoojung/.pm2/dump.pm2
+PM2        | 2025-05-19T12:37:43: PM2 log: Concurrent actions   : 2
+PM2        | 2025-05-19T12:37:43: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2025-05-19T12:37:43: PM2 log: ===============================================================================
+PM2        | [PM2] Restoring processes located in /Users/dsoojung/.pm2/dump.pm2
+PM2        | [PM2] Process /Users/dsoojung/FLM/ai-chatbot/index.js restored
+PM2        | >>>>>>>>>> PM2 updated
+PM2        | ┌────┬──────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+PM2        | │ id │ name     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+PM2        | ├────┼──────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+PM2        | │ 0  │ index    │ default     │ 1.0.0   │ fork    │ N/A      │ 0      │ 299  │ stopped   │ 0%       │ 0b       │ dsoojung │ disabled │
+PM2        | └────┴──────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+PM2        | 2025-05-19T12:40:32: PM2 log: App [index:0] starting in -fork mode-
+PM2        | 2025-05-19T12:40:32: PM2 log: App [index:0] online
+PM2        | 2025-05-19T12:40:39: PM2 log: Stopping app:index id:0
+PM2        | 2025-05-19T12:40:40: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+PM2        | 2025-05-19T12:40:40: PM2 log: pid=36021 msg=process killed
+
