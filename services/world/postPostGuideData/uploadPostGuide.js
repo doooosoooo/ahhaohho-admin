@@ -11,7 +11,7 @@ async function loadAndUploadPostGuideData() {
     const dataDir = path.join(__dirname, '../rawData');
     const files = await fs.readdir(dataDir);
     const postGuideDataFile = files
-      .filter(file => file.startsWith('postingGuideData-updateAt'))
+      .filter(file => file.startsWith('chatData-updateAt'))
       .sort()
       .pop();
     
@@ -43,7 +43,7 @@ async function loadAndUpdatePostGuideData() {
     const dataDir = path.join(__dirname, '../rawData');
     const files = await fs.readdir(dataDir);
     const postGuideDataFile = files
-      .filter(file => file.startsWith('postingGuideData-updateAt'))
+      .filter(file => file.startsWith('chatData-updateAt'))
       .sort()
       .pop();
     
