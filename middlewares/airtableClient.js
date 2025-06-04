@@ -83,7 +83,7 @@ async function initializeWorld() {
     }
 }
 
-async function fetchTableData(baseName, tableName, viewName) {
+async function fetchTableData(baseName, tableName, viewName, lastUpdateDate = null) {
     try {
         if (baseName === 'challenge') {
             await initializeChallenge();
@@ -93,7 +93,16 @@ async function fetchTableData(baseName, tableName, viewName) {
             await initializeParts();
         }
 
-        const records = await base(tableName).select({ view: viewName }).all();
+        let selectOptions = { view: viewName };
+        
+        // 마지막 업데이트 날짜가 있으면 필터링 적용
+        if (lastUpdateDate) {
+            // ISO 형식의 날짜를 Airtable 포맷으로 변환
+            selectOptions.filterByFormula = `IS_AFTER({Last Modified}, "${lastUpdateDate}")`;
+            console.log(`Filtering records modified after: ${lastUpdateDate}`);
+        }
+
+        const records = await base(tableName).select(selectOptions).all();
         return records.map(record => ({
             id: record.id,  // record ID를 최상위 레벨에 추가
             ...record.fields  // 나머지 필드들

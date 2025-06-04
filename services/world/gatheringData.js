@@ -66,8 +66,13 @@ async function initializeS3Client() {
 }
 
 // 미디어 파일의 컨텐츠 타입으로부터 타입 결정
-function getMediaTypeFromContentType(contentType) {
+function getMediaTypeFromContentType(contentType, url = '', filename = '') {
     if (!contentType) return 'unknown';
+    
+    // .octostudio 파일은 특별한 포맷으로 차원 정보가 필요없음
+    if (filename.endsWith('.octostudio') || url.includes('.octostudio')) {
+        return 'octostudio';
+    }
     
     if (contentType.startsWith('image/')) {
         return 'image';
@@ -131,7 +136,7 @@ async function removeTempFile(filePath) {
     }
 }
 
-async function getMediaDimensions(url) {
+async function getMediaDimensions(url, filename = '') {
     try {
         log(`Getting dimensions for media: ${url.substring(0, 60)}...`, false);
         
@@ -183,12 +188,22 @@ async function getMediaDimensions(url) {
             
             // 미디어 타입 결정
             const contentType = response.headers['content-type'] || '';
-            const mediaType = getMediaTypeFromContentType(contentType);
+            const mediaType = getMediaTypeFromContentType(contentType, url, filename);
             
             log(`Media type detected: ${mediaType} (${contentType})`, false);
             
             // 미디어 타입에 따라 다르게 처리
-            if (mediaType === 'image') {
+            if (mediaType === 'octostudio') {
+                // .octostudio 파일은 차원 정보가 필요없음
+                log('Octostudio file detected, skipping dimension extraction', false);
+                return {
+                    width: null,
+                    height: null,
+                    success: true,
+                    method: 'skipped',
+                    mediaType: 'octostudio'
+                };
+            } else if (mediaType === 'image') {
                 // 이미지인 경우 Sharp 사용
                 const sharp = require('sharp');
                 const metadata = await sharp(response.data).metadata();
@@ -252,7 +267,7 @@ async function getMediaDimensions(url) {
 // 기존 함수명 유지 (하위 호환성)
 const getImageDimensions = getMediaDimensions;
 
-async function uploadFileFromUrlToS3(url, key) {
+async function uploadFileFromUrlToS3(url, key, filename = '') {
     if (!s3) {
         log(`Initializing S3 client for ${key}`, false);
         await initializeS3Client();
@@ -368,7 +383,7 @@ async function uploadFileFromUrlToS3(url, key) {
                     
                     try {
                         // 여러 방법으로 크기 정보 가져오기 시도
-                        const dimensions = await getImageDimensions(url);
+                        const dimensions = await getImageDimensions(url, filename);
                         
                         // 성공적으로 미디어 크기를 가져온 경우
                         const locationUrl = `${baseUrl}?w=${dimensions.width}&h=${dimensions.height}`;
@@ -435,7 +450,7 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
                             const s3Key = `${mainKey}/${fileName}`;
 
                             // URL에서 S3로 직접 업로드
-                            const s3Response = await uploadFileFromUrlToS3(url, s3Key);
+                            const s3Response = await uploadFileFromUrlToS3(url, s3Key, file.filename || '');
                             
                             // 스킵된 파일 처리
                             if (s3Response.skipped) {
@@ -486,7 +501,7 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
                                             const thumbS3Key = `${mainKey}/thumbnails/${size}/${thumbFileName}`;
 
                                             // 썸네일 URL에서 S3로 직접 업로드
-                                            const thumbS3Response = await uploadFileFromUrlToS3(thumbUrl, thumbS3Key);
+                                            const thumbS3Response = await uploadFileFromUrlToS3(thumbUrl, thumbS3Key, file.filename || '');
                                             
                                             if (thumbS3Response.skipped) {
                                                 skippedFiles++;
@@ -570,16 +585,48 @@ async function processRecord(record, mainKey, currentIndex, totalRecords) {
 }
 
 async function fetchExistingData(mainKey, dataDir) {
-    const mainKeyPattern = new RegExp(`${mainKey}-updateAt\\d{8}.json`);
+    const mainKeyPattern = new RegExp(`${mainKey}-updateAt(\\d{8})\\.json`);
     const files = await fs.readdir(dataDir);
-    const existingFile = files.find(file => mainKeyPattern.test(file));
+    
+    // 모든 매칭 파일을 찾아서 날짜별로 정렬하여 최신 파일 선택
+    const matchingFiles = files
+        .map(file => {
+            const match = file.match(mainKeyPattern);
+            return match ? { file, date: match[1] } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.date.localeCompare(a.date)); // 날짜 내림차순 정렬
 
-    if (existingFile) {
-        const filePath = path.join(dataDir, existingFile);
+    if (matchingFiles.length > 0) {
+        const latestFile = matchingFiles[0];
+        logDebug(`Using latest existing data file for ${mainKey}: ${latestFile.file} (${latestFile.date})`);
+        const filePath = path.join(dataDir, latestFile.file);
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     }
     return [];
+}
+
+// 마지막 업데이트 시간 저장/로드 함수들
+async function getLastUpdateTime(mainKey, dataDir) {
+    try {
+        const timestampFile = path.join(dataDir, `${mainKey}-lastUpdate.timestamp`);
+        const timestamp = await fs.readFile(timestampFile, 'utf8');
+        return timestamp.trim();
+    } catch {
+        // 파일이 없으면 null 반환 (첫 실행)
+        return null;
+    }
+}
+
+async function saveLastUpdateTime(mainKey, dataDir, timestamp) {
+    try {
+        const timestampFile = path.join(dataDir, `${mainKey}-lastUpdate.timestamp`);
+        await fs.writeFile(timestampFile, timestamp, 'utf8');
+        logDebug(`Saved last update time for ${mainKey}: ${timestamp}`);
+    } catch (error) {
+        log(`Error saving last update time for ${mainKey}: ${error.message}`, true);
+    }
 }
 
 async function main() {
@@ -603,35 +650,54 @@ async function main() {
             currentTableIndex++;
             try {
                 console.log(`[${new Date().toISOString()}] Processing table ${currentTableIndex}/${totalTables}: ${tableName}`);
-                const tableData = await fetchTableData('world', tableName, viewName);
-                logDebug(`Fetched ${tableData.length} records from ${tableName}`);
+                
+                // 마지막 업데이트 시간 가져오기
+                const lastUpdateTime = await getLastUpdateTime(mainKey, dataDir);
+                const currentTime = new Date().toISOString();
+                
+                if (lastUpdateTime) {
+                    console.log(`[${new Date().toISOString()}] Incremental update for ${tableName} since ${lastUpdateTime}`);
+                } else {
+                    console.log(`[${new Date().toISOString()}] Full sync for ${tableName} (first run)`);
+                }
+                
+                // 증분 업데이트로 데이터 가져오기
+                const tableData = await fetchTableData('world', tableName, viewName, lastUpdateTime);
+                logDebug(`Fetched ${tableData.length} records from ${tableName} ${lastUpdateTime ? '(incremental)' : '(full)'}`);
 
                 // Load existing data
                 const existingData = await fetchExistingData(mainKey, dataDir);
                 const existingIds = new Set(existingData.map(record => record.id));
                 logDebug(`Found ${existingData.length} existing records for ${mainKey}`);
 
-                // Process only new or updated records
-                const newRecords = [];
+                // Process all fetched records (new or updated)
+                const processedRecords = [];
                 for (let i = 0; i < tableData.length; i++) {
                     const record = tableData[i];
-                    if (!existingIds.has(record.id)) {
-                        try {
-                            const processedRecord = await processRecord(record, mainKey, i, tableData.length);
-                            newRecords.push(processedRecord);
-                        } catch (recordError) {
-                            log(`Error processing record ${i} in ${tableName}: ${recordError.message}`, true);
-                            // 실패한 레코드도 원본 추가
-                            newRecords.push(record);
+                    try {
+                        const processedRecord = await processRecord(record, mainKey, i, tableData.length);
+                        processedRecords.push(processedRecord);
+                        
+                        // 기존 레코드 업데이트인 경우 기존 데이터에서 제거
+                        if (existingIds.has(record.id)) {
+                            const existingIndex = existingData.findIndex(existing => existing.id === record.id);
+                            if (existingIndex !== -1) {
+                                existingData.splice(existingIndex, 1);
+                                logDebug(`Updated existing record: ${record.id}`);
+                            }
                         }
+                    } catch (recordError) {
+                        log(`Error processing record ${i} in ${tableName}: ${recordError.message}`, true);
+                        // 실패한 레코드도 원본 추가
+                        processedRecords.push(record);
                     }
                     totalProcessedRecords++;
                 }
 
-                totalNewRecords += newRecords.length;
+                totalNewRecords += processedRecords.length;
                 
-                // Combine new records with existing data
-                const updatedData = [...existingData, ...newRecords];
+                // Combine processed records with existing data
+                const updatedData = [...existingData, ...processedRecords];
                 const jsonData = JSON.stringify(updatedData, null, 2);
 
                 const fileName = `${mainKey}-updateAt${updateDate}.json`;
@@ -648,7 +714,11 @@ async function main() {
 
                 // Save updated data
                 await fs.writeFile(filePath, jsonData, 'utf8');
-                logSuccess(`Table ${tableName}: Processed ${newRecords.length} new records, saved to ${fileName}`);
+                
+                // 성공적으로 처리된 경우에만 마지막 업데이트 시간 저장
+                await saveLastUpdateTime(mainKey, dataDir, currentTime);
+                
+                logSuccess(`Table ${tableName}: Processed ${processedRecords.length} records (${lastUpdateTime ? 'incremental' : 'full'}), saved to ${fileName}`);
             } catch (error) {
                 totalFailedTables++;
                 log(`Error processing data for table ${tableName}: ${error.message}`, true);

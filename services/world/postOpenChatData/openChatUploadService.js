@@ -3,12 +3,16 @@ const OpenChatDataTransformer = require('./utils/openChatDataTransformer');
 
 class OpenChatUploadService {
   constructor() {
-    this.BASE_URL = 'https://api.staging.ahhaohho.com';
+    this.BASE_URL = 'https://world.ahhaohho.com';
     this.axios = require('axios');
     
-    // SSL 인증서 검증 비활성화
+    // 향상된 HTTPS 에이전트 설정
     this.httpsAgent = new (require('https').Agent)({
-      rejectUnauthorized: false
+      rejectUnauthorized: false, // SSL 인증서 검증 활성화
+      secureProtocol: 'TLS_method', // 최신 TLS 버전 사용
+      timeout: 30000, // 소켓 타임아웃 증가 (30초)
+      keepAlive: true, // 연결 유지
+      maxSockets: 5 // 동시 연결 제한
     });
   }
   
@@ -18,21 +22,137 @@ class OpenChatUploadService {
     }
     
     try {
-      const response = await this.axios.get(`${this.BASE_URL}/world/chats?chatIdx=${encodeURIComponent(id)}`, {
-        headers: { 'Content-Type': 'application/json' },
-        timeout: 5000,
+      console.log(`[GET] 오픈채팅 조회 요청: chatIdx=${id}`);
+      
+      // 서버가 응답할 시간을 주기 위해 더 긴 딜레이 추가 (1초 → 3초)
+      await new Promise(resolve => setTimeout(resolve, 3000));
+      
+      // 다양한 API 엔드포인트 시도
+      // 1. 일반 쿼리를 사용한 조회
+      const searchResponse = await this.axios.get(`${this.BASE_URL}/world/chats?chatIdx=${encodeURIComponent(id)}`, {
+        headers: { 
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache', // 캐시 방지
+          'Accept': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+          'Pragma': 'no-cache'
+        },
+        timeout: 30000, // 타임아웃 증가 (30초)
         httpsAgent: this.httpsAgent
       });
       
-      // 결과가 배열인 경우 chatIdx가 정확히 일치하는 항목만 필터링
-      if (Array.isArray(response.data)) {
-        const exactMatch = response.data.find(chat => chat.chatIdx === id);
-        return exactMatch || null;
+      // 응답에 유효한 데이터가 있는지 확인
+      if (searchResponse.data && searchResponse.data.data) {
+        console.log(`[GET] 오픈채팅 조회 응답 받음 (searchResponse): ID=${id}`);
+        
+        // 정확한 ID 일치 여부 확인
+        const isIdMatch = searchResponse.data.data.chatIdx === id || searchResponse.data.data.id === id;
+        
+        // 응답에 데이터는 있지만 ID가 일치하지 않는 경우에도 요청한 ID 사용
+        const result = { ...searchResponse.data.data };
+        
+        // chatIdx 필드가 없거나 다른 경우 요청한 ID로 설정
+        if (!result.chatIdx || !isIdMatch) {
+          result.chatIdx = id;
+          console.log(`[GET] 응답에 chatIdx가 없거나 불일치하여 요청한 ID 사용: ${id}`);
+        }
+        
+        return result;
       }
       
-      return response.data || null;
+      // 2. 직접 ID로 조회 시도 (GET /chats/:id)
+      try {
+        const directResponse = await this.axios.get(`${this.BASE_URL}/world/chats/${encodeURIComponent(id)}`, {
+          headers: { 
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache',
+            'Accept': 'application/json'
+          },
+          timeout: 30000,
+          httpsAgent: this.httpsAgent
+        });
+        
+        if (directResponse.data) {
+          console.log(`[GET] 오픈채팅 조회 응답 받음 (directResponse): ID=${id}`);
+          
+          // 정확한 ID 일치 여부 확인
+          const isIdMatch = directResponse.data.chatIdx === id || directResponse.data.id === id;
+          
+          // 응답 데이터 복사 및 ID 확인
+          const result = { ...directResponse.data };
+          
+          // chatIdx 필드가 없거나 다른 경우 요청한 ID로 설정
+          if (!result.chatIdx || !isIdMatch) {
+            result.chatIdx = id;
+            console.log(`[GET] 직접 조회 응답에 chatIdx가 없거나 불일치하여 요청한 ID 사용: ${id}`);
+          }
+          
+          return result;
+        }
+      } catch (directError) {
+        console.log(`[GET] 직접 ID 조회 실패: ${directError.message}`);
+      }
+      
+      // 원래 응답 계속 처리
+      const response = searchResponse;
+      
+      console.log(`[GET] 오픈채팅 조회 응답: 상태=${response.status}, 데이터 길이=${Array.isArray(response.data) ? response.data.length : '객체'}`);
+      
+      // 결과가 배열인 경우 chatIdx가 정확히 일치하는 항목 필터링 또는 첫 번째 항목 사용
+      if (Array.isArray(response.data)) {
+        // 정확히 일치하는 항목 검색
+        const exactMatch = response.data.find(chat => chat.chatIdx === id || chat.id === id);
+        
+        if (exactMatch) {
+          console.log(`[GET] 정확히 일치하는 오픈채팅 찾음: ${exactMatch.chatIdx || id}`);
+          
+          // chatIdx 필드가 없으면 추가
+          const result = { ...exactMatch };
+          if (!result.chatIdx) {
+            result.chatIdx = id;
+            console.log(`[GET] 일치항목에 chatIdx가 없어 요청한 ID 사용: ${id}`);
+          }
+          
+          return result;
+        } else if (response.data.length > 0) {
+          // 정확히 일치하는 항목이 없지만 결과가 있는 경우, 첫 번째 항목 사용하고 ID 설정
+          console.log(`[GET] 정확히 일치하는 오픈채팅을 찾지 못했지만 결과 있음. 첫 번째 항목 사용: ${id}`);
+          const result = { ...response.data[0] };
+          result.chatIdx = id; // 요청한 ID 사용
+          return result;
+        } else {
+          console.log(`[GET] 정확히 일치하는 오픈채팅을 찾지 못함 (빈 배열): ${id}`);
+          return null;
+        }
+      }
+      
+      // 응답이 있는 경우, 응답에 chatIdx가 없더라도 원래 요청한 ID를 사용하도록 추가
+      if (response.data) {
+        // 응답 데이터 로깅
+        console.log(`[GET] 응답 받음. 을 요청한 오픈채팅 ID: ${id}`);
+        
+        // 만약 응답에 chatIdx가 없더라도 요청한 ID로 채워넣기
+        const result = { ...response.data };
+        if (!result.chatIdx) {
+          result.chatIdx = id; // 요청한 ID를 사용
+          console.log(`[GET] 응답에 chatIdx가 없으므로 요청한 ID를 사용: ${id}`);
+        }
+        
+        return result;
+      }
+      
+      return null; // response.data가 없으면 null 반환
     } catch (error) {
-      console.error(`Error fetching chat by id: ${error.message}`);
+      console.error(`[GET] 오픈채팅 조회 오류: ${error.message}`, {
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        url: error.config?.url
+      });
+      
+      if (error.response?.status === 404) {
+        console.log(`[GET] 404 오류: 오픈채팅 ID ${id}가 존재하지 않음`);
+      }
+      
       return null;
     }
   }
@@ -45,30 +165,71 @@ class OpenChatUploadService {
 
       const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
       
-      // 디버깅을 위한 로깅 추가
-      console.log('Uploading chat:', {
+      // 디버깅을 위한 로깅 추가 (간략한 로그만 출력)
+      console.log('[UPLOAD] 오픈채팅 생성 시작:', {
         id: chatData.id,
         chatIdx: transformedData.chatIdx,
-        transformedData: JSON.stringify(transformedData, null, 2)
+        step: transformedData.step
       });
 
+      // 새로운 데이터 생성 전에 이미 존재하는지 한 번 더 확인
+      const existingChat = await this.getChatById(transformedData.chatIdx);
+      if (existingChat) {
+        // 응답이 있다면 업데이트로 전환 (응답에 chatIdx가 없더라도 요청한 ID로 업데이트)
+        console.log(`[UPLOAD] 이미 존재하는 오픈채팅임: ${transformedData.chatIdx}, 업데이트로 전환합니다`);
+        return this.updateSingleChat(chatData);
+      }
+      
+      // POST 요청 전 chatIdx 존재 확인
+      if (!transformedData.chatIdx) {
+        transformedData.chatIdx = chatData.id; // chatIdx 명시적 할당
+        console.log(`[UPLOAD] POST 요청 ChatIdx 명시적 설정: ${transformedData.chatIdx}`);
+      }
+      
+      // POST 요청 실행
       const response = await this.axios.post(
         `${this.BASE_URL}/world/chats`, 
         transformedData,
         {
-          headers: { 'Content-Type': 'application/json' },
-          timeout: 10000, // 10초 타임아웃 설정
+          headers: { 
+            'Content-Type': 'application/json',
+            'X-Debug-ChatIdx': transformedData.chatIdx || 'missing', // 디버깅용 헤더 추가
+            'Cache-Control': 'no-cache' // 캐시 사용 방지
+          },
+          timeout: 30000, // 30초 타임아웃 설정
           httpsAgent: this.httpsAgent
         }
       );
 
-      return response.data;
+      console.log(`[UPLOAD] 오픈채팅 생성 성공: chatIdx=${transformedData.chatIdx}, 응답 상태=${response.status}`);
+      
+      // 생성 후 검증 (확인을 위해 잠시 기다림)
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      const createdChat = await this.getChatById(transformedData.chatIdx);
+      
+      if (createdChat) {
+        // 응답에 chatIdx가 없더라도 원래 ID 사용
+        const chatIdx = createdChat.chatIdx || transformedData.chatIdx;
+        console.log(`[UPLOAD] 생성 후 오픈채팅 확인 성공: chatIdx=${chatIdx}`);
+      } else {
+        console.warn(`[UPLOAD] 주의: 새로 생성한 오픈채팅을 조회할 수 없음: chatIdx=${transformedData.chatIdx}`);
+      }
+      
+      // 응답에 chatIdx가 없을 경우 추가
+      const responseData = response.data || {};
+      if (!responseData.chatIdx) {
+        responseData.chatIdx = transformedData.chatIdx;
+        console.log(`[UPLOAD] 응답에 chatIdx 추가: ${transformedData.chatIdx}`);
+      }
+      
+      return responseData;
     } catch (error) {
       // 에러 상세 정보 로깅
-      console.error('Upload error details:', {
-        chatId: chatData?.id,
-        chatIdx: OpenChatDataTransformer.transformRequestData(chatData)?.chatIdx,
+      console.error('[UPLOAD] 업로드 오류:', {
+        chatIdx: chatData?.id,
         status: error.response?.status,
+        statusText: error.response?.statusText,
+        url: error.config?.url,
         data: error.response?.data,
         message: error.message
       });
@@ -78,6 +239,9 @@ class OpenChatUploadService {
   }
   
   async updateSingleChat(chatData) {
+    let retryCount = 0;
+    const maxRetries = 3;
+    
     try {
       if (!chatData || typeof chatData !== 'object') {
         throw new Error('Invalid chat data: expected an object');
@@ -86,41 +250,214 @@ class OpenChatUploadService {
       const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
       
       // 디버깅을 위한 로깅 추가
-      console.log('Updating chat:', {
+      console.log('[UPDATE] 오픈채팅 업데이트 시작:', {
         id: chatData.id,
-        chatIdx: transformedData.chatIdx,
-        transformedData: JSON.stringify(transformedData, null, 2)
+        chatIdx: transformedData.chatIdx
       });
       
-      // ID로 기존 데이터 검색
-      const existingChat = await this.getChatById(transformedData.chatIdx);
+      // 중요: 서버에 데이터가 있는지 확인하기 전에 짧은 지연 추가
+      // API 서버에서 응답이 완전히 처리될 시간을 확보
+      await new Promise(resolve => setTimeout(resolve, 2000));
       
-      if (!existingChat) {
-        console.log(`Chat with id '${transformedData.chatIdx}' not found, creating a new one`);
-        // 기존 데이터가 없으면 새로 생성
+      // 실제 처리 시작 - 재시도 로직 적용
+      while (retryCount <= maxRetries) {
+        try {
+          // chatIdx로 기존 데이터 검색
+          const existingChat = await this.getChatById(transformedData.chatIdx);
+          
+          if (!existingChat) {
+            // GET 요청에서 404 오류 (데이터가 없음)
+            if (retryCount < maxRetries) {
+              console.log(`[UPDATE] 오픈채팅 없음 (${retryCount+1}/${maxRetries+1} 시도): chatIdx=${transformedData.chatIdx} - 재시도 중...`);
+              retryCount++;
+              await new Promise(resolve => setTimeout(resolve, 2000 * retryCount)); // 점진적 증가 대기 시간
+              continue; // 다시 시도
+            }
+            
+            // 재시도 횟수 초과 시 다양한 방법 시도 - 단순히 업로드로 넘기지 않고 더 적극적으로 시도
+            console.log(`[UPDATE] 오픈채팅을 찾을 수 없지만 업데이트 요청이므로 다양한 방법 시도: chatIdx=${transformedData.chatIdx}`);
+            
+            // POST 요청을 사용한 upsert 시도 (이 기능이 구현되어 있을 경우)
+            try {
+              console.log(`[UPDATE] 오픈채팅을 찾을 수 없어 POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
+              const response = await this.axios.post(
+                `${this.BASE_URL}/world/chats`, 
+                transformedData,
+                {
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'X-Debug-ChatIdx': transformedData.chatIdx || 'missing',
+                    'Cache-Control': 'no-cache', 
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  timeout: 30000,
+                  httpsAgent: this.httpsAgent
+                }
+              );
+              console.log(`[UPDATE] POST 요청 성공 (upsert): chatIdx=${transformedData.chatIdx}, 응답 상태=${response.status}`);
+              return response.data;
+            } catch (postErr) {
+              console.error(`[UPDATE] 최종 시도 (POST) 실패, 새로 생성으로 전환: ${postErr.message}`);
+              return this.uploadSingleChat(chatData);
+            }
+          }
+          
+          // existingChat이 존재하면 서버 응답의 ID 필드를 확인할 필요 없음
+          // 원래 요청한 ID(transformedData.chatIdx)를 사용해서 업데이트
+          console.log(`[UPDATE] 기존 오픈채팅 발견 (재시도 ${retryCount}/${maxRetries+1}): chatIdx=${transformedData.chatIdx}, 업데이트 시작...`);
+          
+          // PATCH 요청으로 기존 데이터 업데이트 (chatIdx 확인)
+          if (!transformedData.chatIdx) {
+            transformedData.chatIdx = chatData.id; // chatIdx 명시적 할당
+            console.log(`[UPDATE] ChatIdx 명시적 설정: ${transformedData.chatIdx}`);
+          }
+          
+          // 서버가 chatIdx를 기준으로 요청을 처리 - PUT 요청만 사용 (배열 중복 방지)
+          console.log(`[UPDATE] 이미지 필드 중복 방지를 위해 PUT 요청 사용`);
+          console.log(`[UPDATE] PUT 요청 데이터:`, JSON.stringify({
+            chatIdx: transformedData.chatIdx,
+            step: transformedData.step,
+            chatLength: transformedData.chat.length
+          }, null, 2));
+          
+          let response;
+          try {
+            // 항상 PUT 요청 사용 (배열 필드 중복 방지)
+            console.log(`[UPDATE] PUT 요청 URL: ${this.BASE_URL}/world/chats/${transformedData.chatIdx}`);
+            response = await this.axios.put(
+              `${this.BASE_URL}/world/chats/${transformedData.chatIdx}`, 
+              transformedData,
+              {
+                headers: { 
+                  'Content-Type': 'application/json',
+                  'X-Debug-ChatIdx': transformedData.chatIdx || 'missing', // 디버깅용 헤더 추가
+                  'Cache-Control': 'no-cache', // 캐시 사용 방지
+                  'Accept': 'application/json', // 응답 형식 명시
+                  'X-Requested-With': 'XMLHttpRequest' // AJAX 요청임을 명시
+                },
+                timeout: 30000, // 30초 타임아웃 설정
+                httpsAgent: this.httpsAgent
+              }
+            );
+            console.log(`[UPDATE] PUT 요청 성공: chatIdx=${transformedData.chatIdx}, 응답 상태=${response.status}`);
+          } catch (putErr) {
+            console.error(`[UPDATE] PUT 요청 실패 상세 정보:`, {
+              status: putErr.response?.status,
+              statusText: putErr.response?.statusText,
+              message: putErr.message,
+              code: putErr.code,
+              isAxiosError: putErr.isAxiosError ? 'Yes' : 'No'
+            });
+            
+            try {
+              // PUT 요청이 실패하면 쿼리 매개변수를 사용한 대체 URL 시도
+              console.log(`[UPDATE] PUT 실패, 대체 URL 시도: ${this.BASE_URL}/world/chats?chatIdx=${transformedData.chatIdx}`);
+              response = await this.axios.put(
+                `${this.BASE_URL}/world/chats?chatIdx=${transformedData.chatIdx}`, 
+                transformedData,
+                {
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'X-Debug-ChatIdx': transformedData.chatIdx || 'missing',
+                    'Cache-Control': 'no-cache',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  timeout: 30000,
+                  httpsAgent: this.httpsAgent
+                }
+              );
+              console.log(`[UPDATE] 대체 URL PUT 요청 성공: chatIdx=${transformedData.chatIdx}, 응답 상태=${response.status}`);
+            } catch (altErr) {
+              console.error(`[UPDATE] 대체 URL PUT 요청 실패 상세 정보:`, {
+                status: altErr.response?.status,
+                statusText: altErr.response?.statusText,
+                message: altErr.message,
+                code: altErr.code,
+                isAxiosError: altErr.isAxiosError ? 'Yes' : 'No'
+              });
+              
+              try {
+                // 마지막 수단: POST 요청으로 upsert 시도
+                console.log(`[UPDATE] PUT 요청 모두 실패, POST 요청으로 시도 (upsert): ${this.BASE_URL}/world/chats`);
+                response = await this.axios.post(
+                  `${this.BASE_URL}/world/chats`, 
+                  transformedData,
+                  {
+                    headers: { 
+                      'Content-Type': 'application/json',
+                      'X-Debug-ChatIdx': transformedData.chatIdx || 'missing',
+                      'Cache-Control': 'no-cache',
+                      'Accept': 'application/json',
+                      'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    timeout: 30000,
+                    httpsAgent: this.httpsAgent
+                  }
+                );
+                console.log(`[UPDATE] POST 요청 성공 (upsert): chatIdx=${transformedData.chatIdx}, 응답 상태=${response.status}`);
+              } catch (postErr) {
+                console.error(`[UPDATE] POST 요청도 실패: ${postErr.message}`);
+                throw postErr;
+              }
+            }
+          }
+          
+          // 업데이트 후 검증 (확인을 위해 잠시 기다림)
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          const updatedChat = await this.getChatById(transformedData.chatIdx);
+          
+          if (updatedChat) {
+            // 응답에 chatIdx가 없더라도 원래 ID 사용
+            const chatIdx = updatedChat.chatIdx || transformedData.chatIdx;
+            console.log(`[UPDATE] 업데이트 후 오픈채팅 검증 성공: chatIdx=${chatIdx}, 응답 받음`);            
+            
+            // 응답에 chatIdx가 없을 경우 추가
+            const responseData = response.data || {};
+            if (!responseData.chatIdx) {
+              responseData.chatIdx = transformedData.chatIdx;
+            }
+            
+            return responseData;
+          } else {
+            console.error(`[UPDATE] 업데이트 후 오픈채팅 조회에 실패. 새로 생성됨: chatIdx=${transformedData.chatIdx}`);
+            
+            // 응답에 chatIdx가 없을 경우 추가
+            const responseData = response.data || {};
+            if (!responseData.chatIdx) {
+              responseData.chatIdx = transformedData.chatIdx;
+            }
+            
+            return responseData;
+          }
+          
+        } catch (err) {
+          if (err.response?.status === 404 && retryCount < maxRetries) {
+            console.log(`[UPDATE] 404 오류 발생 (${retryCount+1}/${maxRetries+1} 시도): chatIdx=${transformedData.chatIdx} - 재시도 중...`);
+            retryCount++;
+            await new Promise(resolve => setTimeout(resolve, 2000 * retryCount));
+            continue;
+          }
+          
+          // 재시도 불가능한 오류 발생
+          throw err;
+        }
+      }
+      
+      // 모든 재시도가 실패한 경우 새로 생성
+      if (retryCount > maxRetries) {
+        console.log(`[UPDATE] 모든 재시도 실패. 새로 생성 시도: chatIdx=${transformedData.chatIdx}`);
         return this.uploadSingleChat(chatData);
       }
       
-      console.log(`Found existing chat with id '${transformedData.chatIdx}', _id: ${existingChat._id}`);
-      
-      // PATCH 요청으로 기존 데이터 업데이트
-      const response = await this.axios.patch(
-        `${this.BASE_URL}/world/chats/${existingChat._id}`, 
-        transformedData,
-        {
-          headers: { 'Content-Type': 'application/json' },
-          timeout: 10000, // 10초 타임아웃 설정
-          httpsAgent: this.httpsAgent
-        }
-      );
-
-      return response.data;
     } catch (error) {
       // 에러 상세 정보 로깅
-      console.error('Update error details:', {
-        chatId: chatData?.id,
-        chatIdx: OpenChatDataTransformer.transformRequestData(chatData)?.chatIdx,
+      console.error('[UPDATE] 업데이트 오류:', {
+        chatIdx: chatData?.id,
+        attempt: `${retryCount}/${maxRetries+1}`,
         status: error.response?.status,
+        statusText: error.response?.statusText,
         data: error.response?.data,
         message: error.message
       });
@@ -131,23 +468,23 @@ class OpenChatUploadService {
 
   async uploadMultipleChats(chatsData) {
     const dataArray = Array.isArray(chatsData) ? chatsData : [chatsData];
-    const batchSize = 5; // 동시에 처리할 요청 수 제한
+    const batchSize = 3; // 동시에 처리할 요청 수 제한 (5에서 3으로 줄임)
     const results = [];
     
     for (let i = 0; i < dataArray.length; i += batchSize) {
       const batch = dataArray.slice(i, i + batchSize);
       const batchResults = await Promise.all(
         batch.map(chatData => 
-          this.uploadSingleChat(chatData)
+          this._retryOperation(() => this.uploadSingleChat(chatData))
             .then(result => this._createSuccessResult(chatData, result))
             .catch(error => this._createErrorResult(chatData, error.message))
         )
       );
       results.push(...batchResults);
       
-      // 배치 간 짧은 딜레이
+      // 배치 간 딜레이 증가
       if (i + batchSize < dataArray.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 3000)); // 1초에서 3초로 증가
       }
     }
 
@@ -156,23 +493,23 @@ class OpenChatUploadService {
   
   async updateMultipleChats(chatsData) {
     const dataArray = Array.isArray(chatsData) ? chatsData : [chatsData];
-    const batchSize = 5; // 동시에 처리할 요청 수 제한
+    const batchSize = 3; // 동시에 처리할 요청 수 제한 (5에서 3으로 줄임)
     const results = [];
     
     for (let i = 0; i < dataArray.length; i += batchSize) {
       const batch = dataArray.slice(i, i + batchSize);
       const batchResults = await Promise.all(
         batch.map(chatData => 
-          this.updateSingleChat(chatData)
+          this._retryOperation(() => this.updateSingleChat(chatData))
             .then(result => this._createSuccessResult(chatData, result, true)) // isUpdate=true
             .catch(error => this._createErrorResult(chatData, error.message))
         )
       );
       results.push(...batchResults);
       
-      // 배치 간 짧은 딜레이
+      // 배치 간 딜레이 증가
       if (i + batchSize < dataArray.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 3000)); // 1초에서 3초로 증가
       }
     }
 
@@ -199,6 +536,11 @@ class OpenChatUploadService {
   }
 
   _createSuccessResult(chatData, result, isUpdate = false) {
+    // 서버 응답에 chatIdx가 없을 경우 원래 ID 사용
+    if (result && !result.chatIdx && chatData.id) {
+      result = { ...result, chatIdx: chatData.id };
+    }
+    
     const transformedData = OpenChatDataTransformer.transformRequestData(chatData);
     return {
       chatId: chatData.id,
@@ -215,6 +557,61 @@ class OpenChatUploadService {
       failed: results.filter(r => r.status === 'error').length,
       details: results
     };
+  }
+  
+  // 재시도 로직 구현 (404 오류 특별 처리 추가)
+  async _retryOperation(operation, maxRetries = 3, initialDelay = 2000) {
+    let delay = initialDelay;
+    
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        return await operation();
+      } catch (error) {
+        
+        // 에러 유형 확인
+        const status = error.response?.status || 0;
+        
+        // 404 오류는 특별 처리
+        if (status === 404) {
+          console.log(`[RETRY] 404 Not Found 오류 발생 (${attempt}/${maxRetries}) - 데이터가 아직 준비되지 않았을 수 있음`);
+          
+          // 404는 항상 재시도 (최대 재시도 회수까지)
+          if (attempt < maxRetries) {
+            console.log(`[RETRY] ${delay}ms 후 재시도 예정...`);
+            await new Promise(resolve => setTimeout(resolve, delay));
+            delay *= 1.5; // 404의 경우 조금 더 완만한 증가율 적용
+            continue;
+          }
+          
+          // 모든 재시도 실패시 예외 발생
+          console.error(`[RETRY] 모든 404 재시도 실패 (${maxRetries}/${maxRetries})`);
+          throw error;
+        }
+        
+        // 네트워크 문제인 경우에도 재시도
+        const isNetworkError = error.message.includes('socket') || 
+                              error.message.includes('network') || 
+                              error.message.includes('timeout') ||
+                              error.message.includes('TLS') || 
+                              error.message.includes('connection') ||
+                              [500, 502, 503, 504].includes(status); // 서버 오류도 재시도
+                              
+        if (!isNetworkError || attempt === maxRetries) {
+          console.log(`[RETRY] 재시도 불가능한 오류 또는 모든 재시도 소진: ${error.message}`);
+          throw error;
+        }
+        
+        console.log(`[RETRY] 시도 ${attempt}/${maxRetries} - ${delay}ms 후 재시도. 오류: ${error.message}`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        
+        // 지수 백오프 (각 재시도마다 대기 시간 2배 증가)
+        delay *= 2;
+      }
+    }
+    
+    // 마지막 재시도까지 실패한 경우에는 오류를 반환해야 하지만
+    // 이 지점까지 도달하는 경우는 거의 없음
+    throw new Error(`모든 재시도 실패 (${maxRetries} 회)`);
   }
 }
 

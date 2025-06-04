@@ -1,16 +1,15 @@
 /* global process, __dirname*/
 // uploadWorlds.js
 const WorldUploadService = require('./worldUploadService');
-const fs = require('fs').promises;
+const { loadLatestDataFile } = require('../utils/fileUtils');
 const path = require('path');
 
 async function loadAndUploadWorldData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/worldData-updateAt20250516.json');
-    const rawData = await fs.readFile(filePath, 'utf8');
-    const worldsData = JSON.parse(rawData);
+    const dataDir = path.join(__dirname, '../rawData');
+    const worldsData = await loadLatestDataFile(dataDir, 'worldData');
 
-    console.log(`Loaded ${Array.isArray(worldsData) ? worldsData.length : 1} world(s) from file`);
+    console.log(`Loaded ${Array.isArray(worldsData) ? worldsData.length : 1} world(s) from latest file`);
     
     const result = await WorldUploadService.uploadMultipleWorlds(worldsData);
     console.log('Upload completed:', result);
@@ -23,11 +22,10 @@ async function loadAndUploadWorldData() {
 
 async function loadAndUpdateWorldData() {
   try {
-    const filePath = path.join(__dirname, '../rawData/worldData-updateAt20250414.json');
-    const rawData = await fs.readFile(filePath, 'utf8');
-    const worldsData = JSON.parse(rawData);
+    const dataDir = path.join(__dirname, '../rawData');
+    const worldsData = await loadLatestDataFile(dataDir, 'worldData');
 
-    console.log(`Loaded ${Array.isArray(worldsData) ? worldsData.length : 1} world(s) from file for update`);
+    console.log(`Loaded ${Array.isArray(worldsData) ? worldsData.length : 1} world(s) from latest file for update`);
     
     // 업데이트 함수 사용
     const result = await WorldUploadService.updateMultipleWorlds(worldsData);

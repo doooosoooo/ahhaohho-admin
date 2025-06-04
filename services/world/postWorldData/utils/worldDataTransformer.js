@@ -18,6 +18,7 @@ class WorldDataTransformer {
   static _transformBasicInfo(data) {
     return {
       title: data["월드명"].trim(),
+      worldIdx: data.id,  // airtableId를 worldIdx로 저장하여 추후 비교 시 사용
       description: data["월드 소개 텍스트"]?.trim() || null,
       keywords: this._transformKeywords(data),
       creatorName: this._transformCreatorNames(data["월드 기획자"]),
