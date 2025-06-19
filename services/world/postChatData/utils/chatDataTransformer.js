@@ -1,22 +1,35 @@
 // utils/transformers/chatDataTransformer.js
 class ChatDataTransformer {
-  static transformRequestData(data) {
+  static async transformRequestData(data) {
     if (!data) {
       throw new Error('Data object is required');
     }
 
-    // 데이터 유효성 검증
+    // 데이터 유효성 검증 - 더 상세한 로깅과 검증
     if (!data.id) {
+      console.error('ERROR - Missing ID in data object:', {
+        dataKeys: Object.keys(data),
+        dataType: typeof data,
+        hasId: 'id' in data,
+        idValue: data.id
+      });
       throw new Error('ID field is required in data object');
     }
 
-    // 서버 DTO 요구사항에 맞게 데이터 변환
-    const chatItems = this._transformChat(data);
-    
-    // chatId 값이 반드시 전송되도록 보장
-    if (!data.id) {
-      throw new Error('ID field is required in data object');
+    // ID 타입 및 값 검증
+    if (typeof data.id !== 'string' || data.id.trim() === '') {
+      console.error('ERROR - Invalid ID format:', {
+        idType: typeof data.id,
+        idValue: data.id,
+        idLength: data.id?.length
+      });
+      throw new Error(`Invalid ID format: expected non-empty string, got ${typeof data.id} with value: ${data.id}`);
     }
+
+    console.log(`[TRANSFORM] Processing data with ID: ${data.id}`);
+
+    // 서버 DTO 요구사항에 맞게 데이터 변환
+    const chatItems = await this._transformChat(data);
     
     const transformedData = {
       chatId: data.id,   // 중요! PutChatRequestDTO에서 필수 필드
@@ -24,8 +37,17 @@ class ChatDataTransformer {
       chat: this._transformPromptFormat(chatItems) // prompt 형식으로 변환
     };
     
+    // 최종 변환 결과 검증
+    if (!transformedData.chatId) {
+      console.error('ERROR - chatId missing after transformation:', {
+        originalId: data.id,
+        transformedChatId: transformedData.chatId
+      });
+      throw new Error('ChatId was lost during transformation');
+    }
+    
     // chatId가 있는지 디버그 출력
-    console.log(`DEBUG - chatId 확인: ${transformedData.chatId}`);
+    console.log(`[TRANSFORM] Successfully transformed data - chatId: ${transformedData.chatId}`);
     
     // userTyping 항목이 몇 개 있는지 확인
     const userTypingCount = transformedData.chat.filter(item => item.type === 'userTyping').length;
@@ -59,7 +81,7 @@ class ChatDataTransformer {
         if (type === 'userTyping') {
           console.log(`[DEBUG] userTyping 항목 발견: talker=${item.talker}`);
           // userTyping 타입은 그대로 유지해야 함
-        } else if (!['text', 'image', 'text+image', 'userTyping'].includes(type)) {
+        } else if (!['text', 'image', 'text+image', 'text+octo', 'userTyping'].includes(type)) {
           console.log(`[DEBUG] 유효하지 않은 타입 변환: ${type} -> text`);
           type = 'text';
         }
@@ -92,9 +114,14 @@ class ChatDataTransformer {
           // 원본 프롬프트의 미디어 정보 참조
           const originalPrompt = item.prompts && item.prompts[index];
           const media = originalPrompt && originalPrompt.media ? originalPrompt.media : null;
+          const octo = originalPrompt && originalPrompt.octo ? originalPrompt.octo : undefined;
           
-          // 이미지가 있는 경우 미디어 필드 설정
-          return { ...prompt, media };
+          // 이미지가 있는 경우 미디어 필드 설정, octo가 있는 경우 octo 필드 설정
+          const result = { ...prompt, media };
+          if (octo) {
+            result.octo = octo;
+          }
+          return result;
         });
         
         // 수정된 구조: image 필드는 중첩구조가 아닌 정규화된 형태로만 추가
@@ -168,7 +195,7 @@ class ChatDataTransformer {
     return images;
   }
 
-  static _transformChat(data) {
+  static async _transformChat(data) {
     const chatArray = [];
     
     for (let i = 1; i <= 15; i++) {
@@ -202,13 +229,25 @@ class ChatDataTransformer {
 
     // 대화 종료 메시지 추가 (매개자)
     const endMessage = data['모듈 4 대화 종료 매개자 대사'];
+    const endMessageMedia = data['모듈 4 대화 종료 매개자 첨부 미디어'];
+    
     if (endMessage) {
-      // 종료 메시지는 talker가 'prompt'여야 함
-      const endMessageItems = this._processTextWithBackslash(endMessage, 'endChat');
-      if (Array.isArray(endMessageItems)) {
-        chatArray.push(...endMessageItems);
+      // octostudio 파일이 있는지 확인
+      if (endMessageMedia && endMessageMedia.length > 0) {
+        const endMessageItems = await this._processEndMessageWithOcto(endMessage, endMessageMedia);
+        if (Array.isArray(endMessageItems)) {
+          chatArray.push(...endMessageItems);
+        } else {
+          chatArray.push(endMessageItems);
+        }
       } else {
-        chatArray.push(endMessageItems);
+        // 기존 방식: 텍스트만 있는 경우
+        const endMessageItems = this._processTextWithBackslash(endMessage, 'endChat');
+        if (Array.isArray(endMessageItems)) {
+          chatArray.push(...endMessageItems);
+        } else {
+          chatArray.push(endMessageItems);
+        }
       }
     }
 
@@ -553,6 +592,331 @@ class ChatDataTransformer {
         large: mediaData.thumbnails?.full?.url || null
       }
     };
+  }
+
+  static async _processEndMessageWithOcto(text, mediaArray) {
+    if (!text || !mediaArray || !Array.isArray(mediaArray)) return null;
+
+    const octoItems = [];
+    
+    for (const mediaItem of mediaArray) {
+      if (mediaItem && mediaItem.media_type === 'octostudio') {
+        // octostudio 파일 처리 (비동기)
+        const octoData = await this._processOctostudioFile(mediaItem);
+        if (octoData) {
+          octoItems.push(octoData);
+        }
+      }
+    }
+
+    if (octoItems.length === 0) {
+      // octo 파일이 없으면 기존 방식으로 처리
+      return this._processTextWithBackslash(text, 'endChat');
+    }
+
+    // 백슬래시 처리
+    const hasBackslash = text.includes('\\') || text.includes('＼');
+    
+    if (hasBackslash) {
+      const parts = text.split(/[\\＼]/).map(part => part.trim()).filter(part => part);
+      const results = [];
+      
+      for (let i = 0; i < parts.length; i++) {
+        const isLast = i === parts.length - 1;
+        
+        results.push({
+          type: isLast && octoItems.length > 0 ? 'text+octo' : 'text',
+          talker: 'endChat',
+          hasOpts: false,
+          prompts: [{
+            text: parts[i],
+            media: null,
+            octo: isLast ? octoItems : undefined
+          }]
+        });
+      }
+      
+      return results;
+    } else {
+      // 백슬래시가 없는 경우
+      return {
+        type: 'text+octo',
+        talker: 'endChat',
+        hasOpts: false,
+        prompts: [{
+          text: text,
+          media: null,
+          octo: octoItems
+        }]
+      };
+    }
+  }
+
+  static async _processOctostudioFile(mediaItem) {
+    if (!mediaItem) return null;
+
+    // 파일명에서 카테고리 추출
+    const filename = mediaItem.filename || '';
+    let category = '옥토스튜디오'; // 기본값
+
+    // [] 안의 텍스트를 카테고리로 사용
+    const categoryMatch = filename.match(/^\[(.*?)\]/);
+    if (categoryMatch) {
+      category = categoryMatch[1].trim();
+    }
+
+    // 제목 추출
+    let title = filename;
+    
+    // []가 있는 경우: []와 .octostudio 사이의 텍스트 추출
+    const titleMatch = filename.match(/^\[(.*?)\](.*)\.octostudio$/);
+    if (titleMatch) {
+      title = titleMatch[2].trim(); // []와 .octostudio 사이의 텍스트
+    } else {
+      // []가 없는 경우: .octostudio 앞의 전체 텍스트
+      title = filename.replace(/\.octostudio$/, '').trim();
+    }
+    
+    // 공백 정리
+    title = title.trim();
+
+    // 썸네일 생성 및 S3 업로드
+    let thumbnailUrl;
+    try {
+      console.log(`[DEBUG] Generating thumbnail for octostudio file: ${filename}`);
+      thumbnailUrl = await this._generateOctostudioThumbnail(mediaItem);
+      console.log(`[DEBUG] Generated thumbnail URL: ${thumbnailUrl}`);
+    } catch (error) {
+      console.error('Failed to generate octostudio thumbnail:', error);
+      thumbnailUrl = this._getDefaultThumbnail(mediaItem);
+      console.log(`[DEBUG] Using default thumbnail: ${thumbnailUrl}`);
+    }
+
+    return {
+      category: category,
+      title: title || 'Octostudio 파일',
+      url: mediaItem.url,
+      thumbnail: thumbnailUrl
+    };
+  }
+
+  static async _generateOctostudioThumbnail(mediaItem) {
+    // octostudio 파일의 썸네일 생성
+    // zip 파일을 풀고 project/thumbnails 폴더에서 jpeg 파일을 찾아서 S3에 업로드
+    try {
+      console.log(`[DEBUG] Starting thumbnail generation for: ${mediaItem.url}`);
+      const fs = require('fs');
+      const AdmZip = require('adm-zip');
+      
+      // octostudio 파일 다운로드 (쿼리 파라미터 제거)
+      const cleanUrl = mediaItem.url.split('?')[0];
+      console.log(`[DEBUG] Downloading octostudio file from: ${cleanUrl}`);
+      const zipBuffer = await this._downloadFile(cleanUrl);
+      if (!zipBuffer) {
+        console.log(`[DEBUG] Failed to download octostudio file`);
+        return this._getDefaultThumbnail(mediaItem);
+      }
+      console.log(`[DEBUG] Downloaded ${zipBuffer.length} bytes`);
+      
+      // octostudio 파일은 "OCTOSTUDIO" 헤더 + 4바이트 + ZIP 데이터 구조
+      console.log(`[DEBUG] Processing octostudio file format...`);
+      
+      // octostudio 헤더 확인 및 제거
+      const headerLength = 14; // "OCTOSTUDIO" (10) + 4 bytes
+      if (zipBuffer.length < headerLength) {
+        console.log(`[DEBUG] File too small to be valid octostudio`);
+        return this._getDefaultThumbnail(mediaItem);
+      }
+      
+      const header = zipBuffer.toString('ascii', 0, 10);
+      if (header !== 'OCTOSTUDIO') {
+        console.log(`[DEBUG] Invalid octostudio header: ${header}`);
+        return this._getDefaultThumbnail(mediaItem);
+      }
+      
+      // ZIP 데이터 추출 (헤더 제거)
+      const actualZipBuffer = zipBuffer.slice(headerLength);
+      console.log(`[DEBUG] Extracted ZIP data: ${actualZipBuffer.length} bytes`);
+      
+      // zip 파일 압축 해제
+      console.log(`[DEBUG] Extracting zip file...`);
+      let zip, entries;
+      try {
+        zip = new AdmZip(actualZipBuffer);
+        entries = zip.getEntries();
+        console.log(`[DEBUG] Found ${entries.length} entries in zip file`);
+      } catch (zipError) {
+        console.error(`[DEBUG] AdmZip extraction failed:`, zipError);
+        
+        // AdmZip 실패 시 Linux unzip 명령어 사용
+        console.log(`[DEBUG] Trying Linux unzip command...`);
+        const tempDir = `/tmp/octostudio_${Date.now()}`;
+        const zipPath = `${tempDir}.zip`;
+        
+        const fs = require('fs');
+        fs.mkdirSync(tempDir, { recursive: true });
+        fs.writeFileSync(zipPath, actualZipBuffer); // 헤더 제거된 ZIP 데이터 사용
+        
+        const { execSync } = require('child_process');
+        try {
+          execSync(`unzip "${zipPath}" -d "${tempDir}"`, { stdio: 'ignore' });
+          
+          // 압축 해제된 파일들에서 썸네일 찾기
+          const thumbnailPath = this._findThumbnailInDirectory(tempDir);
+          if (thumbnailPath) {
+            const thumbnailBuffer = fs.readFileSync(thumbnailPath);
+            console.log(`[DEBUG] Found thumbnail via unzip: ${thumbnailBuffer.length} bytes`);
+            
+            // 임시 파일들 정리
+            execSync(`rm -rf "${tempDir}" "${zipPath}"`, { stdio: 'ignore' });
+            
+            const uploadedUrl = await this._uploadThumbnailToS3(thumbnailBuffer, mediaItem.filename, mediaItem.url);
+            return uploadedUrl;
+          }
+          
+          // 임시 파일들 정리
+          execSync(`rm -rf "${tempDir}" "${zipPath}"`, { stdio: 'ignore' });
+        } catch (unzipError) {
+          console.error(`[DEBUG] Linux unzip also failed:`, unzipError);
+          // 임시 파일들 정리
+          try {
+            execSync(`rm -rf "${tempDir}" "${zipPath}"`, { stdio: 'ignore' });
+          } catch (cleanupError) {
+            console.error(`[DEBUG] Cleanup failed:`, cleanupError);
+          }
+        }
+        
+        return this._getDefaultThumbnail(mediaItem);
+      }
+      
+      // project/thumbnails 폴더에서 jpeg 파일 찾기
+      console.log(`[DEBUG] Searching for thumbnail files...`);
+      const thumbnailEntry = entries.find(entry => {
+        const entryPath = entry.entryName;
+        const isInThumbnails = entryPath.includes('project/thumbnails/');
+        const isJpeg = entryPath.endsWith('.jpg') || entryPath.endsWith('.jpeg');
+        console.log(`[DEBUG] Checking entry: ${entryPath} - in thumbnails: ${isInThumbnails}, is jpeg: ${isJpeg}`);
+        return isInThumbnails && isJpeg;
+      });
+      
+      if (thumbnailEntry) {
+        console.log(`[DEBUG] Found thumbnail entry: ${thumbnailEntry.entryName}`);
+        // 썸네일 파일을 찾았으면 S3에 업로드하고 URL 반환
+        const thumbnailBuffer = thumbnailEntry.getData();
+        console.log(`[DEBUG] Extracted thumbnail buffer: ${thumbnailBuffer.length} bytes`);
+        const uploadedUrl = await this._uploadThumbnailToS3(thumbnailBuffer, mediaItem.filename, mediaItem.url);
+        return uploadedUrl;
+      }
+      
+      console.log(`[DEBUG] No thumbnail found in AdmZip entries, using default`);
+      return this._getDefaultThumbnail(mediaItem);
+    } catch (error) {
+      console.error('Error processing octostudio thumbnail:', error);
+      return this._getDefaultThumbnail(mediaItem);
+    }
+  }
+
+  static _getDefaultThumbnail(mediaItem) {
+    return mediaItem.thumbnails?.large?.url || 
+           mediaItem.thumbnails?.full?.url || 
+           'https://cdn-world.ahhaohho.com/default-octostudio-thumb.jpg';
+  }
+
+  static _findThumbnailInDirectory(dir) {
+    const fs = require('fs');
+    const path = require('path');
+    
+    try {
+      const findThumbnail = (directory) => {
+        const items = fs.readdirSync(directory, { withFileTypes: true });
+        
+        for (const item of items) {
+          const fullPath = path.join(directory, item.name);
+          
+          if (item.isDirectory()) {
+            // 재귀적으로 하위 디렉토리 탐색
+            const result = findThumbnail(fullPath);
+            if (result) return result;
+          } else if (item.isFile()) {
+            // project/thumbnails 경로에 있는 jpeg 파일 찾기
+            const relativePath = path.relative(dir, fullPath);
+            const isInThumbnails = relativePath.includes('project/thumbnails/') || 
+                                 relativePath.includes('project\\thumbnails\\');
+            const isJpeg = item.name.endsWith('.jpg') || item.name.endsWith('.jpeg');
+            
+            if (isInThumbnails && isJpeg) {
+              console.log(`[DEBUG] Found thumbnail file: ${fullPath}`);
+              return fullPath;
+            }
+          }
+        }
+        
+        return null;
+      };
+      
+      return findThumbnail(dir);
+    } catch (error) {
+      console.error(`[DEBUG] Error finding thumbnail in directory:`, error);
+      return null;
+    }
+  }
+
+  static async _downloadFile(url) {
+    const https = require('https');
+    return new Promise((resolve, reject) => {
+      const chunks = [];
+      https.get(url, (response) => {
+        response.on('data', (chunk) => chunks.push(chunk));
+        response.on('end', () => resolve(Buffer.concat(chunks)));
+        response.on('error', reject);
+      }).on('error', reject);
+    });
+  }
+
+  static async _uploadThumbnailToS3(buffer, originalFilename, originalUrl) {
+    try {
+      const AWS = require('aws-sdk');
+      const { loadConfig } = require('../../../../config/config');
+      
+      const config = await loadConfig();
+      
+      const s3 = new AWS.S3({
+        region: config.aws_region,
+        accessKeyId: config.aws_accessKeyId,
+        secretAccessKey: config.aws_secretAccessKey
+      });
+      
+      // 원본 URL에서 해시값 추출 (chatData/ 뒤의 값)
+      const urlParts = originalUrl.split('/');
+      const hashPart = urlParts[urlParts.indexOf('chatData') + 1];
+      const hash = hashPart.split('?')[0]; // 쿼리 파라미터 제거
+      
+      const filename = `thumbnail-${hash}.jpg`;
+      const s3Key = `chatData/octo-thumbnails/${filename}`;
+      
+      const uploadParams = {
+        Bucket: config.world_bucketName,
+        Key: s3Key,
+        Body: buffer,
+        ContentType: 'image/jpeg'
+      };
+      
+      const result = await s3.upload(uploadParams).promise();
+      console.log(`Successfully uploaded thumbnail for ${originalFilename} to ${result.Location}`);
+      
+      // CloudFront URL로 변환
+      const cloudfrontUrl = `https://cdn-world.ahhaohho.com/${s3Key}`;
+      return cloudfrontUrl;
+    } catch (error) {
+      console.error('Error uploading thumbnail to S3:', error);
+      
+      // S3 업로드 실패 시 기본 썸네일 URL 반환
+      const urlParts = originalUrl.split('/');
+      const hashPart = urlParts[urlParts.indexOf('chatData') + 1];
+      const hash = hashPart.split('?')[0]; // 쿼리 파라미터 제거
+      const filename = `thumbnail-${hash}.jpg`;
+      return `https://cdn-world.ahhaohho.com/chatData/octo-thumbnails/${filename}`;
+    }
   }
 }
 

@@ -18,7 +18,15 @@ class ChatUploadService {
   
   async getChatById(id) {
     if (!id) {
-      throw new Error('ID is required to search for a chat');
+      console.error('ERROR - getChatById called with invalid ID:', {
+        idValue: id,
+        idType: typeof id,
+        isUndefined: id === undefined,
+        isNull: id === null,
+        isEmpty: id === '',
+        stackTrace: new Error().stack
+      });
+      throw new Error(`ID is required to search for a chat. Received: ${typeof id} with value: ${id}`);
     }
     
     try {
@@ -163,7 +171,18 @@ class ChatUploadService {
         throw new Error('Invalid chat data: expected an object');
       }
 
-      const transformedData = ChatDataTransformer.transformRequestData(chatData);
+      // chatData ID 검증 추가
+      if (!chatData.id) {
+        console.error('ERROR - uploadSingleChat called with missing ID:', {
+          chatData: chatData,
+          keys: Object.keys(chatData || {}),
+          hasId: 'id' in (chatData || {})
+        });
+        throw new Error(`Chat data must have an 'id' field. Received: ${JSON.stringify(chatData)}`);
+      }
+
+      console.log(`[UPLOAD] Starting upload for chatId: ${chatData.id}`);
+      const transformedData = await ChatDataTransformer.transformRequestData(chatData);
       
       // 디버깅을 위한 로깅 추가 (간략한 로그만 출력)
       console.log('[UPLOAD] 채팅 생성 시작:', {
@@ -279,7 +298,18 @@ class ChatUploadService {
         throw new Error('Invalid chat data: expected an object');
       }
 
-      const transformedData = ChatDataTransformer.transformRequestData(chatData);
+      // chatData ID 검증 추가
+      if (!chatData.id) {
+        console.error('ERROR - updateSingleChat called with missing ID:', {
+          chatData: chatData,
+          keys: Object.keys(chatData || {}),
+          hasId: 'id' in (chatData || {})
+        });
+        throw new Error(`Chat data must have an 'id' field. Received: ${JSON.stringify(chatData)}`);
+      }
+
+      console.log(`[UPDATE] Starting update for chatId: ${chatData.id}`);
+      const transformedData = await ChatDataTransformer.transformRequestData(chatData);
       
       // 디버깅을 위한 로깅 추가
       console.log('[UPDATE] 채팅 업데이트 시작:', {

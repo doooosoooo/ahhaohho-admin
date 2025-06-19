@@ -25,6 +25,31 @@ async function loadAndUploadChatData() {
 
     console.log(`Loaded ${Array.isArray(chatsData) ? chatsData.length : 1} chat(s) from ${chatDataFile}`);
     
+    // 데이터 유효성 검증 추가
+    if (Array.isArray(chatsData)) {
+      const invalidItems = chatsData.filter((item, index) => {
+        if (!item || typeof item !== 'object') {
+          console.error(`Invalid chat data at index ${index}: not an object`, item);
+          return true;
+        }
+        if (!item.id) {
+          console.error(`Invalid chat data at index ${index}: missing id field`, {
+            keys: Object.keys(item),
+            item: item
+          });
+          return true;
+        }
+        return false;
+      });
+      
+      if (invalidItems.length > 0) {
+        console.error(`Found ${invalidItems.length} invalid chat items out of ${chatsData.length} total items`);
+        throw new Error(`Data validation failed: ${invalidItems.length} items have missing or invalid id fields`);
+      }
+      
+      console.log(`Data validation passed: all ${chatsData.length} items have valid id fields`);
+    }
+    
     const result = await ChatUploadService.uploadMultipleChats(chatsData);
     console.log('Upload completed:', result);
     process.exit(0);
@@ -53,6 +78,31 @@ async function loadAndUpdateChatData() {
     const chatsData = JSON.parse(rawData);
 
     console.log(`Loaded ${Array.isArray(chatsData) ? chatsData.length : 1} chat(s) from ${chatDataFile} for update`);
+    
+    // 데이터 유효성 검증 추가
+    if (Array.isArray(chatsData)) {
+      const invalidItems = chatsData.filter((item, index) => {
+        if (!item || typeof item !== 'object') {
+          console.error(`Invalid chat data at index ${index}: not an object`, item);
+          return true;
+        }
+        if (!item.id) {
+          console.error(`Invalid chat data at index ${index}: missing id field`, {
+            keys: Object.keys(item),
+            item: item
+          });
+          return true;
+        }
+        return false;
+      });
+      
+      if (invalidItems.length > 0) {
+        console.error(`Found ${invalidItems.length} invalid chat items out of ${chatsData.length} total items`);
+        throw new Error(`Data validation failed: ${invalidItems.length} items have missing or invalid id fields`);
+      }
+      
+      console.log(`Data validation passed: all ${chatsData.length} items have valid id fields`);
+    }
     
     // 업데이트 함수 사용
     const result = await ChatUploadService.updateMultipleChats(chatsData);

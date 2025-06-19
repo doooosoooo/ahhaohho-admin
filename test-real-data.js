@@ -78,27 +78,29 @@ if (moduleIndex) {
 }
 
 // Test full transformation
-console.log('\n===== Testing full data transformation =====');
-try {
-  const transformedData = ChatDataTransformer.transformRequestData(testChat);
-  console.log('ChatId:', transformedData.chatId);
-  console.log('Chat array length:', transformedData.chat.length);
-  
-  // Find and check media items
-  let mediaItemCount = 0;
-  transformedData.chat.forEach((item, index) => {
-    if (item.prompts) {
-      item.prompts.forEach(prompt => {
-        if (prompt.media) {
-          mediaItemCount++;
-          console.log(`Media found in item ${index}, talker: ${item.talker}`);
-          console.log(`Media content:`, JSON.stringify(prompt.media, null, 2));
-        }
-      });
-    }
-  });
-  
-  console.log(`Total media items found in transformed data: ${mediaItemCount}`);
-} catch (error) {
-  console.error('Error in full transformation:', error.message);
-}
+(async () => {
+  console.log('\n===== Testing full data transformation =====');
+  try {
+    const transformedData = await ChatDataTransformer.transformRequestData(testChat);
+    console.log('ChatId:', transformedData.chatId);
+    console.log('Chat array length:', transformedData.chat.length);
+    
+    // Find and check media items
+    let mediaItemCount = 0;
+    transformedData.chat.forEach((item, index) => {
+      if (item.prompts) {
+        item.prompts.forEach(prompt => {
+          if (prompt.media) {
+            mediaItemCount++;
+            console.log(`Media found in item ${index}, talker: ${item.talker}`);
+            console.log(`Media content:`, JSON.stringify(prompt.media, null, 2));
+          }
+        });
+      }
+    });
+    
+    console.log(`Total media items found in transformed data: ${mediaItemCount}`);
+  } catch (error) {
+    console.error('Error in full transformation:', error.message);
+  }
+})();

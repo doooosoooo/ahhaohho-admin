@@ -495,6 +495,210 @@ class PostGuideUploadService {
     return this._createSummary(results);
   }
 
+  async patchUpdateSinglePostGuide(postGuideData, fieldsToUpdate = null) {
+    let retryCount = 0;
+    const maxRetries = 3;
+    
+    try {
+      if (!postGuideData || typeof postGuideData !== 'object') {
+        throw new Error('Invalid post guide data: expected an object');
+      }
+
+      // fieldsToUpdate가 제공되면 해당 필드만 포함, 아니면 전체 데이터 사용
+      let patchData;
+      if (fieldsToUpdate && Array.isArray(fieldsToUpdate)) {
+        patchData = {};
+        fieldsToUpdate.forEach(field => {
+          if (Object.prototype.hasOwnProperty.call(postGuideData, field)) {
+            patchData[field] = postGuideData[field];
+          }
+        });
+        // id는 항상 포함
+        patchData.id = postGuideData.id;
+      } else {
+        patchData = postGuideData;
+      }
+
+      const transformedData = PostGuideDataTransformer.transformRequestData(patchData);
+      
+      console.log('[PATCH] 포스트가이드 부분 업데이트 시작:', {
+        id: postGuideData.id,
+        challengeId: transformedData.challengeId,
+        fieldsToUpdate: fieldsToUpdate || 'all'
+      });
+      
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      while (retryCount <= maxRetries) {
+        try {
+          // 기존 데이터 확인
+          const existingPostGuide = await this.getPostGuideById(postGuideData.id);
+          
+          if (!existingPostGuide) {
+            if (retryCount < maxRetries) {
+              console.log(`[PATCH] 포스트가이드 없음 (${retryCount+1}/${maxRetries+1} 시도): id=${postGuideData.id} - 재시도 중...`);
+              retryCount++;
+              await new Promise(resolve => setTimeout(resolve, 2000 * retryCount));
+              continue;
+            }
+            
+            console.log(`[PATCH] 포스트가이드를 찾을 수 없어 전체 업데이트로 전환: id=${postGuideData.id}`);
+            return this.updateSinglePostGuide(postGuideData);
+          }
+          
+          console.log(`[PATCH] 기존 포스트가이드 발견, 부분 업데이트 시작: id=${postGuideData.id}`);
+          
+          let response;
+          try {
+            // PATCH 요청 시도
+            console.log(`[PATCH] PATCH 요청 URL: ${this.BASE_URL}/world/challenges/postGuide/${transformedData.challengeId}`);
+            response = await this.axios.patch(
+              `${this.BASE_URL}/world/challenges/postGuide/${transformedData.challengeId}`, 
+              transformedData,
+              {
+                headers: { 
+                  'Content-Type': 'application/json',
+                  'X-Debug-Id': postGuideData.id || 'missing',
+                  'X-Patch-Fields': fieldsToUpdate ? fieldsToUpdate.join(',') : 'all',
+                  'Cache-Control': 'no-cache',
+                  'Accept': 'application/json',
+                  'X-Requested-With': 'XMLHttpRequest'
+                },
+                timeout: 30000,
+                httpsAgent: this.httpsAgent
+              }
+            );
+            console.log(`[PATCH] PATCH 요청 성공: id=${postGuideData.id}, 응답 상태=${response.status}`);
+          } catch (patchErr) {
+            console.log(`[PATCH] PATCH 요청 실패, PUT 요청으로 폴백: ${patchErr.message}`);
+            
+            try {
+              // PATCH 실패 시 PUT 요청으로 폴백
+              console.log(`[PATCH] PUT 요청 URL: ${this.BASE_URL}/world/challenges/postGuide/${transformedData.challengeId}`);
+              response = await this.axios.put(
+                `${this.BASE_URL}/world/challenges/postGuide/${transformedData.challengeId}`, 
+                transformedData,
+                {
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'X-Debug-Id': postGuideData.id || 'missing',
+                    'X-Patch-Fallback': 'true',
+                    'Cache-Control': 'no-cache',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  timeout: 30000,
+                  httpsAgent: this.httpsAgent
+                }
+              );
+              console.log(`[PATCH] PUT 폴백 요청 성공: id=${postGuideData.id}, 응답 상태=${response.status}`);
+            } catch (putErr) {
+              console.log(`[PATCH] PUT 폴백도 실패, 쿼리 매개변수 방식 시도: ${putErr.message}`);
+              
+              try {
+                // 쿼리 매개변수를 사용한 PATCH 시도
+                console.log(`[PATCH] 쿼리 매개변수 PATCH URL: ${this.BASE_URL}/world/challenges/postGuide?challengeIdx=${transformedData.challengeId}`);
+                response = await this.axios.patch(
+                  `${this.BASE_URL}/world/challenges/postGuide?challengeIdx=${transformedData.challengeId}`, 
+                  transformedData,
+                  {
+                    headers: { 
+                      'Content-Type': 'application/json',
+                      'X-Debug-Id': postGuideData.id || 'missing',
+                      'X-Patch-Query': 'true',
+                      'Cache-Control': 'no-cache',
+                      'Accept': 'application/json',
+                      'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    timeout: 30000,
+                    httpsAgent: this.httpsAgent
+                  }
+                );
+                console.log(`[PATCH] 쿼리 매개변수 PATCH 요청 성공: id=${postGuideData.id}, 응답 상태=${response.status}`);
+              } catch (queryErr) {
+                console.error(`[PATCH] 모든 PATCH 시도 실패, 전체 업데이트로 전환: ${queryErr.message}`);
+                return this.updateSinglePostGuide(postGuideData);
+              }
+            }
+          }
+          
+          // 업데이트 후 검증
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          const updatedPostGuide = await this.getPostGuideById(postGuideData.id);
+          
+          if (updatedPostGuide) {
+            const postGuideId = updatedPostGuide.id || postGuideData.id;
+            console.log(`[PATCH] 부분 업데이트 후 검증 성공: id=${postGuideId}`);
+            
+            const responseData = response.data || {};
+            if (!responseData.id) {
+              responseData.id = postGuideData.id;
+            }
+            
+            return responseData;
+          } else {
+            console.warn(`[PATCH] 부분 업데이트 후 검증 실패: id=${postGuideData.id}`);
+            
+            const responseData = response.data || {};
+            if (!responseData.id) {
+              responseData.id = postGuideData.id;
+            }
+            
+            return responseData;
+          }
+          
+        } catch (err) {
+          if (err.response?.status === 404 && retryCount < maxRetries) {
+            console.log(`[PATCH] 404 오류 발생 (${retryCount+1}/${maxRetries+1} 시도): id=${postGuideData.id} - 재시도 중...`);
+            retryCount++;
+            await new Promise(resolve => setTimeout(resolve, 2000 * retryCount));
+            continue;
+          }
+          
+          throw err;
+        }
+      }
+      
+      if (retryCount > maxRetries) {
+        console.log(`[PATCH] 모든 재시도 실패. 전체 업데이트로 전환: id=${postGuideData.id}`);
+        return this.updateSinglePostGuide(postGuideData);
+      }
+      
+    } catch (error) {
+      console.error('[PATCH] 부분 업데이트 오류:', {
+        id: postGuideData?.id,
+        attempt: `${retryCount}/${maxRetries+1}`,
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        data: error.response?.data,
+        message: error.message
+      });
+
+      throw new Error(`Patch update failed: ${error.response?.data?.message || error.message}`);
+    }
+  }
+
+  async patchUpdateMultiplePostGuides(postGuidesData, fieldsToUpdate = null) {
+    const dataArray = Array.isArray(postGuidesData) ? postGuidesData : [postGuidesData];
+    
+    const results = await Promise.all(
+      dataArray.map(async (postGuideData) => {
+        try {
+          if (!this._isValidPostGuideData(postGuideData)) {
+            return this._createErrorResult(postGuideData);
+          }
+          
+          const result = await this.patchUpdateSinglePostGuide(postGuideData, fieldsToUpdate);
+          return this._createSuccessResult(postGuideData, result, 'patched');
+        } catch (error) {
+          return this._createErrorResult(postGuideData, error.message);
+        }
+      })
+    );
+
+    return this._createSummary(results);
+  }
+
   _isValidPostGuideData(postGuideData) {
     return postGuideData && 
            typeof postGuideData === 'object' && 
@@ -509,16 +713,23 @@ class PostGuideUploadService {
     };
   }
 
-  _createSuccessResult(postGuideData, result, isUpdate = false) {
+  _createSuccessResult(postGuideData, result, action = false) {
     // 서버 응답에 id가 없을 경우 원래 ID 사용
     if (result && !result.id && postGuideData.id) {
       result = { ...result, id: postGuideData.id };
     }
     
+    let actionType = 'created';
+    if (action === true) {
+      actionType = 'updated';
+    } else if (typeof action === 'string') {
+      actionType = action;
+    }
+    
     return {
       id: postGuideData.id,
       status: 'success',
-      action: isUpdate ? 'updated' : 'created',
+      action: actionType,
       response: result
     };
   }
